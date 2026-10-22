@@ -1,6 +1,6 @@
 # Backend architecture and delivery roadmap
 
-**Status:** Proposed; awaiting architecture review before implementation.
+**Status:** Accepted by the project owner on October 22, 2026; implementation in progress.
 **Date:** October 22, 2026 (Asia/Tashkent).
 **Project:** Huqiq Mektebi / `abdimuratovv/law-school`.
 
@@ -13,7 +13,7 @@
 - Start with free hosting where practical. Capacity and cost must be measured; free production capacity is not guaranteed. No paid plan is authorized by this design.
 - Implement the backend before deploying a functioning exam application.
 
-Everything below is a concrete proposal for review. Google sign-in and open registration with teacher-managed group assignments are already confirmed; scoring, attempt limits, and feedback policies below are proposed product defaults.
+The project owner approved this architecture, roadmap and product defaults, including scoring, attempt limits and feedback policies. Deployment and any paid services remain separate decisions after validation.
 
 ## 2. Architecture decision
 

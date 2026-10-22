@@ -2,7 +2,7 @@
 
 A multilingual law certificate preparation frontend with student practice exams and a teacher workspace. Built with React, TypeScript, and Vite.
 
-**Status:** frontend prototype. Authentication, shared data storage, and backend services are not implemented. This repository supports demo deployments; it is not ready to administer real exams.
+**Status:** frontend prototype with a Cloudflare Workers/D1 backend foundation. Real authentication, exam APIs, and shared student data are not connected yet. This intermediate version is not ready to administer real exams. See the [backend setup guide](docs/BACKEND.md), [accepted architecture](docs/superpowers/specs/2026-10-22-backend-design.md), and [implementation plan](docs/superpowers/plans/2026-10-22-backend-implementation.md).
 
 ## Features
 
@@ -42,8 +42,12 @@ No environment variables or external services are required for the current front
 | `npm run build` | Check types and create a production build in `dist/` |
 | `npm run preview` | Preview the production build locally |
 | `npm audit` | Check dependencies against npm security advisories |
+| `npm test` | Run Worker-runtime and D1 integration tests |
+| `npm run db:migrate:local` | Apply schema migrations to local D1 |
+| `npm run dev:worker` | Serve built frontend and API together on port 8787 |
+| `npm run build:worker` | Bundle the Worker as a local dry run; no upload |
 
-GitHub Actions runs a clean install, production build, and dependency audit on pushes and pull requests. Browser tests are not included in this CI workflow.
+GitHub Actions runs a clean install, typechecks, frontend build, Worker/D1 tests, Worker bundle dry run, and dependency audit on pushes and pull requests. Browser tests are not included in this CI workflow.
 
 ## Project structure
 
@@ -62,6 +66,9 @@ src/
 design/project/     Historical HTML design references
 docs/ux-audit/      Historical UX reports, scripts, and recorded measurements
 public/             Static assets copied into the build
+server/             Worker API, HTTP helpers, database repositories and tests
+shared/contracts/   Public API types, validation schemas and limits
+migrations/         Numbered D1 SQL migrations
 ```
 
 Generated audit screenshots, archives, Python caches, and the historical benchmark workspace are excluded from Git. Existing local copies are preserved. Some historical reports link to these local-only artifacts or describe older dependency versions and build outputs.
@@ -98,7 +105,7 @@ The historical [performance report](docs/ux-audit/stage-9/PERFORMANCE.md) record
 
 Build the frontend with `npm run build` and serve the contents of `dist/` over HTTPS. Use Node.js 22.12 or later in the build environment. The host must serve `index.html` for client-side application routes so that direct visits and refreshes work.
 
-The planned Cloudflare architecture is Workers Static Assets for the frontend, Workers for the API, and D1 for persistent data. Cloudflare deployment configuration and backend implementation are not included yet. Connecting a GitHub repository alone does not create authentication, an API, or a database.
+The accepted Cloudflare architecture is Workers Static Assets for the frontend, Workers for the API, and D1 for persistent data. Local configuration, health/readiness API endpoints, database migrations and staging/production templates are included. Real Google authentication and exam functionality are not implemented yet; the frontend still uses demo data. Connecting a GitHub repository alone does not configure cloud resources or OAuth credentials. Follow the [backend guide](docs/BACKEND.md) for the current supported local setup.
 
 The current page loads the Inter font from Google Fonts and falls back to system fonts when it is unavailable.
 
@@ -106,14 +113,13 @@ Do not commit `.env` files, Cloudflare tokens, database credentials, or other se
 
 ## Publishing to GitHub
 
-A local Git repository is initialized on the `main` branch. Create an empty GitHub repository without adding a README or license, then run the following commands from this folder. Replace `YOUR_USERNAME` with your GitHub username and adjust the repository name if necessary.
+The repository is [abdimuratovv/law-school](https://github.com/abdimuratovv/law-school), with `main` as its branch. After reviewing and testing local changes:
 
 ```bash
 git add .
 git diff --cached --stat
-git commit -m "Prepare frontend for GitHub"
-git remote add origin https://github.com/YOUR_USERNAME/huqiq-mektebi.git
-git push -u origin main
+git commit -m "Describe your change"
+git push origin main
 ```
 
 Review the staged file list before committing. Dependencies, build output, environment secrets, and generated audit images/archives are excluded by `.gitignore`. Keep `package-lock.json` in version control.

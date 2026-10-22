@@ -10,20 +10,35 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run typecheck && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "npm run typecheck:frontend && npm run typecheck:server && npm run typecheck:tests",
+    "typecheck:frontend": "tsc --noEmit -p tsconfig.json",
+    "typecheck:server": "tsc --noEmit -p tsconfig.server.json",
+    "typecheck:tests": "tsc --noEmit -p tsconfig.tests.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev:worker": "wrangler dev --local",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "build:worker": "wrangler deploy --dry-run --outdir .worker-build"
   },
   "dependencies": {
+    "hono": "4.13.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.18.4"
+    "react-router-dom": "^7.18.4",
+    "zod": "4.6.7"
   },
   "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.4.7",
+    "@cloudflare/workers-types": "^5.20261022.1",
+    "@types/node": "^22.20.5",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^5.2.0",
     "typescript": "~5.6.3",
-    "vite": "^7.3.7"
+    "vite": "^7.3.7",
+    "vitest": "^4.1.12",
+    "wrangler": "^4.152.0"
   }
 }

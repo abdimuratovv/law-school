@@ -5,6 +5,7 @@ coverage/
 *.local
 .vite/
 .wrangler/
+.worker-build/
 *.tsbuildinfo
 
 # Secrets and machine-specific configuration
@@ -16,6 +17,8 @@ coverage/
 !.dev.vars.example
 .claude/
 .codex/
+wrangler.staging.jsonc
+wrangler.production.jsonc
 .idea/
 .vscode/
 *.log

@@ -1,0 +1,87 @@
+# Backend development
+
+The [backend architecture](superpowers/specs/2026-10-22-backend-design.md) was accepted on October 22, 2026. The [implementation plan](superpowers/plans/2026-10-22-backend-implementation.md) tracks six stages.
+
+## Current scope
+
+Stage 1 implements a Worker API foundation and the identity/group database schema. Google login, session enforcement, exam APIs, server grading, and frontend API integration are subsequent stages. The browser application remains a local demo, including its public teacher screens and bundled sample answer keys. Do not deploy this intermediate state for real student assessments.
+
+## Local setup
+
+Use Node.js 22.12 or later and npm. No Cloudflare account, token, paid resource, or Google credential is needed for foundation development.
+
+```bash
+npm ci
+npm run build
+npm run db:migrate:local
+npm run dev:worker
+```
+
+Open `http://127.0.0.1:8787` for the built frontend and the same-origin API. Frontend changes require another `npm run build` when using this combined server. `npm run dev` still provides the separate Vite frontend development server on port 5173; it does not start the API.
+
+Local D1 persists under `.wrangler/`, which is ignored by Git. Reapplying migrations skips tracked migration files. Never edit a migration after it has reached a shared/staging database; create the next numbered migration instead. Tests use disposable databases, not this local database.
+
+## Implemented endpoints
+
+| Endpoint | Behavior |
+| --- | --- |
+| `GET /api/v1/health` | Liveness only; no database read |
+| `GET /api/v1/ready` | Checks that the required migration is applied; otherwise returns a safe 503 |
+| `HEAD` on either endpoint | Same status/headers without response body |
+| Unknown `/api` or `/api/...` | JSON 404, including browser navigation requests |
+| Unsupported method on health/readiness | JSON 405 with `Allow: GET, HEAD` |
+
+Both successful endpoints return `{"status":"ok","requestId":"..."}`. API responses have a server-generated `X-Request-Id`, `Cache-Control: no-store`, and `X-Content-Type-Options: nosniff`. Expected errors use `{"error":{"code":"...","message":"..."},"requestId":"..."}`. Unexpected errors never echo exception text, SQL, headers or request bodies; logs contain a fixed event and request ID only.
+
+Readiness is an operational schema check, not a guarantee that authentication or exams have been implemented. The schema initially has no users, groups or login sessions.
+
+## Boundaries and layout
+
+```text
+server/
+  index.ts              Worker entry; separates API from static assets
+  app.ts                Hono API, request metadata, health and readiness
+  env.ts                Worker bindings and per-request variables
+  http/                 Safe errors and bounded JSON validation
+  repositories/         Prepared SQL operations
+  tests/                Worker-runtime and D1 integration checks
+shared/contracts/       Public schemas; no server secrets or grading keys
+migrations/             Numbered SQL schema migrations
+wrangler.jsonc          Local Worker and local-only D1 binding
+```
+
+Browser, server and test TypeScript configurations are separate. Do not import `server/` from `src/` or put private fields into public contracts. The safe question schema strips private fields at every defined object level. Domain routes must parse their response through that contract before serializing.
+
+The JSON reader enforces a 256 KiB limit against actual streamed bytes, including requests without a Content-Length header. Answer schemas cap snapshots at 100 answers, each written answer at 1,000 Unicode characters, and list pages at 100 items. The combined byte limit applies in addition to per-field limits. Handlers must additionally verify question membership, stable choice IDs, role/ownership, active attempt state, deadline and revision in their domain services; schema validation alone does not authorize an exam mutation.
+
+The first migration creates users, Google identities, hashed sessions, transient login flows, groups, staff/group links, memberships and audit events. It enforces role/status enums, foreign keys, identity/enrollment uniqueness and maximum session/login-flow lifetimes. It does not implement the authentication flow or replace permission checks.
+
+## Verification
+
+```bash
+npm run typecheck
+npm test
+npm run build
+npm run build:worker
+npm audit
+```
+
+`npm test` uses Vitest and Cloudflare's Worker test plugin. The real local D1 runtime applies the production SQL migration. Tests cover routing/error boundaries, oversized streamed JSON, Unicode limits, stripping answer keys, database constraints, migration reapplication and indexed access paths. They do not require OAuth credentials or contact Google.
+
+`npm run build:worker` is a Wrangler **dry run** writing ignored files to `.worker-build/`; it does not upload a Worker, create a cloud database or run remote migrations. It expects `dist/` from the frontend build. GitHub Actions performs the build, Worker tests, dry run and dependency audit.
+
+These checks do not measure hosted CPU quotas, network latency or 200-user capacity. Those remain stage 6 release gates.
+
+Foundation verification on October 22, 2026: all three TypeScript configurations and the frontend build passed; 36 Worker/D1 tests passed; both migrations applied locally; a clean `npm ci` succeeded and npm audit reported zero vulnerabilities. Five HTTP checks through a running local Worker confirmed health/readiness JSON, JSON 404s for two unknown API navigation requests, and the nested-route SPA fallback. The Worker dry-run bundle is approximately 60 KiB (16 KiB gzip). The existing frontend bundle-size warning remains; it is not a backend capacity result.
+
+## Environment separation
+
+- `wrangler.jsonc` uses a deliberately synthetic local database ID. Use it with `--local`; it is not a remote deployment configuration.
+- Staging and production have separate checked-in `.example.jsonc` templates with deliberately invalid placeholder database IDs. Copy them to `wrangler.staging.jsonc` / `wrangler.production.jsonc` only when preparing the respective environment. Local copies are ignored.
+- Each environment needs its own D1 binding and OAuth redirect configuration. Do not use production bindings in preview builds.
+- Google client secrets and future session secrets belong in Worker secrets; local secret files belong in ignored `.dev.vars` files. Never use `VITE_*` for secrets.
+- Actual database IDs, origins, OAuth settings and deployment commands will be filled in during their implementation stages. There is intentionally no automatic deploy workflow or `deploy` npm script at this stage.
+
+## Next stage
+
+Implement Google authorization-code login, single-use PKCE/state/nonce, revocable session cookies, CSRF enforcement and scoped group access. Real staging login validation will require a configured Google OAuth client and an exact registered callback URL. Provider secrets should be configured directly in the environment, never sent through chat.
