@@ -1,3 +1,4 @@
+import { useText } from '@/i18n/LanguageProvider';
 import { Route, Routes } from 'react-router-dom';
 import { AdminShell } from '@/components/layout/AdminShell';
 import Analytics from './Analytics';
@@ -11,8 +12,9 @@ import Students from './Students';
 import { RouteUnavailable } from '@/components/layout/RouteAccess';
 
 export default function AdminRoutes() {
+  const t = useText();
   return (
-    <Routes>
+    <><p role="status" className="card learning-card">{t('Teacher workspace preview. Publishing and manual review will be connected in the next stage.')}</p><Routes>
       <Route element={<AdminShell />}>
         <Route index element={<Overview />} />
         <Route path="bank" element={<Bank />} />
@@ -24,6 +26,6 @@ export default function AdminRoutes() {
         <Route path="analytics" element={<Analytics />} />
         <Route path="*" element={<RouteUnavailable teacher embedded />} />
       </Route>
-    </Routes>
+    </Routes></>
   );
 }

@@ -8,6 +8,7 @@ import { reviewCopy } from './reviewMessages';
 import { authoringCopy } from './authoringMessages';
 import { learningCopy } from './learningMessages';
 import { assessmentCopy } from './assessmentMessages';
+import { examCopy } from './examMessages';
 import { authCopy } from './authMessages';
 import { localizedDate, localizedNumber } from './formatting';
 
@@ -29,7 +30,7 @@ function translated(source: string, language: Language): string {
   const end = source.match(/\s*$/)?.[0] ?? '';
   const key = source.trim().replace(/\s+/g, ' ');
   if (!key) return source;
-  const entry = authCopy[key] ?? reviewCopy[key] ?? authoringCopy[key] ?? learningCopy[key] ?? assessmentCopy[key] ?? discoveryCopy[key] ?? shellCopy[key] ?? designCopy[key] ?? uxCopy[key] ?? messages[key];
+  const entry = examCopy[key] ?? authCopy[key] ?? reviewCopy[key] ?? authoringCopy[key] ?? learningCopy[key] ?? assessmentCopy[key] ?? discoveryCopy[key] ?? shellCopy[key] ?? designCopy[key] ?? uxCopy[key] ?? messages[key];
   const value = entry?.[language] ?? translateDynamic(key, language);
   return `${start}${value}${end}`;
 }

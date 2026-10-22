@@ -20,7 +20,8 @@
     "test:watch": "vitest",
     "dev:worker": "wrangler dev --local",
     "db:migrate:local": "wrangler d1 migrations apply DB --local",
-    "build:worker": "wrangler deploy --dry-run --outdir .worker-build"
+    "build:worker": "wrangler deploy --dry-run --outdir .worker-build",
+    "verify:exam-bundle": "node scripts/verify-exam-bundle.mjs"
   },
   "dependencies": {
     "hono": "4.13.13",

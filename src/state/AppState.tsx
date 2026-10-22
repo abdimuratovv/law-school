@@ -4,7 +4,6 @@ import { load as loadPreference, save as savePreference } from '@/lib/storage';
 import { accountStore } from '@/lib/accountStorage';
 import { useAuth } from './AuthState';
 import type { AuthenticatedUser } from '../../shared/contracts/auth';
-import { seedAttempts, seedSession } from './seed';
 import { sessionAttemptId, submissionSnapshot } from '@/lib/assessment';
 
 export type ThemePref = 'system' | 'light' | 'dark';
@@ -46,16 +45,6 @@ interface AppStateValue {
 }
 
 const Ctx = createContext<AppStateValue | null>(null);
-const SEED_VERSION = 2;
-
-function ensureSeed({ load, save }: ReturnType<typeof accountStore>) {
-  if (load<number>('seed', 0) === SEED_VERSION) return;
-  save('sessions', { 'mock-7': seedSession() });
-  save('attempts', seedAttempts());
-  save('mistakes', ['Q-0422', 'Q-0387', 'Q-0413']);
-  save('seed', SEED_VERSION);
-}
-
 function useSystemDark() {
   const q = '(prefers-color-scheme: dark)';
   const [dark, setDark] = useState(() => typeof matchMedia !== 'undefined' && matchMedia(q).matches);
@@ -199,7 +188,7 @@ function AccountState({ children, user, signOut }: { children: ReactNode; user: 
 
   const resetDemo = useCallback(() => {
     remove('seed');
-    ensureSeed({ load, save, remove });
+    save('sessions', {}); save('attempts', []); save('mistakes', []);
     setSessions(load('sessions', {}));
     setAttempts(load('attempts', []));
     sessionsRef.current = load('sessions', {});

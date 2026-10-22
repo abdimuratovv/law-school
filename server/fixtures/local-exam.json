@@ -1,0 +1,43 @@
+[
+  {
+    "question": {
+      "id": "local-choice-v1",
+      "kind": "single",
+      "topic": "theory",
+      "stem": "Texnik namuna: SERVER so‘zini tanlang.",
+      "options": [
+        {
+          "id": "server-option",
+          "text": "SERVER"
+        },
+        {
+          "id": "browser-option",
+          "text": "BROWSER"
+        },
+        {
+          "id": "draft-option",
+          "text": "DRAFT"
+        },
+        {
+          "id": "timer-option",
+          "text": "TIMER"
+        }
+      ]
+    },
+    "correctOptionId": "server-option",
+    "accepted": [],
+    "explanation": "LOCAL_ONLY_EXPLANATION_7319: Bu savol faqat dastur oqimini tekshirish uchun."
+  },
+  {
+    "question": {
+      "id": "local-written-v1",
+      "kind": "written",
+      "topic": "theory",
+      "stem": "Texnik namuna: saqlandi so‘zini yozing."
+    },
+    "accepted": [
+      "saqlandi"
+    ],
+    "explanation": "LOCAL_ONLY_WRITTEN_7319: Texnik namuna; huquqiy bilim baholanmaydi."
+  }
+]

@@ -1,24 +1,19 @@
 import { lazy, Suspense, type ReactNode } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { StudentShell } from '@/components/layout/StudentShell';
-import Catalog from '@/pages/student/Catalog';
-import Dashboard from '@/pages/student/Dashboard';
-import Exam from '@/pages/student/Exam';
-import { Mistakes, Profile, ProgressPage } from '@/pages/student/Extras';
-import Lobby from '@/pages/student/Lobby';
-import Results from '@/pages/student/Results';
-import Review from '@/pages/student/Review';
+import { ServerCatalog as Catalog, ServerCatalog as Dashboard, ServerExam as Exam, ServerExam as Results, ServerExam as Review, ServerLobby as Lobby, ServerHistory as ProgressPage, ServerProfile as Profile, PendingFeature } from '@/pages/student/ServerExams';
 import SignIn from '@/pages/student/SignIn';
-import GettingStarted from '@/pages/student/GettingStarted';
 import { useApp } from '@/state/AppState';
 import { useAuth } from '@/state/AuthState';
 import { useText } from '@/i18n/LanguageProvider';
 import { Button } from '@/components/ui/basic';
 import { RouteAccess, RouteErrorBoundary, RouteLoading, RouteUnavailable, SkipNavigation } from '@/components/layout/RouteAccess';
 
-// Teacher workspace and the design-system reference load on demand.
+// These previews use public artboard samples, never the server question bank.
 const AdminRoutes = lazy(() => import('@/pages/admin/AdminRoutes'));
 const DesignSystem = lazy(() => import('@/pages/DesignSystem'));
+const Mistakes = PendingFeature;
+const GettingStarted = lazy(() => import('@/pages/student/GettingStarted'));
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const { user } = useApp();

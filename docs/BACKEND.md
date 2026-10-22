@@ -4,7 +4,7 @@ The [backend architecture](superpowers/specs/2026-10-22-backend-design.md) was a
 
 ## Current scope
 
-Stage 1 provides the Worker API foundation. Stage 2 adds Google login, revocable sessions, CSRF enforcement, scoped group/staff APIs and authenticated frontend routing. See [Google authentication setup](GOOGLE-AUTH.md) for credentials, API paths and admin bootstrap. Exam APIs and server grading remain subsequent stages. The browser exam/content screens still contain sample data and sample answer keys. Do not deploy this intermediate state for real student assessments.
+Stages 1–3 provide the Worker foundation, Google authentication, scoped accounts/groups and the server-backed student exam path. Catalog, start/resume, answer synchronization, checks, submission, expiry and grading now use D1. See [exam API and recovery](EXAM-API.md) and [Google setup](GOOGLE-AUTH.md). Teacher publishing/manual review and reporting remain subsequent stages. Real provider configuration, reviewed content and hosted load acceptance are still required before real assessments.
 
 ## Local setup
 
@@ -84,4 +84,4 @@ Foundation verification on October 22, 2026: all three TypeScript configurations
 
 ## Next stage
 
-Complete real staging Google login using the OAuth setup guide, then implement the server-backed student exam path: immutable published questions/tests, attempt synchronization, deadline enforcement and server grading. Provider secrets are configured directly in the environment, never sent through chat.
+Stage 4 connects teacher question drafts, immutable publishing, test assignments and manual review. Real staging Google login and reviewed production content remain prerequisites; provider secrets are configured directly in the environment, never sent through chat.

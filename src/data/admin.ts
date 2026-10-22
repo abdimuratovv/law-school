@@ -68,27 +68,11 @@ export interface GradeItem {
   grade?: Grade;
 }
 
-const Q38 = { stem: 'Málim bir siyasiy talaplardı bildiriw maqsetindegi ǵalabalıq shıǵıw ne dep ataladı?', accepted: ['Demonstraciya', 'Ǵalabalıq demonstraciya'] };
-const Q41 = { stem: 'Neke jasın tómenletiw qanday jaǵdaylarda ruxsat etiledi?', accepted: [] as string[] };
-const Q43 = { stem: 'Mámleket hám jámiyet turmısınıń eń áhmiyetli máseleleri boyınsha ulıwma xalıqlıq dawıs beriw qalay ataladı?', accepted: ['Referendum'] };
-const Q44 = { stem: 'Mámleketlik hákimiyattıń xalıq tárepinen tán alınıwı hám nızamlı dep esaplanıwı qalay ataladı?', accepted: ['Legitimlik'] };
-const Q45 = { stem: 'Lawazımlı shaxstıń wákillikten tıs háreketi qalay ataladı?', accepted: [] as string[] };
-
+// Harmless public controls examples. Real review records come from the server in stage 4.
 export const GRADING: GradeItem[] = [
-  { id: 'g1', q: 38, student: '#12', group: '11-B', answer: 'Demonstraciya', ...Q38, grade: 'ok' },
-  { id: 'g2', q: 38, student: '#19', group: '11-B', answer: 'Miting', ...Q38, grade: 'bad' },
-  { id: 'g3', q: 38, student: '#27', group: '11-B', answer: 'Demanstraciya', ...Q38, note: '1 letter from “Demonstraciya” — sent here instead of auto-marking' },
-  { id: 'g4', q: 41, student: '#03', group: '11-A', answer: 'Sóz erkinligi', ...Q41, note: 'No accepted answers set — always graded by hand' },
-  { id: 'g5', q: 41, student: '#08', group: '11-A', answer: 'Ombudsman', ...Q41, note: 'No accepted answers set — always graded by hand' },
-  { id: 'g6', q: 43, student: '#11', group: '11-B', answer: 'Referendum ótkeriw', ...Q43, note: 'Contains “Referendum” plus extra words' },
-  { id: 'g7', q: 43, student: '#15', group: '11-A', answer: 'Nızam ústinligi', ...Q43, note: 'Different term from the accepted answer' },
-  { id: 'g8', q: 44, student: '#22', group: '11-B', answer: 'Legitimlik', ...Q44, note: 'Exact match after case folding — check manually' },
-  { id: 'g9', q: 45, student: '#30', group: '11-A', answer: 'Deputatlıq soraw', ...Q45, note: 'No accepted answers set — always graded by hand' },
-  { id: 'g10', q: 38, student: '#31', group: '11-A', answer: 'Demonstrasiya', ...Q38, note: '1 letter from “Demonstraciya” — sent here instead of auto-marking' },
-  { id: 'g11', q: 44, student: '#05', group: '11-A', answer: 'Legitimlilik', ...Q44, note: '2 letters from “Legitimlik”' },
-  { id: 'g12', q: 43, student: '#17', group: '11-B', answer: 'Referendım', ...Q43, note: 'Missing ı/u — possible keyboard issue' },
-  { id: 'g13', q: 41, student: '#21', group: '11-B', answer: 'Sud qararı menen', ...Q41, note: 'No accepted answers set — always graded by hand' },
-  { id: 'g14', q: 45, student: '#09', group: '11-B', answer: 'Wákillikten asıw', ...Q45, note: 'No accepted answers set — always graded by hand' }
+  { id:'g1',q:1,student:'#sample',group:'Sample',answer:'sample',stem:'Sample: type sample.',accepted:['sample'],grade:'ok' },
+  { id:'g2',q:1,student:'#sample2',group:'Sample',answer:'sampl',stem:'Sample: type sample.',accepted:['sample'],note:'Public tutorial: possible typo' },
+  { id:'g3',q:2,student:'#sample3',group:'Sample',answer:'free text',stem:'Sample: write any text.',accepted:[],note:'Public tutorial: manual review' },
 ];
 
 /* Students */

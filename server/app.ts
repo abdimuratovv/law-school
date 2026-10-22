@@ -4,6 +4,7 @@ import type { ApiEnv } from './env';
 import { ApiError, errorResponse } from './http/errors';
 import { isDatabaseReady } from './repositories/readiness';
 import { authRoutes } from './routes/auth';
+import { examRoutes } from './routes/exams';
 import { accessRoutes } from './routes/access';
 import type { IdentityProvider } from './auth/google';
 
@@ -21,6 +22,7 @@ export function createApi(options: { identityProvider?: IdentityProvider } = {})
   app.onError(errorResponse);
   app.route(`${API_PREFIX}/auth`, authRoutes(options.identityProvider));
   app.route(API_PREFIX, accessRoutes());
+  app.route(API_PREFIX, examRoutes());
   app.notFound(() => { throw new ApiError(404, 'NOT_FOUND', 'API endpoint not found.'); });
 
   app.get(`${API_PREFIX}/health`, c => c.json({ status: 'ok', requestId: c.get('requestId') }));

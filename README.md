@@ -2,13 +2,13 @@
 
 A multilingual law certificate preparation frontend with student practice exams and a teacher workspace. Built with React, TypeScript, and Vite.
 
-**Status:** Google authentication and account/group APIs are implemented on Cloudflare Workers/D1. OAuth credentials are required for real sign-in. Exam APIs and shared exam data are not connected yet. This intermediate version is not ready to administer real exams. See the [backend setup guide](docs/BACKEND.md), [accepted architecture](docs/superpowers/specs/2026-10-22-backend-design.md), and [implementation plan](docs/superpowers/plans/2026-10-22-backend-implementation.md).
+**Status:** Google authentication and account/group APIs are implemented on Cloudflare Workers/D1. OAuth credentials are required for real sign-in. The learner catalog, attempts, synchronization, results and grading now use the backend. Teacher publishing/manual review and reporting remain previews or pending. This intermediate version is not ready to administer real exams. See the [backend setup guide](docs/BACKEND.md), [accepted architecture](docs/superpowers/specs/2026-10-22-backend-design.md), and [implementation plan](docs/superpowers/plans/2026-10-22-backend-implementation.md).
 
 ## Features
 
 - Student dashboard, test catalog, timed mock exams, and untimed practice.
-- Multiple-choice and written answers, flagged questions, results, review, and a mistakes collection.
-- Teacher interfaces for a question bank, question editing, sample import validation, test building, manual grading, students, and analytics.
+- Server-backed multiple-choice/written answers, flags, provisional/final results and attempt history. Bookmarks and full progress reporting are pending.
+- Teacher interface previews for a question bank, question editing, sample import validation, test building, manual grading, students, and analytics.
 - Uzbek (default), Karakalpak, and Russian interface translations. Question material remains in Karakalpak.
 - Responsive layouts, light/dark themes, keyboard navigation, and a design reference at `/design`.
 
@@ -54,14 +54,14 @@ GitHub Actions runs a clean install, typechecks, frontend build, Worker/D1 tests
 ```text
 src/
   components/       Shared UI, layouts, exam controls, and draft handling
-  data/             Sample questions, tests, topics, and teacher fixtures
+  data/             Public controls examples and teacher preview fixtures
   i18n/             Language provider, translations, and locale formatting
-  lib/              Grading, assessment, storage, navigation, and utilities
+  lib/              API client, IndexedDB drafts, navigation and preview utilities
   pages/
     student/        Sign-in, dashboard, exams, results, and review
     admin/          Teacher workspace
     DesignSystem.tsx
-  state/            Browser-local student state and temporary teacher reviews
+  state/            Authentication, server attempt recovery and preview preferences
   styles/           Design tokens and application styles
 design/project/     Historical HTML design references
 docs/ux-audit/      Historical UX reports, scripts, and recorded measurements
@@ -81,7 +81,7 @@ Generated audit screenshots, archives, Python caches, and the historical benchma
 | `/` | `/admin/bank` |
 | `/tests` | `/admin/editor/:id` |
 | `/tests/:testId` | `/admin/import` |
-| `/exam/:testId` | `/admin/builder` |
+| `/exam/:attemptId` | `/admin/builder` |
 | `/results/:attemptId` | `/admin/grading` |
 | `/results/:attemptId/q/:n` | `/admin/students` |
 | `/mistakes`, `/progress`, `/profile` | `/admin/analytics` |
@@ -89,23 +89,20 @@ Generated audit screenshots, archives, Python caches, and the historical benchma
 
 The shared design reference is available at `/design`.
 
-## Demo data and limitations
+## Data and limitations
 
-- Preview exam data uses browser `localStorage` under `hm.account.<user-id>.demo.*`. It is scoped to the signed-in account and cleared on logout/account changes, but is not synchronized between devices. Historical `hm.*` demo records are preserved and are not imported as real results. Clearing site data removes local progress and drafts.
-- Google sign-in, server sessions, CSRF protection and account/group role enforcement are implemented. Teacher pages require a teacher/admin session. Exam answer keys and sample grading logic still remain in the frontend bundle until the exam integration stage; do not administer real exams with this intermediate build.
-- Timed exam deadlines continue while the student is away from the page. Browser-local timing and scores are not authoritative or tamper-resistant.
-- Question editing, test building, and import screens save local drafts. Import validates sample decisions and file metadata; it does not parse spreadsheet contents, publish questions, or assign tests on a server.
-- Teacher grading uses in-memory fixtures. Reloading or leaving the teacher workspace resets reviews; teacher grades do not update student results.
-- Some questions contain placeholder material. Student history and analytics include sample data.
-- Storage failures are surfaced in the interface, but closing a page with unsaved changes can still lose work.
-
-The historical [performance report](docs/ux-audit/stage-9/PERFORMANCE.md) records an unresolved loading regression. Native-language review, assistive-technology checks, and real-device acceptance remain pending; see the [human acceptance packet](docs/ux-audit/stage-9/HUMAN-ACCEPTANCE.md). Historical results are not validation of future backend capacity or the dependency updates in this repository.
+- Real learner tests use same-origin Worker APIs and immutable D1 versions. Answers are graded on the server. IndexedDB retains account-scoped unsynced drafts; legacy demo scores are preserved separately and never imported.
+- Active exams do not expose answer keys. The public design tutorial uses trivial controls examples. Former artboard question/grading fixtures are archived under `server/fixtures/` and are not bundled into the browser.
+- Teacher authoring/review screens are labeled previews until stage 4. Mistakes and full progress/analytics reporting are pending stage 5. Attempt history is already backed by real records.
+- A fresh database contains no exam bank. An optional synthetic local exercise is documented in [EXAM-API.md](docs/EXAM-API.md); real legal content must be reviewed and published before use.
+- Real Google acceptance needs owner-configured OAuth credentials. Hosted 200-user capacity, quota headroom and production deployment remain stage 6 release gates.
+- For local browser tests and recovery semantics, see the [exam API guide](docs/EXAM-API.md).
 
 ## Deployment
 
 Build the frontend with `npm run build` and serve the contents of `dist/` over HTTPS. Use Node.js 22.12 or later in the build environment. The host must serve `index.html` for client-side application routes so that direct visits and refreshes work.
 
-The accepted Cloudflare architecture is Workers Static Assets for the frontend, Workers for the API, and D1 for persistent data. Local configuration, health/readiness API endpoints, database migrations and staging/production templates are included. Google authentication and account/group APIs are implemented; real provider sign-in requires credentials and an exact registered callback. Exam and teacher-content screens still use scoped sample data. Connecting a GitHub repository alone does not configure cloud resources or OAuth credentials. Follow the [backend guide](docs/BACKEND.md) for the current supported local setup.
+The accepted Cloudflare architecture is Workers Static Assets for the frontend, Workers for the API, and D1 for persistent data. Local configuration, health/readiness API endpoints, database migrations and staging/production templates are included. Google authentication and account/group APIs are implemented; real provider sign-in requires credentials and an exact registered callback. Student exams now use server data; teacher-content screens remain labeled previews. Connecting a GitHub repository alone does not configure cloud resources or OAuth credentials. Follow the [backend guide](docs/BACKEND.md) for the current supported local setup.
 
 The current page loads the Inter font from Google Fonts and falls back to system fonts when it is unavailable.
 
@@ -127,9 +124,9 @@ Review the staged file list before committing. Dependencies, build output, envir
 ## Next development steps
 
 1. Configure Google OAuth and complete the real staging sign-in acceptance check; see [the setup guide](docs/GOOGLE-AUTH.md).
-2. Add persistent question banks, tests, attempts, and teacher reviews.
-3. Move answer keys, grading, and exam deadline enforcement to the server.
-4. Add retry-safe answer synchronization and submission handling.
+2. Connect teacher publishing, assignments and revisioned manual review.
+3. Connect import, bookmarks and progress reporting to actual records.
+4. Prepare reviewed production question content and rehearse backup/restore.
 5. Validate capacity with realistic concurrent exam sessions before production deployment.
 
 ## License

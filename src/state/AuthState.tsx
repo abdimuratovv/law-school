@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { currentUserSchema, type AuthenticatedUser } from '../../shared/contracts/auth';
+import { clearDraftsExcept } from '@/lib/examDrafts';
 import { clearAccountCaches } from '@/lib/accountStorage';
 
 type AuthState = { user: AuthenticatedUser | null; csrfToken: string | null; status: 'loading' | 'ready' | 'error'; googleEnabled: boolean };
@@ -26,6 +27,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const account = me.ok ? currentUserSchema.parse(await me.json()) : null;
       if (ticket !== generation.current) return;
       clearAccountCaches(account?.user.id);
+      await clearDraftsExcept(account?.user.id).catch(() => {});
+      if (ticket !== generation.current) return;
       setState({ user: account?.user ?? null, csrfToken: account?.csrfToken ?? null, googleEnabled: enabled, status: 'ready' });
     } catch {
       if (ticket === generation.current) setState({ ...initial, status: 'error' });
@@ -59,6 +62,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (!response.ok && response.status !== 401) return false;
       generation.current++;
       clearAccountCaches();
+      await clearDraftsExcept().catch(() => {});
       setState({ ...initial, status: 'ready', googleEnabled: current.current.googleEnabled });
       channel.current?.postMessage('changed');
       return true;

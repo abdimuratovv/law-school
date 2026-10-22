@@ -9,7 +9,7 @@ async function addUser(id: string, role = 'student') {
 }
 
 beforeEach(async () => {
-  for (const table of ['admin_bootstrap', 'audit_events', 'group_memberships', 'group_teachers', 'groups', 'login_flows', 'sessions', 'identities', 'users']) {
+  for (const table of ['attempt_starts', 'attempts', 'assignments', 'test_versions', 'question_versions', 'admin_bootstrap', 'audit_events', 'group_memberships', 'group_teachers', 'groups', 'login_flows', 'sessions', 'identities', 'users']) {
     await env.DB.prepare(`DELETE FROM ${table}`).run();
   }
 });
