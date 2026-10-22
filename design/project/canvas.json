@@ -1,0 +1,221 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Admin-Analytics.dc.html": {
+      "h": 1294,
+      "title": "A8 Admin · question analytics",
+      "w": 3858,
+      "x": 0,
+      "y": 29802
+    },
+    "Admin-Bank.dc.html": {
+      "h": 1294,
+      "title": "A2 Admin · question bank",
+      "w": 3858,
+      "x": 0,
+      "y": 21318
+    },
+    "Admin-Builder.dc.html": {
+      "h": 1294,
+      "title": "A5 Admin · test builder",
+      "w": 3858,
+      "x": 0,
+      "y": 25560
+    },
+    "Admin-Components.dc.html": {
+      "h": 1640,
+      "title": "A0 Admin · components",
+      "w": 1504,
+      "x": 0,
+      "y": 18144
+    },
+    "Admin-Editor.dc.html": {
+      "h": 1294,
+      "title": "A3 Admin · question editor",
+      "w": 3858,
+      "x": 0,
+      "y": 22732
+    },
+    "Admin-Grading.dc.html": {
+      "h": 1294,
+      "title": "A6 Admin · manual grading queue",
+      "w": 3858,
+      "x": 0,
+      "y": 26974
+    },
+    "Admin-Import.dc.html": {
+      "h": 1294,
+      "title": "A4 Admin · Excel import (3 steps)",
+      "w": 6818,
+      "x": 0,
+      "y": 24146
+    },
+    "Admin-Overview.dc.html": {
+      "h": 1294,
+      "title": "A1 Admin · overview",
+      "w": 3858,
+      "x": 0,
+      "y": 19904
+    },
+    "Admin-Students.dc.html": {
+      "h": 1294,
+      "title": "A7 Admin · students + student detail",
+      "w": 3858,
+      "x": 0,
+      "y": 28388
+    },
+    "Catalog-Desktop.dc.html": {
+      "h": 1000,
+      "title": "03 Test catalog · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 6020
+    },
+    "Components.dc.html": {
+      "h": 2860,
+      "title": "00 Design system · components",
+      "w": 1504,
+      "x": 1520,
+      "y": 0
+    },
+    "Dashboard-Desktop.dc.html": {
+      "h": 1000,
+      "title": "02 Dashboard · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 4400
+    },
+    "Exam-Desktop.dc.html": {
+      "h": 1000,
+      "is_interactive": true,
+      "title": "05 Exam player · single choice · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 8260
+    },
+    "Lobby-Desktop.dc.html": {
+      "h": 1000,
+      "title": "04 Exam lobby · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 7140
+    },
+    "Main.dc.html": {
+      "h": 2860,
+      "title": "00 Design system · foundations",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "Map-Desktop.dc.html": {
+      "h": 1000,
+      "title": "07 Question map · popover",
+      "w": 2984,
+      "x": 0,
+      "y": 11564
+    },
+    "Offline-Desktop.dc.html": {
+      "h": 1000,
+      "title": "09 Connection lost · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 13804
+    },
+    "Results-Desktop.dc.html": {
+      "h": 1000,
+      "title": "10 Results · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 14924
+    },
+    "Review-Desktop.dc.html": {
+      "h": 1000,
+      "title": "11 Question review · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 16544
+    },
+    "SignIn-Desktop.dc.html": {
+      "h": 1000,
+      "title": "01 Sign in · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 3280
+    },
+    "Submit-Desktop.dc.html": {
+      "h": 1000,
+      "title": "08 Submit confirmation · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 12684
+    },
+    "Written-Desktop.dc.html": {
+      "h": 1000,
+      "title": "06 Written answer · desktop",
+      "w": 2984,
+      "x": 0,
+      "y": 10444
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-04T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "admin": {
+      "kind": "title1",
+      "maxW": 6818,
+      "text": "Admin / teacher — desktop 1440 light + dark · tablet 834",
+      "w": 240,
+      "x": 0,
+      "y": 17844
+    },
+    "ds": {
+      "kind": "title1",
+      "maxW": 3024,
+      "text": "Huqıq Mektebi — design system",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "screens": {
+      "kind": "title1",
+      "maxW": 2984,
+      "text": "Screens — desktop 1440 · light + dark",
+      "w": 240,
+      "x": 0,
+      "y": 2980
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Components.dc.html",
+    "SignIn-Desktop.dc.html",
+    "Dashboard-Desktop.dc.html",
+    "Catalog-Desktop.dc.html",
+    "Lobby-Desktop.dc.html",
+    "Exam-Desktop.dc.html",
+    "Written-Desktop.dc.html",
+    "Map-Desktop.dc.html",
+    "Submit-Desktop.dc.html",
+    "Offline-Desktop.dc.html",
+    "Results-Desktop.dc.html",
+    "Review-Desktop.dc.html",
+    "Admin-Components.dc.html",
+    "Admin-Overview.dc.html",
+    "Admin-Bank.dc.html",
+    "Admin-Editor.dc.html",
+    "Admin-Import.dc.html",
+    "Admin-Builder.dc.html",
+    "Admin-Grading.dc.html",
+    "Admin-Students.dc.html",
+    "Admin-Analytics.dc.html"
+  ],
+  "pages": [],
+  "title": "Huqıq Mektebi"
+}

@@ -1,0 +1,578 @@
+[
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 456,
+      "viewport": [
+        1024,
+        480
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 47.53125,
+      "bottom": 432.46875,
+      "viewport": [
+        1024,
+        480
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 456,
+      "viewport": [
+        1024,
+        480
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 47.53125,
+      "bottom": 432.46875,
+      "viewport": [
+        1024,
+        480
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 456,
+      "viewport": [
+        1024,
+        480
+      ],
+      "overflow": false
+    },
+    "passed": true
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 47.53125,
+      "bottom": 432.46875,
+      "viewport": [
+        1024,
+        480
+      ],
+      "overflow": false
+    },
+    "passed": true
+  }
+]

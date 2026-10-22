@@ -1,0 +1,574 @@
+[
+  {
+    "key": "Accepted answers",
+    "passed": true
+  },
+  {
+    "key": "Accessibility",
+    "passed": true
+  },
+  {
+    "key": "Action",
+    "passed": true
+  },
+  {
+    "key": "All",
+    "passed": true
+  },
+  {
+    "key": "Answer options",
+    "passed": true
+  },
+  {
+    "key": "Attempt history",
+    "passed": true
+  },
+  {
+    "key": "Attempt history table",
+    "passed": true
+  },
+  {
+    "key": "Attempts",
+    "passed": true
+  },
+  {
+    "key": "Auto",
+    "passed": true
+  },
+  {
+    "key": "Average and best use all final results in the selected mode. Preliminary and sample summaries are excluded.",
+    "passed": true
+  },
+  {
+    "key": "Awaiting grading",
+    "passed": true
+  },
+  {
+    "key": "Back to progress",
+    "passed": true
+  },
+  {
+    "key": "Back to results",
+    "passed": true
+  },
+  {
+    "key": "Best final score",
+    "passed": true
+  },
+  {
+    "key": "By topic",
+    "passed": true
+  },
+  {
+    "key": "Check answer",
+    "passed": true
+  },
+  {
+    "key": "Close retry",
+    "passed": true
+  },
+  {
+    "key": "Complete a test to see your results and progress here.",
+    "passed": true
+  },
+  {
+    "key": "Correct",
+    "passed": true
+  },
+  {
+    "key": "Could not sign out. Allow browser storage and try again.",
+    "passed": true
+  },
+  {
+    "key": "Dark",
+    "passed": true
+  },
+  {
+    "key": "Exact dates, modes, scores and grading status for the selected mode.",
+    "passed": true
+  },
+  {
+    "key": "Explanation",
+    "passed": true
+  },
+  {
+    "key": "Filter answers",
+    "passed": true
+  },
+  {
+    "key": "Final score trend",
+    "passed": true
+  },
+  {
+    "key": "Final scores by date. Equivalent values follow in the attempt history table.",
+    "passed": true
+  },
+  {
+    "key": "Final-score average",
+    "passed": true
+  },
+  {
+    "key": "Find a practice test",
+    "passed": true
+  },
+  {
+    "key": "Flagged",
+    "passed": true
+  },
+  {
+    "key": "Grading status",
+    "passed": true
+  },
+  {
+    "key": "Group",
+    "passed": true
+  },
+  {
+    "key": "Identity",
+    "passed": true
+  },
+  {
+    "key": "Incorrect",
+    "passed": true
+  },
+  {
+    "key": "Keep learning",
+    "passed": true
+  },
+  {
+    "key": "Language",
+    "passed": true
+  },
+  {
+    "key": "Language and appearance",
+    "passed": true
+  },
+  {
+    "key": "Learning and account",
+    "passed": true
+  },
+  {
+    "key": "Light",
+    "passed": true
+  },
+  {
+    "key": "Mock exam",
+    "passed": true
+  },
+  {
+    "key": "Mode",
+    "passed": true
+  },
+  {
+    "key": "My mistakes",
+    "passed": true
+  },
+  {
+    "key": "Next question",
+    "passed": true
+  },
+  {
+    "key": "Next question to review",
+    "passed": true
+  },
+  {
+    "key": "No attempts in this mode",
+    "passed": true
+  },
+  {
+    "key": "No explanation is available for this sample question.",
+    "passed": true
+  },
+  {
+    "key": "No final results in this mode. Preliminary answers still await grading; sample summaries are not personal trends.",
+    "passed": true
+  },
+  {
+    "key": "No model answer is available for this question.",
+    "passed": true
+  },
+  {
+    "key": "No questions match this filter.",
+    "passed": true
+  },
+  {
+    "key": "No saved questions yet",
+    "passed": true
+  },
+  {
+    "key": "Not answered",
+    "passed": true
+  },
+  {
+    "key": "Open a result, review a question, then choose Save question for practice.",
+    "passed": true
+  },
+  {
+    "key": "Open results",
+    "passed": true
+  },
+  {
+    "key": "Open saved questions",
+    "passed": true
+  },
+  {
+    "key": "Opens in a new tab",
+    "passed": true
+  },
+  {
+    "key": "Practice",
+    "passed": true
+  },
+  {
+    "key": "Practice this question",
+    "passed": true
+  },
+  {
+    "key": "Preferences apply to this browser. Changes save immediately when storage is available.",
+    "passed": true
+  },
+  {
+    "key": "Preview results are not a reliable assessment.",
+    "passed": true
+  },
+  {
+    "key": "Previous",
+    "passed": true
+  },
+  {
+    "key": "Profile",
+    "passed": true
+  },
+  {
+    "key": "Progress",
+    "passed": true
+  },
+  {
+    "key": "Question {id} is unavailable. You can remove this saved entry.",
+    "passed": true
+  },
+  {
+    "key": "Question {number}",
+    "passed": true
+  },
+  {
+    "key": "Question {number} of {total}",
+    "passed": true
+  },
+  {
+    "key": "Ready for your first test?",
+    "passed": true
+  },
+  {
+    "key": "Reduce transparency",
+    "passed": true
+  },
+  {
+    "key": "Reference",
+    "passed": true
+  },
+  {
+    "key": "Reference: {label} (opens in a new tab)",
+    "passed": true
+  },
+  {
+    "key": "Remove from saved questions",
+    "passed": true
+  },
+  {
+    "key": "Repeat the introduction",
+    "passed": true
+  },
+  {
+    "key": "Retry saving",
+    "passed": true
+  },
+  {
+    "key": "Reveal example",
+    "passed": true
+  },
+  {
+    "key": "Review an explanation, save a question, then practice it without changing this result.",
+    "passed": true
+  },
+  {
+    "key": "Review answers",
+    "passed": true
+  },
+  {
+    "key": "Review navigation",
+    "passed": true
+  },
+  {
+    "key": "Review question {number}",
+    "passed": true
+  },
+  {
+    "key": "Save for practice",
+    "passed": true
+  },
+  {
+    "key": "Saving a question does not change your grade. Retry practice is not added to test history.",
+    "passed": true
+  },
+  {
+    "key": "Score",
+    "passed": true
+  },
+  {
+    "key": "Score (%) by submission date",
+    "passed": true
+  },
+  {
+    "key": "Score = correct answers ÷ all questions. Pending answers are not marked incorrect.",
+    "passed": true
+  },
+  {
+    "key": "Show all answers",
+    "passed": true
+  },
+  {
+    "key": "Show all attempts",
+    "passed": true
+  },
+  {
+    "key": "Sign out",
+    "passed": true
+  },
+  {
+    "key": "Sign out with active work?",
+    "passed": true
+  },
+  {
+    "key": "Signing out keeps this browser’s results, saved questions and active tests. Timed tests keep counting down.",
+    "passed": true
+  },
+  {
+    "key": "Some questions are still being prepared. This is an interface preview.",
+    "passed": true
+  },
+  {
+    "key": "Stay signed in",
+    "passed": true
+  },
+  {
+    "key": "Student",
+    "passed": true
+  },
+  {
+    "key": "Submission date",
+    "passed": true
+  },
+  {
+    "key": "Submitted on",
+    "passed": true
+  },
+  {
+    "key": "Teacher review is not connected in this preview.",
+    "passed": true
+  },
+  {
+    "key": "Test",
+    "passed": true
+  },
+  {
+    "key": "Test type",
+    "passed": true
+  },
+  {
+    "key": "Theme",
+    "passed": true
+  },
+  {
+    "key": "These are questions you saved for practice, not a list of every incorrect answer.",
+    "passed": true
+  },
+  {
+    "key": "This is a local preview. Results and saved questions belong to this browser, not a private online account.",
+    "passed": true
+  },
+  {
+    "key": "This retry is not saved as a test attempt. Closing it clears only this practice response.",
+    "passed": true
+  },
+  {
+    "key": "Time taken",
+    "passed": true
+  },
+  {
+    "key": "Try again",
+    "passed": true
+  },
+  {
+    "key": "Unavailable saved question",
+    "passed": true
+  },
+  {
+    "key": "Up to 10 most recent final results, ordered by submission date. Exact values are in the table below.",
+    "passed": true
+  },
+  {
+    "key": "Use browser zoom to enlarge this interface. Motion follows your system preference; larger exam text is available in Exam options.",
+    "passed": true
+  },
+  {
+    "key": "Use solid navigation surfaces instead of translucent glass.",
+    "passed": true
+  },
+  {
+    "key": "View attempt history",
+    "passed": true
+  },
+  {
+    "key": "Written answer awaiting review. The score is preliminary.",
+    "passed": true
+  },
+  {
+    "key": "Written answers use sample checks. Teacher review is not connected in this preview.",
+    "passed": true
+  },
+  {
+    "key": "Your answer",
+    "passed": true
+  },
+  {
+    "key": "Your history is unchanged. Choose another mode or show all attempts.",
+    "passed": true
+  },
+  {
+    "key": "Your saved test history on this device. Practice retries do not add attempts.",
+    "passed": true
+  },
+  {
+    "key": "Your score",
+    "passed": true
+  },
+  {
+    "key": "{answered} of {total} answered",
+    "passed": true
+  },
+  {
+    "key": "{correct} of {total} correct",
+    "passed": true
+  },
+  {
+    "key": "{count} answers need review. This score is preliminary.",
+    "passed": true
+  },
+  {
+    "key": "{count} attempts shown",
+    "passed": true
+  },
+  {
+    "key": "{count} questions shown",
+    "passed": true
+  },
+  {
+    "key": "{count} saved questions",
+    "passed": true
+  },
+  {
+    "key": "{percent} percent",
+    "passed": true
+  },
+  {
+    "key": "Could not save this preference. The previous setting is unchanged.",
+    "passed": true
+  },
+  {
+    "key": "Could not update saved questions. Your list is unchanged; try again.",
+    "passed": true
+  },
+  {
+    "key": "Earlier test",
+    "passed": true
+  },
+  {
+    "key": "Final result",
+    "passed": true
+  },
+  {
+    "key": "Final score",
+    "passed": true
+  },
+  {
+    "key": "Final score: {correct} of {total}, {percent} percent",
+    "passed": true
+  },
+  {
+    "key": "Language changed in this tab only. Retry saving before closing.",
+    "passed": true
+  },
+  {
+    "key": "Language saved on this device.",
+    "passed": true
+  },
+  {
+    "key": "No model answer is available. This response remains awaiting grading.",
+    "passed": true
+  },
+  {
+    "key": "Open test details to resume",
+    "passed": true
+  },
+  {
+    "key": "Open test details to retake",
+    "passed": true
+  },
+  {
+    "key": "Preference saved on this device.",
+    "passed": true
+  },
+  {
+    "key": "Preliminary score",
+    "passed": true
+  },
+  {
+    "key": "Preliminary score: {correct} of {total}, {percent} percent",
+    "passed": true
+  },
+  {
+    "key": "Review written answers",
+    "passed": true
+  },
+  {
+    "key": "Sample result summary",
+    "passed": true
+  },
+  {
+    "key": "Sample summary",
+    "passed": true
+  },
+  {
+    "key": "Save question for practice",
+    "passed": true
+  },
+  {
+    "key": "Saved questions updated on this device.",
+    "passed": true
+  },
+  {
+    "key": "Saved tests stay on this device. Any timed test keeps counting down while you are signed out.",
+    "passed": true
+  },
+  {
+    "key": "Some work is unsaved in this tab. Stay signed in and retry saving before closing or reloading.",
+    "passed": true
+  },
+  {
+    "key": "This sample history has no saved answers to review.",
+    "passed": true
+  },
+  {
+    "key": "This saved item or its question content is unavailable. Your stored records have not been changed.",
+    "passed": true
+  },
+  {
+    "key": "Topic counts are preliminary while answers await grading.",
+    "passed": true
+  },
+  {
+    "key": "Topic counts include every question in this attempt.",
+    "passed": true
+  }
+]

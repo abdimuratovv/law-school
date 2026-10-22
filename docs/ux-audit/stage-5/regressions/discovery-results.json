@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Phone validation",
+    "status": "pass",
+    "detail": "Empty submit marks phone invalid."
+  },
+  {
+    "name": "Demo OTP accepts six digits",
+    "status": "pass",
+    "detail": "Full-code input in first OTP box; local demo only."
+  },
+  {
+    "name": "Visible-title search uz",
+    "status": "pass",
+    "detail": {
+      "query": "Sinov imtihoni №7",
+      "matches": 1
+    }
+  },
+  {
+    "name": "Empty search uz",
+    "status": "pass",
+    "detail": "No matching cards, clear-filter recovery rendered."
+  },
+  {
+    "name": "Visible-title search kaa",
+    "status": "pass",
+    "detail": {
+      "query": "Sınaw imtihanı №7",
+      "matches": 1
+    }
+  },
+  {
+    "name": "Empty search kaa",
+    "status": "pass",
+    "detail": "No matching cards, clear-filter recovery rendered."
+  },
+  {
+    "name": "Visible-title search ru",
+    "status": "pass",
+    "detail": {
+      "query": "Пробный экзамен №7",
+      "matches": 1
+    }
+  },
+  {
+    "name": "Empty search ru",
+    "status": "pass",
+    "detail": "No matching cards, clear-filter recovery rendered."
+  },
+  {
+    "name": "Import accepts filename and renders fixture validation",
+    "status": "pass",
+    "detail": "Intentionally invalid Excel bytes; demonstrates fixture behavior, not format support."
+  },
+  {
+    "name": "Import preview and completion",
+    "status": "observed",
+    "detail": "Advanced through fixture validation to preview and completion; no questions added to bank."
+  },
+  {
+    "name": "Builder stage 2",
+    "status": "observed",
+    "detail": [
+      "2. Savollar"
+    ]
+  },
+  {
+    "name": "Builder stage 3",
+    "status": "observed",
+    "detail": [
+      "3. Guruhlar va sanalar"
+    ]
+  },
+  {
+    "name": "Builder stage 4",
+    "status": "observed",
+    "detail": [
+      "4. Ko‘rib chiqish"
+    ]
+  },
+  {
+    "name": "Segmented arrow-key selection",
+    "status": "pass",
+    "detail": {
+      "before": [
+        "true",
+        "false",
+        "false"
+      ],
+      "after": [
+        "false",
+        "true",
+        "false"
+      ],
+      "tabIndexes": [
+        -1,
+        0,
+        -1
+      ]
+    }
+  }
+]

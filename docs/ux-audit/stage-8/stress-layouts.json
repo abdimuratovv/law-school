@@ -1,0 +1,1004 @@
+[
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 116.609375,
+      "bottom": 363.390625,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 132.0078125,
+      "bottom": 347.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 132.0078125,
+      "bottom": 347.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  }
+]

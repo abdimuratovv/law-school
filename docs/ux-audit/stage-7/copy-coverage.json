@@ -1,0 +1,942 @@
+[
+  {
+    "key": "Accepted answer",
+    "passed": true
+  },
+  {
+    "key": "Accepted answers",
+    "passed": true
+  },
+  {
+    "key": "Add an accepted answer or choose manual grading.",
+    "passed": true
+  },
+  {
+    "key": "Advanced options",
+    "passed": true
+  },
+  {
+    "key": "All",
+    "passed": true
+  },
+  {
+    "key": "Another version needs your decision",
+    "passed": true
+  },
+  {
+    "key": "Answer key",
+    "passed": true
+  },
+  {
+    "key": "Answer key shown for the author. No student response is recorded.",
+    "passed": true
+  },
+  {
+    "key": "Any difficulty",
+    "passed": true
+  },
+  {
+    "key": "Any topic",
+    "passed": true
+  },
+  {
+    "key": "Any type",
+    "passed": true
+  },
+  {
+    "key": "Automatic sample selection",
+    "passed": true
+  },
+  {
+    "key": "Available from",
+    "passed": true
+  },
+  {
+    "key": "Available until",
+    "passed": true
+  },
+  {
+    "key": "Back",
+    "passed": true
+  },
+  {
+    "key": "Back to overview",
+    "passed": true
+  },
+  {
+    "key": "Back to question bank",
+    "passed": true
+  },
+  {
+    "key": "Build a local preview from the sample question pool.",
+    "passed": true
+  },
+  {
+    "key": "Build and save a local draft. Finishing a preview does not assign it.",
+    "passed": true
+  },
+  {
+    "key": "Builder steps",
+    "passed": true
+  },
+  {
+    "key": "Cancel",
+    "passed": true
+  },
+  {
+    "key": "Changes have not been saved. Leaving can lose this draft. Keep editing to retry saving.",
+    "passed": true
+  },
+  {
+    "key": "Changes to sample rows last only in this session.",
+    "passed": true
+  },
+  {
+    "key": "Check and preview",
+    "passed": true
+  },
+  {
+    "key": "Check these fields",
+    "passed": true
+  },
+  {
+    "key": "Choose an .xlsx or .xls file up to 5 MB.",
+    "passed": true
+  },
+  {
+    "key": "Choose at least one sample group.",
+    "passed": true
+  },
+  {
+    "key": "Choose file",
+    "passed": true
+  },
+  {
+    "key": "Choose sample groups",
+    "passed": true
+  },
+  {
+    "key": "Clear selection",
+    "passed": true
+  },
+  {
+    "key": "Close preview",
+    "passed": true
+  },
+  {
+    "key": "Constitutional law",
+    "passed": true
+  },
+  {
+    "key": "Constitutional law · Practice set 3",
+    "passed": true
+  },
+  {
+    "key": "Content readiness",
+    "passed": true
+  },
+  {
+    "key": "Continue",
+    "passed": true
+  },
+  {
+    "key": "Correct answer",
+    "passed": true
+  },
+  {
+    "key": "Correct answer is empty.",
+    "passed": true
+  },
+  {
+    "key": "Criminal law · Practice set 2",
+    "passed": true
+  },
+  {
+    "key": "Decision included in draft",
+    "passed": true
+  },
+  {
+    "key": "Definitions",
+    "passed": true
+  },
+  {
+    "key": "Details",
+    "passed": true
+  },
+  {
+    "key": "Deterministic selection from the displayed fixture, not the full bank.",
+    "passed": true
+  },
+  {
+    "key": "Difficulty",
+    "passed": true
+  },
+  {
+    "key": "Discard local draft",
+    "passed": true
+  },
+  {
+    "key": "Draft",
+    "passed": true
+  },
+  {
+    "key": "Draft saved on this device",
+    "passed": true
+  },
+  {
+    "key": "Draft settings",
+    "passed": true
+  },
+  {
+    "key": "Draft storage is unavailable or incompatible",
+    "passed": true
+  },
+  {
+    "key": "Duplicate row 7",
+    "passed": true
+  },
+  {
+    "key": "Easy",
+    "passed": true
+  },
+  {
+    "key": "Edit question",
+    "passed": true
+  },
+  {
+    "key": "End date and time must be after the start.",
+    "passed": true
+  },
+  {
+    "key": "Enter a test name.",
+    "passed": true
+  },
+  {
+    "key": "Enter all four answer options.",
+    "passed": true
+  },
+  {
+    "key": "Enter four options and choose one correct answer.",
+    "passed": true
+  },
+  {
+    "key": "Enter the full question text.",
+    "passed": true
+  },
+  {
+    "key": "Error",
+    "passed": true
+  },
+  {
+    "key": "Errors",
+    "passed": true
+  },
+  {
+    "key": "Excel .xlsx or .xls, up to 5 MB. One question per row.",
+    "passed": true
+  },
+  {
+    "key": "Find questions",
+    "passed": true
+  },
+  {
+    "key": "Finish preview",
+    "passed": true
+  },
+  {
+    "key": "Full question text",
+    "passed": true
+  },
+  {
+    "key": "Grading method",
+    "passed": true
+  },
+  {
+    "key": "Groups",
+    "passed": true
+  },
+  {
+    "key": "Groups and dates",
+    "passed": true
+  },
+  {
+    "key": "Hard",
+    "passed": true
+  },
+  {
+    "key": "Hide selected sample rows",
+    "passed": true
+  },
+  {
+    "key": "Import",
+    "passed": true
+  },
+  {
+    "key": "Import from Excel",
+    "passed": true
+  },
+  {
+    "key": "Import preview fields",
+    "passed": true
+  },
+  {
+    "key": "Import steps",
+    "passed": true
+  },
+  {
+    "key": "Keep both in this preview",
+    "passed": true
+  },
+  {
+    "key": "Keep editing",
+    "passed": true
+  },
+  {
+    "key": "Legal basis (optional)",
+    "passed": true
+  },
+  {
+    "key": "Legal label",
+    "passed": true
+  },
+  {
+    "key": "Local draft",
+    "passed": true
+  },
+  {
+    "key": "Local draft found",
+    "passed": true
+  },
+  {
+    "key": "Local drafts do not publish questions or assign tests.",
+    "passed": true
+  },
+  {
+    "key": "Manual grading",
+    "passed": true
+  },
+  {
+    "key": "Map to Constitutional law",
+    "passed": true
+  },
+  {
+    "key": "Mark for review",
+    "passed": true
+  },
+  {
+    "key": "Matching",
+    "passed": true
+  },
+  {
+    "key": "Matching blocks (optional)",
+    "passed": true
+  },
+  {
+    "key": "Matching questions need both terms and definitions.",
+    "passed": true
+  },
+  {
+    "key": "Medium",
+    "passed": true
+  },
+  {
+    "key": "Mock exam",
+    "passed": true
+  },
+  {
+    "key": "Mock exam No. 8",
+    "passed": true
+  },
+  {
+    "key": "Mode",
+    "passed": true
+  },
+  {
+    "key": "Name",
+    "passed": true
+  },
+  {
+    "key": "Needs review",
+    "passed": true
+  },
+  {
+    "key": "New question",
+    "passed": true
+  },
+  {
+    "key": "New test",
+    "passed": true
+  },
+  {
+    "key": "Next",
+    "passed": true
+  },
+  {
+    "key": "Next action",
+    "passed": true
+  },
+  {
+    "key": "No questions match these filters.",
+    "passed": true
+  },
+  {
+    "key": "No sample rows remain in this session.",
+    "passed": true
+  },
+  {
+    "key": "None",
+    "passed": true
+  },
+  {
+    "key": "Not mapped",
+    "passed": true
+  },
+  {
+    "key": "Off",
+    "passed": true
+  },
+  {
+    "key": "On",
+    "passed": true
+  },
+  {
+    "key": "One item per line. Keep its number or letter before the text.",
+    "passed": true
+  },
+  {
+    "key": "Only these sample rows disappear from this session. The saved bank is unchanged.",
+    "passed": true
+  },
+  {
+    "key": "Option",
+    "passed": true
+  },
+  {
+    "key": "Option B references an item missing from the question.",
+    "passed": true
+  },
+  {
+    "key": "Overview",
+    "passed": true
+  },
+  {
+    "key": "Pick questions",
+    "passed": true
+  },
+  {
+    "key": "Points (preview only)",
+    "passed": true
+  },
+  {
+    "key": "Possible duplicate of Q5. Choose whether to skip or keep row 7.",
+    "passed": true
+  },
+  {
+    "key": "Practice",
+    "passed": true
+  },
+  {
+    "key": "Prepare a local draft, then check the student preview.",
+    "passed": true
+  },
+  {
+    "key": "Prepare content",
+    "passed": true
+  },
+  {
+    "key": "Prepare your next test",
+    "passed": true
+  },
+  {
+    "key": "Preview",
+    "passed": true
+  },
+  {
+    "key": "Preview complete. No questions were added to the bank.",
+    "passed": true
+  },
+  {
+    "key": "Preview complete. Nothing was published or assigned.",
+    "passed": true
+  },
+  {
+    "key": "Preview import flow",
+    "passed": true
+  },
+  {
+    "key": "Preview the import workflow with sample rows.",
+    "passed": true
+  },
+  {
+    "key": "Provide a legal label and a valid HTTP or HTTPS link.",
+    "passed": true
+  },
+  {
+    "key": "Published",
+    "passed": true
+  },
+  {
+    "key": "Question",
+    "passed": true
+  },
+  {
+    "key": "Question bank",
+    "passed": true
+  },
+  {
+    "key": "Question content",
+    "passed": true
+  },
+  {
+    "key": "Question fields",
+    "passed": true
+  },
+  {
+    "key": "Question preview",
+    "passed": true
+  },
+  {
+    "key": "Question type",
+    "passed": true
+  },
+  {
+    "key": "Question unavailable",
+    "passed": true
+  },
+  {
+    "key": "Questions",
+    "passed": true
+  },
+  {
+    "key": "Remove",
+    "passed": true
+  },
+  {
+    "key": "Replace file",
+    "passed": true
+  },
+  {
+    "key": "Replace saved version with mine",
+    "passed": true
+  },
+  {
+    "key": "Reset filters",
+    "passed": true
+  },
+  {
+    "key": "Reset sample rows",
+    "passed": true
+  },
+  {
+    "key": "Resume local draft",
+    "passed": true
+  },
+  {
+    "key": "Retry saving",
+    "passed": true
+  },
+  {
+    "key": "Review",
+    "passed": true
+  },
+  {
+    "key": "Review question content",
+    "passed": true
+  },
+  {
+    "key": "Review sample errors and decisions",
+    "passed": true
+  },
+  {
+    "key": "Review sample responses",
+    "passed": true
+  },
+  {
+    "key": "Review versions",
+    "passed": true
+  },
+  {
+    "key": "Row {number}",
+    "passed": true
+  },
+  {
+    "key": "Sample assignments",
+    "passed": true
+  },
+  {
+    "key": "Sample completion",
+    "passed": true
+  },
+  {
+    "key": "Sample file",
+    "passed": true
+  },
+  {
+    "key": "Sample question rows",
+    "passed": true
+  },
+  {
+    "key": "Sample rows hidden in this session. Reload restores the sample.",
+    "passed": true
+  },
+  {
+    "key": "Sample rows marked for review in this session.",
+    "passed": true
+  },
+  {
+    "key": "Sample validation summary",
+    "passed": true
+  },
+  {
+    "key": "Save local draft",
+    "passed": true
+  },
+  {
+    "key": "Search questions",
+    "passed": true
+  },
+  {
+    "key": "Select at least one question.",
+    "passed": true
+  },
+  {
+    "key": "Select displayed rows",
+    "passed": true
+  },
+  {
+    "key": "Select the correct answer.",
+    "passed": true
+  },
+  {
+    "key": "Select {id}",
+    "passed": true
+  },
+  {
+    "key": "Selected IDs",
+    "passed": true
+  },
+  {
+    "key": "Selected files are not parsed. Every file shows the same sample rows. Only its name, size and your decisions can be saved locally; file contents are never saved.",
+    "passed": true
+  },
+  {
+    "key": "Selected sample rows",
+    "passed": true
+  },
+  {
+    "key": "Selection method",
+    "passed": true
+  },
+  {
+    "key": "Show correct answers after submit",
+    "passed": true
+  },
+  {
+    "key": "Show rows",
+    "passed": true
+  },
+  {
+    "key": "Shuffle options A–D",
+    "passed": true
+  },
+  {
+    "key": "Shuffle question order",
+    "passed": true
+  },
+  {
+    "key": "Single choice",
+    "passed": true
+  },
+  {
+    "key": "Skip row 7",
+    "passed": true
+  },
+  {
+    "key": "Source link",
+    "passed": true
+  },
+  {
+    "key": "Start fresh",
+    "passed": true
+  },
+  {
+    "key": "Static examples, not current assignments or deadlines.",
+    "passed": true
+  },
+  {
+    "key": "Status",
+    "passed": true
+  },
+  {
+    "key": "Student preview",
+    "passed": true
+  },
+  {
+    "key": "Teacher workspace · sample data",
+    "passed": true
+  },
+  {
+    "key": "Template columns",
+    "passed": true
+  },
+  {
+    "key": "Terms",
+    "passed": true
+  },
+  {
+    "key": "Test builder",
+    "passed": true
+  },
+  {
+    "key": "Test fields",
+    "passed": true
+  },
+  {
+    "key": "The file is not ready for a real import. Finishing only completes this demonstration.",
+    "passed": true
+  },
+  {
+    "key": "The preview lists accepted answers. Live grading rules are unchanged.",
+    "passed": true
+  },
+  {
+    "key": "The queue contains demonstration responses, independent of student results.",
+    "passed": true
+  },
+  {
+    "key": "The requested count exceeds the sample pool.",
+    "passed": true
+  },
+  {
+    "key": "This clears this preview’s filename, topic mapping and duplicate decision. File contents are never stored.",
+    "passed": true
+  },
+  {
+    "key": "This draft requires teacher review.",
+    "passed": true
+  },
+  {
+    "key": "This is a preview. No test is published or assigned.",
+    "passed": true
+  },
+  {
+    "key": "This question ID has no source content.",
+    "passed": true
+  },
+  {
+    "key": "This route returns to its source. Other drafts and student work are kept.",
+    "passed": true
+  },
+  {
+    "key": "Time limit (minutes)",
+    "passed": true
+  },
+  {
+    "key": "Time limit must be between 10 and 300 minutes.",
+    "passed": true
+  },
+  {
+    "key": "Times use this device’s local time zone.",
+    "passed": true
+  },
+  {
+    "key": "Topic",
+    "passed": true
+  },
+  {
+    "key": "Topic mapping",
+    "passed": true
+  },
+  {
+    "key": "Type",
+    "passed": true
+  },
+  {
+    "key": "Unable to save. Keep this tab open.",
+    "passed": true
+  },
+  {
+    "key": "Undo topic mapping",
+    "passed": true
+  },
+  {
+    "key": "Unknown topic. Map this sample row to Constitutional law.",
+    "passed": true
+  },
+  {
+    "key": "Unsaved changes on this device",
+    "passed": true
+  },
+  {
+    "key": "Untimed",
+    "passed": true
+  },
+  {
+    "key": "Use sample",
+    "passed": true
+  },
+  {
+    "key": "Valid sample row",
+    "passed": true
+  },
+  {
+    "key": "Validation",
+    "passed": true
+  },
+  {
+    "key": "Warning",
+    "passed": true
+  },
+  {
+    "key": "Warnings",
+    "passed": true
+  },
+  {
+    "key": "Written",
+    "passed": true
+  },
+  {
+    "key": "Written question has no accepted answers.",
+    "passed": true
+  },
+  {
+    "key": "Your current fields remain in memory. Use the saved version or explicitly replace it with these fields.",
+    "passed": true
+  },
+  {
+    "key": "{count} bytes · metadata only",
+    "passed": true
+  },
+  {
+    "key": "{count} eligible sample rows; {errors} error rows remain.",
+    "passed": true
+  },
+  {
+    "key": "{count} sample bank rows",
+    "passed": true
+  },
+  {
+    "key": "{count} sample responses awaiting review",
+    "passed": true
+  },
+  {
+    "key": "{count} sample rows displayed",
+    "passed": true
+  },
+  {
+    "key": "{count} sample rows need review",
+    "passed": true
+  },
+  {
+    "key": "{count} sample rows · {errors} errors · {warnings} unresolved warnings",
+    "passed": true
+  },
+  {
+    "key": "{count} selected",
+    "passed": true
+  },
+  {
+    "key": "{count} selected: {single} choice, {written} written",
+    "passed": true
+  },
+  {
+    "key": "Discard this local draft?",
+    "passed": true
+  },
+  {
+    "key": "Discard draft",
+    "passed": true
+  },
+  {
+    "key": "Another tab changed this draft",
+    "passed": true
+  },
+  {
+    "key": "Keep current in memory",
+    "passed": true
+  },
+  {
+    "key": "Use saved version",
+    "passed": true
+  },
+  {
+    "key": "Leave with unsaved changes?",
+    "passed": true
+  },
+  {
+    "key": "Leave anyway",
+    "passed": true
+  },
+  {
+    "key": "Add accepted answer",
+    "passed": true
+  },
+  {
+    "key": "Change question type?",
+    "passed": true
+  },
+  {
+    "key": "Change type",
+    "passed": true
+  },
+  {
+    "key": "Changing type clears answer options, matching blocks and accepted answers. The question text and settings remain.",
+    "passed": true
+  },
+  {
+    "key": "This sample row has no full question definition.",
+    "passed": true
+  },
+  {
+    "key": "Hide selected sample rows?",
+    "passed": true
+  },
+  {
+    "key": "Hide rows",
+    "passed": true
+  },
+  {
+    "key": "Decision saved in draft",
+    "passed": true
+  },
+  {
+    "key": "A real import would require fixing the source file. This fixture remains an error.",
+    "passed": true
+  },
+  {
+    "key": "Replace the selected file?",
+    "passed": true
+  },
+  {
+    "key": "single or written",
+    "passed": true
+  },
+  {
+    "key": "One of your topic names",
+    "passed": true
+  },
+  {
+    "key": "easy · medium · hard",
+    "passed": true
+  },
+  {
+    "key": "Full text; use line breaks for 1–7, a)–g), I/II",
+    "passed": true
+  },
+  {
+    "key": "Options (single choice)",
+    "passed": true
+  },
+  {
+    "key": "A, B, C or D",
+    "passed": true
+  },
+  {
+    "key": "Written answers, separated by |",
+    "passed": true
+  },
+  {
+    "key": "Reset search",
+    "passed": true
+  }
+]

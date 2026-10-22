@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Reflow 320",
+    "overflow": false,
+    "smallTargets": [],
+    "controlCount": 62,
+    "examActionHeights": [
+      48,
+      48
+    ],
+    "glassBackdrop": "blur(16px) saturate(1.8)",
+    "theme": "t-light",
+    "language": "uz"
+  },
+  {
+    "name": "Reflow 375",
+    "overflow": false,
+    "smallTargets": [],
+    "controlCount": 62,
+    "examActionHeights": [
+      48,
+      48
+    ],
+    "glassBackdrop": "blur(16px) saturate(1.8)",
+    "theme": "t-light",
+    "language": "uz"
+  },
+  {
+    "name": "200% root text",
+    "overflow": false,
+    "smallTargets": [],
+    "controlCount": 62,
+    "examActionHeights": [
+      48,
+      48
+    ],
+    "glassBackdrop": "blur(16px) saturate(1.8)",
+    "theme": "t-light",
+    "language": "uz"
+  },
+  {
+    "name": "Reduced motion",
+    "spinnerAnimation": "none"
+  },
+  {
+    "name": "Forced colors",
+    "active": true,
+    "bodyText": "rgb(0, 0, 0)"
+  }
+]

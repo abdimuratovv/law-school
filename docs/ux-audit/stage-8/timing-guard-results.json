@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Actual browser unload warning appears for blocked writes",
+    "passed": true
+  },
+  {
+    "name": "Accepted unsaved reload restores only last saved snapshot",
+    "passed": true
+  },
+  {
+    "name": "Saved reload does not prompt and retains selected answer",
+    "passed": true
+  },
+  {
+    "name": "Finish confirmation initially focuses safe review action",
+    "passed": true
+  },
+  {
+    "name": "Backdrop cannot accidentally submit or dismiss confirmation",
+    "passed": true
+  },
+  {
+    "name": "Escape cancels finish and restores invoking control",
+    "passed": true
+  },
+  {
+    "name": "Review unanswered goes to first unanswered without submitting",
+    "passed": true
+  },
+  {
+    "name": "Crossed time threshold is announced once while countdown keeps updating",
+    "passed": true
+  },
+  {
+    "name": "Existing time announcement follows selected language",
+    "passed": true
+  },
+  {
+    "name": "Time continues in modal without renewing deadline",
+    "passed": true
+  },
+  {
+    "name": "Repeated cleanup retries preserve one immutable result",
+    "passed": true
+  }
+]

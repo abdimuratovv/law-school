@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Admin · question analytics</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 3858px; height: 1294px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="3">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen admin {{f.kind}} {{f.cls}}">
+        <div class="mesh"></div>
+        <div class="shell">
+          <nav class="glass aside" aria-label="Admin">
+            <div class="brand"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><div class="col hide-t"><span class="hl" style="font-size: 15px">Huqıq Mektebi</span><span class="cap gl2">Teacher workspace</span></div></div>
+            <a class="nav-i" href="Admin-Overview.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 16a7.5 7.5 0 1 1 15 0"></path><path d="M12 16l3.5-4"></path></svg>Overview</a>
+            <p class="sec">Content</p>
+            <a class="nav-i" href="Admin-Bank.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Question bank</a>
+            <a class="nav-i" href="Admin-Import.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19.5h14"></path></svg>Import</a>
+            <a class="nav-i" href="Admin-Builder.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="3"></rect><path d="M9 11h6M9 15h4M9.5 3.5h5"></path></svg>Tests</a>
+            <p class="sec">Students</p>
+            <a class="nav-i" href="Admin-Grading.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg>Grading<span class="tag warn num">14</span></a>
+            <a class="nav-i" href="Admin-Students.dc.html"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.3"></circle><path d="M3.5 19c.9-3 3-4.5 5.5-4.5s4.6 1.5 5.5 4.5"></path><path d="M15.5 6a3 3 0 0 1 0 6M17 14.7c1.7.6 3 1.9 3.5 4.3"></path></svg>Students</a>
+            <a class="nav-i on" href="Admin-Analytics.dc.html" aria-current="page"><svg class="i" viewBox="0 0 24 24"><path d="M5 20V11M10 20V5M15 20v-7M20 20v-4"></path></svg>Analytics</a>
+            <div style="flex: 1"></div>
+            <div class="row" style="gap: 10px; padding: 8px; justify-content: center"><span class="mark" style="border-radius: 999px; background: var(--surface-2); color: var(--label); font: 600 13px/18px Inter, sans-serif">MN</span><div class="col hide-t" style="flex: 1"><span class="fn b600">Malika N.</span><span class="cap gl2">Mentor · 3 groups</span></div></div>
+          </nav>
+
+          <div class="mainc">
+            <header class="glass atop">
+              <div class="col" style="flex: 1; min-width: 0"><h1 class="atitle">Question analytics</h1><span class="crumbs num">412 questions with 30+ attempts · 3 flagged</span></div>
+              <span class="pill-btn">Mock exams · last 30 days<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></span>
+              <span class="pill-btn on hide-t">Flagged first<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></span>
+            </header>
+
+            <div class="work">
+              <div class="g-split">
+                <section class="panel">
+                  <table class="tbl">
+                    <thead><tr><th style="padding-left: 16px; width: 76px">ID</th><th>Question</th><th style="width: 120px">Correct</th><th style="width: 150px">Choices A–D</th><th class="n hide-t">Discr.</th><th style="padding-right: 16px">Signal</th></tr></thead>
+                    <tbody>
+                      <sc-for list="{{f.rows}}" as="r" hint-placeholder-count="8">
+                        <tr class="{{r.rc}}">
+                          <td class="num fn b600" style="padding-left: 16px">{{r.id}}</td>
+                          <td style="max-width: 200px"><span class="clip" lang="kaa">{{r.stem}}</span><span class="cap l3 num">{{r.topic}} · {{r.n}} attempts</span></td>
+                          <td><div class="row" style="gap: 8px"><div class="bar" style="flex: 1"><i style="width: {{r.pc}}; background: {{r.pcColor}}"></i></div><span class="fn b600 num" style="width: 34px; text-align: right">{{r.pc}}</span></div></td>
+                          <td><div class="col" style="gap: 3px"><div class="dist" role="img" aria-label="{{r.distLabel}}"><sc-for list="{{r.dist}}" as="s" hint-placeholder-count="4"><i class="{{s.c}}" style="width: {{s.w}}"></i></sc-for></div><span class="cap l3 num" style="white-space: nowrap">{{r.distText}}</span></div></td>
+                          <td class="n hide-t fn b600 {{r.dc}}">{{r.disc}}</td>
+                          <td style="padding-right: 16px"><sc-if value="{{r.hasFlag}}" hint-placeholder-val="{{false}}"><span class="tag {{r.tc}}" style="white-space: nowrap">{{r.flag}}</span></sc-if></td>
+                        </tr>
+                      </sc-for>
+                    </tbody>
+                  </table>
+                  <div class="row" style="gap: 16px; padding: 12px 16px; margin-top: auto; border-top: 1px solid var(--sep); flex-wrap: wrap">
+                    <span class="row cap l2" style="gap: 6px"><span style="width: 14px; height: 8px; border-radius: 2px; background: var(--ok)"></span>Answer key</span>
+                    <span class="row cap l2" style="gap: 6px"><span style="width: 14px; height: 8px; border-radius: 2px; background: var(--bad)"></span>Wrong option chosen more than the key</span>
+                    <span class="row cap l2" style="gap: 6px"><span style="width: 14px; height: 8px; border-radius: 2px; background: var(--label-3); opacity: .45"></span>Other wrong options</span>
+                  </div>
+                </section>
+
+                <section class="panel" style="padding: 18px; gap: 14px">
+                  <div class="row" style="gap: 8px"><span class="hl num">{{f.d.id}}</span><span class="tag {{f.d.tc}}">{{f.d.flag}}</span><div style="flex: 1"></div><a href="Admin-Editor.dc.html" class="btn btn-tinted sm press" style="border-radius: 999px">Open in editor</a></div>
+                  <p class="callout" lang="kaa">{{f.d.stem}}</p>
+                  <div class="inset row" style="padding: 12px 14px; gap: 10px; align-items: flex-start; background: {{f.d.noteBg}}">
+                    <svg class="i s {{f.d.noteC}}" viewBox="0 0 24 24"><path d="M12 4 2.8 19.5h18.4z"></path><path d="M12 10v4M12 16.8v.1"></path></svg>
+                    <p class="fn" style="flex: 1">{{f.d.note}}</p>
+                  </div>
+                  <div class="col" style="gap: 8px">
+                    <div class="row" style="justify-content: space-between"><span class="flab">How often each option was chosen</span><span class="fn l3 num">{{f.d.n}} attempts</span></div>
+                    <sc-for list="{{f.d.opts}}" as="o" hint-placeholder-count="4">
+                      <div class="row" style="gap: 10px">
+                        <span class="lt-badge" style="width: 28px; height: 28px; border-radius: 999px; display: flex; align-items: center; justify-content: center; font: 600 13px/16px Inter, sans-serif; background: {{o.bb}}; color: {{o.bc}}; flex: none">{{o.l}}</span>
+                        <div class="hbar {{o.c}}" style="flex: 1"><i style="width: {{o.p}}"></i><span>{{o.p}}<sc-if value="{{o.key}}" hint-placeholder-val="{{false}}"> · key</sc-if></span></div>
+                        <span class="fn l2 num" style="width: 92px; text-align: right">top {{o.top}}</span>
+                      </div>
+                    </sc-for>
+                    <p class="cap l3">“Top” = share among the strongest 27 % of students on this test.</p>
+                  </div>
+                  <div class="hr"></div>
+                  <div class="col" style="gap: 8px">
+                    <button class="btn btn-primary sm block press">{{f.d.cta}}</button>
+                    <div class="row" style="gap: 8px"><button class="btn btn-tinted sm press" style="flex: 1">Mark as reviewed</button><button class="btn btn-tinted sm press" style="flex: 1; color: var(--bad-text)">Exclude from scores</button></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3858,"height":1294}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const L = ['A', 'B', 'C', 'D'];
+    const R = (id, stem, topic, n, pc, dist, key, disc, flag, tc) => {
+      const keyShare = dist[key];
+      const pcNum = parseInt(pc, 10);
+      return {
+        id, stem, topic, n, pc, disc, flag, tc, hasFlag: !!flag,
+        pcColor: pcNum < 30 ? 'var(--bad)' : pcNum > 90 ? 'var(--label-3)' : 'var(--accent)',
+        dc: parseFloat(disc) < 0 ? 'badc' : parseFloat(disc) < 0.15 ? 'warnc' : '',
+        dist: dist.map((v, i) => ({ w: v + '%', c: i === key ? 'k' : v > keyShare ? 'w2' : 'w' })),
+        distText: dist.map((v, i) => L[i] + ' ' + v).join(' · '),
+        distLabel: 'Chosen: ' + dist.map((v, i) => L[i] + ' ' + v + ' percent').join(', ') + '. Key ' + L[key]
+      };
+    };
+    const base = [
+      R('Q-0422', 'Puqaralıq huqıqıy qatnasıqlardıń subyektleri kimler?', 'Civil law', '312', '18%', [18, 61, 12, 9], 0, '−0.21', 'Likely key error', 'bad'),
+      R('Q-0387', 'Administrativlik huqıqbuzarlıq ushın qollanılatuǵın jazalar túrlerin kórsetiń.', 'Administrative', '288', '41%', [12, 41, 38, 9], 1, '0.08', 'Ambiguous', 'warn'),
+      R('Q-0119', 'Neke jasın tómenletiw qanday jaǵdaylarda ruxsat etiledi?', 'Family law', '140', '52%', [52, 22, 14, 12], 0, '0.15', '6 reports', 'warn'),
+      R('Q-0413', 'Qaraqalpaqstan Respublikası Joqarǵı Keńesiniń wákillikleri qaysı juwapta durıs kórsetilgen?', 'Constitutional', '980', '44%', [44, 20, 21, 15], 0, '0.38', '', ''),
+      R('Q-0412', 'Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań.', 'Constitutional', '1,240', '58%', [9, 6, 58, 27], 2, '0.42', '', ''),
+      R('Q-0398', 'Konstituciyanıń qabıl etiliw tártibi qaysı juwapta durıs?', 'Constitutional', '412', '49%', [49, 30, 21, 0], 0, '0.31', 'Option D unused', ''),
+      R('Q-0051', 'Insan huqıqları ulıwma deklaraciyası qashan qabıl etilgen?', 'Human rights', '1,510', '97%', [97, 1, 1, 1], 0, '0.04', 'Too easy', ''),
+      R('Q-0402', 'Prezident saylawı neshe jılda bir ret ótkeriledi?', 'Constitutional', '760', '83%', [3, 83, 9, 5], 1, '0.22', '', '')
+    ];
+    const rowsFor = (selId) => base.map((r) => ({ ...r, rc: r.id === selId ? 'sel' : '' }));
+    const O = (l, p, top, kind) => ({ l, p: p + '%', top: top + ' %', c: kind, key: kind === 'k', bb: kind === 'k' ? 'var(--ok)' : kind === 'w2' ? 'var(--bad)' : 'var(--surface-2)', bc: kind === 'k' || kind === 'w2' ? '#fff' : 'var(--label)' });
+    const d422 = {
+      id: 'Q-0422', flag: 'Likely key error', tc: 'bad', n: '312', cta: 'Change key to B and regrade 312 attempts',
+      stem: 'Puqaralıq huqıqıy qatnasıqlardıń subyektleri kimler?',
+      note: 'The strongest students chose B (74 %) far more than the key A (11 %), and discrimination is negative. The answer key is probably wrong.',
+      noteBg: 'var(--bad-soft)', noteC: 'badc',
+      opts: [O('A', 18, 11, 'k'), O('B', 61, 74, 'w2'), O('C', 12, 9, ''), O('D', 9, 6, '')]
+    };
+    const d387 = {
+      id: 'Q-0387', flag: 'Ambiguous', tc: 'warn', n: '288', cta: 'Rewrite option C',
+      stem: 'Administrativlik huqıqbuzarlıq ushın qollanılatuǵın jazalar túrlerin kórsetiń.',
+      note: 'B (key) and C are chosen almost equally, even by top students (48 % vs 44 %). Option C may also be defensible — check the wording against the code.',
+      noteBg: 'var(--warn-soft)', noteC: 'warnc',
+      opts: [O('A', 12, 4, ''), O('B', 41, 48, 'k'), O('C', 38, 44, ''), O('D', 9, 4, '')]
+    };
+    return {
+      frames: [
+        { label: 'Desktop 1440', sub: 'Light · likely key error selected', cls: 't-light', kind: 'desk', rows: rowsFor('Q-0422'), d: d422 },
+        { label: 'Desktop 1440', sub: 'Dark · ambiguous question selected', cls: 't-dark', kind: 'desk', rows: rowsFor('Q-0387'), d: d387 },
+        { label: 'Tablet 834', sub: 'Light · table, then detail below', cls: 't-light', kind: 'tabl', rows: rowsFor('Q-0422'), d: d422 }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

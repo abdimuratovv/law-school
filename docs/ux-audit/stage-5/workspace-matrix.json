@@ -1,0 +1,5012 @@
+[
+  {
+    "case": "practice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1440-light-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1440-light-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1440-light-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1440-light-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1440-light-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 86.9609375,
+      "bottom": 813.0390625,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1440-light-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 257.53125,
+      "bottom": 642.46875,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1440-light-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1440-light-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1440-light-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1440-light-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1440-light-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1440-light-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 86.9609375,
+      "bottom": 813.0390625,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1440-light-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 257.53125,
+      "bottom": 642.46875,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1440-light-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1440-light-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1440-light-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1440-light-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1440-light-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1440-light-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 86.9609375,
+      "bottom": 813.0390625,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1440-light-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 257.53125,
+      "bottom": 642.46875,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1440-light-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1440-dark-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1440-dark-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1440-dark-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1440-dark-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1440-dark-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 86.9609375,
+      "bottom": 813.0390625,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1440-dark-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 257.53125,
+      "bottom": 642.46875,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1440-dark-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1440-dark-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1440-dark-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1440-dark-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1440-dark-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1440-dark-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 86.9609375,
+      "bottom": 813.0390625,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1440-dark-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 257.53125,
+      "bottom": 642.46875,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1440-dark-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1440-dark-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1440-dark-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1440-dark-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1440-dark-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1440-dark-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 86.9609375,
+      "bottom": 813.0390625,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1440-dark-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 460,
+      "right": 980,
+      "top": 257.53125,
+      "bottom": 642.46875,
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1440-dark-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1366-light-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1366-light-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1366-light-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1366-light-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1366-light-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1366-light-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1366-light-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1366-light-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1366-light-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1366-light-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1366-light-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1366-light-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1366-light-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1366-light-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1366-light-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1366-light-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1366-light-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1366-light-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1366-light-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1366-light-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1366-light-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1366-dark-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1366-dark-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1366-dark-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1366-dark-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1366-dark-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1366-dark-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1366-dark-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1366-dark-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1366-dark-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1366-dark-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1366-dark-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1366-dark-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1366-dark-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1366-dark-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1366-dark-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1366-dark-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1366-dark-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1366-dark-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1366-dark-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1366-dark-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 423,
+      "right": 943,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1366,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1366-dark-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1024-light-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1024-light-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1024-light-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1024-light-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1024-light-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1024-light-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1024-light-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1024-light-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1024-light-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1024-light-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1024-light-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1024-light-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1024-light-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1024-light-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1024-light-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1024-light-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1024-light-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1024-light-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1024-light-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1024-light-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1024-light-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1024-dark-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1024-dark-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1024-dark-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1024-dark-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1024-dark-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1024-dark-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1024-dark-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1024-dark-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1024-dark-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1024-dark-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1024-dark-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1024-dark-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1024-dark-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1024-dark-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-1024-dark-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-1024-dark-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-1024-dark-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-1024-dark-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-1024-dark-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 24,
+      "bottom": 744,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-1024-dark-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 252,
+      "right": 772,
+      "top": 191.53125,
+      "bottom": 576.46875,
+      "viewport": [
+        1024,
+        768
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-1024-dark-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-390-light-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-390-light-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-390-light-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-390-light-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-390-light-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 72.9609375,
+      "bottom": 771.0390625,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-390-light-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 178.734375,
+      "bottom": 665.265625,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-390-light-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-390-light-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-390-light-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-390-light-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-390-light-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-390-light-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 62.5625,
+      "bottom": 781.4375,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-390-light-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 165.140625,
+      "bottom": 678.859375,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-390-light-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-390-light-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-390-light-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-390-light-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-390-light-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-390-light-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 72.9609375,
+      "bottom": 771.0390625,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-390-light-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 151.546875,
+      "bottom": 692.453125,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-390-light-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-390-dark-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-390-dark-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-390-dark-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-390-dark-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-390-dark-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 72.9609375,
+      "bottom": 771.0390625,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-390-dark-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 178.734375,
+      "bottom": 665.265625,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-390-dark-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-390-dark-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-390-dark-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-390-dark-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-390-dark-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-390-dark-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 62.5625,
+      "bottom": 781.4375,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-390-dark-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 165.140625,
+      "bottom": 678.859375,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-390-dark-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-390-dark-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-390-dark-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-390-dark-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-390-dark-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-390-dark-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 72.9609375,
+      "bottom": 771.0390625,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-390-dark-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 374,
+      "top": 151.546875,
+      "bottom": 692.453125,
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-390-dark-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-320-light-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-320-light-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-320-light-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-320-light-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-320-light-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-320-light-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-320-light-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-320-light-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-320-light-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-320-light-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-320-light-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-320-light-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-320-light-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-320-light-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-320-light-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-320-light-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-320-light-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-320-light-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-320-light-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-320-light-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-320-light-ru.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-320-dark-uz.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-320-dark-uz.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-320-dark-uz.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-320-dark-uz.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-320-dark-uz.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-320-dark-uz.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-320-dark-uz.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-320-dark-kaa.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-320-dark-kaa.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-320-dark-kaa.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-320-dark-kaa.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-320-dark-kaa.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-320-dark-kaa.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-320-dark-kaa.png"
+  },
+  {
+    "case": "practice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/practice-320-dark-ru.png"
+  },
+  {
+    "case": "checked",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/checked-320-dark-ru.png"
+  },
+  {
+    "case": "written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/written-320-dark-ru.png"
+  },
+  {
+    "case": "matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/matching-320-dark-ru.png"
+  },
+  {
+    "case": "timed",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/timed-320-dark-ru.png"
+  },
+  {
+    "case": "map",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/map-320-dark-ru.png"
+  },
+  {
+    "case": "submit",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "inFlow": true,
+    "progressVisible": true,
+    "sourceLanguage": true,
+    "dialog": {
+      "left": 16,
+      "right": 304,
+      "top": 24,
+      "bottom": 544,
+      "viewport": [
+        320,
+        568
+      ],
+      "overflow": false
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/submit-320-dark-ru.png"
+  }
+]

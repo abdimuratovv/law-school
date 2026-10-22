@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Comment-only apply preserves unfinished count",
+    "passed": true
+  },
+  {
+    "name": "Comment-only undo restores original note and grade",
+    "passed": true
+  },
+  {
+    "name": "Rapid double activation applies one sample response",
+    "passed": true
+  },
+  {
+    "name": "Apply moves keyboard focus into visible action group",
+    "passed": true
+  },
+  {
+    "name": "Sample apply works in memory without attempting a storage write",
+    "passed": true
+  },
+  {
+    "name": "Empty shared queue offers content preparation",
+    "passed": true
+  },
+  {
+    "name": "All preview applies preserve student storage",
+    "passed": true
+  },
+  {
+    "name": "Leaving teacher workspace resets sample grades on SPA return",
+    "passed": true
+  },
+  {
+    "name": "Narrow response queue starts collapsed and remains discoverable",
+    "passed": true
+  },
+  {
+    "name": "Narrow queue opens with native keyboard disclosure",
+    "passed": true
+  },
+  {
+    "name": "Narrow queue keyboard selection focuses response with manual guidance",
+    "passed": true
+  },
+  {
+    "name": "Narrow apply keeps the focused controls visible",
+    "passed": true
+  },
+  {
+    "name": "Drawer navigation opens only one loss confirmation",
+    "passed": true
+  },
+  {
+    "name": "Cancelled narrow navigation retains draft and restores page focus",
+    "passed": true
+  }
+]

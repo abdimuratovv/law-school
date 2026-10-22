@@ -1,0 +1,762 @@
+[
+  {
+    "theme": "light",
+    "case": "result-pending",
+    "name": "preliminary heading",
+    "selector": "h1",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 17.45,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "result-pending",
+    "name": "score status",
+    "selector": ".learning-score figcaption strong",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "result-pending",
+    "name": "breakdown label",
+    "selector": ".learning-counts dt",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      240,
+      242,
+      247
+    ],
+    "ratio": 8.46,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "result-pending",
+    "name": "pending notice",
+    "selector": ".learning-note",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      240,
+      242,
+      247
+    ],
+    "ratio": 16.83,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "result-pending",
+    "name": "review action",
+    "selector": ".learning-card>.btn",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "result-final",
+    "name": "final heading",
+    "selector": "h1",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 17.45,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "result-final",
+    "name": "question row",
+    "selector": ".learning-question-link",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "review-choice",
+    "name": "learner answer",
+    "selector": ".opt.wrong .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      253,
+      238,
+      236
+    ],
+    "ratio": 16.71,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "review-choice",
+    "name": "expected answer",
+    "selector": ".opt.right .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      231,
+      246,
+      236
+    ],
+    "ratio": 16.87,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "review-choice",
+    "name": "prompt",
+    "selector": ".learning-review .body",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "review-written",
+    "name": "written answer",
+    "selector": ".learning-answer-text",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      240,
+      242,
+      247
+    ],
+    "ratio": 16.83,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "review-written",
+    "name": "model answer",
+    "selector": ".learning-models",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "saved-choice",
+    "name": "retry action",
+    "selector": ".learning-retry .btn",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      227,
+      230,
+      238
+    ],
+    "ratio": 7.59,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "saved-written",
+    "name": "retry limits",
+    "selector": ".learning-retry .fn",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.47,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "progress",
+    "name": "table heading",
+    "selector": ".learning-table th",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      240,
+      242,
+      247
+    ],
+    "ratio": 16.83,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "progress",
+    "name": "statistic label",
+    "selector": ".learning-stats dt",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.47,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "progress",
+    "name": "axis labels",
+    "selector": ".learning-y",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.47,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "progress",
+    "name": "grading status",
+    "selector": ".learning-table .tag",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      240,
+      242,
+      247
+    ],
+    "ratio": 8.46,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "profile",
+    "name": "local scope",
+    "selector": ".learning-profile .fn",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.47,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "profile",
+    "name": "preference label",
+    "selector": ".learning-setting .hl",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "result-pending",
+    "name": "preliminary heading",
+    "selector": "h1",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      27
+    ],
+    "ratio": 16.92,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "result-pending",
+    "name": "score status",
+    "selector": ".learning-score figcaption strong",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "result-pending",
+    "name": "breakdown label",
+    "selector": ".learning-counts dt",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      39,
+      45,
+      58
+    ],
+    "ratio": 8.2,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "result-pending",
+    "name": "pending notice",
+    "selector": ".learning-note",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      39,
+      45,
+      58
+    ],
+    "ratio": 12.67,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "result-pending",
+    "name": "review action",
+    "selector": ".learning-card>.btn",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "result-final",
+    "name": "final heading",
+    "selector": "h1",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      27
+    ],
+    "ratio": 16.92,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "result-final",
+    "name": "question row",
+    "selector": ".learning-question-link",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "review-choice",
+    "name": "learner answer",
+    "selector": ".opt.wrong .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      62,
+      37,
+      45
+    ],
+    "ratio": 12.8,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "review-choice",
+    "name": "expected answer",
+    "selector": ".opt.right .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      32,
+      57,
+      49
+    ],
+    "ratio": 11.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "review-choice",
+    "name": "prompt",
+    "selector": ".learning-review .body",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "review-written",
+    "name": "written answer",
+    "selector": ".learning-answer-text",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      39,
+      45,
+      58
+    ],
+    "ratio": 12.67,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "review-written",
+    "name": "model answer",
+    "selector": ".learning-models",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "saved-choice",
+    "name": "retry action",
+    "selector": ".learning-retry .btn",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      52,
+      60,
+      76
+    ],
+    "ratio": 6.58,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "saved-written",
+    "name": "retry limits",
+    "selector": ".learning-retry .fn",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "progress",
+    "name": "table heading",
+    "selector": ".learning-table th",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      39,
+      45,
+      58
+    ],
+    "ratio": 12.67,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "progress",
+    "name": "statistic label",
+    "selector": ".learning-stats dt",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "progress",
+    "name": "axis labels",
+    "selector": ".learning-y",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "progress",
+    "name": "grading status",
+    "selector": ".learning-table .tag",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      39,
+      45,
+      58
+    ],
+    "ratio": 8.2,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "profile",
+    "name": "local scope",
+    "selector": ".learning-profile .fn",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "profile",
+    "name": "preference label",
+    "selector": ".learning-setting .hl",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  }
+]

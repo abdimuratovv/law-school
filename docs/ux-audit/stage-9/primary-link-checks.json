@@ -1,0 +1,1862 @@
+[
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 328,
+      "y": 286.71875,
+      "width": 265.015625,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 1193.828125,
+      "y": 44,
+      "width": 128.171875,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 264.640625,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 264.640625,
+      "height": 44
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 486.28125,
+      "width": 123.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 328,
+      "y": 286.71875,
+      "width": 225.59375,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 1194.96875,
+      "y": 44,
+      "width": 127.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 362.359375,
+      "width": 260.21875,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 362.359375,
+      "width": 260.21875,
+      "height": 44
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 486.28125,
+      "width": 122.90625,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 328,
+      "y": 286.71875,
+      "width": 265,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 1161.796875,
+      "y": 44,
+      "width": 160.203125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 293.109375,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 293.109375,
+      "height": 44
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 486.28125,
+      "width": 197.84375,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 328,
+      "y": 286.71875,
+      "width": 265.015625,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 1193.828125,
+      "y": 44,
+      "width": 128.171875,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 264.640625,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 264.640625,
+      "height": 44
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 486.28125,
+      "width": 123.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 328,
+      "y": 286.71875,
+      "width": 225.59375,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 1194.96875,
+      "y": 44,
+      "width": 127.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 362.359375,
+      "width": 260.21875,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 362.359375,
+      "width": 260.21875,
+      "height": 44
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 486.28125,
+      "width": 122.90625,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 328,
+      "y": 286.71875,
+      "width": 265,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 1161.796875,
+      "y": 44,
+      "width": 160.203125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 293.109375,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 361.953125,
+      "width": 293.109375,
+      "height": 44
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 325,
+      "y": 486.28125,
+      "width": 197.84375,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 44,
+      "y": 493.84375,
+      "width": 235,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 130.53125,
+      "y": 240.03125,
+      "width": 128.171875,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 299.96875,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 299.96875,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 266.859375,
+      "width": 123.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 44,
+      "y": 472.5,
+      "width": 225.59375,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 130.53125,
+      "y": 240.03125,
+      "width": 127.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 300.609375,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 300.40625,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 263.265625,
+      "width": 122.90625,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 44,
+      "y": 493.6875,
+      "width": 235,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 24,
+      "y": 294.03125,
+      "width": 160.203125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 300.1875,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 299.984375,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 288.625,
+      "width": 197.84375,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 44,
+      "y": 493.84375,
+      "width": 235,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 130.53125,
+      "y": 240.03125,
+      "width": 128.171875,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 299.96875,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 299.96875,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 266.859375,
+      "width": 123.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 44,
+      "y": 472.5,
+      "width": 225.59375,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 130.53125,
+      "y": 240.03125,
+      "width": 127.03125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 300.609375,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 300.40625,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 263.265625,
+      "width": 122.90625,
+      "height": 44
+    }
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 44,
+      "y": 493.6875,
+      "width": 235,
+      "height": 50
+    }
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 24,
+      "y": 294.03125,
+      "width": 160.203125,
+      "height": 44
+    }
+  },
+  {
+    "case": "analytics-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 300.1875,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 299.984375,
+      "width": 238,
+      "height": 47.59375
+    }
+  },
+  {
+    "case": "import-complete",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "name": "primary teacher link",
+    "selector": ".authoring-page a.btn-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true,
+    "overflow": false,
+    "rect": {
+      "x": 41,
+      "y": 288.625,
+      "width": 197.84375,
+      "height": 44
+    }
+  }
+]

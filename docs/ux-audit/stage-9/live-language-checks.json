@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Live grading switch retains note and draft uz",
+    "passed": true
+  },
+  {
+    "name": "Question material stays Karakalpak uz",
+    "passed": true
+  },
+  {
+    "name": "Live grading switch retains note and draft kaa",
+    "passed": true
+  },
+  {
+    "name": "Question material stays Karakalpak kaa",
+    "passed": true
+  },
+  {
+    "name": "Live grading switch retains note and draft ru",
+    "passed": true
+  },
+  {
+    "name": "Question material stays Karakalpak ru",
+    "passed": true
+  },
+  {
+    "name": "Heading changes through React in all three languages",
+    "passed": true
+  },
+  {
+    "name": "Portal confirmation uses current explicit Russian copy",
+    "passed": true
+  },
+  {
+    "name": "User name is never translated uz",
+    "passed": true
+  },
+  {
+    "name": "User name is never translated kaa",
+    "passed": true
+  },
+  {
+    "name": "User name is never translated ru",
+    "passed": true
+  },
+  {
+    "name": "Missing teacher question has named localized recovery",
+    "passed": true
+  },
+  {
+    "name": "Source contains no DOM mutator or fuzzy word fallback",
+    "passed": true
+  }
+]

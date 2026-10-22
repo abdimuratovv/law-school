@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign in · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh"></div>
+        <header class="row" style="position: absolute; left: 40px; right: 40px; top: 28px; justify-content: space-between">
+          <div class="row" style="gap: 12px"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><span class="hl">Huqıq Mektebi</span></div>
+        </header>
+
+        <div class="col" style="position: absolute; left: 50%; top: 150px; width: 440px; margin-left: -220px; gap: 24px">
+          <div class="col" style="gap: 6px; text-align: center; align-items: center">
+            <h1 class="lt">{{f.title}}</h1>
+            <p class="callout l2">{{f.lede}}</p>
+          </div>
+
+          <sc-if value="{{f.phone}}" hint-placeholder-val="{{true}}">
+            <form class="glass r28 col" style="padding: 32px; gap: 20px">
+              <div class="field"><label class="flab gl2" for="dp-{{f.id}}">Phone number</label><div class="input"><span class="prefix">+998</span><input id="dp-{{f.id}}" placeholder="90 123 45 67" class="num"></div><span class="fn gl2">We'll text you a 6-digit code. New here? Your account is created automatically.</span></div>
+              <button class="btn btn-primary block press" type="button">Send code</button>
+              <div class="divider">or</div>
+              <button class="btn btn-surface block press" type="button"><svg class="i" viewBox="0 0 24 24"><path d="M20.5 3.8 3.5 10.6l6.4 2.6 2.6 6.4z"></path><path d="m9.9 13.2 5-5"></path></svg>Continue with Telegram</button>
+            </form>
+          </sc-if>
+
+          <sc-if value="{{f.otp}}" hint-placeholder-val="{{false}}">
+            <form class="glass r28 col" style="padding: 32px; gap: 22px">
+              <div class="row" style="justify-content: space-between"><p class="fn gl2">Sent to <b class="b600 num" style="color: var(--label)">+998 90 123 45 67</b></p><a href="#change" class="btn btn-plain sm" style="padding: 0 6px">Change</a></div>
+              <div class="field"><span class="flab gl2">6-digit code</span>
+                <div class="otp" role="group" aria-label="One-time code, 5 of 6 digits entered"><span class="c">4</span><span class="c">8</span><span class="c">1</span><span class="gap"></span><span class="c">0</span><span class="c">7</span><span class="c f"><span class="caret"></span></span></div>
+              </div>
+              <button class="btn block is-disabled" type="button" disabled="">Verify</button>
+              <div class="row" style="justify-content: space-between">
+                <p class="fn gl2 num row" style="gap: 6px"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>Resend code in <b class="b600" style="color: var(--label)">0:42</b></p>
+                <a href="#tg" class="btn btn-plain sm" style="padding: 0 6px">Get it in Telegram</a>
+              </div>
+            </form>
+          </sc-if>
+
+        </div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      frames: [
+        { id: 'l', label: 'Light', sub: 'Phone number', cls: 't-light', phone: true, otp: false, title: 'Welcome', lede: 'Sign in or create an account to keep practicing.' },
+        { id: 'd', label: 'Dark', sub: 'Code entry · resend countdown', cls: 't-dark', phone: false, otp: true, title: 'Enter the code', lede: 'Paste it or type it — it fills in as you go.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

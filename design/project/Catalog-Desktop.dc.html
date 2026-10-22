@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Test catalog · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}}</div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh"></div>
+        <main class="col" style="position: absolute; left: 296px; right: 48px; top: 40px; bottom: 40px; gap: 24px">
+          <header class="row" style="justify-content: space-between; align-items: flex-end; gap: 24px">
+            <div class="col" style="gap: 2px"><h1 class="lt">Tests</h1><p class="callout l2">11 mock exams and 24 practice sets</p></div>
+            <label class="input" style="width: 340px; min-height: 44px; gap: 8px"><svg class="i s l3" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg><input placeholder="Search tests" aria-label="Search tests"></label>
+          </header>
+          <div class="row" style="gap: 16px; flex-wrap: wrap">
+            <div class="seg" style="width: 320px"><button class="on" aria-pressed="true">All</button><button aria-pressed="false">Mock exam</button><button aria-pressed="false">Practice</button></div>
+            <div class="row" style="gap: 8px; flex-wrap: wrap" role="group" aria-label="Topic">
+              <button class="chip on" aria-pressed="true">All topics</button>
+              <button class="chip">Constitutional law</button>
+              <button class="chip">Civil law</button>
+              <button class="chip">Criminal law</button>
+              <button class="chip">Administrative law</button>
+              <button class="chip">Human rights</button>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+            <sc-for list="{{f.tests}}" as="c" hint-placeholder-count="6">
+              <a class="card col press" href="Lobby-Desktop.dc.html" style="padding: 22px; gap: 16px; text-decoration: none">
+                <div class="row" style="justify-content: space-between; align-items: flex-start; gap: 12px">
+                  <span class="cap l3">{{c.kind}}</span>
+                  <span class="tag {{c.tcls}}">{{c.status}}</span>
+                </div>
+                <h2 class="t2">{{c.name}}</h2>
+                <div class="row" style="gap: 18px">
+                  <span class="fn l2 row num" style="gap: 6px"><svg class="i s" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6"></path></svg>{{c.q}} questions</span>
+                  <span class="fn l2 row num" style="gap: 6px"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>{{c.time}}</span>
+                </div>
+                <div class="hr"></div>
+                <div class="row" style="justify-content: space-between"><span class="fn l3">Best score</span><span class="hl num">{{c.best}}</span></div>
+              </a>
+            </sc-for>
+          </div>
+        </main>
+
+        <nav class="glass side" aria-label="Main">
+          <div class="row" style="gap: 12px; padding: 0 8px 20px"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><span class="hl">Huqıq Mektebi</span></div>
+          <a class="nav-i" href="Dashboard-Desktop.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"></path></svg>Home</a>
+          <a class="nav-i on" href="#tests" aria-current="page"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Tests</a>
+          <a class="nav-i" href="#progress"><svg class="i" viewBox="0 0 24 24"><path d="M4 19.5h16"></path><path d="M6 16l4-5 3.5 3L19 7"></path></svg>Progress</a>
+          <a class="nav-i" href="#mistakes"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-5.5-4-5.5 4z"></path></svg>My mistakes<span class="tag" style="margin-left: auto">38</span></a>
+          <a class="nav-i" href="#profile"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8"></circle><path d="M4.5 20c1.2-3.6 4-5.3 7.5-5.3s6.3 1.7 7.5 5.3"></path></svg>Profile</a>
+          <div style="flex: 1"></div>
+          <div class="row" style="gap: 10px; padding: 8px"><span class="mark" style="border-radius: 999px; background: var(--surface-2); color: var(--label); font: 600 14px/18px Inter, sans-serif">AT</span><div class="col"><span class="fn b600">Aybek T.</span><span class="cap gl2">Group 11-B</span></div></div>
+        </nav>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const tests = [
+        { kind: 'Mock exam · all topics', name: 'Mock exam No. 7', status: 'In progress · 12/45', tcls: 'acc', q: '45', time: '2 h 30 min', best: '—' },
+        { kind: 'Practice · constitutional law', name: 'Practice set 3', status: 'Due Oct 8', tcls: 'warn', q: '20', time: 'Untimed', best: '—' },
+        { kind: 'Mock exam · all topics', name: 'Mock exam No. 8', status: 'Due Oct 12', tcls: 'warn', q: '45', time: '2 h 30 min', best: '—' },
+        { kind: 'Mock exam · all topics', name: 'Mock exam No. 6', status: 'Completed', tcls: 'ok', q: '45', time: '2 h 30 min', best: '69 %' },
+        { kind: 'Practice · criminal law', name: 'Practice set 2', status: 'Completed', tcls: 'ok', q: '20', time: 'Untimed', best: '55 %' },
+        { kind: 'Practice · human rights', name: 'Practice set 1', status: 'Not started', tcls: '', q: '20', time: 'Untimed', best: '—' }
+    ];
+    return { frames: [ { label: 'Light', cls: 't-light', tests }, { label: 'Dark', cls: 't-dark', tests } ] };
+  }
+}
+</script>
+</body>
+</html>

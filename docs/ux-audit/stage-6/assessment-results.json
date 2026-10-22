@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Repeated selection stays selected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Explicit clearing removes answer",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Practice choice editable before checking",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Deliberate check locks choice and persists flag/check",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Map distinguishes current answered flagged checked",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Map suppresses page shortcuts",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Map Escape restores trigger",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Global Right advances question without checking",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Position does not inflate answered progress",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Radio arrows select locally without advancing question",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Typing suppresses global shortcuts",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Character assistance inserts at caret",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Opening map preserves written answer",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Language change preserves written input",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Closing options returns focus to its trigger",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Escape closes options and returns focus",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Reload restores answer flag check and position",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Offline is independent of successful local saving",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Write failure is surfaced without discarding text",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Unsaved work installs native unload guard",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Navigation retains unsaved answers in memory",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Retry persists newest answers and clears failure",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Successful retry removes unload warning",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Recovered written answer survives reload",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "No unexpected player errors",
+    "passed": true,
+    "detail": []
+  },
+  {
+    "name": "Failed result write keeps session and stays in workspace",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Failed submission locks edits and offers recovery",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Frozen snapshot remains reviewable",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Retry commits one snapshot before removing session",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Partial commit reports durable result and retained session",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Reload reuses durable result instead of stale session answers",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Cleanup retry creates no duplicate and never overwrites result",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Expiry closes modal and freezes even when result saving fails",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Expiry retry keeps original duration and commits exactly once",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Late answer event between ticks is rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Back is guarded with safe initial focus",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Cancelling Back preserves route and answer",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Confirmed Back reaches actual history destination",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Forward resumes saved answer without a reset",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Unsaved exit names loss and still permits explicit leaving",
+    "passed": true,
+    "detail": null
+  }
+]

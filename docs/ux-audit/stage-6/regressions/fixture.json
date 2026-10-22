@@ -1,0 +1,125 @@
+{
+  "sessions": {
+    "practice-1": {
+      "testId": "practice-1",
+      "mode": "practice",
+      "startedAt": 1792595156259,
+      "endsAt": null,
+      "answers": {},
+      "flags": {},
+      "current": 0
+    },
+    "mock-7": {
+      "testId": "mock-7",
+      "mode": "mock",
+      "startedAt": 1792595156259,
+      "endsAt": 1792604156259,
+      "answers": {},
+      "flags": {},
+      "current": 0
+    }
+  },
+  "attempts": [
+    {
+      "id": "baseline",
+      "testId": "practice-1",
+      "mode": "practice",
+      "submittedAt": 1792391514328,
+      "durationSec": 180,
+      "answers": {
+        "Q-0051": "A",
+        "Q-0435": "A",
+        "Q-0393": "A",
+        "Q-0418": "Nızam ústinligix",
+        "Q-0905": "A",
+        "Q-0913": "A"
+      },
+      "flags": {}
+    }
+  ],
+  "questions": [
+    {
+      "kind": "single",
+      "id": "Q-0051",
+      "topic": "human-rights",
+      "stem": "Insan huqıqları ulıwma deklaraciyası qashan qabıl etilgen?",
+      "options": [
+        "1948-jıl 10-dekabr",
+        "1966-jıl 16-dekabr",
+        "1945-jıl 24-oktyabr",
+        "1950-jıl 4-noyabr"
+      ],
+      "correct": "A"
+    },
+    {
+      "kind": "single",
+      "id": "Q-0435",
+      "topic": "human-rights",
+      "stem": "Insan huqıqları boyınsha wákil (ombudsman) kim tárepinen saylanadı?",
+      "placeholder": true,
+      "options": [
+        "[Answer option A]",
+        "[Answer option B]",
+        "[Answer option C]",
+        "[Answer option D]"
+      ],
+      "correct": "A"
+    },
+    {
+      "kind": "single",
+      "id": "Q-0393",
+      "topic": "theory",
+      "stem": "Nızam ústinligi degen ne?",
+      "options": [
+        "Mámleket hám jámiyet turmısınıń eń áhmiyetli máseleleri boyınsha ulıwma xalıqlıq dawıs beriw.",
+        "Barlıq mámleketlik organlar, lawazımlı shaxslar hám puqaralardıń nızamǵa birdey boysınıwı.",
+        "Mámleketlik hákimiyattıń xalıq tárepinen tán alınıwı hám nızamlı dep esaplanıwı.",
+        "Húkimet aǵzası, mámleketlik basqarıwdıń belgili bir tarawın basqaratuǵın lawazımlı shaxs."
+      ],
+      "correct": "B",
+      "explanation": [
+        {
+          "k": "",
+          "t": "Nızam ústinligi — hámmeniń nızamǵa birdey boysınıwı."
+        }
+      ]
+    },
+    {
+      "kind": "written",
+      "id": "Q-0418",
+      "topic": "theory",
+      "stem": "Barlıq mámleketlik organlar, lawazımlı shaxslar hám puqaralardıń nızamǵa birdey boysınıwı qalay ataladı?",
+      "accepted": [
+        "Nızam ústinligi"
+      ]
+    },
+    {
+      "kind": "single",
+      "id": "Q-0905",
+      "topic": "civil",
+      "stem": "[Question text from the question bank]",
+      "placeholder": true,
+      "options": [
+        "[Answer option A]",
+        "[Answer option B]",
+        "[Answer option C]",
+        "[Answer option D]"
+      ],
+      "correct": "A"
+    },
+    {
+      "kind": "single",
+      "id": "Q-0913",
+      "topic": "civil",
+      "stem": "[Question text from the question bank]",
+      "placeholder": true,
+      "options": [
+        "[Answer option A]",
+        "[Answer option B]",
+        "[Answer option C]",
+        "[Answer option D]"
+      ],
+      "correct": "A"
+    }
+  ]
+}

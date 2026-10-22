@@ -1,0 +1,46 @@
+# Stage 0 — route and state inventory
+
+Date: 2026-10-19 (Asia/Tashkent). Scope: current React frontend and local demo data. Stage 0 records behavior; it does not migrate routes, storage, or presentation.
+
+The user requested execution one stage at a time with confirmation between stages. The sequence document supplies scope and acceptance criteria; its statement that implementation was a future task is historical context, not a prohibition on the user's current request. Direction A is the working direction for later stages; detailed screen contracts belong to stage 1.
+
+## Coverage and state notation
+
+All route patterns in `src/App.tsx` and `src/pages/admin/AdminRoutes.tsx` are included below. The screenshot matrix captures 23 representative route variants × 3 viewports × 2 appearances × 3 languages = 414 screenshots. These are full-page captures, not evidence that everything is visible without scrolling. Additional `flow-*` screenshots record interaction states. See the JSON manifests for actual destinations and measurements. Unknown student routes redirect; missing-content behavior must remain explicit in the later screen contracts.
+
+State lists below are testable scenarios, not claims that every scenario has passed. Browser-executed checks are recorded separately in `flow-results.json`. “Absent” means the current implementation has no dedicated state; it is a redesign requirement or integration boundary, not a tested backend failure. Student routes require `hm.user`; teacher and design routes currently have no production authorization guard.
+
+| Route | Entry / primary task | Data dependency | Testable states and recovery |
+|---|---|---|---|
+| `/sign-in` | Auth redirect or direct / enter local demo | Phone/OTP component state; `hm.user` | Empty phone; incomplete number error; 9 digits → OTP; edit phone; 6-digit demo code → original destination. No real SMS/network error or resend service. |
+| `/` | Sign-in, logo, Home / choose next learning action | User, introduction status, sessions, attempts, assignments | New learner with no history; active session; completed history; pending result; no assignment; resume → exam. No route loading/error UI. |
+| `/getting-started` | Home, lobby, profile / learn answer workflow | Sample questions; local completion preference | First sample; change answer; check feedback; written sample; finish; skip/back; return after completion. Must not fabricate an attempt. |
+| `/tests` | Navigation, home, focused-screen back / find a test | TESTS, topics, translations, attempts, sessions; URL filters | All/practice/mock; topic; translated search; combined filters; zero results → reset; active/completed/not-started; incomplete content preview; browser back restores URL filters. |
+| `/tests/:testId` | Catalog card / understand and start or resume | Test/question definitions; matching session | Untimed vs timed; content-preview notice; single/written counts; start; resume without overwrite; sample/back; unknown test → `/tests`. |
+| `/exam/:testId` | Lobby start or resume / answer and submit | Test/questions; persisted session; absolute deadline; connectivity | Choice selected/unselected/cleared; unchecked/checked practice; correct/incorrect feedback; long question; written Karakalpak input; map; unanswered submission; exit/cancel; offline; deadline expiry; reload/resume; blocked local writes. Missing test → catalog; missing session → lobby. |
+| `/results/:attemptId` | Submit, history / interpret outcome and review | Persisted attempt; grading; prior attempts; test | Correct/incorrect/unanswered/pending; all/incorrect/flagged filter; no errors; preliminary vs final; retake/resume; missing or seed-only attempt → home. No remote loading/error state. |
+| `/results/:attemptId/q/:n` | Results row / understand one answer | Attempt, graded rows, question, saved questions | Choice/written; pending; expected answer/explanation; expand; previous/next; save/remove question; return to results; invalid attempt → home; invalid number → results. |
+| `/mistakes` | Navigation, review / retry saved questions | `hm.mistakes`, question definitions; local retry state | Empty → tests; saved list; open retry; choose/type; check then reveal; remove; close. Saved questions are not automatically equivalent to incorrect attempts. |
+| `/progress` | Navigation / assess completed learning | Attempts, grading, mode filter | Empty; all/practice/mock; pending excluded from final average/trend; seed history; actual attempt link; chart and list. Dedicated accessible chart alternative requires later audit. |
+| `/profile` | Navigation / manage local identity/preferences | User, language, theme, transparency, intro status | Empty name/group; three languages; system/light/dark; transparency; restart sample; sign out. Preferences are browser-local. Internal admin/design/reset links removed from student flow. |
+| `/admin` | Direct or teacher navigation / prioritize teacher work | Static admin fixtures | Grading queue, assignments, readiness; navigate to each task. True empty queue and service errors are absent. |
+| `/admin/bank` | Teacher navigation, editor/import return / find questions | BANK and questions; component-local row/selection state | Search/topic/type/difficulty/status; zero matches/reset; select one/all; bulk action; preview initially closed/open/close; create/edit/import. Changes are local demo state. |
+| `/admin/editor` | Bank create / compose question | Component-local draft, parsed text, topic fixtures | Empty/valid/invalid; choice/written; one correct option; accepted answers; manual/auto; formatting; preview; publish feedback; dirty navigation/reload. Persistent autosave and unsaved-exit warning absent. |
+| `/admin/editor/:id` | Bank edit / revise question | Existing question → component-local draft | Existing choice/written; preview; validation; publish; draft loss on reload. Unknown ID currently falls back to new-question behavior; later contract must avoid misleading edits. |
+| `/admin/import` | Bank or teacher navigation / inspect demo import | IMPORT_ROWS/TEMPLATE_COLS; selected filename, local decisions | Upload/drop/sample → validation; errors/warnings/filter; resolve warning; duplicate skip/include; preview; commit summary; cancel. Filename selection uses fixture rows, not an actual Excel parser. |
+| `/admin/builder` | Overview/navigation / assemble demo test | BANK, groups; component-local four-stage draft | Details/mode; auto/manual question selection; count validity; groups/deadline; review; back/next; local save/assign message; cancel/reload. Persistent draft/backend assignment absent. |
+| `/admin/grading` | Overview/navigation / review written response | GRADING/STUDENTS; local grades/comments/undo | Pending/current/already graded; correct/partial/incorrect; next/previous/skip; comment; hide names; undo; all done; keyboard. Grades do not update student attempts. Persistence/service failure absent. |
+| `/admin/students` | Teacher navigation / inspect student history | Static student records and derived demo details | Search/group; zero matches; select student; responsive list/details; history; assignment toast. Empty search and selected detail consistency needs verification. |
+| `/admin/analytics` | Overview/navigation / identify question problems | ANALYTICS; local sorting/rows/toast | Sort; flagged/healthy rows; option distribution; demo adjustment/regrade feedback. Actual affected attempt scope, persistent regrade and backend error absent. |
+| `/design` | Direct internal reference / inspect shared UI | Shared components/tokens and local demo controls | Component default/selected/disabled; light/dark; dialogs; charts. Lazy load currently has null Suspense fallback. Theme/language/state reference expansion belongs to stage 2. |
+| Unknown top-level path | Direct / recover | Router | Redirect `/` then auth guard as applicable. Unknown `/admin/*` suffix has no explicit nested fallback. |
+
+## Data and integration boundaries
+
+- Keep `hm.user`, `hm.theme`, `hm.rt`, raw-string `hm.language`, `hm.sessions`, `hm.attempts`, `hm.mistakes`, `hm.introductionComplete` compatible. Session fields include `answers`, `checked`, `current`, `flags`, `startedAt`, `endsAt`. Fixtures are synthetic, stored only in disposable automation contexts.
+- New accounts start without attempts/sessions. Demo reset can intentionally seed historical data; it must not become automatic first-login behavior.
+- Timers use absolute epoch deadlines; leaving/reloading does not pause the exam. Auto submission caps duration at deadline.
+- Written exact normalized answers can grade automatically; near matches and questions without accepted answers require review. Preserve Karakalpak characters.
+- Teacher fixtures, draft changes, import decisions and grading are distinct from student persistence. Do not imply cross-role synchronization exists.
+- Current `save()` returns failure but callers do not propagate a failed-write state. Stage 5 must give truthful save feedback and recoverable behavior.
+- No server fetching means no network loading/error states on most pages. Lazy teacher/design bundles are the exception; their Suspense fallback is blank. Do not simulate a successful backend operation to fill missing states.

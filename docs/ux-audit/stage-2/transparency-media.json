@@ -1,0 +1,14 @@
+[
+  {
+    "theme": "light",
+    "name": "OS reduced transparency",
+    "mediaSupported": true,
+    "backdrop": "none"
+  },
+  {
+    "theme": "dark",
+    "name": "OS reduced transparency",
+    "mediaSupported": true,
+    "backdrop": "none"
+  }
+]

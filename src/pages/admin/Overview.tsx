@@ -1,0 +1,11 @@
+import { Button } from '@/components/ui/basic';
+import { BANK, ASSIGNED } from '@/data/admin';
+import { useText } from '@/i18n/LanguageProvider';
+import { useTeacherReview } from '@/state/TeacherReview';
+export default function Overview() {
+ const t = useText(); const { items } = useTeacherReview(); const pending = items.filter(x => !x.grade); const review = BANK.filter(x => x.status === 'rev');
+ return <div data-no-translate className="authoring-page"><header><div><h1>{t('Overview')}</h1><p>{t('Teacher workspace · sample data')}</p></div><Button variant="secondary" to="/admin/builder">{t('New test')}</Button></header>
+ <section className="authoring-card authoring-priority"><p className="eyebrow">{t('Next action')}</p><h2>{t('{count} sample responses awaiting review', { count: pending.length })}</h2><p>{t('The queue contains demonstration responses, independent of student results.')}</p><Button to={pending.length ? '/admin/grading' : '/admin/bank'}>{t(pending.length ? 'Review sample responses' : 'Prepare content')}</Button></section>
+ <div className="authoring-grid"><section className="authoring-card"><h2>{t('Content readiness')}</h2><p>{t('{count} sample bank rows', { count: BANK.length })}</p><p>{t('{count} sample rows need review', { count: review.length })}</p><div className="authoring-actions"><Button variant="secondary" to="/admin/bank?status=rev">{t('Review question content')}</Button><Button variant="secondary" to="/admin/editor">{t('New question')}</Button></div></section><section className="authoring-card"><h2>{t('Prepare your next test')}</h2><p>{t('Build and save a local draft. Finishing a preview does not assign it.')}</p><div className="authoring-actions"><Button variant="secondary" to="/admin/builder">{t('Test builder')}</Button><Button variant="plain" to="/admin/import">{t('Preview import flow')}</Button></div></section></div>
+ <section className="authoring-card"><h2>{t('Sample assignments')}</h2><p>{t('Static examples, not current assignments or deadlines.')}</p><ul className="authoring-assigned">{ASSIGNED.map((a, i) => <li key={a.name}><strong>{t(['Constitutional law · Practice set 3', 'Mock exam No. 8', 'Criminal law · Practice set 2'][i])}</strong><span>{t('Sample completion')}: {a.pct}%</span></li>)}</ul><Button variant="secondary" to="/admin/builder">{t('Prepare content')}</Button></section></div>;
+}

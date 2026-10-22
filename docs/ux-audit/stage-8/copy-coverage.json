@@ -1,0 +1,2722 @@
+[
+  {
+    "key": "1 / 2 / 3 choose a draft grade; J / K move; S skips; C focuses the note. Shortcuts pause while typing or in dialogs.",
+    "passed": true
+  },
+  {
+    "key": "6-digit code",
+    "passed": true
+  },
+  {
+    "key": "A calmer learning workspace",
+    "passed": true
+  },
+  {
+    "key": "A negative indicator means the stronger sample group selected the sample key less often. It suggests review; it does not prove a key error.",
+    "passed": true
+  },
+  {
+    "key": "A real import would require fixing the source file. This fixture remains an error.",
+    "passed": true
+  },
+  {
+    "key": "Accepted answer",
+    "passed": true
+  },
+  {
+    "key": "Accepted answers",
+    "passed": true
+  },
+  {
+    "key": "Accessibility",
+    "passed": true
+  },
+  {
+    "key": "Add accepted answer",
+    "passed": true
+  },
+  {
+    "key": "Advanced options",
+    "passed": true
+  },
+  {
+    "key": "After checking a practice answer, it is locked. Read the feedback before moving on.",
+    "passed": true
+  },
+  {
+    "key": "All",
+    "passed": true
+  },
+  {
+    "key": "All groups",
+    "passed": true
+  },
+  {
+    "key": "All questions",
+    "passed": true
+  },
+  {
+    "key": "All sample responses have an applied grade. Student results remain independent.",
+    "passed": true
+  },
+  {
+    "key": "All topics",
+    "passed": true
+  },
+  {
+    "key": "An unfinished test is unavailable. Its saved answers have been kept.",
+    "passed": true
+  },
+  {
+    "key": "Another tab changed this draft",
+    "passed": true
+  },
+  {
+    "key": "Another version needs your decision",
+    "passed": true
+  },
+  {
+    "key": "Answer guidance",
+    "passed": true
+  },
+  {
+    "key": "Answer key",
+    "passed": true
+  },
+  {
+    "key": "Answer key shown for the author. No student response is recorded.",
+    "passed": true
+  },
+  {
+    "key": "Answer options",
+    "passed": true
+  },
+  {
+    "key": "Answered",
+    "passed": true
+  },
+  {
+    "key": "Answers are locked in this tab. Retry saving to finish. Closing or reloading may restore only the last saved answers.",
+    "passed": true
+  },
+  {
+    "key": "Answers are saved on this device. The timer continues if you leave.",
+    "passed": true
+  },
+  {
+    "key": "Answers are saved on this device. You can return later.",
+    "passed": true
+  },
+  {
+    "key": "Answers saved on this device",
+    "passed": true
+  },
+  {
+    "key": "Any difficulty",
+    "passed": true
+  },
+  {
+    "key": "Any topic",
+    "passed": true
+  },
+  {
+    "key": "Any type",
+    "passed": true
+  },
+  {
+    "key": "Applied sample grades and notes stay while this teacher workspace is open. Leaving it or reloading resets them; student results never change.",
+    "passed": true
+  },
+  {
+    "key": "Applied state",
+    "passed": true
+  },
+  {
+    "key": "Apply sample grade",
+    "passed": true
+  },
+  {
+    "key": "Assignment preview",
+    "passed": true
+  },
+  {
+    "key": "Attempt",
+    "passed": true
+  },
+  {
+    "key": "Attempt history",
+    "passed": true
+  },
+  {
+    "key": "Attempt history table",
+    "passed": true
+  },
+  {
+    "key": "Attempts",
+    "passed": true
+  },
+  {
+    "key": "Auto",
+    "passed": true
+  },
+  {
+    "key": "Automatic sample selection",
+    "passed": true
+  },
+  {
+    "key": "Available from",
+    "passed": true
+  },
+  {
+    "key": "Available until",
+    "passed": true
+  },
+  {
+    "key": "Average across final sample attempts",
+    "passed": true
+  },
+  {
+    "key": "Average and best use all final results in the selected mode. Preliminary and sample summaries are excluded.",
+    "passed": true
+  },
+  {
+    "key": "Awaiting grading",
+    "passed": true
+  },
+  {
+    "key": "Back",
+    "passed": true
+  },
+  {
+    "key": "Back home",
+    "passed": true
+  },
+  {
+    "key": "Back to overview",
+    "passed": true
+  },
+  {
+    "key": "Back to progress",
+    "passed": true
+  },
+  {
+    "key": "Back to question bank",
+    "passed": true
+  },
+  {
+    "key": "Back to results",
+    "passed": true
+  },
+  {
+    "key": "Back to test details",
+    "passed": true
+  },
+  {
+    "key": "Back to tests",
+    "passed": true
+  },
+  {
+    "key": "Before you start",
+    "passed": true
+  },
+  {
+    "key": "Best final score",
+    "passed": true
+  },
+  {
+    "key": "Body text",
+    "passed": true
+  },
+  {
+    "key": "Build a local preview from the sample question pool.",
+    "passed": true
+  },
+  {
+    "key": "Build and save a local draft. Finishing a preview does not assign it.",
+    "passed": true
+  },
+  {
+    "key": "Builder steps",
+    "passed": true
+  },
+  {
+    "key": "Buttons",
+    "passed": true
+  },
+  {
+    "key": "By topic",
+    "passed": true
+  },
+  {
+    "key": "Cancel",
+    "passed": true
+  },
+  {
+    "key": "Change number",
+    "passed": true
+  },
+  {
+    "key": "Change question type?",
+    "passed": true
+  },
+  {
+    "key": "Changes have not been saved. Leaving can lose this draft. Keep editing to retry saving.",
+    "passed": true
+  },
+  {
+    "key": "Changes to sample rows last only in this session.",
+    "passed": true
+  },
+  {
+    "key": "Changing type clears answer options, matching blocks and accepted answers. The question text and settings remain.",
+    "passed": true
+  },
+  {
+    "key": "Check and preview",
+    "passed": true
+  },
+  {
+    "key": "Check answer",
+    "passed": true
+  },
+  {
+    "key": "Check each answer and learn from the explanation.",
+    "passed": true
+  },
+  {
+    "key": "Check these fields",
+    "passed": true
+  },
+  {
+    "key": "Checked",
+    "passed": true
+  },
+  {
+    "key": "Choose a destination from the navigation or use the return link.",
+    "passed": true
+  },
+  {
+    "key": "Choose a display mode",
+    "passed": true
+  },
+  {
+    "key": "Choose a draft grade",
+    "passed": true
+  },
+  {
+    "key": "Choose a question to inspect",
+    "passed": true
+  },
+  {
+    "key": "Choose a question to open it.",
+    "passed": true
+  },
+  {
+    "key": "Choose a sample student",
+    "passed": true
+  },
+  {
+    "key": "Choose an available sample response or return to the overview.",
+    "passed": true
+  },
+  {
+    "key": "Choose an exam",
+    "passed": true
+  },
+  {
+    "key": "Choose any step. You can finish without writing an answer.",
+    "passed": true
+  },
+  {
+    "key": "Choose file",
+    "passed": true
+  },
+  {
+    "key": "Choose one answer",
+    "passed": true
+  },
+  {
+    "key": "Choose practice",
+    "passed": true
+  },
+  {
+    "key": "Choose practice to learn, or a timed exam to check your preparation.",
+    "passed": true
+  },
+  {
+    "key": "Choose sample groups",
+    "passed": true
+  },
+  {
+    "key": "Choose your next step",
+    "passed": true
+  },
+  {
+    "key": "Clear answer",
+    "passed": true
+  },
+  {
+    "key": "Clear filters",
+    "passed": true
+  },
+  {
+    "key": "Clear reviewed marker",
+    "passed": true
+  },
+  {
+    "key": "Clear selection",
+    "passed": true
+  },
+  {
+    "key": "Clear the search to see the sample questions.",
+    "passed": true
+  },
+  {
+    "key": "Close",
+    "passed": true
+  },
+  {
+    "key": "Close details",
+    "passed": true
+  },
+  {
+    "key": "Close navigation",
+    "passed": true
+  },
+  {
+    "key": "Close preview",
+    "passed": true
+  },
+  {
+    "key": "Close retry",
+    "passed": true
+  },
+  {
+    "key": "Comfortable",
+    "passed": true
+  },
+  {
+    "key": "Compact",
+    "passed": true
+  },
+  {
+    "key": "Complete a test to see your results and progress here.",
+    "passed": true
+  },
+  {
+    "key": "Completed",
+    "passed": true
+  },
+  {
+    "key": "Constitutional law",
+    "passed": true
+  },
+  {
+    "key": "Constitutional law · Practice set 3",
+    "passed": true
+  },
+  {
+    "key": "Content preview",
+    "passed": true
+  },
+  {
+    "key": "Content readiness",
+    "passed": true
+  },
+  {
+    "key": "Continue",
+    "passed": true
+  },
+  {
+    "key": "Continue learning",
+    "passed": true
+  },
+  {
+    "key": "Controls",
+    "passed": true
+  },
+  {
+    "key": "Correct",
+    "passed": true
+  },
+  {
+    "key": "Correct answer",
+    "passed": true
+  },
+  {
+    "key": "Could not create a saved test. Allow browser storage and try again.",
+    "passed": true
+  },
+  {
+    "key": "Could not save this preference. The previous setting is unchanged.",
+    "passed": true
+  },
+  {
+    "key": "Could not sign out. Allow browser storage and try again.",
+    "passed": true
+  },
+  {
+    "key": "Could not update saved questions. Your list is unchanged; try again.",
+    "passed": true
+  },
+  {
+    "key": "Criminal law · Practice set 2",
+    "passed": true
+  },
+  {
+    "key": "Current question",
+    "passed": true
+  },
+  {
+    "key": "Dark",
+    "passed": true
+  },
+  {
+    "key": "Data and alternatives",
+    "passed": true
+  },
+  {
+    "key": "Decision included in draft",
+    "passed": true
+  },
+  {
+    "key": "Decrease {label}",
+    "passed": true
+  },
+  {
+    "key": "Definitions",
+    "passed": true
+  },
+  {
+    "key": "Density",
+    "passed": true
+  },
+  {
+    "key": "Design reference",
+    "passed": true
+  },
+  {
+    "key": "Details",
+    "passed": true
+  },
+  {
+    "key": "Deterministic selection from the displayed fixture, not the full bank.",
+    "passed": true
+  },
+  {
+    "key": "Dialogs and panels",
+    "passed": true
+  },
+  {
+    "key": "Difficulty",
+    "passed": true
+  },
+  {
+    "key": "Digit {number}",
+    "passed": true
+  },
+  {
+    "key": "Disabled",
+    "passed": true
+  },
+  {
+    "key": "Discard local draft",
+    "passed": true
+  },
+  {
+    "key": "Discard this local draft?",
+    "passed": true
+  },
+  {
+    "key": "Discard unapplied changes",
+    "passed": true
+  },
+  {
+    "key": "Discard unapplied review changes?",
+    "passed": true
+  },
+  {
+    "key": "Discrimination indicator",
+    "passed": true
+  },
+  {
+    "key": "Distribution data table",
+    "passed": true
+  },
+  {
+    "key": "Draft",
+    "passed": true
+  },
+  {
+    "key": "Draft grade and note",
+    "passed": true
+  },
+  {
+    "key": "Draft saved on this device",
+    "passed": true
+  },
+  {
+    "key": "Draft settings",
+    "passed": true
+  },
+  {
+    "key": "Draft storage is unavailable or incompatible",
+    "passed": true
+  },
+  {
+    "key": "Due: {date}",
+    "passed": true
+  },
+  {
+    "key": "Duplicate row 7",
+    "passed": true
+  },
+  {
+    "key": "Duration: {minutes} min",
+    "passed": true
+  },
+  {
+    "key": "Earlier test",
+    "passed": true
+  },
+  {
+    "key": "Easy",
+    "passed": true
+  },
+  {
+    "key": "Edit question",
+    "passed": true
+  },
+  {
+    "key": "Enter a title to continue.",
+    "passed": true
+  },
+  {
+    "key": "Enter four options and choose one correct answer.",
+    "passed": true
+  },
+  {
+    "key": "Enter nine digits after +998. Example: 90 123 45 67.",
+    "passed": true
+  },
+  {
+    "key": "Enter six digits, then choose Continue. You can paste the whole code.",
+    "passed": true
+  },
+  {
+    "key": "Enter the code",
+    "passed": true
+  },
+  {
+    "key": "Error",
+    "passed": true
+  },
+  {
+    "key": "Exact dates, modes, scores and grading status for the selected mode.",
+    "passed": true
+  },
+  {
+    "key": "Exam options",
+    "passed": true
+  },
+  {
+    "key": "Example action completed",
+    "passed": true
+  },
+  {
+    "key": "Example answer",
+    "passed": true
+  },
+  {
+    "key": "Example count",
+    "passed": true
+  },
+  {
+    "key": "Example save failure",
+    "passed": true
+  },
+  {
+    "key": "Example saved state",
+    "passed": true
+  },
+  {
+    "key": "Example selection",
+    "passed": true
+  },
+  {
+    "key": "Example state",
+    "passed": true
+  },
+  {
+    "key": "Example warning",
+    "passed": true
+  },
+  {
+    "key": "Excel .xlsx or .xls, up to 5 MB. One question per row.",
+    "passed": true
+  },
+  {
+    "key": "Explanation",
+    "passed": true
+  },
+  {
+    "key": "Explore the interface",
+    "passed": true
+  },
+  {
+    "key": "Feedback and recovery",
+    "passed": true
+  },
+  {
+    "key": "Filter answers",
+    "passed": true
+  },
+  {
+    "key": "Filters",
+    "passed": true
+  },
+  {
+    "key": "Final result",
+    "passed": true
+  },
+  {
+    "key": "Final sample result",
+    "passed": true
+  },
+  {
+    "key": "Final sample score trend",
+    "passed": true
+  },
+  {
+    "key": "Final sample topics",
+    "passed": true
+  },
+  {
+    "key": "Final score",
+    "passed": true
+  },
+  {
+    "key": "Final score (%)",
+    "passed": true
+  },
+  {
+    "key": "Final score trend",
+    "passed": true
+  },
+  {
+    "key": "Final score: {correct} of {total}, {percent} percent",
+    "passed": true
+  },
+  {
+    "key": "Final scores by date. Equivalent values follow in the attempt history table.",
+    "passed": true
+  },
+  {
+    "key": "Final-score average",
+    "passed": true
+  },
+  {
+    "key": "Find a practice test",
+    "passed": true
+  },
+  {
+    "key": "Find a sample student",
+    "passed": true
+  },
+  {
+    "key": "Find a test",
+    "passed": true
+  },
+  {
+    "key": "Find questions",
+    "passed": true
+  },
+  {
+    "key": "Finish preview",
+    "passed": true
+  },
+  {
+    "key": "Finish test",
+    "passed": true
+  },
+  {
+    "key": "First time taking a test online?",
+    "passed": true
+  },
+  {
+    "key": "Flag question",
+    "passed": true
+  },
+  {
+    "key": "Flagged",
+    "passed": true
+  },
+  {
+    "key": "Flagged: {count}",
+    "passed": true
+  },
+  {
+    "key": "Focus stays inside this dialog until it closes.",
+    "passed": true
+  },
+  {
+    "key": "Foundations",
+    "passed": true
+  },
+  {
+    "key": "Full question text",
+    "passed": true
+  },
+  {
+    "key": "Grading",
+    "passed": true
+  },
+  {
+    "key": "Grading method",
+    "passed": true
+  },
+  {
+    "key": "Group",
+    "passed": true
+  },
+  {
+    "key": "Groups",
+    "passed": true
+  },
+  {
+    "key": "Groups and dates",
+    "passed": true
+  },
+  {
+    "key": "Hard",
+    "passed": true
+  },
+  {
+    "key": "Hide selected sample rows",
+    "passed": true
+  },
+  {
+    "key": "Hide selected sample rows?",
+    "passed": true
+  },
+  {
+    "key": "Hide student identifiers",
+    "passed": true
+  },
+  {
+    "key": "Identity",
+    "passed": true
+  },
+  {
+    "key": "Illustrative student records. These are not the current learner’s local attempts.",
+    "passed": true
+  },
+  {
+    "key": "Import",
+    "passed": true
+  },
+  {
+    "key": "Import from Excel",
+    "passed": true
+  },
+  {
+    "key": "Import preview fields",
+    "passed": true
+  },
+  {
+    "key": "Import steps",
+    "passed": true
+  },
+  {
+    "key": "In progress",
+    "passed": true
+  },
+  {
+    "key": "Incorrect",
+    "passed": true
+  },
+  {
+    "key": "Increase {label}",
+    "passed": true
+  },
+  {
+    "key": "Insert {letter}",
+    "passed": true
+  },
+  {
+    "key": "Inspect",
+    "passed": true
+  },
+  {
+    "key": "Interactive examples only. No answers, questions or grades are saved here.",
+    "passed": true
+  },
+  {
+    "key": "Investigate questions",
+    "passed": true
+  },
+  {
+    "key": "Issue scope",
+    "passed": true
+  },
+  {
+    "key": "Karakalpak letters",
+    "passed": true
+  },
+  {
+    "key": "Keep both in this preview",
+    "passed": true
+  },
+  {
+    "key": "Keep learning",
+    "passed": true
+  },
+  {
+    "key": "Keep solving",
+    "passed": true
+  },
+  {
+    "key": "Keep your work open and retry. This is a demonstration, not a real save.",
+    "passed": true
+  },
+  {
+    "key": "Keyboard shortcuts",
+    "passed": true
+  },
+  {
+    "key": "Language",
+    "passed": true
+  },
+  {
+    "key": "Language and appearance",
+    "passed": true
+  },
+  {
+    "key": "Language changed in this tab only. Retry saving before closing.",
+    "passed": true
+  },
+  {
+    "key": "Language saved on this device.",
+    "passed": true
+  },
+  {
+    "key": "Large",
+    "passed": true
+  },
+  {
+    "key": "Learn the controls in three simple steps. No timer and no score.",
+    "passed": true
+  },
+  {
+    "key": "Learn the format. Build your confidence.",
+    "passed": true
+  },
+  {
+    "key": "Learning and account",
+    "passed": true
+  },
+  {
+    "key": "Learning workspace",
+    "passed": true
+  },
+  {
+    "key": "Leave anyway",
+    "passed": true
+  },
+  {
+    "key": "Leave test",
+    "passed": true
+  },
+  {
+    "key": "Leave this test?",
+    "passed": true
+  },
+  {
+    "key": "Leave with unapplied review changes?",
+    "passed": true
+  },
+  {
+    "key": "Leave with unsaved changes?",
+    "passed": true
+  },
+  {
+    "key": "Left and Right arrows move between questions. M opens the map. F toggles a flag. Shortcuts stay inactive in inputs and dialogs.",
+    "passed": true
+  },
+  {
+    "key": "Legacy sample values (not applicable)",
+    "passed": true
+  },
+  {
+    "key": "Legal basis (optional)",
+    "passed": true
+  },
+  {
+    "key": "Legal label",
+    "passed": true
+  },
+  {
+    "key": "Light",
+    "passed": true
+  },
+  {
+    "key": "Loading design reference",
+    "passed": true
+  },
+  {
+    "key": "Loading example",
+    "passed": true
+  },
+  {
+    "key": "Loading workspace",
+    "passed": true
+  },
+  {
+    "key": "Local draft",
+    "passed": true
+  },
+  {
+    "key": "Local draft found",
+    "passed": true
+  },
+  {
+    "key": "Local drafts do not publish questions or assign tests.",
+    "passed": true
+  },
+  {
+    "key": "Local preferences",
+    "passed": true
+  },
+  {
+    "key": "Local preview",
+    "passed": true
+  },
+  {
+    "key": "Local review note (optional)",
+    "passed": true
+  },
+  {
+    "key": "Main navigation",
+    "passed": true
+  },
+  {
+    "key": "Manual grading",
+    "passed": true
+  },
+  {
+    "key": "Map to Constitutional law",
+    "passed": true
+  },
+  {
+    "key": "Mark for review",
+    "passed": true
+  },
+  {
+    "key": "Mark reviewed in this view",
+    "passed": true
+  },
+  {
+    "key": "Matching blocks (optional)",
+    "passed": true
+  },
+  {
+    "key": "Medium",
+    "passed": true
+  },
+  {
+    "key": "Mock exam",
+    "passed": true
+  },
+  {
+    "key": "Mock exam No. 8",
+    "passed": true
+  },
+  {
+    "key": "Modal example",
+    "passed": true
+  },
+  {
+    "key": "Mode",
+    "passed": true
+  },
+  {
+    "key": "Mode: {mode} · Topic: {topic}",
+    "passed": true
+  },
+  {
+    "key": "Model and rubric",
+    "passed": true
+  },
+  {
+    "key": "My mistakes",
+    "passed": true
+  },
+  {
+    "key": "Name",
+    "passed": true
+  },
+  {
+    "key": "Navigation",
+    "passed": true
+  },
+  {
+    "key": "Needs review",
+    "passed": true
+  },
+  {
+    "key": "New question",
+    "passed": true
+  },
+  {
+    "key": "New test",
+    "passed": true
+  },
+  {
+    "key": "Next",
+    "passed": true
+  },
+  {
+    "key": "Next action",
+    "passed": true
+  },
+  {
+    "key": "Next question",
+    "passed": true
+  },
+  {
+    "key": "Next question to review",
+    "passed": true
+  },
+  {
+    "key": "No",
+    "passed": true
+  },
+  {
+    "key": "No SMS is sent. Any six digits open this local preview.",
+    "passed": true
+  },
+  {
+    "key": "No accepted model is set. Review the meaning using the rubric; an empty model does not imply an incorrect response.",
+    "passed": true
+  },
+  {
+    "key": "No analytics match these filters.",
+    "passed": true
+  },
+  {
+    "key": "No attempts in this mode",
+    "passed": true
+  },
+  {
+    "key": "No explanation is available for this sample question.",
+    "passed": true
+  },
+  {
+    "key": "No final results in this mode. Preliminary answers still await grading; sample summaries are not personal trends.",
+    "passed": true
+  },
+  {
+    "key": "No issue is flagged in this sample. Check the source before reuse.",
+    "passed": true
+  },
+  {
+    "key": "No matching examples",
+    "passed": true
+  },
+  {
+    "key": "No model answer is available for this question.",
+    "passed": true
+  },
+  {
+    "key": "No questions match these filters.",
+    "passed": true
+  },
+  {
+    "key": "No questions match this filter.",
+    "passed": true
+  },
+  {
+    "key": "No response available",
+    "passed": true
+  },
+  {
+    "key": "No sample analytics available.",
+    "passed": true
+  },
+  {
+    "key": "No sample issue flagged",
+    "passed": true
+  },
+  {
+    "key": "No sample rows remain in this session.",
+    "passed": true
+  },
+  {
+    "key": "No sample students available.",
+    "passed": true
+  },
+  {
+    "key": "No saved questions yet",
+    "passed": true
+  },
+  {
+    "key": "No scored work yet",
+    "passed": true
+  },
+  {
+    "key": "No students match these filters.",
+    "passed": true
+  },
+  {
+    "key": "No tests are available yet.",
+    "passed": true
+  },
+  {
+    "key": "No tests match",
+    "passed": true
+  },
+  {
+    "key": "No unapplied changes.",
+    "passed": true
+  },
+  {
+    "key": "No unreviewed issues in this sample.",
+    "passed": true
+  },
+  {
+    "key": "None",
+    "passed": true
+  },
+  {
+    "key": "Nonmodal example",
+    "passed": true
+  },
+  {
+    "key": "Not answered",
+    "passed": true
+  },
+  {
+    "key": "Not available",
+    "passed": true
+  },
+  {
+    "key": "Not mapped",
+    "passed": true
+  },
+  {
+    "key": "Not quite — the correct answer is marked",
+    "passed": true
+  },
+  {
+    "key": "Not started",
+    "passed": true
+  },
+  {
+    "key": "Off",
+    "passed": true
+  },
+  {
+    "key": "Offline. You can keep using this loaded page. Reloading may need a connection.",
+    "passed": true
+  },
+  {
+    "key": "On",
+    "passed": true
+  },
+  {
+    "key": "One item per line. Keep its number or letter before the text.",
+    "passed": true
+  },
+  {
+    "key": "One-time code, {count} of 6 digits entered",
+    "passed": true
+  },
+  {
+    "key": "Only these sample rows disappear from this session. The saved bank is unchanged.",
+    "passed": true
+  },
+  {
+    "key": "Open a result, review a question, then choose Save question for practice.",
+    "passed": true
+  },
+  {
+    "key": "Open details",
+    "passed": true
+  },
+  {
+    "key": "Open details from the displayed list. Filters never keep another student’s profile on screen.",
+    "passed": true
+  },
+  {
+    "key": "Open modal example",
+    "passed": true
+  },
+  {
+    "key": "Open navigation",
+    "passed": true
+  },
+  {
+    "key": "Open nonmodal example",
+    "passed": true
+  },
+  {
+    "key": "Open results",
+    "passed": true
+  },
+  {
+    "key": "Open saved questions",
+    "passed": true
+  },
+  {
+    "key": "Open test",
+    "passed": true
+  },
+  {
+    "key": "Open test details to resume",
+    "passed": true
+  },
+  {
+    "key": "Open test details to retake",
+    "passed": true
+  },
+  {
+    "key": "Opens in a new tab",
+    "passed": true
+  },
+  {
+    "key": "Option",
+    "passed": true
+  },
+  {
+    "key": "Overview",
+    "passed": true
+  },
+  {
+    "key": "Page not found",
+    "passed": true
+  },
+  {
+    "key": "Pending attempts are preliminary and excluded from the final-score average and trend.",
+    "passed": true
+  },
+  {
+    "key": "Phone number",
+    "passed": true
+  },
+  {
+    "key": "Pick questions",
+    "passed": true
+  },
+  {
+    "key": "Points (preview only)",
+    "passed": true
+  },
+  {
+    "key": "Practice",
+    "passed": true
+  },
+  {
+    "key": "Practice at your own pace",
+    "passed": true
+  },
+  {
+    "key": "Practice this question",
+    "passed": true
+  },
+  {
+    "key": "Preference saved on this device.",
+    "passed": true
+  },
+  {
+    "key": "Preferences apply to this browser. Changes save immediately when storage is available.",
+    "passed": true
+  },
+  {
+    "key": "Preliminary result",
+    "passed": true
+  },
+  {
+    "key": "Preliminary score",
+    "passed": true
+  },
+  {
+    "key": "Preliminary score: {correct} of {total}, {percent} percent",
+    "passed": true
+  },
+  {
+    "key": "Preliminary · {count} awaiting grading",
+    "passed": true
+  },
+  {
+    "key": "Prepare a local draft, then check the student preview.",
+    "passed": true
+  },
+  {
+    "key": "Prepare content",
+    "passed": true
+  },
+  {
+    "key": "Prepare for the exam",
+    "passed": true
+  },
+  {
+    "key": "Prepare your next test",
+    "passed": true
+  },
+  {
+    "key": "Preview",
+    "passed": true
+  },
+  {
+    "key": "Preview complete. No questions were added to the bank.",
+    "passed": true
+  },
+  {
+    "key": "Preview complete. Nothing was published or assigned.",
+    "passed": true
+  },
+  {
+    "key": "Preview import flow",
+    "passed": true
+  },
+  {
+    "key": "Preview only — some questions are incomplete.",
+    "passed": true
+  },
+  {
+    "key": "Preview results are not a reliable assessment.",
+    "passed": true
+  },
+  {
+    "key": "Preview the import workflow with sample rows.",
+    "passed": true
+  },
+  {
+    "key": "Previous",
+    "passed": true
+  },
+  {
+    "key": "Profile",
+    "passed": true
+  },
+  {
+    "key": "Progress",
+    "passed": true
+  },
+  {
+    "key": "Published",
+    "passed": true
+  },
+  {
+    "key": "Question",
+    "passed": true
+  },
+  {
+    "key": "Question analytics",
+    "passed": true
+  },
+  {
+    "key": "Question bank",
+    "passed": true
+  },
+  {
+    "key": "Question content",
+    "passed": true
+  },
+  {
+    "key": "Question details",
+    "passed": true
+  },
+  {
+    "key": "Question fields",
+    "passed": true
+  },
+  {
+    "key": "Question map",
+    "passed": true
+  },
+  {
+    "key": "Question material is in Karakalpak.",
+    "passed": true
+  },
+  {
+    "key": "Question navigation",
+    "passed": true
+  },
+  {
+    "key": "Question preview",
+    "passed": true
+  },
+  {
+    "key": "Question states",
+    "passed": true
+  },
+  {
+    "key": "Question text",
+    "passed": true
+  },
+  {
+    "key": "Question type",
+    "passed": true
+  },
+  {
+    "key": "Question unavailable",
+    "passed": true
+  },
+  {
+    "key": "Question unavailable in this view",
+    "passed": true
+  },
+  {
+    "key": "Question unavailable. Open the bank.",
+    "passed": true
+  },
+  {
+    "key": "Question {id} is unavailable. You can remove this saved entry.",
+    "passed": true
+  },
+  {
+    "key": "Question {number}",
+    "passed": true
+  },
+  {
+    "key": "Question {number} of {total}",
+    "passed": true
+  },
+  {
+    "key": "Question {number}: {state}",
+    "passed": true
+  },
+  {
+    "key": "Questions",
+    "passed": true
+  },
+  {
+    "key": "Questions: {count}",
+    "passed": true
+  },
+  {
+    "key": "Questions: {numbers}",
+    "passed": true
+  },
+  {
+    "key": "Read the question before choosing an answer.",
+    "passed": true
+  },
+  {
+    "key": "Ready for your first test?",
+    "passed": true
+  },
+  {
+    "key": "Ready to practice",
+    "passed": true
+  },
+  {
+    "key": "Recent learning",
+    "passed": true
+  },
+  {
+    "key": "Reduce transparency",
+    "passed": true
+  },
+  {
+    "key": "Reference",
+    "passed": true
+  },
+  {
+    "key": "Reference: {label} (opens in a new tab)",
+    "passed": true
+  },
+  {
+    "key": "Regrading is unavailable because these sample analytics are not linked to learner attempts.",
+    "passed": true
+  },
+  {
+    "key": "Reload page",
+    "passed": true
+  },
+  {
+    "key": "Reload this page or return to a working destination.",
+    "passed": true
+  },
+  {
+    "key": "Remaining: {time}",
+    "passed": true
+  },
+  {
+    "key": "Remove",
+    "passed": true
+  },
+  {
+    "key": "Remove flag",
+    "passed": true
+  },
+  {
+    "key": "Remove from saved questions",
+    "passed": true
+  },
+  {
+    "key": "Repeat the introduction",
+    "passed": true
+  },
+  {
+    "key": "Replace file",
+    "passed": true
+  },
+  {
+    "key": "Replace saved version with mine",
+    "passed": true
+  },
+  {
+    "key": "Replace the selected file?",
+    "passed": true
+  },
+  {
+    "key": "Required field example",
+    "passed": true
+  },
+  {
+    "key": "Reset filters",
+    "passed": true
+  },
+  {
+    "key": "Reset sample rows",
+    "passed": true
+  },
+  {
+    "key": "Reset search",
+    "passed": true
+  },
+  {
+    "key": "Response {number}",
+    "passed": true
+  },
+  {
+    "key": "Responses awaiting grading",
+    "passed": true
+  },
+  {
+    "key": "Result saved; session cleanup failed",
+    "passed": true
+  },
+  {
+    "key": "Results",
+    "passed": true
+  },
+  {
+    "key": "Resume local draft",
+    "passed": true
+  },
+  {
+    "key": "Retry example",
+    "passed": true
+  },
+  {
+    "key": "Retry finishing. Your saved result will be reused without creating another attempt.",
+    "passed": true
+  },
+  {
+    "key": "Retry saving",
+    "passed": true
+  },
+  {
+    "key": "Return to test details",
+    "passed": true
+  },
+  {
+    "key": "Reveal example",
+    "passed": true
+  },
+  {
+    "key": "Review",
+    "passed": true
+  },
+  {
+    "key": "Review an explanation, save a question, then practice it without changing this result.",
+    "passed": true
+  },
+  {
+    "key": "Review answers",
+    "passed": true
+  },
+  {
+    "key": "Review mistakes",
+    "passed": true
+  },
+  {
+    "key": "Review navigation",
+    "passed": true
+  },
+  {
+    "key": "Review question content",
+    "passed": true
+  },
+  {
+    "key": "Review question in editor",
+    "passed": true
+  },
+  {
+    "key": "Review question {number}",
+    "passed": true
+  },
+  {
+    "key": "Review sample errors and decisions",
+    "passed": true
+  },
+  {
+    "key": "Review sample responses",
+    "passed": true
+  },
+  {
+    "key": "Review suitable practice in the test builder. Opening a preview does not assign work to this sample student.",
+    "passed": true
+  },
+  {
+    "key": "Review unanswered",
+    "passed": true
+  },
+  {
+    "key": "Review versions",
+    "passed": true
+  },
+  {
+    "key": "Review written answers",
+    "passed": true
+  },
+  {
+    "key": "Reviewed in this view",
+    "passed": true
+  },
+  {
+    "key": "Row {number}",
+    "passed": true
+  },
+  {
+    "key": "Sample analytics, not live learner data",
+    "passed": true
+  },
+  {
+    "key": "Sample assignments",
+    "passed": true
+  },
+  {
+    "key": "Sample attempt date",
+    "passed": true
+  },
+  {
+    "key": "Sample attempt history",
+    "passed": true
+  },
+  {
+    "key": "Sample attempts",
+    "passed": true
+  },
+  {
+    "key": "Sample completion",
+    "passed": true
+  },
+  {
+    "key": "Sample completion could not be saved. Try again or skip the sample.",
+    "passed": true
+  },
+  {
+    "key": "Sample data",
+    "passed": true
+  },
+  {
+    "key": "Sample file",
+    "passed": true
+  },
+  {
+    "key": "Sample key",
+    "passed": true
+  },
+  {
+    "key": "Sample option distribution",
+    "passed": true
+  },
+  {
+    "key": "Sample profile",
+    "passed": true
+  },
+  {
+    "key": "Sample progress",
+    "passed": true
+  },
+  {
+    "key": "Sample question analytics",
+    "passed": true
+  },
+  {
+    "key": "Sample question rows",
+    "passed": true
+  },
+  {
+    "key": "Sample questions",
+    "passed": true
+  },
+  {
+    "key": "Sample queue complete",
+    "passed": true
+  },
+  {
+    "key": "Sample response queue",
+    "passed": true
+  },
+  {
+    "key": "Sample result summary",
+    "passed": true
+  },
+  {
+    "key": "Sample score history",
+    "passed": true
+  },
+  {
+    "key": "Sample share (%)",
+    "passed": true
+  },
+  {
+    "key": "Sample shares: A {a}%, B {b}%, C {c}%, D {d}%. Sample key {key}.",
+    "passed": true
+  },
+  {
+    "key": "Sample student",
+    "passed": true
+  },
+  {
+    "key": "Sample students",
+    "passed": true
+  },
+  {
+    "key": "Sample summary",
+    "passed": true
+  },
+  {
+    "key": "Sample tabs",
+    "passed": true
+  },
+  {
+    "key": "Sample validation summary",
+    "passed": true
+  },
+  {
+    "key": "Save for practice",
+    "passed": true
+  },
+  {
+    "key": "Save local draft",
+    "passed": true
+  },
+  {
+    "key": "Save question for practice",
+    "passed": true
+  },
+  {
+    "key": "Saved for practice: {count}",
+    "passed": true
+  },
+  {
+    "key": "Saved questions updated on this device.",
+    "passed": true
+  },
+  {
+    "key": "Saved tests stay on this device. Any timed test keeps counting down while you are signed out.",
+    "passed": true
+  },
+  {
+    "key": "Saving a question does not change your grade. Retry practice is not added to test history.",
+    "passed": true
+  },
+  {
+    "key": "Saving is local to this browser. Keep its data to return to your answers; there is no online account sync.",
+    "passed": true
+  },
+  {
+    "key": "Score (%)",
+    "passed": true
+  },
+  {
+    "key": "Score (%) by submission date",
+    "passed": true
+  },
+  {
+    "key": "Score = correct answers ÷ all questions. Pending answers are not marked incorrect.",
+    "passed": true
+  },
+  {
+    "key": "Score {correct} of {total}, {percent} percent",
+    "passed": true
+  },
+  {
+    "key": "Search example",
+    "passed": true
+  },
+  {
+    "key": "Search name or group",
+    "passed": true
+  },
+  {
+    "key": "Search question, topic or issue",
+    "passed": true
+  },
+  {
+    "key": "Search questions",
+    "passed": true
+  },
+  {
+    "key": "Search tests",
+    "passed": true
+  },
+  {
+    "key": "See example answer",
+    "passed": true
+  },
+  {
+    "key": "Select a displayed row or reset filters. No substitute question is opened silently.",
+    "passed": true
+  },
+  {
+    "key": "Select displayed rows",
+    "passed": true
+  },
+  {
+    "key": "Select sample question",
+    "passed": true
+  },
+  {
+    "key": "Select {id}",
+    "passed": true
+  },
+  {
+    "key": "Selected",
+    "passed": true
+  },
+  {
+    "key": "Selected IDs",
+    "passed": true
+  },
+  {
+    "key": "Selected files are not parsed. Every file shows the same sample rows. Only its name, size and your decisions can be saved locally; file contents are never saved.",
+    "passed": true
+  },
+  {
+    "key": "Selected sample rows",
+    "passed": true
+  },
+  {
+    "key": "Selection method",
+    "passed": true
+  },
+  {
+    "key": "Session-only sample grading",
+    "passed": true
+  },
+  {
+    "key": "Share of sample responses (%) · 0–100 scale",
+    "passed": true
+  },
+  {
+    "key": "Short supporting text",
+    "passed": true
+  },
+  {
+    "key": "Show all answers",
+    "passed": true
+  },
+  {
+    "key": "Show all attempts",
+    "passed": true
+  },
+  {
+    "key": "Show lowercase letters",
+    "passed": true
+  },
+  {
+    "key": "Show response queue",
+    "passed": true
+  },
+  {
+    "key": "Show rows",
+    "passed": true
+  },
+  {
+    "key": "Show uppercase letters",
+    "passed": true
+  },
+  {
+    "key": "Sign out",
+    "passed": true
+  },
+  {
+    "key": "Sign out with active work?",
+    "passed": true
+  },
+  {
+    "key": "Sign-in could not be saved. Allow browser storage, then try again.",
+    "passed": true
+  },
+  {
+    "key": "Signing out keeps this browser’s results, saved questions and active tests. Timed tests keep counting down.",
+    "passed": true
+  },
+  {
+    "key": "Single choice",
+    "passed": true
+  },
+  {
+    "key": "Skip row 7",
+    "passed": true
+  },
+  {
+    "key": "Skip sample",
+    "passed": true
+  },
+  {
+    "key": "Skip to main content",
+    "passed": true
+  },
+  {
+    "key": "Skip to next unfinished",
+    "passed": true
+  },
+  {
+    "key": "Solid reading surfaces, clear controls and one consistent system for students and teachers.",
+    "passed": true
+  },
+  {
+    "key": "Some questions are still being prepared. This is an interface preview.",
+    "passed": true
+  },
+  {
+    "key": "Some questions are unavailable. This test cannot be started.",
+    "passed": true
+  },
+  {
+    "key": "Some work is unsaved in this tab. Stay signed in and retry saving before closing or reloading.",
+    "passed": true
+  },
+  {
+    "key": "Sort",
+    "passed": true
+  },
+  {
+    "key": "Source link",
+    "passed": true
+  },
+  {
+    "key": "Standard",
+    "passed": true
+  },
+  {
+    "key": "Start fresh",
+    "passed": true
+  },
+  {
+    "key": "Start here",
+    "passed": true
+  },
+  {
+    "key": "Static examples, not current assignments or deadlines.",
+    "passed": true
+  },
+  {
+    "key": "Status",
+    "passed": true
+  },
+  {
+    "key": "Stay signed in",
+    "passed": true
+  },
+  {
+    "key": "Step {step} of 3",
+    "passed": true
+  },
+  {
+    "key": "Strongest group means the top 27% in this illustrative test. Shares are percentages, not respondent counts.",
+    "passed": true
+  },
+  {
+    "key": "Strongest sample group (%)",
+    "passed": true
+  },
+  {
+    "key": "Student",
+    "passed": true
+  },
+  {
+    "key": "Student answer",
+    "passed": true
+  },
+  {
+    "key": "Student app",
+    "passed": true
+  },
+  {
+    "key": "Student identity hidden",
+    "passed": true
+  },
+  {
+    "key": "Student preview",
+    "passed": true
+  },
+  {
+    "key": "Student reading preview",
+    "passed": true
+  },
+  {
+    "key": "Student unavailable in these filters",
+    "passed": true
+  },
+  {
+    "key": "Students",
+    "passed": true
+  },
+  {
+    "key": "Submission date",
+    "passed": true
+  },
+  {
+    "key": "Submission not saved",
+    "passed": true
+  },
+  {
+    "key": "Submit",
+    "passed": true
+  },
+  {
+    "key": "Submit this attempt?",
+    "passed": true
+  },
+  {
+    "key": "Submitting locks your answers. The result opens only after it has been saved on this device.",
+    "passed": true
+  },
+  {
+    "key": "Take a few tests to see your trend.",
+    "passed": true
+  },
+  {
+    "key": "Teacher navigation",
+    "passed": true
+  },
+  {
+    "key": "Teacher review is not connected in this preview.",
+    "passed": true
+  },
+  {
+    "key": "Teacher table preview",
+    "passed": true
+  },
+  {
+    "key": "Teacher workspace",
+    "passed": true
+  },
+  {
+    "key": "Teacher workspace · sample data",
+    "passed": true
+  },
+  {
+    "key": "Technical sample indicators",
+    "passed": true
+  },
+  {
+    "key": "Template columns",
+    "passed": true
+  },
+  {
+    "key": "Terms",
+    "passed": true
+  },
+  {
+    "key": "Test builder",
+    "passed": true
+  },
+  {
+    "key": "Test fields",
+    "passed": true
+  },
+  {
+    "key": "Test type",
+    "passed": true
+  },
+  {
+    "key": "Tests",
+    "passed": true
+  },
+  {
+    "key": "Text size",
+    "passed": true
+  },
+  {
+    "key": "The deadline has passed. Opening this test completes its existing attempt; it does not restart the timer.",
+    "passed": true
+  },
+  {
+    "key": "The draft grade and note have not been applied. Continuing discards these edits only.",
+    "passed": true
+  },
+  {
+    "key": "The draft grade and note have not been applied. Leaving discards these edits. Applied grades remain only while the teacher workspace stays open.",
+    "passed": true
+  },
+  {
+    "key": "The file is not ready for a real import. Finishing only completes this demonstration.",
+    "passed": true
+  },
+  {
+    "key": "The preview lists accepted answers. Live grading rules are unchanged.",
+    "passed": true
+  },
+  {
+    "key": "The queue contains demonstration responses, independent of student results.",
+    "passed": true
+  },
+  {
+    "key": "The rest of the page remains available.",
+    "passed": true
+  },
+  {
+    "key": "The sample key differs from the current source key. Inspect the question before drawing conclusions.",
+    "passed": true
+  },
+  {
+    "key": "The source question is written. This legacy A–D distribution is not applicable to its grading.",
+    "passed": true
+  },
+  {
+    "key": "The timer starts on entry and continues while you are away. At zero, the attempt finishes automatically.",
+    "passed": true
+  },
+  {
+    "key": "Theme",
+    "passed": true
+  },
+  {
+    "key": "There is no active session for this test. Open its details to start or choose another test.",
+    "passed": true
+  },
+  {
+    "key": "These are questions you saved for practice, not a list of every incorrect answer.",
+    "passed": true
+  },
+  {
+    "key": "These are sample assignments, not messages from your teacher.",
+    "passed": true
+  },
+  {
+    "key": "These demonstration attempts have no result links. They are not matched to local learner history.",
+    "passed": true
+  },
+  {
+    "key": "These figures are fixtures and do not recompute from current question definitions. Reviewed markers reset when you leave or reload.",
+    "passed": true
+  },
+  {
+    "key": "This attempt has not been saved. Leave only if you accept losing the unsaved work on reload or close.",
+    "passed": true
+  },
+  {
+    "key": "This clears this preview’s filename, topic mapping and duplicate decision. File contents are never stored.",
+    "passed": true
+  },
+  {
+    "key": "This draft requires teacher review.",
+    "passed": true
+  },
+  {
+    "key": "This is a local preview. Results and saved questions belong to this browser, not a private online account.",
+    "passed": true
+  },
+  {
+    "key": "This is a preview. No test is published or assigned.",
+    "passed": true
+  },
+  {
+    "key": "This note is part of the sample grade, not a message to a student.",
+    "passed": true
+  },
+  {
+    "key": "This question ID has no source content.",
+    "passed": true
+  },
+  {
+    "key": "This retry is not saved as a test attempt. Closing it clears only this practice response.",
+    "passed": true
+  },
+  {
+    "key": "This route returns to its source. Other drafts and student work are kept.",
+    "passed": true
+  },
+  {
+    "key": "This sample history has no saved answers to review.",
+    "passed": true
+  },
+  {
+    "key": "This sample resets on reload. It never creates a score or test attempt.",
+    "passed": true
+  },
+  {
+    "key": "This sample row has no full question definition.",
+    "passed": true
+  },
+  {
+    "key": "This saved item or its question content is unavailable. Your stored records have not been changed.",
+    "passed": true
+  },
+  {
+    "key": "This test is unavailable.",
+    "passed": true
+  },
+  {
+    "key": "Time is up. Answers are locked.",
+    "passed": true
+  },
+  {
+    "key": "Time limit",
+    "passed": true
+  },
+  {
+    "key": "Time limit (minutes)",
+    "passed": true
+  },
+  {
+    "key": "Time taken",
+    "passed": true
+  },
+  {
+    "key": "Timed tests. See your results after finishing.",
+    "passed": true
+  },
+  {
+    "key": "Times use this device’s local time zone.",
+    "passed": true
+  },
+  {
+    "key": "Topic",
+    "passed": true
+  },
+  {
+    "key": "Topic counts are preliminary while answers await grading.",
+    "passed": true
+  },
+  {
+    "key": "Topic counts include every question in this attempt.",
+    "passed": true
+  },
+  {
+    "key": "Topic mapping",
+    "passed": true
+  },
+  {
+    "key": "Try a sample",
+    "passed": true
+  },
+  {
+    "key": "Try again",
+    "passed": true
+  },
+  {
+    "key": "Try another topic or clear the search.",
+    "passed": true
+  },
+  {
+    "key": "Type",
+    "passed": true
+  },
+  {
+    "key": "Type a question or ID",
+    "passed": true
+  },
+  {
+    "key": "Type your answer",
+    "passed": true
+  },
+  {
+    "key": "Typography and spacing",
+    "passed": true
+  },
+  {
+    "key": "Unable to save. Keep this tab open.",
+    "passed": true
+  },
+  {
+    "key": "Unanswered: {count}",
+    "passed": true
+  },
+  {
+    "key": "Unapplied changes. Apply or discard before leaving.",
+    "passed": true
+  },
+  {
+    "key": "Unavailable content",
+    "passed": true
+  },
+  {
+    "key": "Unavailable saved question",
+    "passed": true
+  },
+  {
+    "key": "Undo last applied sample grade",
+    "passed": true
+  },
+  {
+    "key": "Undo topic mapping",
+    "passed": true
+  },
+  {
+    "key": "Unsaved answers",
+    "passed": true
+  },
+  {
+    "key": "Unsaved changes on this device",
+    "passed": true
+  },
+  {
+    "key": "Untimed",
+    "passed": true
+  },
+  {
+    "key": "Up to 10 most recent final results, ordered by submission date. Exact values are in the table below.",
+    "passed": true
+  },
+  {
+    "key": "Use Karakalpak letters where needed. Spaces and letter case are normalized; close matches can remain pending.",
+    "passed": true
+  },
+  {
+    "key": "Use browser zoom to enlarge this interface. Motion follows your system preference; larger exam text is available in Exam options.",
+    "passed": true
+  },
+  {
+    "key": "Use sample",
+    "passed": true
+  },
+  {
+    "key": "Use sample code",
+    "passed": true
+  },
+  {
+    "key": "Use solid navigation surfaces instead of translucent glass.",
+    "passed": true
+  },
+  {
+    "key": "Valid sample row",
+    "passed": true
+  },
+  {
+    "key": "Validation",
+    "passed": true
+  },
+  {
+    "key": "View attempt history",
+    "passed": true
+  },
+  {
+    "key": "Warning",
+    "passed": true
+  },
+  {
+    "key": "Welcome",
+    "passed": true
+  },
+  {
+    "key": "Welcome to Huqıq Mektebi",
+    "passed": true
+  },
+  {
+    "key": "Workspace unavailable",
+    "passed": true
+  },
+  {
+    "key": "Write a short answer",
+    "passed": true
+  },
+  {
+    "key": "Written",
+    "passed": true
+  },
+  {
+    "key": "Written answer awaiting review. The score is preliminary.",
+    "passed": true
+  },
+  {
+    "key": "Written answers use sample answer checks. Some remain pending; teacher review is not connected in this preview.",
+    "passed": true
+  },
+  {
+    "key": "Written answers use sample checks. Teacher review is not connected in this preview.",
+    "passed": true
+  },
+  {
+    "key": "Yes",
+    "passed": true
+  },
+  {
+    "key": "You can change answers until you finish. Use All questions to return to a question.",
+    "passed": true
+  },
+  {
+    "key": "You can change your choice before checking.",
+    "passed": true
+  },
+  {
+    "key": "Your answer",
+    "passed": true
+  },
+  {
+    "key": "Your current fields remain in memory. Use the saved version or explicitly replace it with these fields.",
+    "passed": true
+  },
+  {
+    "key": "Your first completed test will appear here.",
+    "passed": true
+  },
+  {
+    "key": "Your history is unchanged. Choose another mode or show all attempts.",
+    "passed": true
+  },
+  {
+    "key": "Your latest answers are still in this tab. Allow browser storage, then retry saving. Closing or reloading may lose them.",
+    "passed": true
+  },
+  {
+    "key": "Your learning starts here",
+    "passed": true
+  },
+  {
+    "key": "Your saved test history on this device. Practice retries do not add attempts.",
+    "passed": true
+  },
+  {
+    "key": "Your score",
+    "passed": true
+  },
+  {
+    "key": "{answered} of {total} answered",
+    "passed": true
+  },
+  {
+    "key": "{correct} of {total} correct",
+    "passed": true
+  },
+  {
+    "key": "{count} answers need review. This score is preliminary.",
+    "passed": true
+  },
+  {
+    "key": "{count} attempts shown",
+    "passed": true
+  },
+  {
+    "key": "{count} bytes · metadata only",
+    "passed": true
+  },
+  {
+    "key": "{count} eligible sample rows; {errors} error rows remain.",
+    "passed": true
+  },
+  {
+    "key": "{count} questions shown",
+    "passed": true
+  },
+  {
+    "key": "{count} sample bank rows",
+    "passed": true
+  },
+  {
+    "key": "{count} sample question rows · {issues} unreviewed issues",
+    "passed": true
+  },
+  {
+    "key": "{count} sample questions selected",
+    "passed": true
+  },
+  {
+    "key": "{count} sample responses",
+    "passed": true
+  },
+  {
+    "key": "{count} sample responses awaiting review",
+    "passed": true
+  },
+  {
+    "key": "{count} sample rows displayed",
+    "passed": true
+  },
+  {
+    "key": "{count} sample rows need review",
+    "passed": true
+  },
+  {
+    "key": "{count} sample rows · {errors} errors · {warnings} unresolved warnings",
+    "passed": true
+  },
+  {
+    "key": "{count} sample students displayed",
+    "passed": true
+  },
+  {
+    "key": "{count} saved questions",
+    "passed": true
+  },
+  {
+    "key": "{count} selected",
+    "passed": true
+  },
+  {
+    "key": "{count} selected: {single} choice, {written} written",
+    "passed": true
+  },
+  {
+    "key": "{count} tests found",
+    "passed": true
+  },
+  {
+    "key": "{done} of {total} sample responses graded",
+    "passed": true
+  },
+  {
+    "key": "{hours} hours {minutes} minutes {seconds} seconds remaining",
+    "passed": true
+  },
+  {
+    "key": "{letter}, correct answer: {text}",
+    "passed": true
+  },
+  {
+    "key": "{letter}, your answer, incorrect: {text}",
+    "passed": true
+  },
+  {
+    "key": "{pending} awaiting review · {done} applied sample grades",
+    "passed": true
+  },
+  {
+    "key": "{percent} percent",
+    "passed": true
+  },
+  {
+    "key": "{single} choice questions · {written} written questions",
+    "passed": true
+  },
+  {
+    "key": "Awaiting sample review",
+    "passed": true
+  },
+  {
+    "key": "Sample grade applied. Student results were not changed.",
+    "passed": true
+  },
+  {
+    "key": "Last sample grade and note restored.",
+    "passed": true
+  },
+  {
+    "key": "The answer expresses the required concept.",
+    "passed": true
+  },
+  {
+    "key": "The core idea is present but incomplete.",
+    "passed": true
+  },
+  {
+    "key": "The required concept is absent or contradicted.",
+    "passed": true
+  },
+  {
+    "key": "Unapplied changes discarded.",
+    "passed": true
+  },
+  {
+    "key": "Discard and continue",
+    "passed": true
+  },
+  {
+    "key": "Final sample average",
+    "passed": true
+  },
+  {
+    "key": "Check the sample key",
+    "passed": true
+  },
+  {
+    "key": "The strongest sample group preferred B over sample key A. Check the key against the source.",
+    "passed": true
+  },
+  {
+    "key": "Possible ambiguity",
+    "passed": true
+  },
+  {
+    "key": "B and C were chosen at similar rates in the sample. Check whether both options could be defended.",
+    "passed": true
+  },
+  {
+    "key": "Reported wording issue",
+    "passed": true
+  },
+  {
+    "key": "Sample reports suggest unclear wording. Review the written prompt and grading criteria.",
+    "passed": true
+  },
+  {
+    "key": "Low challenge in sample",
+    "passed": true
+  },
+  {
+    "key": "Most sample responses were correct. Check whether the question challenges the intended group.",
+    "passed": true
+  },
+  {
+    "key": "Unused sample option",
+    "passed": true
+  },
+  {
+    "key": "No sample responses selected D. Check whether that option is plausible.",
+    "passed": true
+  },
+  {
+    "key": "All sample rows",
+    "passed": true
+  },
+  {
+    "key": "Unreviewed issues",
+    "passed": true
+  },
+  {
+    "key": "Reviewed markers",
+    "passed": true
+  },
+  {
+    "key": "Sample correct (%)",
+    "passed": true
+  },
+  {
+    "key": "Issue",
+    "passed": true
+  },
+  {
+    "key": "Sample review marker cleared. No grades or answer keys changed.",
+    "passed": true
+  },
+  {
+    "key": "Sample row marked reviewed in this view. No grades or answer keys changed.",
+    "passed": true
+  },
+  {
+    "key": "Mock exam No. 7",
+    "passed": true
+  },
+  {
+    "key": "1 point",
+    "passed": true
+  },
+  {
+    "key": "0.5 point",
+    "passed": true
+  },
+  {
+    "key": "0 points",
+    "passed": true
+  }
+]

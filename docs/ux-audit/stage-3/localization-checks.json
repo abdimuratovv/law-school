@@ -1,0 +1,292 @@
+[
+  {
+    "name": "Live explicit shell translation /tests uz",
+    "passed": true,
+    "detail": [
+      "Bosh sahifa",
+      "Testlar",
+      "Natijalar dinamikasi",
+      "Xatolarim",
+      "Profil"
+    ]
+  },
+  {
+    "name": "Language change preserves control focus /tests uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Document language and route title /tests uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Live explicit shell translation /tests kaa",
+    "passed": true,
+    "detail": [
+      "Bas bet",
+      "Testler",
+      "Nátiyjeler dinamikası",
+      "Qátelerim",
+      "Profil"
+    ]
+  },
+  {
+    "name": "Language change preserves control focus /tests kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Document language and route title /tests kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Live explicit shell translation /tests ru",
+    "passed": true,
+    "detail": [
+      "Главная",
+      "Тесты",
+      "Прогресс",
+      "Мои ошибки",
+      "Профиль"
+    ]
+  },
+  {
+    "name": "Language change preserves control focus /tests ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Document language and route title /tests ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Live explicit shell translation /admin/bank uz",
+    "passed": true,
+    "detail": [
+      "Umumiy ko‘rinish",
+      "Savollar banki",
+      "Import",
+      "Test tuzish",
+      "Baholash",
+      "O‘quvchilar",
+      "Tahlil",
+      "O‘quvchi ilovasi"
+    ]
+  },
+  {
+    "name": "Language change preserves control focus /admin/bank uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Document language and route title /admin/bank uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Live explicit shell translation /admin/bank kaa",
+    "passed": true,
+    "detail": [
+      "Ulıwma kórinis",
+      "Sorawlar banki",
+      "Import",
+      "Test dúziw",
+      "Bahalaw",
+      "Oqıwshılar",
+      "Talqılaw",
+      "Oqıwshı qosımshası"
+    ]
+  },
+  {
+    "name": "Language change preserves control focus /admin/bank kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Document language and route title /admin/bank kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Live explicit shell translation /admin/bank ru",
+    "passed": true,
+    "detail": [
+      "Обзор",
+      "Банк вопросов",
+      "Импорт",
+      "Конструктор тестов",
+      "Оценивание",
+      "Ученики",
+      "Аналитика",
+      "Приложение ученика"
+    ]
+  },
+  {
+    "name": "Language change preserves control focus /admin/bank ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Document language and route title /admin/bank ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Numbers use supported locale conventions",
+    "passed": true,
+    "detail": [
+      "1,234.5",
+      "1,234.5",
+      "1 234,5"
+    ]
+  },
+  {
+    "name": "Numeric dates include day, month, year and local time",
+    "passed": true,
+    "detail": [
+      "2026-10-19 17:34",
+      "2026-10-19 17:34",
+      "19.10.2026, 17:34"
+    ]
+  },
+  {
+    "name": "Invalid dates are neutral",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Auth return accepts student context and rejects other destinations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Question material stays Karakalpak uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Question material stays Karakalpak kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Question material stays Karakalpak ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Language change preserves Karakalpak input",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Large text drawer reflows /tests",
+    "passed": true,
+    "detail": {
+      "links": [
+        {
+          "text": "Bas bet",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Testler",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Nátiyjeler dinamikası",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Qátelerim",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Profil",
+          "width": 259,
+          "scroll": 259
+        }
+      ],
+      "dialog": {
+        "width": 302,
+        "scroll": 302
+      },
+      "document": {
+        "width": 320,
+        "scroll": 325
+      }
+    }
+  },
+  {
+    "name": "Resizing open drawer closes it and focuses content /tests",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Large text drawer reflows /admin/bank",
+    "passed": true,
+    "detail": {
+      "links": [
+        {
+          "text": "Ulıwma kórinis",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Sorawlar banki",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Import",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Test dúziw",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Bahalaw12",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Oqıwshılar",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Talqılaw",
+          "width": 259,
+          "scroll": 259
+        },
+        {
+          "text": "Oqıwshı qosımshası",
+          "width": 259,
+          "scroll": 259
+        }
+      ],
+      "dialog": {
+        "width": 302,
+        "scroll": 302
+      },
+      "document": {
+        "width": 320,
+        "scroll": 320
+      }
+    }
+  },
+  {
+    "name": "Resizing open drawer closes it and focuses content /admin/bank",
+    "passed": true,
+    "detail": null
+  }
+]

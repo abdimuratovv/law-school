@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Submit confirmation · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>Centered dialog · focus starts on Review unanswered</span></div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh calm"></div>
+        <article class="card" style="position: absolute; left: 340px; top: 120px; width: 760px; height: 420px"></article>
+        <header class="glass row" style="position: absolute; left: 24px; right: 24px; top: 16px; height: 68px; border-radius: 34px; padding: 0 12px 0 8px; gap: 12px">
+          <span class="icon-btn"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></span>
+          <div class="col" style="width: 300px"><span class="hl">Mock exam No. 7</span><span class="saved">All answers saved</span></div>
+          <div class="row" style="flex: 1; justify-content: center; gap: 14px"><div class="prog" style="flex: none; width: 420px"><i style="width: 100%"></i></div><span class="callout b600 num">45 / 45</span></div>
+          <div class="row" style="width: 300px; justify-content: flex-end"><span class="timer num">22:14</span></div>
+        </header>
+        <div class="scrim"></div>
+
+        <section class="glass strong dialog col" role="alertdialog" aria-modal="true" aria-labelledby="sd-{{f.cls}}" style="left: 50%; top: 170px; width: 520px; margin-left: -260px; gap: 20px">
+          <div class="col" style="gap: 6px">
+            <h2 class="t1" id="sd-{{f.cls}}">Submit exam?</h2>
+            <p class="callout gl2">After you submit, answers can't be changed. Results for written answers arrive after teacher grading.</p>
+          </div>
+          <div class="list">
+            <div class="li"><svg class="i acc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m8 12.3 2.8 2.8L16.2 9.5"></path></svg><span class="callout" style="flex: 1">Answered</span><span class="hl num">42</span></div>
+            <div class="li"><svg class="i l3" viewBox="0 0 24 24" style="stroke-dasharray: 3 3"><circle cx="12" cy="12" r="9"></circle></svg><div class="col" style="flex: 1"><span class="callout">Unanswered</span><span class="fn l3 num">Questions 17, 29, 44</span></div><span class="hl num">3</span></div>
+            <div class="li"><svg class="i warnc fill" viewBox="0 0 24 24"><path d="M5.5 21V4.5"></path><path d="M5.5 4.5h11l-2.2 4 2.2 4h-11z"></path></svg><div class="col" style="flex: 1"><span class="callout">Flagged</span><span class="fn l3 num">Questions 9, 22</span></div><span class="hl num">2</span></div>
+            <div class="li"><svg class="i l2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="callout" style="flex: 1">Time remaining</span><span class="hl num">22:14</span></div>
+          </div>
+          <div class="row" style="justify-content: flex-end; gap: 12px">
+            <a href="Map-Desktop.dc.html" class="btn btn-secondary press focus-ring">Review unanswered</a>
+            <a href="Results-Desktop.dc.html" class="btn btn-primary press">Submit</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { frames: [ { label: 'Light', cls: 't-light' }, { label: 'Dark', cls: 't-dark' } ] };
+  }
+}
+</script>
+</body>
+</html>

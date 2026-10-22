@@ -1,0 +1,146 @@
+{
+  "browserVersion": "146.0.7680.178",
+  "method": "Retrospective matched-source production comparison; local Chrome, 1366x768, 4x CPU, cold browser cache, blocked remote fonts, six alternating paired runs. Two-frame scripted answer commit, 60-frame scripted scroll. Not field INP or historical Stage 0 timings.",
+  "summary": [
+    {
+      "route": "/",
+      "variant": "baseline",
+      "runs": 6,
+      "medians": {
+        "fcp": 1166.0,
+        "lcp": 1166.0,
+        "domContentLoaded": 141.95,
+        "load": 143.3,
+        "longTaskTotal": 1087.0
+      },
+      "scrollFrameP95Ms": 32.1,
+      "framesOver25ms": 41,
+      "measuredFrames": 360
+    },
+    {
+      "route": "/",
+      "variant": "redesign",
+      "runs": 6,
+      "medians": {
+        "fcp": 1894.0,
+        "lcp": 1894.0,
+        "domContentLoaded": 279.7,
+        "load": 280.95,
+        "longTaskTotal": 2021.5
+      },
+      "scrollFrameP95Ms": 31.5,
+      "framesOver25ms": 32,
+      "measuredFrames": 360
+    },
+    {
+      "route": "/exam/practice-1",
+      "variant": "baseline",
+      "runs": 6,
+      "medians": {
+        "fcp": 548.0,
+        "lcp": 548.0,
+        "domContentLoaded": 135.2,
+        "load": 136.3,
+        "longTaskTotal": 436.5
+      },
+      "medianAnswerCommitMs": 286.35,
+      "allAnswersSaved": true,
+      "scrollFrameP95Ms": 32.3,
+      "framesOver25ms": 43,
+      "measuredFrames": 360
+    },
+    {
+      "route": "/exam/practice-1",
+      "variant": "redesign",
+      "runs": 6,
+      "medians": {
+        "fcp": 1588.0,
+        "lcp": 1588.0,
+        "domContentLoaded": 403.85,
+        "load": 405.0,
+        "longTaskTotal": 1512.5
+      },
+      "medianAnswerCommitMs": 135.2,
+      "allAnswersSaved": true,
+      "scrollFrameP95Ms": 28.6,
+      "framesOver25ms": 29,
+      "measuredFrames": 360
+    },
+    {
+      "route": "/admin/bank",
+      "variant": "baseline",
+      "runs": 6,
+      "medians": {
+        "fcp": 1058.0,
+        "lcp": 1058.0,
+        "domContentLoaded": 147.3,
+        "load": 148.8,
+        "longTaskTotal": 747.5
+      },
+      "scrollFrameP95Ms": 32.9,
+      "framesOver25ms": 35,
+      "measuredFrames": 360
+    },
+    {
+      "route": "/admin/bank",
+      "variant": "redesign",
+      "runs": 6,
+      "medians": {
+        "fcp": 638.0,
+        "lcp": 1364.0,
+        "domContentLoaded": 336.2,
+        "load": 337.8,
+        "longTaskTotal": 1147.5
+      },
+      "scrollFrameP95Ms": 31.7,
+      "framesOver25ms": 24,
+      "measuredFrames": 300
+    }
+  ],
+  "bundles": {
+    "baseline": [
+      {
+        "file": "assets/AdminRoutes-zlGEM5YB.js",
+        "bytes": 88231,
+        "gzipBytes": 22127
+      },
+      {
+        "file": "assets/DesignSystem-CmazeFDv.js",
+        "bytes": 13759,
+        "gzipBytes": 4439
+      },
+      {
+        "file": "assets/index-BkXZeoov.css",
+        "bytes": 53980,
+        "gzipBytes": 10612
+      },
+      {
+        "file": "assets/index-Dpb9rZbb.js",
+        "bytes": 345080,
+        "gzipBytes": 109377
+      }
+    ],
+    "redesign": [
+      {
+        "file": "assets/AdminRoutes-D4RfYnuf.js",
+        "bytes": 77817,
+        "gzipBytes": 21199
+      },
+      {
+        "file": "assets/DesignSystem-CfOrviya.js",
+        "bytes": 12113,
+        "gzipBytes": 3845
+      },
+      {
+        "file": "assets/index-CoQWZ6c5.css",
+        "bytes": 95062,
+        "gzipBytes": 17902
+      },
+      {
+        "file": "assets/index-KefI9Drs.js",
+        "bytes": 531512,
+        "gzipBytes": 165106
+      }
+    ]
+  }
+}

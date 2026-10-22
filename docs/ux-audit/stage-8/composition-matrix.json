@@ -1,0 +1,5612 @@
+[
+  {
+    "case": "students-list",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1440-light-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1440-light-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1440-light-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1440-light-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1440-light-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1440-light-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1440-light-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1440-light-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1440-light-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1440-light-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1440-light-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1440-light-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1440-dark-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1440-dark-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1440-dark-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1440-dark-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1440-dark-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1440-dark-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1440-dark-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1440-dark-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1440-dark-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1440-dark-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1440-dark-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1440-dark-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1366-light-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1366-light-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1366-light-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1366-light-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1366-light-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1366-light-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1366-light-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1366-light-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1366-light-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1366-light-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1366-light-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1366-light-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1366-dark-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1366-dark-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1366-dark-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1366-dark-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1366-dark-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1366-dark-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1366-dark-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1366-dark-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1366-dark-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1366-dark-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1366-dark-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1366-dark-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1024-light-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1024-light-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1024-light-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1024-light-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1024-light-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1024-light-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1024-light-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1024-light-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1024-light-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1024-light-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1024-light-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1024-light-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1024-dark-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1024-dark-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1024-dark-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1024-dark-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1024-dark-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1024-dark-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1024-dark-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1024-dark-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-1024-dark-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-1024-dark-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-1024-dark-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-1024-dark-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-390-light-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-390-light-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-390-light-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-390-light-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-390-light-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-390-light-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-390-light-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-390-light-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-390-light-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-390-light-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-390-light-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-390-light-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-390-dark-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-390-dark-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-390-dark-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-390-dark-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-390-dark-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-390-dark-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-390-dark-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-390-dark-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-390-dark-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-390-dark-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-390-dark-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-390-dark-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-320-light-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-320-light-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-320-light-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-320-light-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-320-light-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-320-light-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-320-light-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-320-light-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-320-light-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-320-light-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-320-light-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-320-light-ru.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-320-dark-uz.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-320-dark-uz.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-320-dark-uz.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-320-dark-uz.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-320-dark-kaa.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-320-dark-kaa.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-320-dark-kaa.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-320-dark-kaa.png"
+  },
+  {
+    "case": "students-list",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-list-320-dark-ru.png"
+  },
+  {
+    "case": "students-detail",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-detail-320-dark-ru.png"
+  },
+  {
+    "case": "students-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/students-empty-320-dark-ru.png"
+  },
+  {
+    "case": "analytics-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-empty-320-dark-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1440-light-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1440-light-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1440-light-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 326.609375,
+      "bottom": 573.390625,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1440-light-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1440-light-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1440-light-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1440-light-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1440-light-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1440-light-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1440-light-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1440-light-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1440-light-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1440-dark-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1440-dark-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1440-dark-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 326.609375,
+      "bottom": 573.390625,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1440-dark-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1440-dark-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1440-dark-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1440-dark-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1440-dark-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1440-dark-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1440-dark-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1440-dark-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1440-dark-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1366-light-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1366-light-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1366-light-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 260.609375,
+      "bottom": 507.390625,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1366-light-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1366-light-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1366-light-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1366-light-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1366-light-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1366-light-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1366-light-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1366-light-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1366-light-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1366-dark-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1366-dark-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1366-dark-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 260.609375,
+      "bottom": 507.390625,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1366-dark-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1366-dark-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1366-dark-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1366-dark-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1366-dark-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1366-dark-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1366-dark-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1366-dark-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1366-dark-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1024-light-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1024-light-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1024-light-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 260.609375,
+      "bottom": 507.390625,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1024-light-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1024-light-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1024-light-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1024-light-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1024-light-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1024-light-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1024-light-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1024-light-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1024-light-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1024-dark-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1024-dark-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1024-dark-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 260.609375,
+      "bottom": 507.390625,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1024-dark-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1024-dark-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1024-dark-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1024-dark-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1024-dark-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-1024-dark-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-1024-dark-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-1024-dark-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-1024-dark-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-390-light-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-390-light-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-390-light-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-390-light-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-390-light-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-390-light-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-390-light-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-390-light-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-390-light-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-390-light-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-390-light-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 264.8125,
+      "bottom": 579.1875,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-390-light-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-390-dark-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-390-dark-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-390-dark-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-390-dark-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-390-dark-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-390-dark-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-390-dark-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-390-dark-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-390-dark-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-390-dark-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-390-dark-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 264.8125,
+      "bottom": 579.1875,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-390-dark-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-320-light-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-320-light-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-320-light-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 111.4140625,
+      "bottom": 456.5859375,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-320-light-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-320-light-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-320-light-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-320-light-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 111.4140625,
+      "bottom": 456.5859375,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-320-light-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-320-light-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-320-light-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-320-light-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 109.6171875,
+      "bottom": 458.3828125,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-320-light-ru.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-320-dark-uz.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-320-dark-uz.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-320-dark-uz.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 111.4140625,
+      "bottom": 456.5859375,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-320-dark-uz.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-320-dark-kaa.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-320-dark-kaa.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-320-dark-kaa.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 111.4140625,
+      "bottom": 456.5859375,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-320-dark-kaa.png"
+  },
+  {
+    "case": "grading",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-320-dark-ru.png"
+  },
+  {
+    "case": "grading-manual",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-manual-320-dark-ru.png"
+  },
+  {
+    "case": "grading-draft",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-draft-320-dark-ru.png"
+  },
+  {
+    "case": "grading-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 109.6171875,
+      "bottom": 458.3828125,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/grading-dialog-320-dark-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1440-light-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1440-light-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1440-light-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1440-light-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1440-light-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1440-light-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1440-dark-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1440-dark-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1440-dark-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1440-dark-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1440-dark-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1440-dark-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1366-light-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1366-light-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1366-light-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1366-light-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1366-light-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1366-light-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1366-dark-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1366-dark-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1366-dark-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1366-dark-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1366-dark-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1366-dark-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1024-light-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1024-light-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1024-light-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1024-light-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1024-light-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1024-light-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1024-dark-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1024-dark-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1024-dark-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1024-dark-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-1024-dark-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-1024-dark-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-390-light-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-390-light-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-390-light-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-390-light-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-390-light-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-390-light-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-390-dark-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-390-dark-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-390-dark-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-390-dark-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-390-dark-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-390-dark-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-320-light-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-320-light-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-320-light-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-320-light-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-320-light-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-320-light-ru.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-320-dark-uz.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-320-dark-uz.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-320-dark-kaa.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-320-dark-kaa.png"
+  },
+  {
+    "case": "analytics-issue",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-issue-320-dark-ru.png"
+  },
+  {
+    "case": "analytics-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/analytics-written-320-dark-ru.png"
+  }
+]

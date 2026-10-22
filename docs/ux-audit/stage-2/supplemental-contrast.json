@@ -1,0 +1,218 @@
+[
+  {
+    "theme": "light",
+    "name": "question text",
+    "selector": ".ds-question",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "name": "answer text",
+    "selector": ".ds-options .opt .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "name": "input text",
+    "selector": "#demo-phone",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "name": "selected answer",
+    "selector": ".ds-options .opt.sel .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      236,
+      235,
+      252
+    ],
+    "ratio": 16.03,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "name": "checked correct answer",
+    "selector": ".ds-options .opt.right .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      231,
+      246,
+      236
+    ],
+    "ratio": 16.87,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "name": "modal heading",
+    "selector": "dialog h2",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "question text",
+    "selector": ".ds-question",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "answer text",
+    "selector": ".ds-options .opt .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "input text",
+    "selector": "#demo-phone",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "selected answer",
+    "selector": ".ds-options .opt.sel .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      44,
+      47,
+      76
+    ],
+    "ratio": 11.92,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "checked correct answer",
+    "selector": ".ds-options .opt.right .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      32,
+      57,
+      49
+    ],
+    "ratio": 11.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "modal heading",
+    "selector": "dialog h2",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  }
+]

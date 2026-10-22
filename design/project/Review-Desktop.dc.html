@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Question review · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh calm"></div>
+
+        <article class="card col" style="position: absolute; left: 148px; top: 104px; width: 600px; bottom: 32px; padding: 32px 40px; gap: 20px; overflow: hidden">
+          <div class="row" style="gap: 8px"><span class="hl">Question 12</span><span class="tag acc">Constitutional law</span><span class="tag bad"><svg class="i xs" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg>Incorrect</span></div>
+          <p class="body" lang="kaa">Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań.</p>
+          <div class="col" style="gap: 8px" lang="kaa">
+            <p class="eyebrow">Atamalar</p>
+            <ol class="ql body" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px 16px"><li><span class="k">1.</span><span>Deputat</span></li><li><span class="k">2.</span><span>Legitimlik</span></li><li><span class="k">3.</span><span>Ministr</span></li><li><span class="k">4.</span><span>Referendum</span></li><li><span class="k">5.</span><span>Nızam ústinligi</span></li></ol>
+          </div>
+          <div class="col" style="gap: 8px" lang="kaa">
+            <p class="eyebrow">Anıqlamalar</p>
+            <ol class="ql body measure" style="gap: 10px">
+              <li><span class="k">a)</span><span>Húkimet aǵzası, mámleketlik basqarıwdıń belgili bir tarawın basqaratuǵın lawazımlı shaxs.</span></li>
+              <li><span class="k">b)</span><span>Mámleketlik hákimiyattıń xalıq tárepinen tán alınıwı hám nızamlı dep esaplanıwı.</span></li>
+              <li><span class="k">c)</span><span>Barlıq mámleketlik organlar, lawazımlı shaxslar hám puqaralardıń nızamǵa birdey boysınıwı.</span></li>
+              <li><span class="k">d)</span><span>Saylawshılar tárepinen wákillik organına saylanǵan xalıq wákili.</span></li>
+              <li><span class="k">e)</span><span>Mámleket hám jámiyet turmısınıń eń áhmiyetli máseleleri boyınsha ulıwma xalıqlıq dawıs beriw.</span></li>
+            </ol>
+          </div>
+        </article>
+
+        <div class="col" style="position: absolute; left: 772px; top: 104px; width: 520px; gap: 16px">
+          <section class="card col" style="padding: 24px; gap: 10px">
+            <p class="fn b600 badc">Your answer</p>
+            <div class="opt wrong" aria-label="Your answer D, incorrect"><span class="lt-badge">D</span><span class="txt">1-b; 2-a; 3-d; 4-e; 5-c</span><span class="end"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></span></div>
+            <p class="fn b600 okc" style="margin-top: 6px">Correct answer</p>
+            <div class="opt right" aria-label="Correct answer C"><span class="lt-badge">C</span><span class="txt">1-d; 2-b; 3-a; 4-e; 5-c</span><span class="end"><svg class="i" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span></div>
+          </section>
+          <section class="card col" style="padding: 24px; gap: 14px">
+            <p class="eyebrow">Explanation</p>
+            <ol class="ql callout" lang="kaa" style="gap: 8px">
+              <li><span class="k">1-d</span><span>Deputat — saylawshılar saylaǵan xalıq wákili.</span></li>
+              <li><span class="k">2-b</span><span>Legitimlik — hákimiyattıń xalıq tárepinen tán alınıwı.</span></li>
+              <li><span class="k">3-a</span><span>Ministr — húkimet aǵzası.</span></li>
+              <li><span class="k">4-e</span><span>Referendum — ulıwma xalıqlıq dawıs beriw.</span></li>
+              <li><span class="k">5-c</span><span>Nızam ústinligi — hámmeniń nızamǵa birdey boysınıwı.</span></li>
+            </ol>
+            <div class="hr"></div>
+            <div class="row" style="justify-content: space-between; gap: 12px">
+              <span class="fn l2">Legal basis</span>
+              <a href="https://lex.uz" class="tag lg acc" style="text-decoration: none; min-height: 44px; border-radius: 999px; padding: 0 14px" aria-label="Legal basis: Constitution, Article 17 (opens in a new tab)"><svg class="i xs" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path></svg>Constitution, Art. 17<svg class="i xs" viewBox="0 0 24 24"><path d="M8 16 16 8M9.5 8H16v6.5"></path></svg></a>
+            </div>
+          </section>
+          <button class="btn {{f.btnCls}} lg block press">
+            <sc-if value="{{f.added}}" hint-placeholder-val="{{false}}"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-5.5-4-5.5 4z"></path><path d="m9.3 10 2 2 3.5-3.6"></path></svg></sc-if>
+            <sc-if value="{{f.notAdded}}" hint-placeholder-val="{{true}}"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-5.5-4-5.5 4z"></path><path d="M12 7.5v6M9 10.5h6"></path></svg></sc-if>
+            {{f.btnLabel}}
+          </button>
+        </div>
+
+        <header class="glass row" style="position: absolute; left: 24px; right: 24px; top: 16px; height: 68px; border-radius: 34px; padding: 0 10px 0 8px; gap: 12px">
+          <a href="Results-Desktop.dc.html" class="btn btn-plain sm" style="padding: 0 12px 0 6px; gap: 2px; color: var(--label)"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Results</a>
+          <div class="col" style="flex: 1; align-items: center"><span class="hl num">Question 12 of 45</span><span class="cap gl2">Mock exam No. 7 · review</span></div>
+          <button class="btn btn-plain sm press" style="color: var(--label)"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Previous</button>
+          <button class="btn btn-plain sm press" style="color: var(--label)">Next<svg class="i" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg></button>
+        </header>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      frames: [
+        { label: 'Light', sub: 'Not yet in My mistakes', cls: 't-light', added: false, notAdded: true, btnCls: 'btn-primary', btnLabel: 'Add to My mistakes' },
+        { label: 'Dark', sub: 'Added state', cls: 't-dark', added: true, notAdded: false, btnCls: 'btn-secondary', btnLabel: 'Added to My mistakes' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

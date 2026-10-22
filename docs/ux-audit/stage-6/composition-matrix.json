@@ -1,0 +1,6002 @@
+[
+  {
+    "case": "result-pending",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1440-light-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1440-light-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1440-light-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1440-light-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1440-light-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1440-light-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1440-light-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1440-light-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1440-light-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1440-light-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1440-light-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1440-light-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1440-light-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1440-light-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1440-light-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1440-light-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1440-light-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1440-light-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1440-light-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1440-light-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1440-light-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1440-light-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1440-light-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1440-light-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1440-light-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1440-light-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1440-light-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1440-light-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1440-light-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1440-light-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1440-dark-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1440-dark-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1440-dark-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1440-dark-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1440-dark-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1440-dark-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1440-dark-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1440-dark-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1440-dark-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1440-dark-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1440-dark-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1440-dark-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1440-dark-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1440-dark-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1440-dark-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1440-dark-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1440-dark-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1440-dark-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1440-dark-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1440-dark-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1440-dark-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1440-dark-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1440-dark-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1440-dark-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1440-dark-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1440-dark-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1440-dark-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1440-dark-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1440-dark-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1440-dark-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1366-light-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1366-light-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1366-light-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1366-light-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1366-light-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1366-light-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1366-light-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1366-light-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1366-light-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1366-light-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1366-light-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1366-light-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1366-light-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1366-light-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1366-light-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1366-light-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1366-light-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1366-light-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1366-light-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1366-light-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1366-light-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1366-light-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1366-light-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1366-light-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1366-light-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1366-light-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1366-light-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1366-light-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1366-light-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1366-light-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1366-dark-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1366-dark-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1366-dark-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1366-dark-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1366-dark-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1366-dark-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1366-dark-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1366-dark-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1366-dark-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1366-dark-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1366-dark-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1366-dark-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1366-dark-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1366-dark-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1366-dark-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1366-dark-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1366-dark-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1366-dark-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1366-dark-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1366-dark-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1366-dark-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1366-dark-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1366-dark-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1366-dark-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1366-dark-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1366-dark-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1366-dark-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1366-dark-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1366-dark-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1366-dark-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1024-light-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1024-light-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1024-light-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1024-light-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1024-light-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1024-light-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1024-light-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1024-light-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1024-light-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1024-light-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1024-light-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1024-light-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1024-light-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1024-light-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1024-light-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1024-light-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1024-light-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1024-light-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1024-light-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1024-light-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1024-light-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1024-light-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1024-light-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1024-light-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1024-light-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1024-light-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1024-light-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1024-light-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1024-light-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1024-light-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1024-dark-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1024-dark-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1024-dark-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1024-dark-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1024-dark-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1024-dark-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1024-dark-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1024-dark-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1024-dark-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1024-dark-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1024-dark-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1024-dark-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1024-dark-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1024-dark-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1024-dark-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1024-dark-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1024-dark-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1024-dark-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1024-dark-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1024-dark-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-1024-dark-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-1024-dark-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-1024-dark-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-1024-dark-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-1024-dark-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-1024-dark-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-1024-dark-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-1024-dark-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-1024-dark-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-1024-dark-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-390-light-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-390-light-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-390-light-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-390-light-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-390-light-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-390-light-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-390-light-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-390-light-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-390-light-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-390-light-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-390-light-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-390-light-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-390-light-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-390-light-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-390-light-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-390-light-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-390-light-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-390-light-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-390-light-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-390-light-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-390-light-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-390-light-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-390-light-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-390-light-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-390-light-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-390-light-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-390-light-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-390-light-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-390-light-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-390-light-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-390-dark-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-390-dark-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-390-dark-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-390-dark-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-390-dark-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-390-dark-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-390-dark-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-390-dark-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-390-dark-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-390-dark-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-390-dark-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-390-dark-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-390-dark-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-390-dark-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-390-dark-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-390-dark-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-390-dark-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-390-dark-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-390-dark-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-390-dark-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-390-dark-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-390-dark-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-390-dark-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-390-dark-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-390-dark-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-390-dark-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-390-dark-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-390-dark-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-390-dark-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-390-dark-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-320-light-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-320-light-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-320-light-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-320-light-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-320-light-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-320-light-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-320-light-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-320-light-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-320-light-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-320-light-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-320-light-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-320-light-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-320-light-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-320-light-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-320-light-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-320-light-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-320-light-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-320-light-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-320-light-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-320-light-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-320-light-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-320-light-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-320-light-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-320-light-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-320-light-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-320-light-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-320-light-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-320-light-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-320-light-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-320-light-ru.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-320-dark-uz.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-320-dark-uz.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-320-dark-uz.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-320-dark-uz.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-320-dark-uz.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-320-dark-uz.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-320-dark-uz.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-320-dark-uz.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-320-dark-uz.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-320-dark-uz.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-320-dark-kaa.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-320-dark-kaa.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-320-dark-kaa.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-320-dark-kaa.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-320-dark-kaa.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-320-dark-kaa.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-320-dark-kaa.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-320-dark-kaa.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-320-dark-kaa.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-320-dark-kaa.png"
+  },
+  {
+    "case": "result-pending",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-pending-320-dark-ru.png"
+  },
+  {
+    "case": "result-final",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-final-320-dark-ru.png"
+  },
+  {
+    "case": "result-filter-empty",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/result-filter-empty-320-dark-ru.png"
+  },
+  {
+    "case": "review-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-choice-320-dark-ru.png"
+  },
+  {
+    "case": "review-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-written-320-dark-ru.png"
+  },
+  {
+    "case": "review-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/review-matching-320-dark-ru.png"
+  },
+  {
+    "case": "saved-choice",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-choice-320-dark-ru.png"
+  },
+  {
+    "case": "saved-written",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/saved-written-320-dark-ru.png"
+  },
+  {
+    "case": "progress",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": true,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/progress-320-dark-ru.png"
+  },
+  {
+    "case": "profile",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "reviewInFlow": true,
+    "tableScroll": false,
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/profile-320-dark-ru.png"
+  }
+]

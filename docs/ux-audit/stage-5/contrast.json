@@ -1,0 +1,872 @@
+[
+  {
+    "theme": "light",
+    "case": "practice",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      244,
+      245,
+      250
+    ],
+    "ratio": 17.31,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "practice",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "practice",
+    "name": "answer text",
+    "selector": ".opt .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "practice",
+    "name": "primary action",
+    "selector": ".assessment-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "checked",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      244,
+      245,
+      250
+    ],
+    "ratio": 17.31,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "checked",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "checked",
+    "name": "feedback title",
+    "selector": ".assessment-feedback strong",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      253,
+      238,
+      236
+    ],
+    "ratio": 16.71,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "checked",
+    "name": "correct answer",
+    "selector": ".opt.right .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      231,
+      246,
+      236
+    ],
+    "ratio": 16.87,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "checked",
+    "name": "incorrect answer",
+    "selector": ".opt.wrong .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      253,
+      238,
+      236
+    ],
+    "ratio": 16.71,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "written",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      244,
+      245,
+      250
+    ],
+    "ratio": 17.31,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "written",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "matching",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 17.45,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "matching",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "timed",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 17.45,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "timed",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "timed",
+    "name": "answer text",
+    "selector": ".opt .txt",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "timed",
+    "name": "primary action",
+    "selector": ".assessment-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "map",
+    "name": "map heading",
+    "selector": "dialog h2",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "map",
+    "name": "current map cell",
+    "selector": ".assessment-map .cell.cur",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.47,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "submit",
+    "name": "submit heading",
+    "selector": "dialog h2",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "case": "submit",
+    "name": "submit action",
+    "selector": "#submit-now",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "practice",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      28
+    ],
+    "ratio": 16.91,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "practice",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "practice",
+    "name": "answer text",
+    "selector": ".opt .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "practice",
+    "name": "primary action",
+    "selector": ".assessment-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "checked",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      28
+    ],
+    "ratio": 16.91,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "checked",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "checked",
+    "name": "feedback title",
+    "selector": ".assessment-feedback strong",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      62,
+      37,
+      45
+    ],
+    "ratio": 12.8,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "checked",
+    "name": "correct answer",
+    "selector": ".opt.right .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      32,
+      57,
+      49
+    ],
+    "ratio": 11.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "checked",
+    "name": "incorrect answer",
+    "selector": ".opt.wrong .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      62,
+      37,
+      45
+    ],
+    "ratio": 12.8,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "written",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      28
+    ],
+    "ratio": 16.91,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "written",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "matching",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      27
+    ],
+    "ratio": 16.92,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "matching",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "timed",
+    "name": "save status",
+    "selector": ".assessment-save",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      27
+    ],
+    "ratio": 16.92,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "timed",
+    "name": "question text",
+    "selector": ".assessment-question>.body",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "timed",
+    "name": "answer text",
+    "selector": ".opt .txt",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "timed",
+    "name": "primary action",
+    "selector": ".assessment-primary",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "map",
+    "name": "map heading",
+    "selector": "dialog h2",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "map",
+    "name": "current map cell",
+    "selector": ".assessment-map .cell.cur",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "submit",
+    "name": "submit heading",
+    "selector": "dialog h2",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "case": "submit",
+    "name": "submit action",
+    "selector": "#submit-now",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "name": "timer warning",
+    "selector": ".timer",
+    "foreground": [
+      43.0,
+      23.0,
+      0.0
+    ],
+    "sampledBackground": [
+      245,
+      158,
+      11
+    ],
+    "ratio": 7.98,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "name": "timer danger",
+    "selector": ".timer",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      194,
+      55,
+      47
+    ],
+    "ratio": 5.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "timer warning",
+    "selector": ".timer",
+    "foreground": [
+      43.0,
+      23.0,
+      0.0
+    ],
+    "sampledBackground": [
+      245,
+      165,
+      36
+    ],
+    "ratio": 8.4,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "name": "timer danger",
+    "selector": ".timer",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      194,
+      55,
+      47
+    ],
+    "ratio": 5.41,
+    "threshold": 4.5,
+    "passed": true
+  }
+]

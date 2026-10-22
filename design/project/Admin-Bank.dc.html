@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Admin · question bank</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 3858px; height: 1294px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="3">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen admin {{f.kind}} {{f.cls}}">
+        <div class="mesh"></div>
+        <div class="shell">
+          <nav class="glass aside" aria-label="Admin">
+            <div class="brand"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><div class="col hide-t"><span class="hl" style="font-size: 15px">Huqıq Mektebi</span><span class="cap gl2">Teacher workspace</span></div></div>
+            <a class="nav-i" href="Admin-Overview.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 16a7.5 7.5 0 1 1 15 0"></path><path d="M12 16l3.5-4"></path></svg>Overview</a>
+            <p class="sec">Content</p>
+            <a class="nav-i on" href="Admin-Bank.dc.html" aria-current="page"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Question bank</a>
+            <a class="nav-i" href="Admin-Import.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19.5h14"></path></svg>Import</a>
+            <a class="nav-i" href="Admin-Builder.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="3"></rect><path d="M9 11h6M9 15h4M9.5 3.5h5"></path></svg>Tests</a>
+            <p class="sec">Students</p>
+            <a class="nav-i" href="Admin-Grading.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg>Grading<span class="tag warn num">14</span></a>
+            <a class="nav-i" href="Admin-Students.dc.html"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.3"></circle><path d="M3.5 19c.9-3 3-4.5 5.5-4.5s4.6 1.5 5.5 4.5"></path><path d="M15.5 6a3 3 0 0 1 0 6M17 14.7c1.7.6 3 1.9 3.5 4.3"></path></svg>Students</a>
+            <a class="nav-i" href="Admin-Analytics.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M5 20V11M10 20V5M15 20v-7M20 20v-4"></path></svg>Analytics</a>
+            <div style="flex: 1"></div>
+            <div class="row" style="gap: 10px; padding: 8px; justify-content: center"><span class="mark" style="border-radius: 999px; background: var(--surface-2); color: var(--label); font: 600 13px/18px Inter, sans-serif">MN</span><div class="col hide-t" style="flex: 1"><span class="fn b600">Malika N.</span><span class="cap gl2">Mentor · 3 groups</span></div></div>
+          </nav>
+
+          <div class="mainc">
+            <header class="glass atop">
+              <div class="col" style="flex: 1; min-width: 0"><h1 class="atitle">Question bank</h1><span class="crumbs num">1,284 questions · 37 need review</span></div>
+              <a href="Admin-Import.dc.html" class="btn btn-tinted sm press" style="border-radius: 999px"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19.5h14"></path></svg><span class="hide-t">Import from Excel</span><span class="show-t">Import</span></a>
+              <a href="Admin-Editor.dc.html" class="btn btn-primary sm press" style="border-radius: 999px"><svg class="i s" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>New question</a>
+            </header>
+
+            <div class="work">
+              <section class="panel" style="flex: 1">
+                <div class="tools">
+                  <div class="search"><svg class="i s" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>Search text, ID or legal act</div>
+                  <button class="pill-btn">Topic<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></button>
+                  <button class="pill-btn">Type<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></button>
+                  <button class="pill-btn">Difficulty<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></button>
+                  <button class="pill-btn on">Status: any<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></button>
+                </div>
+                <div class="row" style="gap: 4px; padding: 8px 12px; border-bottom: 1px solid var(--sep)" role="tablist" aria-label="Status">
+                  <button class="pill-btn on" role="tab" aria-selected="true" style="border: 0">All <span class="l3 num">1,284</span></button>
+                  <button class="pill-btn" role="tab" aria-selected="false" style="border: 0; background: transparent"><span class="st pub"><i></i>Published</span><span class="l3 num">1,162</span></button>
+                  <button class="pill-btn" role="tab" aria-selected="false" style="border: 0; background: transparent"><span class="st draft"><i></i>Draft</span><span class="l3 num">85</span></button>
+                  <button class="pill-btn" role="tab" aria-selected="false" style="border: 0; background: transparent"><span class="st rev"><i></i>Needs review</span><span class="l3 num">37</span></button>
+                </div>
+                <table class="tbl">
+                  <thead><tr>
+                    <th style="width: 44px; padding-left: 16px"><span class="cbx {{f.allCls}}" role="checkbox" aria-checked="{{f.allAria}}" aria-label="Select all"><sc-if value="{{f.someSel}}" hint-placeholder-val="{{false}}"><svg class="i xs" viewBox="0 0 24 24" style="stroke-width: 3"><path d="M6 12h12"></path></svg></sc-if></span></th>
+                    <th style="width: 76px">ID</th><th>Question</th><th class="hide-t">Topic</th><th class="hide-t">Type</th><th>Difficulty</th><th>Status</th><th class="n hide-t">Used in</th><th class="hide-t" style="padding-right: 16px">Updated</th>
+                  </tr></thead>
+                  <tbody>
+                    <sc-for list="{{f.rows}}" as="r" hint-placeholder-count="10">
+                      <tr class="{{r.rc}}">
+                        <td style="padding-left: 16px"><span class="cbx {{r.cc}}" role="checkbox" aria-checked="{{r.ca}}" aria-label="Select {{r.id}}"><sc-if value="{{r.checked}}" hint-placeholder-val="{{false}}"><svg class="i xs" viewBox="0 0 24 24" style="stroke-width: 3"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></sc-if></span></td>
+                        <td class="num fn b600">{{r.id}}</td>
+                        <td style="max-width: 380px"><span class="clip" lang="kaa">{{r.stem}}</span></td>
+                        <td class="hide-t fn l2" style="white-space: nowrap">{{r.topic}}</td>
+                        <td class="hide-t fn l2" style="white-space: nowrap">{{r.type}}</td>
+                        <td><span class="diff"><b><i class="on"></i><i class="{{r.d2}}"></i><i class="{{r.d3}}"></i></b>{{r.diff}}</span></td>
+                        <td><span class="st {{r.sc}}"><i></i>{{r.status}}</span></td>
+                        <td class="n hide-t fn">{{r.used}}</td>
+                        <td class="hide-t fn l2" style="padding-right: 16px; white-space: nowrap">{{r.upd}}</td>
+                      </tr>
+                    </sc-for>
+                  </tbody>
+                </table>
+                <div class="row" style="justify-content: space-between; padding: 10px 16px; margin-top: auto; border-top: 1px solid var(--sep)"><span class="fn l2 num">1–10 of 1,284</span><div class="row" style="gap: 4px"><button class="icon-btn" aria-label="Previous page"><svg class="i s" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg></button><button class="icon-btn" aria-label="Next page"><svg class="i s" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg></button></div></div>
+              </section>
+            </div>
+
+            <sc-if value="{{f.bulk}}" hint-placeholder-val="{{false}}">
+              <div class="glass bulk" role="toolbar" aria-label="Bulk actions" style="position: absolute; left: 50%; bottom: 32px; transform: translateX(-50%); white-space: nowrap">
+                <span class="f14 b600 num">3 selected</span>
+                <span style="width: 1px; height: 24px; background: var(--sep-2)"></span>
+                <button class="btn btn-primary sm press" style="border-radius: 999px">Publish</button>
+                <button class="btn btn-plain sm press" style="color: var(--label)">Change topic</button>
+                <button class="btn btn-plain sm press" style="color: var(--label)">Add to test</button>
+                <button class="btn btn-plain sm press" style="color: var(--bad-text)">Archive</button>
+                <button class="icon-btn press" aria-label="Clear selection"><svg class="i s" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+
+        <sc-if value="{{f.drawer}}" hint-placeholder-val="{{false}}">
+          <aside class="glass strong drawer" aria-label="Question preview">
+            <div class="row" style="gap: 8px">
+              <span class="hl num">Q-0412</span><span class="st pub"><i></i>Published</span>
+              <div style="flex: 1"></div>
+              <a href="Admin-Editor.dc.html" class="btn btn-primary sm press" style="border-radius: 999px">Edit</a>
+              <button class="icon-btn press" aria-label="More actions"><svg class="i" viewBox="0 0 24 24"><circle cx="6" cy="12" r=".8"></circle><circle cx="12" cy="12" r=".8"></circle><circle cx="18" cy="12" r=".8"></circle></svg></button>
+              <button class="icon-btn press" aria-label="Close preview"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button>
+            </div>
+            <div class="card col" style="padding: 16px; gap: 12px; flex: 1; min-height: 0; overflow: hidden">
+              <div class="row" style="gap: 6px"><span class="tag acc">Constitutional law</span><span class="tag">Matching</span><span class="tag">1 point</span></div>
+              <p class="callout" lang="kaa">Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań.</p>
+              <p class="fn l2" lang="kaa">1. Deputat · 2. Legitimlik · 3. Ministr · 4. Referendum · 5. Nızam ústinligi — definitions a)–e)</p>
+              <div class="col" style="gap: 6px">
+                <div class="optrow"><span class="lt-badge">A</span><span class="val">1-b; 2-d; 3-a; 4-c; 5-e</span><span class="fn l3 num">9 %</span></div>
+                <div class="optrow"><span class="lt-badge">B</span><span class="val">1-d; 2-b; 3-g; 4-e; 5-f</span><span class="fn l3 num">6 %</span></div>
+                <div class="optrow right"><span class="lt-badge">C</span><span class="val">1-d; 2-b; 3-a; 4-e; 5-c</span><span class="fn okc b600 num row" style="gap: 4px"><svg class="i xs" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>58 %</span></div>
+                <div class="optrow"><span class="lt-badge">D</span><span class="val">1-b; 2-a; 3-d; 4-e; 5-c</span><span class="fn l3 num">27 %</span></div>
+              </div>
+              <div class="hr"></div>
+              <div class="g-2" style="gap: 10px 16px">
+                <div class="col"><span class="cap l3">Legal basis</span><a href="https://lex.uz" class="fn acc b600" style="text-decoration: none">Constitution, Art. 17 ↗</a></div>
+                <div class="col"><span class="cap l3">Attempts</span><span class="fn b600 num">1,240 · 58 % correct</span></div>
+                <div class="col"><span class="cap l3">Used in</span><span class="fn">Mock exams No. 5, 6, 7, 8</span></div>
+                <div class="col"><span class="cap l3">Last edited</span><span class="fn">Oct 2 · Malika N.</span></div>
+              </div>
+            </div>
+          </aside>
+        </sc-if>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3858,"height":1294}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const base = [
+      ['Q-0412', 'Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań.', 'Constitutional', 'Matching', 2, 'pub', '4', 'Oct 2'],
+      ['Q-0413', 'Qaraqalpaqstan Respublikası Joqarǵı Keńesiniń wákillikleri qaysı juwapta durıs kórsetilgen?', 'Constitutional', 'Single choice', 3, 'pub', '3', 'Oct 2'],
+      ['Q-0414', 'Málim bir siyasiy talaplardı bildiriw maqsetindegi ǵalabalıq shıǵıw ne dep ataladı?', 'Constitutional', 'Written', 1, 'pub', '2', 'Sep 30'],
+      ['Q-0422', 'Puqaralıq huqıqıy qatnasıqlardıń subyektleri kimler?', 'Civil', 'Single choice', 2, 'rev', '5', 'Oct 3'],
+      ['Q-0387', 'Administrativlik huqıqbuzarlıq ushın qollanılatuǵın jazalar túrlerin kórsetiń.', 'Administrative', 'Single choice', 2, 'rev', '3', 'Oct 1'],
+      ['Q-0431', 'Miynet shártnamasınıń sınaq múddeti neshe aydan aspawı kerek?', 'Labor', 'Single choice', 1, 'draft', '—', 'Today'],
+      ['Q-0432', 'Neke dúziw ushın qanday shártler talap etiledi?', 'Family', 'Single choice', 2, 'draft', '—', 'Today'],
+      ['Q-0433', 'Tómendegi I hám II toparlardaǵı principlerdi sáykeslendiriń.', 'Legal theory', 'Matching', 3, 'draft', '—', 'Today'],
+      ['Q-0051', 'Insan huqıqları ulıwma deklaraciyası qashan qabıl etilgen?', 'Human rights', 'Single choice', 1, 'pub', '6', 'Aug 14'],
+      ['Q-0119', 'Neke jasın tómenletiw qanday jaǵdaylarda ruxsat etiledi?', 'Family', 'Written', 2, 'rev', '2', 'Sep 21']
+    ];
+    const SN = { pub: 'Published', draft: 'Draft', rev: 'Needs review' };
+    const DN = ['', 'Easy', 'Medium', 'Hard'];
+    const mk = (selIds, focusId) => base.map(([id, stem, topic, type, d, s, used, upd]) => {
+      const checked = selIds.indexOf(id) > -1;
+      return {
+        id, stem, topic, type, used, upd, diff: DN[d], d2: d >= 2 ? 'on' : '', d3: d >= 3 ? 'on' : '',
+        sc: s, status: SN[s], checked, cc: checked ? 'on' : '', ca: checked ? 'true' : 'false',
+        rc: checked ? 'sel' : id === focusId ? 'hov' : ''
+      };
+    });
+    const bulkSel = ['Q-0431', 'Q-0432', 'Q-0433'];
+    return {
+      frames: [
+        { label: 'Desktop 1440', sub: 'Light · row preview drawer open', cls: 't-light', kind: 'desk', rows: mk([], 'Q-0412'), drawer: true, bulk: false, allCls: '', allAria: 'false', someSel: false },
+        { label: 'Desktop 1440', sub: 'Dark · 3 drafts selected, bulk bar', cls: 't-dark', kind: 'desk', rows: mk(bulkSel, ''), drawer: false, bulk: true, allCls: 'on', allAria: 'mixed', someSel: true },
+        { label: 'Tablet 834', sub: 'Light · columns collapse, drawer becomes a sheet', cls: 't-light', kind: 'tabl', rows: mk([], 'Q-0412'), drawer: true, bulk: false, allCls: '', allAria: 'false', someSel: false }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

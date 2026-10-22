@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Queue shows fourteen sample responses with twelve unfinished",
+    "passed": true
+  },
+  {
+    "name": "Apply initially disabled with no selected draft grade",
+    "passed": true
+  },
+  {
+    "name": "Queue initially selects first unfinished response",
+    "passed": true
+  },
+  {
+    "name": "Grade shortcut selects a draft without applying",
+    "passed": true
+  },
+  {
+    "name": "Typing does not invoke shortcuts or change selection",
+    "passed": true
+  },
+  {
+    "name": "Dialog suppresses grade shortcut",
+    "passed": true
+  },
+  {
+    "name": "Queue cancellation preserves note",
+    "passed": true
+  },
+  {
+    "name": "Explicit apply records sample grade without moving the response",
+    "passed": true
+  },
+  {
+    "name": "Missing model shows manual rubric guidance",
+    "passed": true
+  },
+  {
+    "name": "Undo restores grade note selection and unfinished count",
+    "passed": true
+  },
+  {
+    "name": "Overview and navigation share applied sample queue count",
+    "passed": true
+  },
+  {
+    "name": "Applied note survives teacher route navigation in memory",
+    "passed": true
+  },
+  {
+    "name": "App navigation protects unapplied grade",
+    "passed": true
+  },
+  {
+    "name": "History Back protects unapplied grade",
+    "passed": true
+  },
+  {
+    "name": "Native reload warning protects unapplied work",
+    "passed": true
+  },
+  {
+    "name": "Discard restores applied grade and note",
+    "passed": true
+  },
+  {
+    "name": "Single-key shortcuts can be disabled",
+    "passed": true
+  },
+  {
+    "name": "Identifiers hidden by default",
+    "passed": true
+  },
+  {
+    "name": "Identifier control reveals actual fixture ID only",
+    "passed": true
+  },
+  {
+    "name": "All-done state is explicit and no unfinished badge remains",
+    "passed": true
+  },
+  {
+    "name": "Undo from all-done reopens a real unfinished response",
+    "passed": true
+  },
+  {
+    "name": "Sample grading never writes student data or authoring drafts",
+    "passed": true
+  },
+  {
+    "name": "Reload resets only sample grading to fixture state",
+    "passed": true
+  },
+  {
+    "name": "Students show actual ten-row fixture count",
+    "passed": true
+  },
+  {
+    "name": "Student details use a final-only average and two final chart points",
+    "passed": true
+  },
+  {
+    "name": "Pending sample attempt remains preliminary",
+    "passed": true
+  },
+  {
+    "name": "History has accessible chart data alternative",
+    "passed": true
+  },
+  {
+    "name": "No fabricated sample result links or fake assignment controls",
+    "passed": true
+  },
+  {
+    "name": "Name filter clears stale details",
+    "passed": true
+  },
+  {
+    "name": "Selected student is from filtered list",
+    "passed": true
+  },
+  {
+    "name": "Incompatible group filter has understandable empty state",
+    "passed": true
+  },
+  {
+    "name": "No-data search has recovery and no stale profile",
+    "passed": true
+  },
+  {
+    "name": "Closing details restores initiating student control",
+    "passed": true
+  },
+  {
+    "name": "Analytics actual scope is eight rows",
+    "passed": true
+  },
+  {
+    "name": "Plain-language issue precedes coefficient disclosure",
+    "passed": true
+  },
+  {
+    "name": "Hardest sort actually changes first row",
+    "passed": true
+  },
+  {
+    "name": "Easiest sort actually changes first row",
+    "passed": true
+  },
+  {
+    "name": "Choice chart has four matching data rows and bounded scale",
+    "passed": true
+  },
+  {
+    "name": "Review marker reports no grade or key mutation",
+    "passed": true
+  },
+  {
+    "name": "Review marker is actually reversible",
+    "passed": true
+  },
+  {
+    "name": "Written question rejects legacy choice chart as inapplicable",
+    "passed": true
+  },
+  {
+    "name": "No unreviewed issues differs from no matching data",
+    "passed": true
+  },
+  {
+    "name": "Reset restores all rows without inventing new data",
+    "passed": true
+  },
+  {
+    "name": "Analytics empty search has clear recovery",
+    "passed": true
+  },
+  {
+    "name": "Unknown analytics ID does not silently substitute a row",
+    "passed": true
+  },
+  {
+    "name": "Real student pending result stays preliminary after teacher preview",
+    "passed": true
+  },
+  {
+    "name": "Student attempts and sessions remain byte-identical",
+    "passed": true
+  },
+  {
+    "name": "No browser exceptions",
+    "passed": true
+  }
+]

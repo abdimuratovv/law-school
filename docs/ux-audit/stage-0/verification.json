@@ -1,0 +1,36 @@
+{
+  "matrixComplete": true,
+  "matrixCaptures": 414,
+  "routeVariants": 23,
+  "viewportCount": 3,
+  "themeCount": 2,
+  "languageCount": 3,
+  "interactionCaptures": 22,
+  "pageErrorRecords": [],
+  "horizontalOverflowRecords": [],
+  "unnamedButtonCandidateRecords": [],
+  "routesWithoutMain": [
+    "/admin",
+    "/admin/analytics",
+    "/admin/bank",
+    "/admin/builder",
+    "/admin/editor",
+    "/admin/editor/Q-0051",
+    "/admin/grading",
+    "/admin/import",
+    "/admin/students",
+    "/exam/mock-7",
+    "/exam/practice-1",
+    "/results/baseline/q/1",
+    "/sign-in"
+  ],
+  "recordsWithSmallTargetCandidates": 276,
+  "flowStatusCounts": {
+    "pass": 24,
+    "fail": 5,
+    "observed": 9
+  },
+  "typecheck": "passed",
+  "build": "passed",
+  "limits": "No composed contrast score, native language signoff, screen-reader pass, full zoom/reflow audit or user study claimed."
+}

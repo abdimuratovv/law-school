@@ -1,0 +1,337 @@
+{
+  "stage": 9,
+  "verifiedAt": "2026-10-22T00:39:23.231883+05:00",
+  "status": "Automated validation and release preparation delivered; full Stage 9 acceptance pending loading-performance finding S9-P01 and human reviews",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "checks": {
+    "review-checks.json": 48,
+    "review-edge-checks.json": 14,
+    "authoring-checks.json": 56,
+    "edge-checks.json": 19,
+    "assessment-results.json": 40,
+    "timing-guard-results.json": 11,
+    "component-results.json": 39,
+    "journey-results.json": 48,
+    "edge-results.json": 15,
+    "localized-routes.json": 207,
+    "live-language-checks.json": 13,
+    "copy-coverage.json": 680,
+    "production-routes.json": 414,
+    "axe-results.json": 138,
+    "production-reflow.json": 207,
+    "target-audit.json": 92,
+    "teacher-scroll-checks.json": 36,
+    "static-answer-checks.json": 24,
+    "keyboard-checks.json": 23,
+    "primary-link-checks.json": 60,
+    "contrast-measurements.json": 72,
+    "supplemental-contrast.json": 12,
+    "scrolled-glass-contrast.json": 16,
+    "dialog-measurements.json": 4,
+    "production-assessment/assessment-results.json": 40,
+    "production-assessment/timing-guard-results.json": 11
+  },
+  "sharedReferenceConfigurations": 72,
+  "contrastProbes": 160,
+  "minimumMeasuredTextContrast": 4.87,
+  "minimumMeasuredNonTextContrast": 3.59,
+  "targetAppearances": 1666,
+  "axeIncompleteAuditsByRule": {
+    "color-contrast": 138
+  },
+  "baselineCounts": {
+    "pass": 28,
+    "observed": 10
+  },
+  "fixedFindings": [
+    "S9-A01 static answer label semantics",
+    "S9-A02 teacher content scroll reachability"
+  ],
+  "changedSourceFiles": [
+    "src/components/exam/parts.tsx",
+    "src/styles/app.css"
+  ],
+  "sourceHashes": {
+    "src/App.tsx": "5028d767d8386f8e6bc5f57c86ff75c88a0bac382869d47833657a38632eb65b",
+    "src/components/authoring/Draft.tsx": "424180b84e5a4cdf76a38d1ea0fef3f20c552da9467ae9a17030f46478d81a5c",
+    "src/components/exam/LearningParts.tsx": "1a74191b27a54d45d3f007dcc322f052e4b6caa74cf461649249c80e57d0a89a",
+    "src/components/exam/parts.tsx": "e7518a11e442b08aee59c911d3dbb7fb0514caa818ff8e2b5d3cde63a7a21ee7",
+    "src/components/layout/AdminShell.tsx": "88e7309a83cccdd044d34f970b0146f0917b68538664e00f62aa5d36950f065e",
+    "src/components/layout/RouteAccess.tsx": "e3b2fc0716e42269f123f7e4bbcd479471a5a4aea3b668cd071f244cd14de233",
+    "src/components/layout/StudentShell.tsx": "58d9717739b3d20d057af79775547372f757604be816fa97142573a0eaebb649",
+    "src/components/layout/WorkspaceNavigation.tsx": "dfeed7bd6ec31857cb758d2354354c4e47813ab9c0661ff794ea0c24abdf2461",
+    "src/components/ui/basic.tsx": "81b0c41b40745a350a268abd695772209263b9a8535b37facc0416b817e27ce9",
+    "src/components/ui/data.tsx": "ec10f20b85fb0eb36929c7c49ed285ec52c805ad5159f16670145a23c4f1d44b",
+    "src/components/ui/form.tsx": "17002e4517cb2b1b964c99a282e96cc7de98c7f89fc53355d897c2b4a8aaa802",
+    "src/components/ui/Icon.tsx": "5d3b29e9a86e9a6b8878bc69cbc9c0a2f64b44d83bfadef62c5292977b403eda",
+    "src/components/ui/overlay.tsx": "c27285b27e20587eabde3eaa4d0fe174ebc9326897a94af142dfbc82ae5fa270",
+    "src/components/ui/patterns.tsx": "59b5347abe9b30010a78f888fc6bdabe89ba0e7f4e4a51205f597240910bb930",
+    "src/data/admin.ts": "b2c71902a5fb123e38e3ea0a8f0874dab919c9e88d267683eb579183d6373e71",
+    "src/data/questions.ts": "1f9511c7c5303ef33b4f1c9552544266f8a7ec0226a17c2d633aa8dbd7e24db2",
+    "src/data/tests.ts": "1d3c659bb87222fec2ba52acdf45fa6b245dc26c29d0ede5f2863af71d39d866",
+    "src/data/topics.ts": "3b577958162b97a76c3c0ab3b5735e2b75c35bf6c3eac958ca022ec97c5ef712",
+    "src/data/types.ts": "2db5931d0ef0483eb9710c04cdc09729fdc2209e8f1d4e3331ba98c0159bdbcc",
+    "src/i18n/assessmentMessages.ts": "9d67db9d42d1891b5781948372f188d833017b1b01a9c28e53b9fe89c7b57b2a",
+    "src/i18n/authoringMessages.ts": "dca6fef20eb42d6c5d1eec17b03b419dde303dd6019ea9e2f31972d9f6d62dd3",
+    "src/i18n/designMessages.ts": "d0ada426b3974bc6cbe776d5fb115bd40083334123b8f6ae9bcfc4f8221d28cc",
+    "src/i18n/discoveryMessages.ts": "524a504546058b2a818e5fad71e53144aa401be225bac135e30c1656680142bb",
+    "src/i18n/formatting.ts": "e72b849ac945e3c4cfbc9f04530004ec3656991427ae1def610b41f32be70bea",
+    "src/i18n/LanguageProvider.tsx": "e1fced6541fb4eb6c2a93ac26e18603df78fd6e610adcc588c1c68e62fc950aa",
+    "src/i18n/learningMessages.ts": "53a0eca4d932268732dfe38f78964f22a5acc01ca80da06d68fc0b783d3b66bf",
+    "src/i18n/messages.ts": "e40994da432ca79c5cca7c9190871ff81c73ce27f134f11e4799c565acdd6d1f",
+    "src/i18n/reviewMessages.ts": "bb968de13cc4f12386b53b08e23e9296c09a9ba286b54f0c50dfb6c60c3eb34f",
+    "src/i18n/shellMessages.ts": "6375617c37765f53b2f708a16cbd16826fb09630762259c3040dffb46a576743",
+    "src/i18n/uxCopy.ts": "d645f1c025f53e6ae02bd7ca5a0b4d490fab713e18fa067539621f58aaa758b5",
+    "src/lib/assessment.ts": "da26c60f4c7c1eca8af68f2b490735494d430830cdc57cdec2b0bc5ebcae4437",
+    "src/lib/authoring.ts": "98a902d7a632bbe580da9105393e0d06974f4c1b91103c0feaa790847627b9be",
+    "src/lib/discovery.ts": "2f7474b0ff1954dbb7388cab750055a6c66e7ff1be28e20ba3ce35dc701af2be",
+    "src/lib/format.ts": "44793bc68065490397fc0c5445055603588c3193ae34c70307e19e490f5684a5",
+    "src/lib/grading.ts": "d59514c445b08e29cb2aa84147266674bd65c7569b27b700d6f4ac221cde2736",
+    "src/lib/hooks.ts": "85cd8da0b7c49ca93831a306a143bd5995566161d9f1736cfe1d6ee7d23cac0e",
+    "src/lib/learning.ts": "1299a07117f9da3a488d82c437bb182db9df19ea9971a316e184b3dd97744abd",
+    "src/lib/navigation.ts": "8b9aa7b787e152136217b716d8856034b457817eb96fcafbc538ae38c4371b1d",
+    "src/lib/storage.ts": "5e5ddd6e7b34b5c978120d3ab43422364f4f714e4945d4697e45a4a6111d1883",
+    "src/lib/tests.ts": "aeaeddf3ff8660a9aae48cf2373efa0ab12885d9e0068f64878efebfd78f0807",
+    "src/main.tsx": "0215c08a2f23512a69cc6fc375a7ae4e62330da448f46f3a759ab2ba8382ca87",
+    "src/pages/admin/AdminRoutes.tsx": "295a11c4aca3db0fbce60c940db86bdeb47768b00a35fa361b3f30dce0500f67",
+    "src/pages/admin/Analytics.tsx": "e190ceb1e661a89208bdd4b0642551e04603f9e7faf7d5b9de4bb986c06eb213",
+    "src/pages/admin/Bank.tsx": "4f768c925f4f81a66895ae59b3501d9d1e2fe27d91f14c08c318c2f3f59aabd9",
+    "src/pages/admin/Builder.tsx": "3d459e37b29246c393efc157c5ee38618d1be7f411ee0e8dd0903a737f2a8c21",
+    "src/pages/admin/Editor.tsx": "c33702c45b63f3afc591ed92d40cc632b58b7d3d327b85b9545e354dbe678e6a",
+    "src/pages/admin/Grading.tsx": "402dc5e45001f49aa3444a6aca9c682db732ab585391a7eb0557ac30b2d28743",
+    "src/pages/admin/Import.tsx": "2444a2e5468b46b48d5039b54073abf2c5d8c209d68b4ed9c9455f682d8928da",
+    "src/pages/admin/Overview.tsx": "0a7cc7711eaa2471eca12a5c9cfee27f7bbe868d6ad27311921ba7b54fdef3b1",
+    "src/pages/admin/Students.tsx": "a4ad4cf8148cd432ae789f55c921725d38a2c907e6f4c86d24d15285f7b7bcc0",
+    "src/pages/DesignSystem.tsx": "ac668d7c0c4f68f5aeb31d4ca138dcb062cd6c365a501e0a57e415d01254b66d",
+    "src/pages/student/Catalog.tsx": "533a700ef9ca5027685de1089f30ed0691656b8140083dd40813d6629cd9bcc2",
+    "src/pages/student/Dashboard.tsx": "363ff7fc6fc6008f7505beef2550e388bd6e544c03d6f1d77070fe2f2c5b52bb",
+    "src/pages/student/Exam.tsx": "04538a0c2300f9a2fbfb7169818c9b1bcbc8c696e7afdf4ee27dd7c765dc9db5",
+    "src/pages/student/Extras.tsx": "9a15294d0604313d401258afa3647cd82df08688084f106781ba7293be124cdb",
+    "src/pages/student/GettingStarted.tsx": "5224937f098acce7ea3dab0a55c9dbb2eed14af1a763b5ac19f5b31157a9bda0",
+    "src/pages/student/Lobby.tsx": "7f1b05f4b51ded82ac19236db3e878906a370f70478e28a879775e42a7719d1a",
+    "src/pages/student/Progress.tsx": "06d821f3dbdba3065a74dce79d6891ee1af6ef82302c1d6823a0d0507ee79f8f",
+    "src/pages/student/Results.tsx": "cb9c2a730c692826a3a17945912d24d605df01cefccc953821db3b863aeb4404",
+    "src/pages/student/Review.tsx": "9d46d4a34724f6d3d0bd761ac1eb469f3e3b7e574c4c3c5eafae99bc0d6ea5c5",
+    "src/pages/student/SignIn.tsx": "0d9b2c8d91cb1b67b1000e12375204a7570fa54ea09a408c6553547ceea294b6",
+    "src/state/AppState.tsx": "1510a706eb9b2a47f619518a2b9acff84dd38ef456cfea774cd6070c6b694d6b",
+    "src/state/seed.ts": "9aa06b82fb0a3856b281b2f4ab1b028673f57d9bcd2c54b62242fc2e4e271bcc",
+    "src/state/TeacherReview.tsx": "31ea5d85f2cf20a67efe95abb49fd556437d939d68be666d27d001d57480c411",
+    "src/styles/app.css": "9fd9f31c549811908170ada82c646ea1d5837f3e8b61acb9f186efff2f5019f4",
+    "src/styles/hm.css": "22281aab0c6369e1139a87981d439a085f18849d0e1eef9cef45fb5f3f91513d",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "buildHashes": {
+    "dist/assets/AdminRoutes-D4RfYnuf.js": "0a8c005c0b1bbb3dad49c14a61418c7fa578a31cdafe9c41c31c1b7165376b31",
+    "dist/assets/DesignSystem-CfOrviya.js": "23836cc376f5f0b93863cb2d3236b7327f245757c6c4d58e2c90da09bfc78bf4",
+    "dist/assets/index-CoQWZ6c5.css": "27299ba9534752459ecb0d311e4108344ae3e106ecf03dcfbd73721c34999886",
+    "dist/assets/index-KefI9Drs.js": "69e8d7b18b6a553874dec3aae5b18351fac184830ef27e0f87134c7bdc1a08b2",
+    "dist/favicon.svg": "e0ec592e186e11ad0ff501a3caeddc6eeb25fbd7934f6f0a00025efbab3b72a0",
+    "dist/index.html": "7c1f866b335b7234b4367eef383fd619e25af3a38f0eecf83f5e4c015422cf8d"
+  },
+  "evidenceHashes": {
+    "assessment-results.json": "74f14c083fb835256034fb958fbd3d7121204d9d4cad092445440d05a6da08c7",
+    "authoring-checks.json": "ced6d9e9a05a7e142deaa0714aae4637b47e32b1b2af8115981a00b95c8e1898",
+    "axe-before-fix.json": "991358c5328502b9ac7e7064213c5719a90eab201bb45c9ed76c72c086930a4f",
+    "axe-results.json": "f9175e93d31c282f4706cd2b49a6c96d0198e470534f71a3f66a89975390b187",
+    "baseline-provenance.json": "9d2ed9688a01ab62cd67c5d4ece69f91cbda2e2e3d8c90f262a03b5bcfde2e79",
+    "component-results.json": "3ddab280694036ff43e5da812fa5a3172f62027f5dcf8db68af76810d539cd2d",
+    "contrast-measurements.json": "544012d4c5dae29b6e2ed6264cc201680e54f5437718c2b66ee391d71d33ea1c",
+    "copy-coverage.json": "ab86fa101c5707f78db5d2ccec23c0394e32b54cc3cc0abf96b8b8a34e5630af",
+    "cpu-profile-baseline.json": "230d3dac6a86e1e441a6f27b45c79382621dee8c9726d5919125f028bb4d6f40",
+    "cpu-profile-redesign.json": "c726e63b8adbc83deee2480a7ba560e6d002417c9f43d1e806953df1dc0a0eed",
+    "dialog-measurements.json": "50e1b48424d803f395e7dd6c950b78b93e93743aef754de4d7d85ce4a42e9a80",
+    "edge-checks.json": "1fe50be8e1a31750b2d67bdb762bedf6f71e021c62d225a214db11a66525b582",
+    "edge-results.json": "be4772dbc7262b8dadb690f0839e94e5abbecdd5ad09bea4ed3720239281f496",
+    "journey-results.json": "03e25d4a4224b9eb69de772a8817133f39fd086e0a3bed0ed18aa2515359766c",
+    "keyboard-checks.json": "d9fb81f5681bf95ed59fa1dfddfdd62908478bae24fa71e01ddad8779a74b0f8",
+    "keyboard-focus.json": "1b1450b5bf54a644ec8c6e15c169422d9d0e54b57ef476ec0226859af82d1701",
+    "live-language-checks.json": "8fe6cabe433ce7a378b26fd8b2b0206a77780bca7f39d6935d41ac2c24f660dc",
+    "localized-routes.json": "07afa6fc9511204753b6ac13130cacb90f6d06264c6ec5d349fc6b519241cdc6",
+    "media-checks.json": "9cf732d9fb130a99acbd2f5a6b0c7010a58e8e81076df1a0e74b6ec9947bd875",
+    "performance-diagnostic-samples.json": "dc0331d3eb520327793c39148129c128b9c3d282b0e34bd1b858afe500de5376",
+    "performance-diagnostic-summary.json": "7ddae4b8fa9ad1a6775def184364855e6c8797fb1ebcbcfeb45329d47dea1e0e",
+    "performance-initial-probe.json": "23dcc1a0b9cc5362f619a7a475781f8cbb8126493e9138e6f0c464c94c52fda5",
+    "performance-samples.json": "0443cf362b8166e72eadb3b03323257de4611e2d88c7b5bb34fb9fbd0f787450",
+    "performance-summary.json": "34610b16d754b0d6c541e82e6f779449ca8ce2c46056a8def3906268a33ab51e",
+    "primary-link-checks.json": "ca0967bf2ab9c2910e09d89ffb5095c5cf50ed008fcba1b9cd12940c5e6af2b2",
+    "production-reflow.json": "89455b430b37ce67b1febdcfe60e324ea662898c464fe6b79b338af98bcd2366",
+    "production-routes-before-scroll-fix.json": "fcf734489c912d561be8cbbbbe395c75f842422eca792867a0aca3acacf1e0c5",
+    "production-routes.json": "3070cf9eadca2fc9f6c80fa3484b0cba5af8c60647f436c3052468680ae04678",
+    "reference-matrix.json": "bf434bbc015e18a3b18b03ea225a720e753e3b4693f42938e4a1d76c3997e4b9",
+    "review-checks.json": "7e36fe7a58ba8a417af17fabaf2e2006fdead518041f3b74929d738732ec17c8",
+    "review-edge-checks.json": "4162a3a9925257dc652e65e4ac95cb9c18d7db9cb09a07a7a75a286a4d217def",
+    "route-smoke.json": "75c299379863a60fa4ecc48af4f2fa1076a3e62161828f194a2792b149da4b81",
+    "scrolled-glass-contrast.json": "2d746a9db6c0614ca6b247a06c47090c0f5536d4596bc7b671bd1dd0056df682",
+    "source-copy-audit.json": "b5f7c51a883291badc0010482d1b9800d46b3b1ad16f78b98b652710958a0247",
+    "static-answer-checks.json": "15f006269b5f40f1b43dfcbfe798e745c1218b5befe19beccfc58e5e444e13a3",
+    "supplemental-contrast.json": "77edf01b04686f2cda612c2fff3edd51cdf64e2c71527df1b4d9fe045f7e8129",
+    "target-audit.json": "036a93abc515b8b1d9e376254e9451e6e34734a85d1be425a27fd5bffbf11f0d",
+    "teacher-scroll-checks.json": "7a9ed5862d9c819b6eaa86aa6dba6e8255d45858a11219a456141164a4893d8c",
+    "timing-guard-results.json": "52e573926f7440990163c95c3037aa5ad86a2579f56e97eddc28bc55f58a7410",
+    "transparency-media.json": "5866d4aedf84ca036f4b9e799eb0608e75587ab20dbd5f2886f75d286b1084bc",
+    "production-assessment/assessment-results.json": "74f14c083fb835256034fb958fbd3d7121204d9d4cad092445440d05a6da08c7",
+    "production-assessment/timing-guard-results.json": "52e573926f7440990163c95c3037aa5ad86a2579f56e97eddc28bc55f58a7410",
+    "regressions/discovery-results.json": "e9aed49f19b37294699b28eab3efa14801dd965e7a508bb47045b8b1ebf77d07",
+    "regressions/fixture.json": "f28ddcdb8eb4a9b2d750a35e519da24cb1590f71e38019ae41ea4942690ae392",
+    "regressions/flow-results.json": "aa5a36baae988c8864ad033ce88579856a1fbc2b00d75ad14874c272fa980320"
+  },
+  "performance": {
+    "browserVersion": "146.0.7680.178",
+    "method": "Retrospective matched-source production comparison; local Chrome, 1366x768, 4x CPU, cold browser cache, blocked remote fonts, six alternating paired runs; wait for actual route content and positive paint observations. Two-frame scripted answer commit, 60-frame scripted scroll. Not field INP or historical Stage 0 timings.",
+    "summary": [
+      {
+        "route": "/",
+        "variant": "baseline",
+        "runs": 6,
+        "medians": {
+          "fcp": 2860.0,
+          "lcp": 2860.0,
+          "domContentLoaded": 665.15,
+          "load": 666.6,
+          "longTaskTotal": 2731.5
+        },
+        "scrollFrameP95Ms": 32.7,
+        "framesOver25ms": 39,
+        "measuredFrames": 360
+      },
+      {
+        "route": "/",
+        "variant": "redesign",
+        "runs": 6,
+        "medians": {
+          "fcp": 4822.0,
+          "lcp": 4822.0,
+          "domContentLoaded": 1426.65,
+          "load": 1429.9,
+          "longTaskTotal": 4415.0
+        },
+        "scrollFrameP95Ms": 31.9,
+        "framesOver25ms": 34,
+        "measuredFrames": 360
+      },
+      {
+        "route": "/exam/practice-1",
+        "variant": "baseline",
+        "runs": 6,
+        "medians": {
+          "fcp": 2204.0,
+          "lcp": 2204.0,
+          "domContentLoaded": 770.05,
+          "load": 778.9,
+          "longTaskTotal": 2073.5
+        },
+        "medianAnswerCommitMs": 227.25,
+        "allAnswersSaved": true,
+        "scrollFrameP95Ms": 28.6,
+        "framesOver25ms": 35,
+        "measuredFrames": 360
+      },
+      {
+        "route": "/exam/practice-1",
+        "variant": "redesign",
+        "runs": 6,
+        "medians": {
+          "fcp": 3678.0,
+          "lcp": 3678.0,
+          "domContentLoaded": 1686.8,
+          "load": 1689.25,
+          "longTaskTotal": 3067.0
+        },
+        "medianAnswerCommitMs": 83.6,
+        "allAnswersSaved": true,
+        "scrollFrameP95Ms": 28.4,
+        "framesOver25ms": 25,
+        "measuredFrames": 360
+      },
+      {
+        "route": "/admin/bank",
+        "variant": "baseline",
+        "runs": 6,
+        "medians": {
+          "fcp": 5136.0,
+          "lcp": 5136.0,
+          "domContentLoaded": 657.1,
+          "load": 659.25,
+          "longTaskTotal": 3394.5
+        },
+        "scrollFrameP95Ms": 33,
+        "framesOver25ms": 62,
+        "measuredFrames": 360
+      },
+      {
+        "route": "/admin/bank",
+        "variant": "redesign",
+        "runs": 6,
+        "medians": {
+          "fcp": 2570.0,
+          "lcp": 6088.0,
+          "domContentLoaded": 1308.1,
+          "load": 1310.15,
+          "longTaskTotal": 4449.0
+        },
+        "scrollFrameP95Ms": 33.6,
+        "framesOver25ms": 49,
+        "measuredFrames": 360
+      }
+    ],
+    "bundles": {
+      "baseline": [
+        {
+          "file": "assets/AdminRoutes-zlGEM5YB.js",
+          "bytes": 88231,
+          "gzipBytes": 22127
+        },
+        {
+          "file": "assets/DesignSystem-CmazeFDv.js",
+          "bytes": 13759,
+          "gzipBytes": 4439
+        },
+        {
+          "file": "assets/index-BkXZeoov.css",
+          "bytes": 53980,
+          "gzipBytes": 10612
+        },
+        {
+          "file": "assets/index-Dpb9rZbb.js",
+          "bytes": 345080,
+          "gzipBytes": 109377
+        }
+      ],
+      "redesign": [
+        {
+          "file": "assets/AdminRoutes-D4RfYnuf.js",
+          "bytes": 77817,
+          "gzipBytes": 21199
+        },
+        {
+          "file": "assets/DesignSystem-CfOrviya.js",
+          "bytes": 12113,
+          "gzipBytes": 3845
+        },
+        {
+          "file": "assets/index-CoQWZ6c5.css",
+          "bytes": 95062,
+          "gzipBytes": 17902
+        },
+        {
+          "file": "assets/index-KefI9Drs.js",
+          "bytes": 531512,
+          "gzipBytes": 165106
+        }
+      ]
+    }
+  },
+  "humanGates": {
+    "nativeLanguageReview": "not run",
+    "NVDAWindowsListening": "not run",
+    "VoiceOverSafariApple": "not run",
+    "actualBrowserZoom": "not run",
+    "representativeLearners": "0 of minimum 5",
+    "representativeTeachers": "0 of planned 2"
+  },
+  "deployment": "not performed",
+  "applicationDependencies": "unchanged; axe-core is an isolated pinned audit tool, not an application dependency",
+  "python": "3.12.10",
+  "performanceAcceptance": "Pending: unresolved loading regression S9-P01; no blur-specific cause established"
+}

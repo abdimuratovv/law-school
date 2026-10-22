@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="kaa">
+<head>
+<meta charset="utf-8">
+<title>Written answer · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh calm"></div>
+
+        <article class="card col" style="position: absolute; left: 50%; top: 120px; width: 760px; margin-left: -380px; padding: 36px 40px; gap: 22px">
+          <div class="row" style="gap: 8px" lang="en"><span class="hl num">Question 38</span><span class="tag acc">Constitutional law</span><span class="tag">Written answer</span></div>
+          <p class="body measure" style="font-size: 19px; line-height: 28px">Málim bir siyasiy talaplardı bildiriw maqsetindegi ǵalabalıq shıǵıw ne dep ataladı?</p>
+          <div class="field" lang="en">
+            <label class="flab" for="wd-{{f.cls}}">Your answer</label>
+            <div class="input area focus" style="min-height: 112px"><span class="body" lang="kaa">{{f.typed}}<span class="caret"></span></span></div>
+            <div class="row" style="justify-content: space-between; gap: 16px; margin-top: 4px">
+              <div class="glass charbar" role="toolbar" aria-label="Karakalpak letters">
+                <sc-for list="{{f.keys}}" as="k" hint-placeholder-count="6"><button class="key press" aria-label="Insert {{k.c}}" lang="kaa">{{k.c}}</button></sc-for>
+                <button class="key mod press {{f.shiftCls}}" aria-label="{{f.shiftLabel}}" aria-pressed="{{f.shiftOn}}"><svg class="i" viewBox="0 0 24 24"><path d="M12 4.5 4.5 12.5H9v6.5h6v-6.5h4.5z"></path></svg></button>
+              </div>
+              <p class="fn l3" style="text-align: right">Spelling counts. Short answers are graded by your teacher.</p>
+            </div>
+          </div>
+        </article>
+
+        <header class="glass row" lang="en" style="position: absolute; left: 24px; right: 24px; top: 16px; height: 68px; border-radius: 34px; padding: 0 12px 0 8px; gap: 12px">
+          <button class="icon-btn press" aria-label="Exit exam"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button>
+          <div class="col" style="width: 300px"><span class="hl">Mock exam No. 7</span><span class="saved"><svg class="i xs" viewBox="0 0 24 24"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 9.5a4.5 4.5 0 0 0 0 9z"></path><path d="m9.5 13.8 1.8 1.8 3.4-3.4"></path></svg>Saving as you type</span></div>
+          <div class="row" style="flex: 1; justify-content: center; gap: 14px">
+            <div class="prog" style="flex: none; width: 420px" role="progressbar" aria-valuemin="1" aria-valuemax="45" aria-valuenow="38" aria-label="Question 38 of 45"><i style="width: 84.4%"></i></div>
+            <span class="callout b600 num">38 / 45</span>
+          </div>
+          <div class="row" style="width: 300px; justify-content: flex-end"><span class="timer" role="timer" aria-label="1 hour 12 minutes left"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>1:12:05</span></div>
+        </header>
+
+        <nav class="glass toolbar" lang="en" aria-label="Question navigation" style="left: 50%; right: auto; width: 600px; margin-left: -300px; bottom: 24px">
+          <button class="tool press"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Previous</span><span class="kb">←</span></button>
+          <button class="tool press" aria-pressed="false"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><path d="M5.5 21V4.5"></path><path d="M5.5 4.5h11l-2.2 4 2.2 4h-11"></path></svg>Flag</span><span class="kb">F</span></button>
+          <a class="tool press" href="Map-Desktop.dc.html" style="text-decoration: none"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.8"></rect></svg>Question map</span><span class="kb">M</span></a>
+          <button class="tool primary press"><span class="row" style="gap: 6px">Next<svg class="i" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg></span><span class="kb">→</span></button>
+        </nav>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const lower = ['ǵ', 'ń', 'ı', 'á', 'ó', 'ú'].map((c) => ({ c }));
+    const upper = ['Ǵ', 'Ń', 'I', 'Á', 'Ó', 'Ú'].map((c) => ({ c }));
+    return {
+      frames: [
+        { label: 'Light', sub: 'Lowercase letter bar', cls: 't-light', keys: lower, typed: 'Demonstraciya', shiftLabel: 'Uppercase letters', shiftCls: '', shiftOn: 'false' },
+        { label: 'Dark', sub: 'Uppercase letter bar (shift on)', cls: 't-dark', keys: upper, typed: 'Ǵalabalıq demonstraciya', shiftLabel: 'Uppercase letters', shiftCls: 'on', shiftOn: 'true' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

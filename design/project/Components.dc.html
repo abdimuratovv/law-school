@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Design system · components</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 1504px; height: 2860px">
+  <sc-for list="{{themes}}" as="t" hint-placeholder-count="2">
+    <div class="screen {{t.cls}}" style="width: 700px; height: 2796px; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 28px">
+
+      <div class="row" style="justify-content: space-between"><h2 class="t1">Components · {{t.name}}</h2><span class="tag lg">{{t.note}}</span></div>
+
+      <section class="col" style="gap: 12px">
+        <p class="eyebrow">Buttons</p>
+        <div class="card" style="padding: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 12px">
+          <div class="col" style="gap: 6px"><button class="btn btn-primary press">Start exam</button><span class="cap l3">Primary</span></div>
+          <div class="col" style="gap: 6px"><button class="btn btn-primary is-pressed" style="background: var(--accent-press)">Start exam</button><span class="cap l3">Primary · pressed 0.97</span></div>
+          <div class="col" style="gap: 6px"><button class="btn btn-primary focus-ring">Start exam</button><span class="cap l3">Primary · keyboard focus</span></div>
+          <div class="col" style="gap: 6px"><button class="btn btn-secondary press">Review unanswered</button><span class="cap l3">Secondary</span></div>
+          <div class="col" style="gap: 6px"><button class="btn btn-plain press">Change number</button><span class="cap l3">Plain</span></div>
+          <div class="col" style="gap: 6px"><button class="btn is-disabled" disabled="">Verify</button><span class="cap l3">Disabled</span></div>
+        </div>
+        <div class="screen {{t.cls}}" style="height: 92px; border-radius: 20px; display: flex; align-items: center; gap: 12px; padding: 0 20px">
+          <div class="mesh"></div>
+          <button class="btn btn-glass press" style="border-radius: 999px">Continue with Telegram</button>
+          <button class="icon-btn glass press" aria-label="Close"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button>
+          <button class="icon-btn glass is-pressed" aria-label="Back"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg></button>
+          <span class="cap gl2" style="position: relative">Glass · default / pressed</span>
+        </div>
+      </section>
+
+      <section class="col" style="gap: 12px">
+        <p class="eyebrow">Chips &amp; tags</p>
+        <div class="card col" style="padding: 20px; gap: 16px">
+          <div class="row" style="gap: 8px; flex-wrap: wrap">
+            <button class="chip on">All</button>
+            <button class="chip">Mock exam</button>
+            <button class="chip">Practice</button>
+            <button class="chip">Topic <svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></button>
+            <button class="chip focus-ring">Constitutional law</button>
+          </div>
+          <div class="row" style="gap: 8px; flex-wrap: wrap">
+            <span class="tag acc">Constitutional law</span>
+            <span class="tag acc"><svg class="i xs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>In progress</span>
+            <span class="tag ok"><svg class="i xs" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>Completed</span>
+            <span class="tag warn"><svg class="i xs" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="3"></rect><path d="M4 10h16"></path></svg>Due Oct 8</span>
+            <span class="tag">Not started</span>
+            <span class="tag bad"><svg class="i xs" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg>Incorrect</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="col" style="gap: 12px">
+        <p class="eyebrow">Answer option row</p>
+        <div class="card col" style="padding: 20px; gap: 10px">
+          <sc-for list="{{t.opts}}" as="o" hint-placeholder-count="7">
+            <div class="row" style="gap: 14px">
+              <span class="cap l3" style="width: 92px; flex: none">{{o.state}}</span>
+              <button class="opt {{o.cls}}" aria-pressed="{{o.pressed}}">
+                <span class="lt-badge">{{o.letter}}</span>
+                <span class="txt">{{o.text}}</span>
+                <span class="end">
+                  <sc-if value="{{o.check}}" hint-placeholder-val="{{false}}"><svg class="i" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></sc-if>
+                  <sc-if value="{{o.cross}}" hint-placeholder-val="{{false}}"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></sc-if>
+                </span>
+              </button>
+            </div>
+          </sc-for>
+          <p class="fn l3" style="padding-left: 106px">Selected uses fill, a 2 px border, a filled badge and a check — never color alone.</p>
+        </div>
+      </section>
+
+      <section class="col" style="gap: 12px">
+        <p class="eyebrow">Inputs</p>
+        <div class="card" style="padding: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+          <div class="field"><label class="flab" for="p1-{{t.cls}}">Phone number</label><div class="input"><span class="prefix">+998</span><input id="p1-{{t.cls}}" placeholder="90 123 45 67"></div></div>
+          <div class="field"><label class="flab" for="p2-{{t.cls}}">Phone number · focus</label><div class="input focus"><span class="prefix">+998</span><span>90 123 45<span class="caret"></span></span></div></div>
+          <div class="field"><label class="flab" for="p3-{{t.cls}}">Phone number · error</label><div class="input err"><span class="prefix">+998</span><span>90 123</span></div><span class="fn badc row" style="gap: 6px"><svg class="i xs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.3v.1"></path></svg>Enter all 9 digits</span></div>
+          <div class="field"><span class="flab">One-time code</span><div class="otp"><span class="c">4</span><span class="c">8</span><span class="c">1</span><span class="c f"><span class="caret"></span></span><span class="c"></span><span class="c"></span></div></div>
+        </div>
+        <div class="seg" role="tablist"><button class="on" role="tab" aria-selected="true">Mock exam</button><button role="tab" aria-selected="false">Practice</button></div>
+      </section>
+
+      <section class="col" style="gap: 12px">
+        <p class="eyebrow">Floating glass · tab bar, exam bar, toolbar, banner</p>
+        <div class="screen {{t.cls}}" style="height: 480px; border-radius: 20px">
+          <div class="mesh"></div>
+          <div class="card" style="position: absolute; left: 24px; right: 24px; top: 70px; height: 340px; padding: 20px"><p class="body l2">Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań. Solid content scrolls beneath every bar.</p></div>
+          <div class="glass r28" style="position: absolute; left: 12px; right: 12px; top: 12px; padding: 8px 10px 10px 8px">
+            <div class="row" style="gap: 8px"><button class="icon-btn" aria-label="Exit exam"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button><span class="hl" style="flex: 1">Mock exam No. 7</span><span class="timer"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>1:48:20</span><span class="timer warn"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>9:41</span><span class="timer danger"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>1:52</span></div>
+            <div class="row" style="gap: 10px; padding: 6px 4px 0 12px"><div class="prog"><i style="width: 26.6%"></i></div><span class="fn b600 num">12 / 45</span><span class="saved"><svg class="i xs" viewBox="0 0 24 24"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 9.5a4.5 4.5 0 0 0 0 9z"></path><path d="m9.5 13.8 1.8 1.8 3.4-3.4"></path></svg>Saved</span></div>
+          </div>
+          <div class="glass banner" style="position: absolute; left: 24px; right: 24px; top: 132px"><span class="ic"><svg class="i s" viewBox="0 0 24 24"><path d="M3.5 3.5l17 17"></path><path d="M8.5 16.2a5 5 0 0 1 7 0M5.2 12.8a9.6 9.6 0 0 1 4-2.3M14.6 10.3a9.6 9.6 0 0 1 4.2 2.5M2 9.3a14.5 14.5 0 0 1 5.3-3M11 5.5c4 0 7.9 1.4 11 3.8"></path></svg></span><p class="fn"><b class="b600">Offline</b> — your answers are saved on this device and will sync.</p></div>
+          <div class="glass toolbar" style="bottom: 100px">
+            <button class="tool press"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Previous</button>
+            <button class="tool flagged press" aria-pressed="true"><svg class="i fill" viewBox="0 0 24 24"><path d="M5.5 21V4.5"></path><path d="M5.5 4.5h11l-2.2 4 2.2 4h-11z"></path></svg>Flagged</button>
+            <button class="tool press"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.8"></rect></svg>Question map</button>
+            <button class="tool primary press">Next<svg class="i" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg></button>
+          </div>
+          <nav class="glass tabbar" style="bottom: 16px" aria-label="Main">
+            <a class="tab on" href="#home"><svg class="i" viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"></path></svg>Home</a>
+            <a class="tab" href="#tests"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Tests</a>
+            <a class="tab" href="#progress"><svg class="i" viewBox="0 0 24 24"><path d="M4 19.5h16"></path><path d="M6 16l4-5 3.5 3L19 7"></path></svg>Progress</a>
+            <a class="tab" href="#profile"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8"></circle><path d="M4.5 20c1.2-3.6 4-5.3 7.5-5.3s6.3 1.7 7.5 5.3"></path></svg>Profile</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="col" style="gap: 12px">
+        <p class="eyebrow">Sheet · question map cells · character bar</p>
+        <div class="screen {{t.cls}}" style="height: 470px; border-radius: 20px">
+          <div class="mesh"></div>
+          <div class="scrim"></div>
+          <div class="glass strong sheet" style="left: 12px; right: 12px; bottom: 12px; top: 20px">
+            <div class="grab"></div>
+            <div class="row" style="justify-content: space-between; margin-bottom: 14px"><h3 class="hl">Question map</h3><button class="icon-btn" aria-label="Close"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button></div>
+            <div class="row" style="gap: 18px; flex-wrap: wrap; margin-bottom: 20px">
+              <div class="col" style="gap: 6px; align-items: center"><span class="cell ans cur">12</span><span class="cap">Current</span></div>
+              <div class="col" style="gap: 6px; align-items: center"><span class="cell ans">7</span><span class="cap">Answered</span></div>
+              <div class="col" style="gap: 6px; align-items: center"><span class="cell un">17</span><span class="cap">Unanswered</span></div>
+              <div class="col" style="gap: 6px; align-items: center"><span class="cell flg">9</span><span class="cap">Flagged</span></div>
+              <div class="col" style="gap: 6px; align-items: center"><span class="cell ok">3</span><span class="cap">Correct</span></div>
+              <div class="col" style="gap: 6px; align-items: center"><span class="cell no">5</span><span class="cap">Incorrect</span></div>
+              <div class="col" style="gap: 6px; align-items: center"><span class="cell un cur">18</span><span class="cap">Current, empty</span></div>
+            </div>
+            <p class="cap gl2" style="margin-bottom: 8px">Karakalpak character bar · lowercase / uppercase</p>
+            <div class="col" style="gap: 8px">
+              <div class="glass charbar" style="align-self: flex-start"><button class="key">ǵ</button><button class="key">ń</button><button class="key is-pressed">ı</button><button class="key">á</button><button class="key">ó</button><button class="key">ú</button><button class="key mod" aria-label="Show uppercase"><svg class="i" viewBox="0 0 24 24"><path d="M12 4.5 4.5 12.5H9v6.5h6v-6.5h4.5z"></path></svg></button></div>
+              <div class="glass charbar" style="align-self: flex-start"><button class="key">Ǵ</button><button class="key">Ń</button><button class="key">I</button><button class="key">Á</button><button class="key">Ó</button><button class="key">Ú</button><button class="key mod" aria-label="Show lowercase" style="background: var(--accent-soft); color: var(--accent-text)"><svg class="i fill" viewBox="0 0 24 24"><path d="M12 4.5 4.5 12.5H9v6.5h6v-6.5h4.5z"></path></svg></button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1504,"height":2860}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const t = '1-d; 2-b; 3-a; 4-e; 5-c';
+    const opts = [
+        { state: 'Default', cls: '', letter: 'A', text: '1-b; 2-d; 3-a; 4-c; 5-e', pressed: 'false' },
+        { state: 'Hover', cls: 'is-hover', letter: 'B', text: '1-d; 2-b; 3-g; 4-e; 5-f', pressed: 'false' },
+        { state: 'Pressed', cls: 'is-pressed', letter: 'B', text: '1-d; 2-b; 3-g; 4-e; 5-f', pressed: 'false' },
+        { state: 'Selected', cls: 'sel', letter: 'C', text: t, pressed: 'true', check: true },
+        { state: 'Keyboard focus', cls: 'focus-ring', letter: 'D', text: '1-b; 2-a; 3-d; 4-e; 5-c', pressed: 'false' },
+        { state: 'Review · correct', cls: 'right', letter: 'C', text: t, pressed: 'false', check: true },
+        { state: 'Review · yours, wrong', cls: 'wrong', letter: 'D', text: '1-b; 2-a; 3-d; 4-e; 5-c', pressed: 'false', cross: true }
+    ];
+    return {
+      themes: [
+        { cls: 't-light', name: 'light', note: 'Surface #FFFFFF', opts },
+        { cls: 't-dark', name: 'dark', note: 'Surface #1C1C1E', opts }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

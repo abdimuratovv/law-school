@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Pasted code accepts spaces and fills all six boxes",
+    "passed": true
+  },
+  {
+    "name": "Keyboard Enter continues to home",
+    "passed": true
+  },
+  {
+    "name": "Sample map Escape restores its keyboard trigger",
+    "passed": true
+  },
+  {
+    "name": "Sample answer arrows change selection",
+    "passed": true
+  },
+  {
+    "name": "Keyboard checking shows answer feedback",
+    "passed": true
+  },
+  {
+    "name": "Mode filter is keyboard-operable and updates URL",
+    "passed": true
+  },
+  {
+    "name": "Keyboard return restores the originating catalog card",
+    "passed": true
+  },
+  {
+    "name": "Browser Back and Forward preserve catalog mode",
+    "passed": true
+  },
+  {
+    "name": "Language changes preserve user search text and its URL",
+    "passed": true
+  },
+  {
+    "name": "Malformed origins use fallback and valid catalog context is retained",
+    "passed": true
+  }
+]

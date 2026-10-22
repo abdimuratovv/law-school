@@ -1,0 +1,31 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+coverage/
+*.local
+.vite/
+.wrangler/
+*.tsbuildinfo
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.claude/
+.codex/
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Generated historical audit evidence (keep local copies)
+docs/ux-audit/**/*.png
+docs/ux-audit/**/*.zip
+docs/ux-audit/**/*.tgz
+docs/ux-audit/stage-9/baseline-workspace/
+__pycache__/
+*.py[cod]

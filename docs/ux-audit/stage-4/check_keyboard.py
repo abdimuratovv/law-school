@@ -1,0 +1,37 @@
+"""Additional keyboard, paste, history and origin-boundary scenarios."""
+import json
+from pathlib import Path
+from playwright.sync_api import sync_playwright, expect
+OUT=Path(__file__).resolve().parent;BASE='http://127.0.0.1:5173';checks=[]
+def check(name,ok):checks.append({'name':name,'passed':bool(ok)});print(name,bool(ok),flush=True)
+with sync_playwright() as p:
+ b=p.chromium.launch(channel='chrome',headless=True);c=b.new_context(viewport={'width':390,'height':900})
+ c.add_init_script('localStorage.setItem("hm.language","ru");window.MutationObserver=class{observe(){} disconnect(){}}')
+ page=c.new_page();page.goto(BASE+'/sign-in');page.wait_for_load_state('networkidle')
+ page.locator('#phone').focus();page.keyboard.type('901234567');page.keyboard.press('Enter');page.wait_for_selector('.otp')
+ page.locator('.otp input').first.evaluate('e=>{const data=new DataTransfer();data.setData("text/plain","123 456");e.dispatchEvent(new ClipboardEvent("paste",{clipboardData:data,bubbles:true,cancelable:true}))}')
+ check('Pasted code accepts spaces and fills all six boxes',page.locator('.otp input').evaluate_all('els=>els.map(e=>e.value).join("")')=='123456')
+ page.keyboard.press('Enter');page.wait_for_url(BASE+'/');check('Keyboard Enter continues to home',page.locator('main h1').count()==1)
+ page.locator('.learning-next-actions .btn-primary').focus();page.keyboard.press('Enter');page.wait_for_url(BASE+'/getting-started')
+ trigger=page.locator('.tutorial-actions button[aria-haspopup="dialog"]');trigger.focus();page.keyboard.press('Enter');page.keyboard.press('Escape')
+ check('Sample map Escape restores its keyboard trigger',trigger.evaluate('e=>e===document.activeElement') and page.locator('dialog[open]').count()==0)
+ radio=page.locator('.tutorial-question .opt').first;radio.focus();page.keyboard.press('ArrowRight');page.wait_for_timeout(50)
+ check('Sample answer arrows change selection',page.locator('.tutorial-question .opt').nth(1).get_attribute('aria-checked')=='true')
+ page.locator('.tutorial-actions .btn-primary').focus();page.keyboard.press('Enter');page.wait_for_timeout(50)
+ check('Keyboard checking shows answer feedback',page.locator('.tutorial-question [role="status"]').count()==1)
+ page.locator('.tutorial-actions a').focus();page.keyboard.press('Enter');page.wait_for_url(BASE+'/')
+ page.locator('a[href="/tests?mode=practice"]').first.focus();page.keyboard.press('Enter');page.wait_for_url(BASE+'/tests?mode=practice')
+ group=page.locator('main [role="radiogroup"]');group.locator('[role="radio"][aria-checked="true"]').focus();page.keyboard.press('ArrowRight');page.wait_for_timeout(80)
+ check('Mode filter is keyboard-operable and updates URL','mode=mock' in page.url)
+ first=page.locator('.test-card a').first;target=first.get_attribute('href');first.focus();page.keyboard.press('Enter');page.wait_for_url(BASE+target)
+ page.locator('.lobby-top a').focus();page.keyboard.press('Enter');page.wait_for_url(BASE+'/tests?mode=mock');page.wait_for_timeout(80)
+ expect(page.locator('.test-card a').first).to_be_focused(timeout=3000)
+ check('Keyboard return restores the originating catalog card',page.locator('.test-card a').first.evaluate('e=>e===document.activeElement'))
+ page.go_back();page.wait_for_url(BASE+target);page.go_forward();page.wait_for_url(BASE+'/tests?mode=mock');check('Browser Back and Forward preserve catalog mode',page.locator('[role="radio"][aria-checked="true"]').inner_text()=='Пробный экзамен')
+ page.set_viewport_size({'width':1366,'height':900});page.locator('input[type="search"]').fill('exam');page.locator('.workspace-sidebar select').select_option('kaa')
+ check('Language changes preserve user search text and its URL',page.locator('input[type="search"]').input_value()=='exam' and 'q=exam' in page.url)
+ origins=page.evaluate('''async()=>{const {discoveryOrigin:d}=await import('/src/lib/discovery.ts');return [undefined,{}, {from:'//example.com'},{from:'/exam/mock-7'},{from:'/tests?mode=practice',scroll:-50,card:'practice-1'}].map(v=>d(v,'/tests'));}''')
+ check('Malformed origins use fallback and valid catalog context is retained',all(r['from']=='/tests' for r in origins[:4]) and origins[4]=={'from':'/tests?mode=practice','scroll':0,'card':'practice-1'})
+ b.close()
+(OUT/'keyboard-results.json').write_text(json.dumps(checks,ensure_ascii=False,indent=2),encoding='utf-8')
+assert all(r['passed'] for r in checks)

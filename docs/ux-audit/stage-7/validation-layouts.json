@@ -1,0 +1,698 @@
+[
+  {
+    "case": "question-errors",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 110.0078125,
+      "bottom": 369.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 110.0078125,
+      "bottom": 369.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 83.0078125,
+      "bottom": 396.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 110.0078125,
+      "bottom": 369.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 110.0078125,
+      "bottom": 369.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "question-errors",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "written-preview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "conflict-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 83.0078125,
+      "bottom": 396.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  }
+]

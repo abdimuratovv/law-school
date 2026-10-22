@@ -1,0 +1,274 @@
+[
+  {
+    "key": "All questions",
+    "passed": true
+  },
+  {
+    "key": "Answer options",
+    "passed": true
+  },
+  {
+    "key": "Answered",
+    "passed": true
+  },
+  {
+    "key": "Checked",
+    "passed": true
+  },
+  {
+    "key": "Choose one answer",
+    "passed": true
+  },
+  {
+    "key": "Clear answer",
+    "passed": true
+  },
+  {
+    "key": "Close",
+    "passed": true
+  },
+  {
+    "key": "Content preview",
+    "passed": true
+  },
+  {
+    "key": "Current question",
+    "passed": true
+  },
+  {
+    "key": "Exam options",
+    "passed": true
+  },
+  {
+    "key": "Finish test",
+    "passed": true
+  },
+  {
+    "key": "Flagged",
+    "passed": true
+  },
+  {
+    "key": "Flagged: {count}",
+    "passed": true
+  },
+  {
+    "key": "Insert {letter}",
+    "passed": true
+  },
+  {
+    "key": "Karakalpak letters",
+    "passed": true
+  },
+  {
+    "key": "Keep solving",
+    "passed": true
+  },
+  {
+    "key": "Keyboard shortcuts",
+    "passed": true
+  },
+  {
+    "key": "Large",
+    "passed": true
+  },
+  {
+    "key": "Leave test",
+    "passed": true
+  },
+  {
+    "key": "Leave this test?",
+    "passed": true
+  },
+  {
+    "key": "Left and Right arrows move between questions. M opens the map. F toggles a flag. Shortcuts stay inactive in inputs and dialogs.",
+    "passed": true
+  },
+  {
+    "key": "Next question",
+    "passed": true
+  },
+  {
+    "key": "No explanation is available for this sample question.",
+    "passed": true
+  },
+  {
+    "key": "Offline. You can keep using this loaded page. Reloading may need a connection.",
+    "passed": true
+  },
+  {
+    "key": "Open results",
+    "passed": true
+  },
+  {
+    "key": "Preview results are not a reliable assessment.",
+    "passed": true
+  },
+  {
+    "key": "Previous",
+    "passed": true
+  },
+  {
+    "key": "Question",
+    "passed": true
+  },
+  {
+    "key": "Question map",
+    "passed": true
+  },
+  {
+    "key": "Question navigation",
+    "passed": true
+  },
+  {
+    "key": "Question states",
+    "passed": true
+  },
+  {
+    "key": "Question {number} of {total}",
+    "passed": true
+  },
+  {
+    "key": "Question {number}: {state}",
+    "passed": true
+  },
+  {
+    "key": "Questions: {numbers}",
+    "passed": true
+  },
+  {
+    "key": "Retry saving",
+    "passed": true
+  },
+  {
+    "key": "Standard",
+    "passed": true
+  },
+  {
+    "key": "Submit",
+    "passed": true
+  },
+  {
+    "key": "Submit this attempt?",
+    "passed": true
+  },
+  {
+    "key": "Submitting locks your answers. The result opens only after it has been saved on this device.",
+    "passed": true
+  },
+  {
+    "key": "Text size",
+    "passed": true
+  },
+  {
+    "key": "Time is up. Answers are locked.",
+    "passed": true
+  },
+  {
+    "key": "Unanswered: {count}",
+    "passed": true
+  },
+  {
+    "key": "Unavailable content",
+    "passed": true
+  },
+  {
+    "key": "Unsaved answers",
+    "passed": true
+  },
+  {
+    "key": "Untimed",
+    "passed": true
+  },
+  {
+    "key": "Use Karakalpak letters where needed. Spaces and letter case are normalized; close matches can remain pending.",
+    "passed": true
+  },
+  {
+    "key": "Write a short answer",
+    "passed": true
+  },
+  {
+    "key": "Written answers use sample answer checks. Some remain pending; teacher review is not connected in this preview.",
+    "passed": true
+  },
+  {
+    "key": "Your answer",
+    "passed": true
+  },
+  {
+    "key": "Your latest answers are still in this tab. Allow browser storage, then retry saving. Closing or reloading may lose them.",
+    "passed": true
+  },
+  {
+    "key": "{answered} of {total} answered",
+    "passed": true
+  },
+  {
+    "key": "{correct} of {total} correct",
+    "passed": true
+  },
+  {
+    "key": "{count} answers need review. This score is preliminary.",
+    "passed": true
+  },
+  {
+    "key": "{hours} hours {minutes} minutes {seconds} seconds remaining",
+    "passed": true
+  },
+  {
+    "key": "{letter}, correct answer: {text}",
+    "passed": true
+  },
+  {
+    "key": "{letter}, your answer, incorrect: {text}",
+    "passed": true
+  },
+  {
+    "key": "Answers saved on this device",
+    "passed": true
+  },
+  {
+    "key": "Submission not saved",
+    "passed": true
+  },
+  {
+    "key": "Answers are locked in this tab. Retry saving to finish. Closing or reloading may restore only the last saved answers.",
+    "passed": true
+  },
+  {
+    "key": "Result saved; session cleanup failed",
+    "passed": true
+  },
+  {
+    "key": "Retry finishing. Your saved result will be reused without creating another attempt.",
+    "passed": true
+  },
+  {
+    "key": "Review and finish",
+    "passed": true
+  },
+  {
+    "key": "Flag question",
+    "passed": true
+  },
+  {
+    "key": "Remove flag",
+    "passed": true
+  },
+  {
+    "key": "Leave anyway",
+    "passed": true
+  },
+  {
+    "key": "This attempt has not been saved. Leave only if you accept losing the unsaved work on reload or close.",
+    "passed": true
+  },
+  {
+    "key": "Return to test details",
+    "passed": true
+  },
+  {
+    "key": "There is no active session for this test. Open its details to start or choose another test.",
+    "passed": true
+  }
+]

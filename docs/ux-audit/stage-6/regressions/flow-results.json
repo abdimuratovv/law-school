@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Fresh account has no fabricated history",
+    "status": "pass",
+    "detail": "Fresh isolated local storage; no attempts or sessions seeded by app."
+  },
+  {
+    "name": "Repeated choice keeps answer",
+    "status": "pass",
+    "detail": "Same option clicked twice before checking."
+  },
+  {
+    "name": "Answer survives reload",
+    "status": "pass",
+    "detail": "Read back persisted answer after full document reload."
+  },
+  {
+    "name": "Explicit clear removes answer",
+    "status": "pass",
+    "detail": "Clear answer button, not repeat selection."
+  },
+  {
+    "name": "Practice answer editable before checking",
+    "status": "pass",
+    "detail": "Can change selection before Check answer."
+  },
+  {
+    "name": "Practice check locks choice and persists check",
+    "status": "pass",
+    "detail": "Explicit check action; persisted checked map."
+  },
+  {
+    "name": "Question map declares modal contract",
+    "status": "pass",
+    "detail": "Desktop map traps focus; inspect aria-modal. Missing/false is a contract defect."
+  },
+  {
+    "name": "Map Escape closes and returns focus",
+    "status": "pass",
+    "detail": "Open map via click, Escape, compare focus with trigger."
+  },
+  {
+    "name": "Exam ArrowRight shortcut advances",
+    "status": "pass",
+    "detail": "Shortcut advertised by README; actual player has no keydown registration."
+  },
+  {
+    "name": "Written Karakalpak answer survives reload",
+    "status": "pass",
+    "detail": "Near-match fixture routes written answer to manual grading."
+  },
+  {
+    "name": "Offline message is visible",
+    "status": "pass",
+    "detail": "Browser network switched offline after page load."
+  },
+  {
+    "name": "Submit preserves answers and drops live session",
+    "status": "pass",
+    "detail": "Actual submit confirmation, persisted attempt and removed session."
+  },
+  {
+    "name": "Pending written grade is labeled preliminary",
+    "status": "pass",
+    "detail": "Near-match written answer; inspect result wording."
+  },
+  {
+    "name": "Review route displays written learner answer",
+    "status": "pass",
+    "detail": "Navigate to actual submitted attempt question 4."
+  },
+  {
+    "name": "Timed reload preserves deadline",
+    "status": "pass",
+    "detail": "Absolute endsAt is preserved, not restarted."
+  },
+  {
+    "name": "Expired timer submits exactly once",
+    "status": "pass",
+    "detail": "Forced expired persisted deadline then reload; isolated state."
+  },
+  {
+    "name": "Storage failure is surfaced",
+    "status": "pass",
+    "detail": "Injected quota failure: answer changes in memory, but no alert is rendered. Confirm loss by reload."
+  },
+  {
+    "name": "Storage-failure probe demonstrates lost answer",
+    "status": "observed",
+    "detail": "Browser unload warning was explicitly accepted. Only the last successful write can reload; unsaved browser-memory recovery is not guaranteed."
+  },
+  {
+    "name": "Editor draft survives reload",
+    "status": "fail",
+    "detail": "Change draft, wait longer than autosave stamp delay, reload."
+  },
+  {
+    "name": "Recovery /tests/missing",
+    "status": "observed",
+    "detail": {
+      "destination": "/tests/missing",
+      "headings": [
+        "Kontent mavjud emas"
+      ]
+    }
+  },
+  {
+    "name": "Recovery /exam/missing",
+    "status": "observed",
+    "detail": {
+      "destination": "/exam/missing",
+      "headings": [
+        "Kontent mavjud emas"
+      ]
+    }
+  },
+  {
+    "name": "Recovery /results/missing",
+    "status": "observed",
+    "detail": {
+      "destination": "/results/missing",
+      "headings": [
+        "Kontent mavjud emas"
+      ]
+    }
+  },
+  {
+    "name": "Recovery /results/baseline/q/999",
+    "status": "observed",
+    "detail": {
+      "destination": "/results/baseline/q/999",
+      "headings": [
+        "Kontent mavjud emas"
+      ]
+    }
+  },
+  {
+    "name": "Recovery /admin/editor/missing",
+    "status": "observed",
+    "detail": {
+      "destination": "/admin/editor/missing",
+      "headings": [
+        "Savolni tahrirlash"
+      ]
+    }
+  }
+]

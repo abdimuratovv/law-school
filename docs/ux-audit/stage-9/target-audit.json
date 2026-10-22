@@ -1,0 +1,922 @@
+[
+  {
+    "route": "/sign-in",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 4,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 14,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 15,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 19,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 22,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 10,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 14,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 17,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 47,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 35,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 35,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 15,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 18,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 38,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 24,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 27,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": 1366,
+    "theme": "light",
+    "language": "ru",
+    "targets": 63,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 4,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 14,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 15,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 19,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 22,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 10,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 14,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 17,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 47,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 35,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 35,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 15,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 18,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 38,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 24,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 27,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 63,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 4,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 9,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 10,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 14,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 17,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 9,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 9,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 39,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 27,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 27,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 10,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 30,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 16,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 19,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": 320,
+    "theme": "light",
+    "language": "ru",
+    "targets": 63,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 4,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 9,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 10,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 14,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 12,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 17,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 5,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 9,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 9,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 39,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 27,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 27,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 7,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 10,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 30,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 16,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 19,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": 320,
+    "theme": "dark",
+    "language": "ru",
+    "targets": 63,
+    "inlineTextLinkExceptions": [],
+    "small": [],
+    "passed": true
+  }
+]

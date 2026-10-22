@@ -1,0 +1,252 @@
+[
+  {
+    "name": "48 shell configurations: all labels and destinations fit",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "69 route renders have landmarks, headings and no page errors",
+    "passed": true,
+    "detail": []
+  },
+  {
+    "name": "Keyboard destination 1366 /tests → /",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /tests → /tests",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /tests → /progress",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /tests → /mistakes",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /tests → /profile",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /admin",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /admin/bank",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /admin/import",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /admin/builder",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /admin/grading",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /admin/students",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /admin/analytics",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 1366 /admin/bank → /",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /tests → /",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /tests → /tests",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /tests → /progress",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /tests → /mistakes",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /tests → /profile",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /admin",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /admin/bank",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /admin/import",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /admin/builder",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /admin/grading",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /admin/students",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /admin/analytics",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Keyboard destination 390 /admin/bank → /",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Drawer initially focuses current destination",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Drawer traps forward Tab",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Drawer traps reverse Tab",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Modal blocks background focus",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Escape closes drawer and restores menu focus",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Skip link focuses main",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Browser Back restores route and focus",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Browser Forward restores route and focus",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Query context remains on route",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Active parent /getting-started",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Active parent /results/baseline",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Active parent /admin/editor",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Focused route omits global navigation /tests/practice-1",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Focused route omits global navigation /exam/practice-1",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Focused route omits global navigation /results/baseline/q/1",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Unknown route offers recovery /missing",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Unknown route offers recovery /admin/missing",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Protected route keeps complete return URL",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Sign-in returns to original filters and hash",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Lazy route exposes named busy state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Lazy route failure offers reload and return",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Reload recovers failed lazy module",
+    "passed": true,
+    "detail": null
+  }
+]

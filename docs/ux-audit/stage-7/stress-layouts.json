@@ -1,0 +1,908 @@
+[
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "scale": 200,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 12,
+      "bottom": 556,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 132.0078125,
+      "bottom": 347.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 132.0078125,
+      "bottom": 347.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      480
+    ],
+    "scale": 100,
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 132.0078125,
+      "bottom": 347.9921875,
+      "width": 1024,
+      "height": 480
+    },
+    "passed": true
+  }
+]

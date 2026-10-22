@@ -1,0 +1,7868 @@
+[
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/sign-in",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/sign-in",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/getting-started",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/getting-started",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/tests/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/tests/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/practice-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/exam/practice-1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/exam/mock-7",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/exam/mock-7",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/results/baseline",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/mistakes",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/mistakes",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/progress",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/progress",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/profile",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/profile",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/bank",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/editor",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/editor/Q-0051",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/editor/Q-0051",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/import",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/import",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/builder",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/builder",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/grading",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/grading",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/students",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/students",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/admin/analytics",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/admin/analytics",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/design",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/design",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1440,
+    "height": 900,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1366,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "uz",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "kaa",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  },
+  {
+    "route": "/results/baseline/q/1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "actual": "/results/baseline/q/1",
+    "errors": [],
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "lang": "ru",
+    "body": true,
+    "width": 1024,
+    "height": 768,
+    "passed": true
+  }
+]

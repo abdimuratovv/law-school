@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Admin · students</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 3858px; height: 1294px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="3">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen admin {{f.kind}} {{f.cls}}">
+        <div class="mesh"></div>
+        <div class="shell">
+          <nav class="glass aside" aria-label="Admin">
+            <div class="brand"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><div class="col hide-t"><span class="hl" style="font-size: 15px">Huqıq Mektebi</span><span class="cap gl2">Teacher workspace</span></div></div>
+            <a class="nav-i" href="Admin-Overview.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 16a7.5 7.5 0 1 1 15 0"></path><path d="M12 16l3.5-4"></path></svg>Overview</a>
+            <p class="sec">Content</p>
+            <a class="nav-i" href="Admin-Bank.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Question bank</a>
+            <a class="nav-i" href="Admin-Import.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19.5h14"></path></svg>Import</a>
+            <a class="nav-i" href="Admin-Builder.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="3"></rect><path d="M9 11h6M9 15h4M9.5 3.5h5"></path></svg>Tests</a>
+            <p class="sec">Students</p>
+            <a class="nav-i" href="Admin-Grading.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg>Grading<span class="tag warn num">14</span></a>
+            <a class="nav-i on" href="Admin-Students.dc.html" aria-current="page"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.3"></circle><path d="M3.5 19c.9-3 3-4.5 5.5-4.5s4.6 1.5 5.5 4.5"></path><path d="M15.5 6a3 3 0 0 1 0 6M17 14.7c1.7.6 3 1.9 3.5 4.3"></path></svg>Students</a>
+            <a class="nav-i" href="Admin-Analytics.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M5 20V11M10 20V5M15 20v-7M20 20v-4"></path></svg>Analytics</a>
+            <div style="flex: 1"></div>
+            <div class="row" style="gap: 10px; padding: 8px; justify-content: center"><span class="mark" style="border-radius: 999px; background: var(--surface-2); color: var(--label); font: 600 13px/18px Inter, sans-serif">MN</span><div class="col hide-t" style="flex: 1"><span class="fn b600">Malika N.</span><span class="cap gl2">Mentor · 3 groups</span></div></div>
+          </nav>
+
+          <div class="mainc">
+            <header class="glass atop">
+              <a href="#list" class="btn btn-plain sm show-t" style="padding: 0 8px 0 0; color: var(--label)"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Students</a>
+              <h1 class="atitle hide-t" style="flex: 1">Students</h1>
+              <div style="flex: 1" class="show-t"></div>
+              <span class="pill-btn">11-A, 11-B<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></span>
+              <button class="btn btn-tinted sm press" style="border-radius: 999px">Message</button>
+              <button class="btn btn-primary sm press" style="border-radius: 999px">Assign practice</button>
+            </header>
+
+            <div class="work">
+              <div class="g-list">
+                <section class="panel hide-t">
+                  <div class="tools"><div class="search"><svg class="i s" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>Search 62 students</div></div>
+                  <table class="tbl">
+                    <thead><tr><th style="padding-left: 16px">Student</th><th class="n">Avg</th><th class="n" style="padding-right: 16px">Trend</th></tr></thead>
+                    <tbody>
+                      <sc-for list="{{f.students}}" as="s" hint-placeholder-count="10">
+                        <tr class="{{s.rc}}">
+                          <td style="padding-left: 16px"><div class="row" style="gap: 10px"><span class="avatar">{{s.ini}}</span><div class="col" style="min-width: 0"><span class="f14 b600">{{s.name}}</span><span class="fn l2">{{s.meta}}</span></div></div></td>
+                          <td class="n b600">{{s.avg}}</td>
+                          <td class="n fn {{s.tc}}" style="padding-right: 16px; white-space: nowrap">{{s.trend}}</td>
+                        </tr>
+                      </sc-for>
+                    </tbody>
+                  </table>
+                </section>
+
+                <div class="col" style="gap: 16px; min-width: 0; min-height: 0">
+                  <section class="panel row" style="padding: 16px 18px; gap: 14px; flex-direction: row; align-items: center; flex: none">
+                    <span class="avatar" style="width: 52px; height: 52px; font-size: 17px; background: var(--accent-soft); color: var(--accent-text)">AT</span>
+                    <div class="col" style="flex: 1; min-width: 0"><h2 class="t2">Aybek Tursınbaev</h2><span class="fn l2">11-B · joined Sep 2 · last active today 21:14</span></div>
+                    <div class="row hide-t" style="gap: 28px; padding-right: 8px">
+                      <div class="col"><span class="cap l3">Attempts</span><span class="hl num">14</span></div>
+                      <div class="col"><span class="cap l3">Average</span><span class="hl num">63 %</span></div>
+                      <div class="col"><span class="cap l3">Best</span><span class="hl num">69 %</span></div>
+                    </div>
+                  </section>
+
+                  <div class="g-2" style="flex: none">
+                    <section class="panel">
+                      <div class="ph"><h3 style="flex: 1">Score trend · last 10</h3><span class="tag ok"><svg class="i xs" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>+17 pts</span></div>
+                      <div class="pb">
+                        <svg viewBox="-6 -6 332 136" style="width: 100%; height: 150px; overflow: visible" role="img" aria-label="Scores rising from 52 % to 69 %">
+                          <path d="M0 120H320" style="stroke: var(--sep-2); stroke-width: 1; fill: none"></path>
+                          <path d="M0 60H320" style="stroke: var(--sep); stroke-width: 1; stroke-dasharray: 3 4; fill: none"></path>
+                          <polyline points="0,92 36,68 71,80 107,56 142,60 178,44 213,52 249,32 284,36 320,24" style="fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round"></polyline>
+                          <circle cx="320" cy="24" r="5" style="fill: var(--accent); stroke: var(--surface); stroke-width: 2"></circle>
+                        </svg>
+                        <div class="row" style="justify-content: space-between"><span class="cap l3">Sep 2</span><span class="cap l3">Oct 4</span></div>
+                      </div>
+                    </section>
+                    <section class="panel">
+                      <div class="ph"><h3 style="flex: 1">Topics</h3><span class="fn l3">All attempts</span></div>
+                      <div class="pb col" style="gap: 10px">
+                        <sc-for list="{{f.topics}}" as="t" hint-placeholder-count="5">
+                          <div class="row" style="gap: 10px">
+                            <span class="fn" style="width: 120px; flex: none">{{t.name}}</span>
+                            <div class="bar {{t.bc}}" style="flex: 1"><i style="width: {{t.pct}}"></i></div>
+                            <span class="fn b600 num" style="width: 36px; text-align: right">{{t.pct}}</span>
+                            <span class="tag {{t.tc}}" style="width: 86px; justify-content: center">{{t.lab}}</span>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </section>
+                  </div>
+
+                  <section class="panel" style="flex: 1">
+                    <div class="ph"><h3 style="flex: 1">Attempts</h3><a href="#all" class="btn btn-plain sm" style="padding: 0 6px">All 14</a></div>
+                    <table class="tbl">
+                      <thead><tr><th style="padding-left: 16px">Test</th><th class="hide-t">Date</th><th class="n">Score</th><th class="n hide-t">Time</th><th style="padding-right: 16px">Status</th></tr></thead>
+                      <tbody>
+                        <sc-for list="{{f.attempts}}" as="a" hint-placeholder-count="5">
+                          <tr><td class="b500" style="padding-left: 16px">{{a.t}}</td><td class="hide-t fn l2">{{a.d}}</td><td class="n b600">{{a.s}}</td><td class="n hide-t fn l2">{{a.tm}}</td><td style="padding-right: 16px"><span class="tag {{a.tc}}">{{a.st}}</span></td></tr>
+                        </sc-for>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3858,"height":1294}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const S = (ini, name, meta, avg, trend, tc, sel) => ({ ini, name, meta, avg, trend, tc, rc: sel ? 'sel' : '' });
+    const students = [
+      S('AT', 'Aybek Tursınbaev', '11-B · today', '63 %', '↑ 17', 'okc', true),
+      S('GE', 'Gúlnara Esbergenova', '11-A · today', '78 %', '↑ 6', 'okc'),
+      S('DA', 'Dawran Allambergenov', '11-B · yesterday', '55 %', '↓ 4', 'badc'),
+      S('ZS', 'Zuxra Saparova', '11-A · today', '71 %', '↑ 2', 'okc'),
+      S('BJ', 'Bekzat Jumabaev', '11-B · 5 days ago', '48 %', '— 0', 'l2'),
+      S('AQ', 'Aruwxan Qayratova', '11-A · today', '82 %', '↑ 9', 'okc'),
+      S('RE', 'Ruslan Ermekov', '11-B · 2 days ago', '59 %', '↓ 1', 'badc'),
+      S('MS', 'Mádina Seytmuratova', '11-A · today', '67 %', '↑ 3', 'okc'),
+      S('NA', 'Nurlan Abdiraxmanov', '11-B · today', '61 %', '↑ 5', 'okc'),
+      S('SJ', 'Sanjar Jaqsılıqov', '11-A · 3 days ago', '52 %', '↓ 2', 'badc')
+    ];
+    const T = (name, p, lab) => ({ name, pct: p + '%', lab, tc: lab === 'Strong' ? 'ok' : lab === 'Needs work' ? 'warn' : '', bc: lab === 'Needs work' ? 'warn' : '' });
+    const topics = [T('Constitutional', 78, 'Strong'), T('Civil law', 70, 'Strong'), T('Administrative', 67, 'Steady'), T('Criminal law', 62, 'Needs work'), T('Human rights', 57, 'Needs work')];
+    const A = (t, d, s, tm, st, tc) => ({ t, d, s, tm, st, tc });
+    const attempts = [
+      A('Mock exam No. 7', 'Oct 4', '31 / 45', '2:07:46', '2 to grade', 'warn'),
+      A('Constitutional law · Practice set 3', 'Oct 2', '16 / 20', '24:10', 'Complete', 'ok'),
+      A('Mock exam No. 6', 'Sep 27', '30 / 45', '2:21:03', 'Complete', 'ok'),
+      A('Criminal law · Practice set 2', 'Sep 24', '11 / 20', '31:44', 'Complete', 'ok'),
+      A('Mock exam No. 5', 'Sep 19', '28 / 45', '2:29:12', 'Complete', 'ok')
+    ];
+    const d = { students, topics, attempts };
+    return {
+      frames: [
+        { label: 'Desktop 1440', sub: 'Light · list + detail', cls: 't-light', kind: 'desk', ...d },
+        { label: 'Desktop 1440', sub: 'Dark', cls: 't-dark', kind: 'desk', ...d },
+        { label: 'Tablet 834', sub: 'Light · detail pushed, list behind a back button', cls: 't-light', kind: 'tabl', ...d }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

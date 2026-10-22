@@ -1,0 +1,893 @@
+[
+  {
+    "key": "6-digit code",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "All",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "All questions",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "All topics",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "An unfinished test is unavailable. Its saved answers have been kept.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Answer options",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Answered",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Before you start",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Change number",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Change your answer",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Check answer",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Check each answer and learn from the explanation.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Choose a question to open it.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Choose an exam",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Choose an option, then try another. Press Check answer when you are ready.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Choose any step. You can finish without writing an answer.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Choose practice",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Choose practice to learn, or a timed exam to check your preparation.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Choose your next step",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Clear filters",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Click an answer. You can change your choice before checking.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Close",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Content preview",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Continue",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Could not create a saved test. Allow browser storage and try again.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Due: {date}",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Duration: {minutes} min",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Enter nine digits after +998. Example: 90 123 45 67.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Enter six digits, then choose Continue. You can paste the whole code.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Example answer",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Filters",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Find a practice test",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Find a test",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "First time taking a test online?",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "In progress",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Learn the controls in three simple steps. No timer and no score.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Learn the format. Build your confidence.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Local preview",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Mock exam",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Mode: {mode} · Topic: {topic}",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "My mistakes",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Next",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "No SMS is sent. Any six digits open this local preview.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "No scored work yet",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Open results",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Open test",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Practice",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Practice at your own pace",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Prepare for the exam",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Preview only — some questions are incomplete.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Preview results are not a reliable assessment.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Previous",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Question material is in Karakalpak.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Question {number}",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Questions",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Questions: {count}",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Ready to practice",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Recent learning",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Remaining: {time}",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Sample assignments",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Sample completion could not be saved. Try again or skip the sample.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Sample data",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Saved for practice: {count}",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Saving is local to this browser. Keep its data to return to your answers; there is no online account sync.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Search tests",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "See example answer",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Select an option",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Sign-in could not be saved. Allow browser storage, then try again.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Skip sample",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Some questions are unavailable. This test cannot be started.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Start here",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Step {step} of 3",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Test type",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Tests",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "The deadline has passed. Opening this test completes its existing attempt; it does not restart the timer.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "These are sample assignments, not messages from your teacher.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "This sample resets on reload. It never creates a score or test attempt.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "This test is unavailable.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Time limit",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Timed tests. See your results after finishing.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Topic",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Try a sample",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Type a short answer. Use All questions to move between questions.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Type your answer",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Unavailable content",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Untimed",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Use sample code",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Welcome",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Welcome to Huqıq Mektebi",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Write an answer and use the map",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Written answers use sample answer checks. Some remain pending; teacher review is not connected in this preview.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Your answer",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Your first completed test will appear here.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "Your learning starts here",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "{answered} of {total} answered",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "{correct} of {total} correct",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "{count} answers need review. This score is preliminary.",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "{count} tests found",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  },
+  {
+    "key": "{single} choice questions · {written} written questions",
+    "languages": [
+      "uz",
+      "kaa",
+      "ru"
+    ],
+    "passed": true
+  }
+]

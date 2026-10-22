@@ -1,0 +1,422 @@
+[
+  {
+    "case": "correct-review",
+    "theme": "light",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "incorrect-review",
+    "theme": "light",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "B, javobingiz noto‘g‘ri: 1966-jıl 16-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "bank-preview",
+    "theme": "light",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "editor-preview",
+    "theme": "light",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "correct-review",
+    "theme": "light",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "incorrect-review",
+    "theme": "light",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "B, juwabıńız nadurıs: 1966-jıl 16-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "bank-preview",
+    "theme": "light",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "editor-preview",
+    "theme": "light",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "correct-review",
+    "theme": "light",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "incorrect-review",
+    "theme": "light",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "B, ваш ответ неверен: 1966-jıl 16-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "bank-preview",
+    "theme": "light",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "editor-preview",
+    "theme": "light",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "correct-review",
+    "theme": "dark",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "incorrect-review",
+    "theme": "dark",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "B, javobingiz noto‘g‘ri: 1966-jıl 16-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "bank-preview",
+    "theme": "dark",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "editor-preview",
+    "theme": "dark",
+    "language": "uz",
+    "labels": [
+      {
+        "name": "A, to‘g‘ri javob: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "correct-review",
+    "theme": "dark",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "incorrect-review",
+    "theme": "dark",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "B, juwabıńız nadurıs: 1966-jıl 16-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "bank-preview",
+    "theme": "dark",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "editor-preview",
+    "theme": "dark",
+    "language": "kaa",
+    "labels": [
+      {
+        "name": "A, durıs juwap: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "correct-review",
+    "theme": "dark",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "incorrect-review",
+    "theme": "dark",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "B, ваш ответ неверен: 1966-jıl 16-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      },
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "bank-preview",
+    "theme": "dark",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  },
+  {
+    "case": "editor-preview",
+    "theme": "dark",
+    "language": "ru",
+    "labels": [
+      {
+        "name": "A, правильный ответ: 1948-jıl 10-dekabr",
+        "tabIndex": -1,
+        "radio": null
+      }
+    ],
+    "violations": [],
+    "incomplete": [],
+    "passed": true
+  }
+]

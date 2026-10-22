@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exam lobby · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}}</div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh"></div>
+        <a href="Catalog-Desktop.dc.html" class="btn btn-glass sm press" style="position: absolute; left: 32px; top: 28px; border-radius: 999px; padding: 0 16px 0 10px"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Tests</a>
+
+        <main style="position: absolute; left: 50%; top: 104px; width: 1040px; margin-left: -520px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px">
+          <div class="col" style="gap: 24px">
+            <header class="col" style="gap: 6px">
+              <p class="callout l2 b500">Mock exam · all topics · due Oct 12</p>
+              <h1 class="lt" style="font-size: 44px; line-height: 50px">Mock exam No. 8</h1>
+            </header>
+            <div class="card" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 20px 8px">
+              <div class="col" style="align-items: center; gap: 2px; border-right: 1px solid var(--sep)"><span class="t1 num">45</span><span class="fn l3">questions</span></div>
+              <div class="col" style="align-items: center; gap: 2px; border-right: 1px solid var(--sep)"><span class="t1 num">2 h 30 min</span><span class="fn l3">time limit</span></div>
+              <div class="col" style="align-items: center; gap: 2px"><span class="t1 num">35 + 10</span><span class="fn l3">choice + written</span></div>
+            </div>
+            <section class="col" style="gap: 12px">
+              <h2 class="hl">Mode</h2>
+              <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px" role="radiogroup" aria-label="Mode">
+                <button class="opt sel" role="radio" aria-checked="true" style="flex-direction: column; align-items: flex-start; gap: 6px; padding: 16px"><span class="row" style="gap: 8px; width: 100%"><svg class="i acc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="hl" style="flex: 1">Mock exam</span><svg class="i acc" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span><span class="fn l2">Real timer. Results at the end, like the certificate exam.</span></button>
+                <button class="opt" role="radio" aria-checked="false" style="flex-direction: column; align-items: flex-start; gap: 6px; padding: 17px"><span class="row" style="gap: 8px"><svg class="i l2" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg><span class="hl">Practice</span></span><span class="fn l2">Untimed. Instant feedback and explanation after every answer.</span></button>
+              </div>
+            </section>
+          </div>
+
+          <section class="card col" style="padding: 28px; gap: 18px; align-self: start">
+            <h2 class="hl">Before you start</h2>
+            <ol class="ql" style="gap: 14px">
+              <li><span class="k acc num">1</span><span class="callout">Questions 1–35: choose one answer, A to D.</span></li>
+              <li><span class="k acc num">2</span><span class="callout">Questions 36–45: type a short written answer. Your teacher grades these.</span></li>
+              <li><span class="k acc num">3</span><span class="callout">Answers save automatically, even if you go offline.</span></li>
+              <li><span class="k acc num">4</span><span class="callout">Flag questions and return to them from the question map.</span></li>
+              <li><span class="k acc num">5</span><span class="callout">When time runs out, the exam submits itself.</span></li>
+            </ol>
+            <div class="hr"></div>
+            <div class="row" style="gap: 10px; flex-wrap: wrap"><span class="fn l2">Keyboard:</span><span class="kbdk">A</span><span class="kbdk">B</span><span class="kbdk">C</span><span class="kbdk">D</span><span class="fn l3">answer</span><span class="kbdk">←</span><span class="kbdk">→</span><span class="fn l3">move</span><span class="kbdk">F</span><span class="fn l3">flag</span></div>
+          </section>
+        </main>
+
+        <div class="glass row" style="position: absolute; left: 50%; bottom: 32px; width: 520px; margin-left: -260px; border-radius: 34px; padding: 8px 8px 8px 24px; gap: 16px">
+          <p class="fn gl2" style="flex: 1">The timer starts when you press Start.</p>
+          <a href="Exam-Desktop.dc.html" class="btn btn-primary lg press" style="border-radius: 26px"><svg class="i fill" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"></path></svg>Start exam</a>
+        </div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { frames: [ { label: 'Light', cls: 't-light' }, { label: 'Dark', cls: 't-dark' } ] };
+  }
+}
+</script>
+</body>
+</html>

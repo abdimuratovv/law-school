@@ -1,0 +1,78 @@
+[
+  {
+    "name": "SPA browser Back blocks loss and focuses safe action",
+    "passed": true
+  },
+  {
+    "name": "Escape cancels history navigation",
+    "passed": true
+  },
+  {
+    "name": "Cancelled drawer navigation returns focus into the page",
+    "passed": true
+  },
+  {
+    "name": "Student app navigation also protects unsaved teacher work",
+    "passed": true
+  },
+  {
+    "name": "Explicit Leave anyway completes intended navigation",
+    "passed": true
+  },
+  {
+    "name": "Forward returns to original editor source without claiming failed draft saved",
+    "passed": true
+  },
+  {
+    "name": "Successful save permits history navigation without warning",
+    "passed": true
+  },
+  {
+    "name": "Independent tab drafts preserve unrelated identities",
+    "passed": true
+  },
+  {
+    "name": "A version changed during conflict review requires another decision",
+    "passed": true
+  },
+  {
+    "name": "Conflict retains current fields until deliberate saved-version adoption",
+    "passed": true
+  },
+  {
+    "name": "Builder failed write leaves current form available",
+    "passed": true
+  },
+  {
+    "name": "Import rejects unsupported file metadata",
+    "passed": true
+  },
+  {
+    "name": "Import rejects files over 5 MB",
+    "passed": true
+  },
+  {
+    "name": "Import failed save retains selected metadata in memory",
+    "passed": true
+  },
+  {
+    "name": "Consequential dialog contains reverse keyboard focus",
+    "passed": true
+  },
+  {
+    "name": "Dialog Escape restores initiating control",
+    "passed": true
+  },
+  {
+    "name": "Start fresh cancellation preserves saved draft",
+    "passed": true
+  },
+  {
+    "name": "Invalid stored timestamp cannot crash draft recovery",
+    "passed": true
+  },
+  {
+    "name": "Malformed payload is incompatible and cannot enter form",
+    "passed": true
+  }
+]

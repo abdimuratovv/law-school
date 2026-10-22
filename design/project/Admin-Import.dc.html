@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Admin · Excel import</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 6818px; height: 1294px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="5">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen admin {{f.kind}} {{f.cls}}">
+        <div class="mesh"></div>
+        <div class="shell">
+          <nav class="glass aside" aria-label="Admin">
+            <div class="brand"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><div class="col hide-t"><span class="hl" style="font-size: 15px">Huqıq Mektebi</span><span class="cap gl2">Teacher workspace</span></div></div>
+            <a class="nav-i" href="Admin-Overview.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 16a7.5 7.5 0 1 1 15 0"></path><path d="M12 16l3.5-4"></path></svg>Overview</a>
+            <p class="sec">Content</p>
+            <a class="nav-i" href="Admin-Bank.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Question bank</a>
+            <a class="nav-i on" href="Admin-Import.dc.html" aria-current="page"><svg class="i" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19.5h14"></path></svg>Import</a>
+            <a class="nav-i" href="Admin-Builder.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="3"></rect><path d="M9 11h6M9 15h4M9.5 3.5h5"></path></svg>Tests</a>
+            <p class="sec">Students</p>
+            <a class="nav-i" href="Admin-Grading.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg>Grading<span class="tag warn num">14</span></a>
+            <a class="nav-i" href="Admin-Students.dc.html"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.3"></circle><path d="M3.5 19c.9-3 3-4.5 5.5-4.5s4.6 1.5 5.5 4.5"></path><path d="M15.5 6a3 3 0 0 1 0 6M17 14.7c1.7.6 3 1.9 3.5 4.3"></path></svg>Students</a>
+            <a class="nav-i" href="Admin-Analytics.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M5 20V11M10 20V5M15 20v-7M20 20v-4"></path></svg>Analytics</a>
+            <div style="flex: 1"></div>
+            <div class="row" style="gap: 10px; padding: 8px; justify-content: center"><span class="mark" style="border-radius: 999px; background: var(--surface-2); color: var(--label); font: 600 13px/18px Inter, sans-serif">MN</span><div class="col hide-t" style="flex: 1"><span class="fn b600">Malika N.</span><span class="cap gl2">Mentor · 3 groups</span></div></div>
+          </nav>
+
+          <div class="mainc">
+            <header class="glass atop" style="gap: 20px">
+              <div class="col" style="min-width: 0"><span class="crumbs">Question bank / Import</span><h1 class="atitle" style="font-size: 20px; line-height: 26px">Import from Excel</h1></div>
+              <ol class="stepper hide-t" style="flex: 1; margin: 0; padding: 0 8px; list-style: none" aria-label="Import steps">
+                <li class="step {{f.s1}}"><span class="n">{{f.n1}}</span>Upload</li>
+                <li class="step-line {{f.l1}}"></li>
+                <li class="step {{f.s2}}"><span class="n">{{f.n2}}</span>Preview &amp; validation</li>
+                <li class="step-line {{f.l2}}"></li>
+                <li class="step {{f.s3}}"><span class="n">3</span>Publish</li>
+              </ol>
+              <span class="tag lg show-t num" style="margin-left: auto">Step {{f.stepNo}} of 3</span>
+              <button class="btn btn-plain sm" style="color: var(--label)">Cancel</button>
+            </header>
+
+            <div class="work">
+              <sc-if value="{{f.up}}" hint-placeholder-val="{{false}}">
+                <div class="g-main" style="flex: 1">
+                  <section class="panel" style="padding: 20px; gap: 16px">
+                    <div class="drop" style="flex: 1; background: var(--accent-soft); border-color: var(--accent)">
+                      <span class="mark" style="width: 64px; height: 64px; border-radius: 20px"><svg class="i l" viewBox="0 0 24 24"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5"></path><path d="M5 14v4.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V14"></path></svg></span>
+                      <h2 class="t2">Drop an Excel file to import</h2>
+                      <p class="callout l2">.xlsx up to 5 MB · one question per row · Karakalpak text in UTF-8</p>
+                      <div class="row" style="gap: 10px; margin-top: 6px"><button class="btn btn-primary press">Choose file</button><a href="#template" class="btn btn-secondary press"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19.5h14"></path></svg>Download template</a></div>
+                    </div>
+                  </section>
+                  <div class="col" style="gap: 16px; min-height: 0">
+                    <section class="panel">
+                      <div class="ph"><h2>Template columns</h2></div>
+                      <div class="pb col" style="gap: 8px">
+                        <sc-for list="{{f.cols}}" as="c" hint-placeholder-count="8">
+                          <div class="row" style="gap: 10px; align-items: flex-start"><code class="tag" style="font-family: ui-monospace, Menlo, monospace; flex: none">{{c.k}}</code><span class="fn l2">{{c.v}}</span></div>
+                        </sc-for>
+                      </div>
+                    </section>
+                    <section class="panel">
+                      <div class="ph"><h2>Recent imports</h2></div>
+                      <div class="col" style="padding: 0 4px 6px">
+                        <div class="li" style="padding: 8px 12px"><div class="col" style="flex: 1"><span class="f14 b600">jinayat_huqiqi_set2.xlsx</span><span class="fn l2">Sep 27 · 40 questions</span></div><span class="tag ok">Published</span></div>
+                        <div class="li" style="padding: 8px 12px"><div class="col" style="flex: 1"><span class="f14 b600">mock_6_full.xlsx</span><span class="fn l2">Sep 12 · 45 questions</span></div><span class="tag ok">Published</span></div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </sc-if>
+
+              <sc-if value="{{f.val}}" hint-placeholder-val="{{true}}">
+                <section class="panel" style="flex: 1">
+                  <div class="tools" style="gap: 12px">
+                    <span class="row f14 b600" style="gap: 8px"><svg class="i s okc" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="3"></rect><path d="m8.5 9 7 6M15.5 9l-7 6"></path></svg>konstituciya_oktyabr.xlsx</span>
+                    <span class="fn l2 num">48 rows</span>
+                    <div style="flex: 1"></div>
+                    <span class="tag lg ok num"><svg class="i xs" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>41 ready</span>
+                    <span class="tag lg warn num"><svg class="i xs" viewBox="0 0 24 24"><path d="M12 4 2.8 19.5h18.4z"></path><path d="M12 10v4M12 16.8v.1"></path></svg>4 warnings</span>
+                    <span class="tag lg bad num"><svg class="i xs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m9 9 6 6M15 9l-6 6"></path></svg>3 errors</span>
+                  </div>
+                  <div class="row" style="gap: 4px; padding: 8px 12px; border-bottom: 1px solid var(--sep)" role="tablist" aria-label="Filter rows">
+                    <button class="pill-btn on" role="tab" aria-selected="true" style="border: 0">All <span class="l3 num">48</span></button>
+                    <button class="pill-btn" role="tab" aria-selected="false" style="border: 0; background: transparent">Errors <span class="l3 num">3</span></button>
+                    <button class="pill-btn" role="tab" aria-selected="false" style="border: 0; background: transparent">Warnings <span class="l3 num">4</span></button>
+                  </div>
+                  <table class="tbl">
+                    <thead><tr><th style="padding-left: 16px; width: 56px">Row</th><th style="width: 40px"><span class="hide-t">Status</span></th><th>Question</th><th class="hide-t">Topic</th><th class="hide-t">Key</th><th>Validation</th><th style="padding-right: 16px"></th></tr></thead>
+                    <tbody>
+                      <sc-for list="{{f.rows}}" as="r" hint-placeholder-count="10">
+                        <tr class="{{r.rc}}">
+                          <td class="num fn b600" style="padding-left: 16px">{{r.n}}</td>
+                          <td>
+                            <sc-if value="{{r.isOk}}" hint-placeholder-val="{{true}}"><svg class="i s okc" viewBox="0 0 24 24" aria-label="Ready"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></sc-if>
+                            <sc-if value="{{r.isWarn}}" hint-placeholder-val="{{false}}"><svg class="i s warnc" viewBox="0 0 24 24" aria-label="Warning"><path d="M12 4 2.8 19.5h18.4z"></path><path d="M12 10v4M12 16.8v.1"></path></svg></sc-if>
+                            <sc-if value="{{r.isErr}}" hint-placeholder-val="{{false}}"><svg class="i s badc" viewBox="0 0 24 24" aria-label="Error"><circle cx="12" cy="12" r="9"></circle><path d="m9 9 6 6M15 9l-6 6"></path></svg></sc-if>
+                          </td>
+                          <td style="max-width: 300px"><span class="clip" lang="kaa">{{r.stem}}</span></td>
+                          <td class="hide-t fn l2" style="white-space: nowrap">{{r.topic}}</td>
+                          <td class="hide-t fn b600">{{r.key}}</td>
+                          <td style="max-width: 360px"><span class="fn {{r.mc}}">{{r.msg}}</span></td>
+                          <td style="padding-right: 16px; text-align: right"><sc-if value="{{r.act}}" hint-placeholder-val="{{false}}"><button class="btn btn-plain sm" style="padding: 0 6px">{{r.actLabel}}</button></sc-if></td>
+                        </tr>
+                      </sc-for>
+                    </tbody>
+                  </table>
+                </section>
+                <div style="height: 76px; flex: none"></div>
+              </sc-if>
+
+              <sc-if value="{{f.pub}}" hint-placeholder-val="{{false}}">
+                <div class="g-main" style="flex: 1">
+                  <section class="panel" style="padding: 24px; gap: 20px">
+                    <div class="col" style="gap: 4px"><h2 class="t1 num">45 questions ready to publish</h2><p class="callout l2">3 rows with errors were skipped. You can fix them in Excel and import them later.</p></div>
+                    <div class="list" style="box-shadow: 0 0 0 1px var(--sep)">
+                      <div class="li"><span class="callout" style="flex: 1">Constitutional law</span><span class="fn l2 num">22 single choice · 4 written</span></div>
+                      <div class="li"><span class="callout" style="flex: 1">Administrative law</span><span class="fn l2 num">11 single choice · 2 written</span></div>
+                      <div class="li"><span class="callout" style="flex: 1">Human rights</span><span class="fn l2 num">6 single choice</span></div>
+                    </div>
+                    <div class="col" style="gap: 10px">
+                      <span class="flab">Publish as</span>
+                      <div class="g-2" role="radiogroup" aria-label="Publish as" style="gap: 12px">
+                        <button class="opt" role="radio" aria-checked="false" style="flex-direction: column; align-items: flex-start; gap: 4px; padding: 14px 16px"><span class="row" style="gap: 8px"><span class="st draft"><i></i></span><span class="hl">Drafts</span></span><span class="fn l2">Review each question before students can see it.</span></button>
+                        <button class="opt sel" role="radio" aria-checked="true" style="flex-direction: column; align-items: flex-start; gap: 4px; padding: 13px 15px"><span class="row" style="gap: 8px; width: 100%"><span class="st pub"><i></i></span><span class="hl" style="flex: 1">Published</span><svg class="i s acc" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span><span class="fn l2">Available to the test builder right away.</span></button>
+                      </div>
+                    </div>
+                    <div class="row" style="gap: 12px"><span class="f14" style="flex: 1">Tag all imported questions “Imported Oct 4”</span><button class="switch on" role="switch" aria-checked="true" aria-label="Tag imported questions"></button></div>
+                  </section>
+                  <section class="panel" style="padding: 20px; gap: 14px; align-self: start">
+                    <div class="row" style="gap: 10px"><svg class="i warnc" viewBox="0 0 24 24"><path d="M12 4 2.8 19.5h18.4z"></path><path d="M12 10v4M12 16.8v.1"></path></svg><h2 class="hl">1 possible duplicate</h2></div>
+                    <div class="g-2" style="gap: 10px">
+                      <div class="inset col" style="padding: 12px; gap: 4px"><span class="cap l3">Row 7 · new</span><p class="fn" lang="kaa">Referendum degenimiz ne?</p></div>
+                      <div class="inset col" style="padding: 12px; gap: 4px"><span class="cap l3">Q5 · in bank</span><p class="fn" lang="kaa">Referendum degen ne?</p></div>
+                    </div>
+                    <div class="seg" role="radiogroup" aria-label="Duplicate handling"><button role="radio" aria-checked="false">Import anyway</button><button class="on" role="radio" aria-checked="true">Skip row 7</button></div>
+                  </section>
+                </div>
+                <div style="height: 76px; flex: none"></div>
+              </sc-if>
+            </div>
+
+            <sc-if value="{{f.bar}}" hint-placeholder-val="{{true}}">
+              <div class="glass bulk" style="position: absolute; left: 32px; right: 32px; bottom: 32px; padding: 8px 8px 8px 20px">
+                <span class="f14" style="flex: 1">{{f.barText}}</span>
+                <button class="btn btn-plain sm" style="color: var(--label)">Back</button>
+                <sc-if value="{{f.val}}" hint-placeholder-val="{{true}}"><button class="btn btn-tinted sm press hide-t" style="border-radius: 999px">Re-upload fixed file</button></sc-if>
+                <button class="btn btn-primary sm press" style="border-radius: 999px">{{f.cta}}</button>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":6818,"height":1294}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const cols = [
+      { k: 'type', v: 'single or written' },
+      { k: 'topic', v: 'One of your topic names' },
+      { k: 'difficulty', v: 'easy · medium · hard' },
+      { k: 'question', v: 'Full text; use line breaks for 1–7, a)–g), I/II' },
+      { k: 'A … D', v: 'Options (single choice)' },
+      { k: 'correct', v: 'A, B, C or D' },
+      { k: 'accepted', v: 'Written answers, separated by |' },
+      { k: 'act · article · link', v: 'Legal basis (optional)' }
+    ];
+    const R = (n, s, stem, topic, key, msg, actLabel) => ({
+      n, stem, topic, key, msg, actLabel, act: !!actLabel,
+      isOk: s === 'ok', isWarn: s === 'w', isErr: s === 'e',
+      rc: s === 'e' ? 'err' : s === 'w' ? 'wrn' : '', mc: s === 'e' ? 'badc b600' : s === 'w' ? 'warnc b600' : 'l3'
+    });
+    const rows = [
+      R(3, 'ok', 'Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań.', 'Constitutional', 'C', 'Ready', ''),
+      R(4, 'e', 'Tómendegi wákillikler hám organlar ortasındaǵı sáykeslikti anıqlań.', 'Constitutional', 'B', 'Option B references item 6, which doesn’t exist (stem lists 1–5)', 'Edit row'),
+      R(5, 'ok', 'Qaraqalpaqstan Respublikası Joqarǵı Keńesiniń wákillikleri qaysı juwapta durıs kórsetilgen?', 'Constitutional', 'A', 'Ready', ''),
+      R(6, 'ok', 'Prezident saylawı neshe jılda bir ret ótkeriledi?', 'Constitutional', 'D', 'Ready', ''),
+      R(7, 'w', 'Referendum degenimiz ne?', 'Constitutional', 'A', 'Possible duplicate of Q5 · 94 % text match', 'Compare'),
+      R(8, 'ok', 'Administrativlik juwapkershilik qashan payda boladı?', 'Administrative', 'B', 'Ready', ''),
+      R(9, 'e', 'Lawazımlı shaxstıń wákillikten tıs háreketi qalay ataladı?', 'Administrative', '—', 'Correct answer is empty', 'Edit row'),
+      R(10, 'ok', 'Puqaralardıń múráját etiw huqıqı qaysı nızam menen tártiplestiriledi?', 'Administrative', 'C', 'Ready', ''),
+      R(12, 'w', 'Insan huqıqları boyınsha wákil (ombudsman) kim tárepinen saylanadı?', 'Konstituciya huqıqı', 'B', 'Unknown topic “Konstituciya huqıqı” — map to Constitutional law?', 'Map topic'),
+      R(15, 'e', 'Siyasiy partiyanı dúziw ushın neshe aǵza kerek?', 'Constitutional', 'written', 'Written question has no accepted answers', 'Edit row')
+    ];
+    const base = { cols, rows };
+    const step = (n) => ({
+      up: n === 1, val: n === 2, pub: n === 3, stepNo: n,
+      s1: n === 1 ? 'cur' : 'done', n1: n === 1 ? '1' : '✓',
+      s2: n === 2 ? 'cur' : n > 2 ? 'done' : '', n2: n > 2 ? '✓' : '2',
+      s3: n === 3 ? 'cur' : '', l1: n > 1 ? 'done' : '', l2: n > 2 ? 'done' : '',
+      bar: n > 1,
+      barText: n === 2 ? '3 errors block their rows. Fix them in Excel or skip them — the other 45 rows import fine.' : 'Students see published questions only when they are added to a test.',
+      cta: n === 2 ? 'Skip 3 error rows and continue' : 'Publish 45 questions'
+    });
+    return {
+      frames: [
+        { label: 'Desktop 1440', sub: 'Light · step 1 upload', cls: 't-light', kind: 'desk', ...base, ...step(1) },
+        { label: 'Desktop 1440', sub: 'Light · step 2 preview & validation', cls: 't-light', kind: 'desk', ...base, ...step(2) },
+        { label: 'Desktop 1440', sub: 'Dark · step 2 preview & validation', cls: 't-dark', kind: 'desk', ...base, ...step(2) },
+        { label: 'Desktop 1440', sub: 'Light · step 3 publish', cls: 't-light', kind: 'desk', ...base, ...step(3) },
+        { label: 'Tablet 834', sub: 'Light · step 2, topic/key columns hidden', cls: 't-light', kind: 'tabl', ...base, ...step(2) }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

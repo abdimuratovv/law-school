@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="kaa">
+<head>
+<meta charset="utf-8">
+<title>Exam player · single choice · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh calm"></div>
+
+        <article class="card" style="position: absolute; left: 148px; top: 104px; width: 640px; bottom: 112px; padding: 32px 40px; display: flex; flex-direction: column; gap: 22px; overflow: hidden">
+          <div class="row" style="gap: 8px" lang="en">
+            <span class="hl num">Question 12</span>
+            <span class="tag acc">Constitutional law</span>
+            <span class="tag">Single choice</span>
+            <sc-if value="{{f.flagged}}" hint-placeholder-val="{{false}}"><span class="tag warn"><svg class="i xs fill" viewBox="0 0 24 24"><path d="M5.5 21V4.5"></path><path d="M5.5 4.5h11l-2.2 4 2.2 4h-11z"></path></svg>Flagged</span></sc-if>
+          </div>
+          <p class="body measure">Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań.</p>
+          <div class="col" style="gap: 8px">
+            <p class="eyebrow">Atamalar</p>
+            <ol class="ql body" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px 16px">
+              <sc-for list="{{f.terms}}" as="tm" hint-placeholder-count="5"><li><span class="k">{{tm.k}}</span><span>{{tm.t}}</span></li></sc-for>
+            </ol>
+          </div>
+          <div class="col" style="gap: 8px">
+            <p class="eyebrow">Anıqlamalar</p>
+            <ol class="ql body measure" style="gap: 10px">
+              <sc-for list="{{f.defs}}" as="d" hint-placeholder-count="5"><li><span class="k">{{d.k}}</span><span>{{d.t}}</span></li></sc-for>
+            </ol>
+          </div>
+        </article>
+
+        <section class="card" lang="en" style="position: absolute; left: 812px; top: 104px; width: 480px; padding: 24px; display: flex; flex-direction: column; gap: 12px" role="radiogroup" aria-label="Answer options">
+          <div class="row" style="justify-content: space-between"><h2 class="hl">Choose one answer</h2><span class="fn l3 row" style="gap: 4px">Press <span class="kbdk">A</span>–<span class="kbdk">D</span></span></div>
+          <sc-for list="{{f.options}}" as="o" hint-placeholder-count="4">
+            <button class="opt {{o.cls}}" role="radio" aria-checked="{{o.checked}}" aria-keyshortcuts="{{o.letter}}" onClick="{{o.pick}}">
+              <span class="lt-badge">{{o.letter}}</span>
+              <span class="txt">{{o.text}}</span>
+              <span class="end"><sc-if value="{{o.isSel}}" hint-placeholder-val="{{false}}"><svg class="i" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></sc-if></span>
+            </button>
+          </sc-for>
+          <div class="hr" style="margin: 6px 0"></div>
+          <div class="row" style="gap: 10px">
+            <sc-if value="{{f.answered}}" hint-placeholder-val="{{true}}"><span class="fn l2 row" style="gap: 6px"><svg class="i s okc" viewBox="0 0 24 24"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 9.5a4.5 4.5 0 0 0 0 9z"></path><path d="m9.5 13.8 1.8 1.8 3.4-3.4"></path></svg>Answer saved · you can change it until you submit</span></sc-if>
+            <sc-if value="{{f.unanswered}}" hint-placeholder-val="{{false}}"><span class="fn l2">Not answered yet</span></sc-if>
+          </div>
+        </section>
+
+        <header class="glass row" lang="en" style="position: absolute; left: 24px; right: 24px; top: 16px; height: 68px; border-radius: 34px; padding: 0 12px 0 8px; gap: 12px">
+          <button class="icon-btn press" aria-label="Exit exam"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button>
+          <div class="col" style="width: 300px"><span class="hl">Mock exam No. 7</span><span class="saved"><svg class="i xs" viewBox="0 0 24 24"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 9.5a4.5 4.5 0 0 0 0 9z"></path><path d="m9.5 13.8 1.8 1.8 3.4-3.4"></path></svg>All answers saved</span></div>
+          <div class="row" style="flex: 1; justify-content: center; gap: 14px">
+            <div class="prog" style="flex: none; width: 420px" role="progressbar" aria-valuemin="1" aria-valuemax="45" aria-valuenow="12" aria-label="Question 12 of 45"><i style="width: 26.6%"></i></div>
+            <span class="callout b600 num">12 / 45</span>
+          </div>
+          <div class="row" style="width: 300px; justify-content: flex-end"><span class="timer {{f.tcls}}" role="timer" aria-label="{{f.tlabel}}"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>{{f.timer}}</span></div>
+        </header>
+
+        <nav class="glass toolbar" lang="en" aria-label="Question navigation" style="left: 50%; right: auto; width: 600px; margin-left: -300px; bottom: 24px">
+          <button class="tool press" aria-keyshortcuts="ArrowLeft"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Previous</span><span class="kb">←</span></button>
+          <button class="tool press {{f.flagCls}}" aria-pressed="{{f.flagPressed}}" aria-keyshortcuts="F" onClick="{{f.toggleFlag}}"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><path d="M5.5 21V4.5"></path><path d="M5.5 4.5h11l-2.2 4 2.2 4h-11"></path></svg>{{f.flagLabel}}</span><span class="kb">F</span></button>
+          <a class="tool press" href="Map-Desktop.dc.html" aria-keyshortcuts="M" style="text-decoration: none"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.8"></rect></svg>Question map</span><span class="kb">M</span></a>
+          <button class="tool primary press" aria-keyshortcuts="ArrowRight"><span class="row" style="gap: 6px">Next<svg class="i" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg></span><span class="kb">→</span></button>
+        </nav>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const st = this.state || {};
+    const selMap = st.sel || {};
+    const flagMap = st.flag || {};
+    const terms = [
+      { k: '1.', t: 'Deputat' }, { k: '2.', t: 'Legitimlik' }, { k: '3.', t: 'Ministr' },
+      { k: '4.', t: 'Referendum' }, { k: '5.', t: 'Nızam ústinligi' }
+    ];
+    const defs = [
+      { k: 'a)', t: 'Húkimet aǵzası, mámleketlik basqarıwdıń belgili bir tarawın basqaratuǵın lawazımlı shaxs.' },
+      { k: 'b)', t: 'Mámleketlik hákimiyattıń xalıq tárepinen tán alınıwı hám nızamlı dep esaplanıwı.' },
+      { k: 'c)', t: 'Barlıq mámleketlik organlar, lawazımlı shaxslar hám puqaralardıń nızamǵa birdey boysınıwı.' },
+      { k: 'd)', t: 'Saylawshılar tárepinen wákillik organına saylanǵan xalıq wákili.' },
+      { k: 'e)', t: 'Mámleket hám jámiyet turmısınıń eń áhmiyetli máseleleri boyınsha ulıwma xalıqlıq dawıs beriw.' }
+    ];
+    const opts = [
+      ['A', '1-b; 2-d; 3-a; 4-c; 5-e'], ['B', '1-d; 2-b; 3-g; 4-e; 5-f'],
+      ['C', '1-d; 2-b; 3-a; 4-e; 5-c'], ['D', '1-b; 2-a; 3-d; 4-e; 5-c']
+    ];
+    const base = [
+      { id: 'l', label: 'Light', sub: 'Answered · saved', cls: 't-light', timer: '1:48:20', tcls: '', tlabel: '1 hour 48 minutes left', sel: 'C', flag: false },
+      { id: 'd', label: 'Dark', sub: 'Flagged · unanswered · under 10 min', cls: 't-dark', timer: '9:41', tcls: 'warn', tlabel: '9 minutes left', sel: null, flag: true }
+    ];
+    const frames = base.map((f) => {
+      const sel = Object.prototype.hasOwnProperty.call(selMap, f.id) ? selMap[f.id] : f.sel;
+      const flag = Object.prototype.hasOwnProperty.call(flagMap, f.id) ? flagMap[f.id] : f.flag;
+      return {
+        ...f, terms, defs,
+        flagged: flag, answered: !!sel, unanswered: !sel,
+        flagLabel: flag ? 'Flagged' : 'Flag', flagCls: flag ? 'flagged' : '', flagPressed: flag ? 'true' : 'false',
+        toggleFlag: () => this.setState({ flag: { ...((this.state && this.state.flag) || {}), [f.id]: !flag } }),
+        options: opts.map(([l, t]) => ({
+          letter: l, text: t, isSel: sel === l, cls: sel === l ? 'sel' : '', checked: sel === l ? 'true' : 'false',
+          pick: () => this.setState({ sel: { ...((this.state && this.state.sel) || {}), [f.id]: sel === l ? null : l } })
+        }))
+      };
+    });
+    return { frames };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Heading and visualization explicitly mark preliminary result",
+    "passed": true
+  },
+  {
+    "name": "Four verdict counts separate pending from mistakes",
+    "passed": true
+  },
+  {
+    "name": "Pending filter is in URL and shows only pending row",
+    "passed": true
+  },
+  {
+    "name": "Review keeps complete prompt and pending label",
+    "passed": true
+  },
+  {
+    "name": "Review orders learner answer before expected model before explanation",
+    "passed": true
+  },
+  {
+    "name": "Return restores filter and question focus",
+    "passed": true
+  },
+  {
+    "name": "Review arrow navigation updates question without stacking history",
+    "passed": true
+  },
+  {
+    "name": "Browser Back returns to filtered result after review steps",
+    "passed": true
+  },
+  {
+    "name": "External return input cannot redirect learner",
+    "passed": true
+  },
+  {
+    "name": "Bookmark failure keeps saved list and shows actionable error",
+    "passed": true
+  },
+  {
+    "name": "Bookmark removal persists only after successful write",
+    "passed": true
+  },
+  {
+    "name": "Saving a review question does not alter its grade",
+    "passed": true
+  },
+  {
+    "name": "Saved destination highlights requested question without opening answers",
+    "passed": true
+  },
+  {
+    "name": "Retry opens with no answer selected or explanation revealed",
+    "passed": true
+  },
+  {
+    "name": "Deliberate check reveals feedback and explanation",
+    "passed": true
+  },
+  {
+    "name": "Try again hides expected answer and clears choice",
+    "passed": true
+  },
+  {
+    "name": "Escape closes retry and restores invoking control",
+    "passed": true
+  },
+  {
+    "name": "Written retry does not expose accepted answers on open",
+    "passed": true
+  },
+  {
+    "name": "Written retry preserves Karakalpak character insertion",
+    "passed": true
+  },
+  {
+    "name": "Written model appears only after deliberate reveal",
+    "passed": true
+  },
+  {
+    "name": "Retries never mutate attempts or active sessions",
+    "passed": true
+  },
+  {
+    "name": "Missing saved ID stays visible and removable",
+    "passed": true
+  },
+  {
+    "name": "Removing unavailable saved entry is durable",
+    "passed": true
+  },
+  {
+    "name": "Named recovery /results/absent",
+    "passed": true
+  },
+  {
+    "name": "Named recovery /results/mixed/q/999",
+    "passed": true
+  },
+  {
+    "name": "Named recovery /results/mixed/q/1.5",
+    "passed": true
+  },
+  {
+    "name": "Named recovery /results/missing-question",
+    "passed": true
+  },
+  {
+    "name": "Sample summary offers no invented review",
+    "passed": true
+  },
+  {
+    "name": "Final result has explicit final heading and no pending warning",
+    "passed": true
+  },
+  {
+    "name": "Manual-only review declares absent model and disconnected grading",
+    "passed": true
+  },
+  {
+    "name": "Final-only statistics exclude pending sample and missing content",
+    "passed": true
+  },
+  {
+    "name": "Chart exposes labeled axes and equivalent table",
+    "passed": true
+  },
+  {
+    "name": "Pending history row remains preliminary",
+    "passed": true
+  },
+  {
+    "name": "Sample history has no broken result link",
+    "passed": true
+  },
+  {
+    "name": "History mode survives result return",
+    "passed": true
+  },
+  {
+    "name": "No matches differs from empty history and resets",
+    "passed": true
+  },
+  {
+    "name": "Profile excludes internal demo and design operations",
+    "passed": true
+  },
+  {
+    "name": "Failed theme change reports failure and preserves selected value",
+    "passed": true
+  },
+  {
+    "name": "Preference retry applies and persists intended value",
+    "passed": true
+  },
+  {
+    "name": "Reduced transparency preference persists",
+    "passed": true
+  },
+  {
+    "name": "Language failure reports tab-only change",
+    "passed": true
+  },
+  {
+    "name": "Language appearance and accessibility restore after reload",
+    "passed": true
+  },
+  {
+    "name": "Active-work sign-out supports safe focus and cancellation",
+    "passed": true
+  },
+  {
+    "name": "Sign-out failure retains identity and offers retry",
+    "passed": true
+  },
+  {
+    "name": "Confirmed sign-out keeps browser work without fabricated account isolation",
+    "passed": true
+  },
+  {
+    "name": "Empty progress invents no chart history",
+    "passed": true
+  },
+  {
+    "name": "Empty saved list explains how to save questions",
+    "passed": true
+  },
+  {
+    "name": "No unexpected JavaScript errors",
+    "passed": true
+  }
+]

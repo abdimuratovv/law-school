@@ -1,0 +1,197 @@
+[
+  {
+    "name": "Radio arrows move focus and selection",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Radio wraps to first",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Radio End selects last",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Radio Home selects first",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Radio has one tab stop",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Tabs select linked visible panel",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Hidden panel has no tab stop",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Tab leaves tablist for current panel",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Checkbox Space toggles exactly once",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Checkbox Enter toggles exactly once",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Switch Space toggles",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Loading action disabled with preserved name",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Disabled action cannot activate",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Disabled navigation link does not navigate",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Phone formatting preserves nine digits",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "OTP whole-code input fills six positions",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "OTP backspace edits last digit",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Validation error is associated",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Answer radio arrows select without checking",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Answer group has one tab stop",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Modal has name, modality and safe initial focus",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Modal blocks background focus",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Modal Tab focus remains contained",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Confirmation ignores backdrop click",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Modal Escape closes and returns focus",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Nonmodal does not declare modality",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Nonmodal allows background focus",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Nonmodal Escape closes",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Empty search exposes recovery",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Reset restores sample table",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Chart has equivalent table values",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Progress has bounded named value",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Explicit reference translation uz",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "OTP accessible name translated uz",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Explicit reference translation kaa",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "OTP accessible name translated kaa",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Explicit reference translation ru",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "OTP accessible name translated ru",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "No JavaScript page errors",
+    "passed": true,
+    "detail": []
+  }
+]

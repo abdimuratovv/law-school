@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Results · desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh"></div>
+        <main class="col" style="position: absolute; left: 296px; right: 48px; top: 40px; bottom: 40px; gap: 24px">
+          <header class="row" style="justify-content: space-between; align-items: flex-end">
+            <div class="col" style="gap: 2px"><p class="fn l2 b500">Mock exam No. 7 · submitted Oct 4, 21:14</p><h1 class="lt">Results</h1></div>
+            <div class="row" style="gap: 12px"><a href="#retake" class="btn btn-secondary sm press">Retake</a><a href="Dashboard-Desktop.dc.html" class="btn btn-primary sm press">Done</a></div>
+          </header>
+          <div style="display: grid; grid-template-columns: minmax(0, 440px) minmax(0, 1fr); gap: 24px; flex: 1; min-height: 0">
+            <div class="col" style="gap: 20px">
+              <section class="card col" style="padding: 24px; gap: 18px">
+                <div class="row" style="gap: 24px">
+                  <div style="position: relative; width: 148px; height: 148px; flex: none">
+                    <svg viewBox="0 0 132 132" style="width: 148px; height: 148px; transform: rotate(-90deg)" role="img" aria-label="Score 31 of 45, 69 percent">
+                      <circle cx="66" cy="66" r="56" style="fill: none; stroke: var(--surface-2); stroke-width: 11"></circle>
+                      <circle cx="66" cy="66" r="56" style="fill: none; stroke: var(--accent); stroke-width: 11; stroke-linecap: round; stroke-dasharray: 242.4 351.9"></circle>
+                    </svg>
+                    <div class="col" style="position: absolute; inset: 0; align-items: center; justify-content: center"><span class="t1 num">31 / 45</span><span class="fn l2 num b600">69 %</span></div>
+                  </div>
+                  <div class="col" style="gap: 14px">
+                    <div class="col"><span class="cap l3">Time taken</span><span class="hl num">2:07:46 <span class="fn l3 b500">of 2:30:00</span></span></div>
+                    <div class="col"><span class="cap l3">Answered</span><span class="hl num">42 of 45</span></div>
+                    <div class="col"><span class="cap l3">Best before</span><span class="hl num">66 %</span></div>
+                  </div>
+                </div>
+                <div class="inset row" style="padding: 12px 14px; gap: 12px; align-items: flex-start">
+                  <svg class="i acc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+                  <div class="col" style="gap: 2px; flex: 1"><span class="callout b600">2 written answers awaiting teacher grading</span><span class="fn l2">Questions 38 and 41. Your score updates when they're graded.</span></div>
+                </div>
+              </section>
+              <section class="card col" style="padding: 24px; gap: 14px">
+                <h2 class="hl">By topic</h2>
+                <sc-for list="{{f.topics}}" as="tp" hint-placeholder-count="5">
+                  <div class="row" style="gap: 14px">
+                    <span class="fn" style="width: 140px; flex: none">{{tp.name}}</span>
+                    <div class="bar" style="flex: 1"><i style="width: {{tp.pct}}"></i></div>
+                    <span class="fn b600 num" style="width: 48px; text-align: right">{{tp.score}}</span>
+                  </div>
+                </sc-for>
+              </section>
+            </div>
+
+            <section class="card col" style="padding: 24px; gap: 14px; min-height: 0">
+              <div class="row" style="justify-content: space-between">
+                <h2 class="hl">Review answers</h2>
+                <div class="seg" style="width: 380px" role="tablist" aria-label="Filter answers"><button class="{{f.allCls}}" role="tab" aria-selected="{{f.allSel}}">All</button><button class="{{f.incCls}}" role="tab" aria-selected="{{f.incSel}}">Incorrect · 12</button><button role="tab" aria-selected="false">Flagged · 2</button></div>
+              </div>
+              <div class="col">
+                <sc-for list="{{f.review}}" as="r" hint-placeholder-count="8">
+                  <a class="li" href="Review-Desktop.dc.html" style="padding: 10px 4px">
+                    <span class="mark" style="width: 32px; height: 32px; border-radius: 999px; background: {{r.bg}}; color: {{r.fg}}">
+                      <sc-if value="{{r.ok}}" hint-placeholder-val="{{true}}"><svg class="i s" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></sc-if>
+                      <sc-if value="{{r.bad}}" hint-placeholder-val="{{false}}"><svg class="i s" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></sc-if>
+                      <sc-if value="{{r.pend}}" hint-placeholder-val="{{false}}"><svg class="i s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></sc-if>
+                    </span>
+                    <span class="callout b600 num" style="width: 112px">Question {{r.n}}</span>
+                    <span class="fn l2" style="flex: 1">{{r.sub}}</span>
+                    <span class="tag">{{r.topic}}</span>
+                    <sc-if value="{{r.flag}}" hint-placeholder-val="{{false}}"><svg class="i s warnc fill" viewBox="0 0 24 24" aria-label="Flagged"><path d="M5.5 21V4.5"></path><path d="M5.5 4.5h11l-2.2 4 2.2 4h-11z"></path></svg></sc-if>
+                    <svg class="i s l3" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg>
+                  </a>
+                </sc-for>
+              </div>
+            </section>
+          </div>
+        </main>
+
+        <nav class="glass side" aria-label="Main">
+          <div class="row" style="gap: 12px; padding: 0 8px 20px"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><span class="hl">Huqıq Mektebi</span></div>
+          <a class="nav-i" href="Dashboard-Desktop.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"></path></svg>Home</a>
+          <a class="nav-i on" href="Catalog-Desktop.dc.html" aria-current="page"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Tests</a>
+          <a class="nav-i" href="#progress"><svg class="i" viewBox="0 0 24 24"><path d="M4 19.5h16"></path><path d="M6 16l4-5 3.5 3L19 7"></path></svg>Progress</a>
+          <a class="nav-i" href="#mistakes"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-5.5-4-5.5 4z"></path></svg>My mistakes<span class="tag" style="margin-left: auto">38</span></a>
+          <a class="nav-i" href="#profile"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8"></circle><path d="M4.5 20c1.2-3.6 4-5.3 7.5-5.3s6.3 1.7 7.5 5.3"></path></svg>Profile</a>
+          <div style="flex: 1"></div>
+          <div class="row" style="gap: 10px; padding: 8px"><span class="mark" style="border-radius: 999px; background: var(--surface-2); color: var(--label); font: 600 14px/18px Inter, sans-serif">AT</span><div class="col"><span class="fn b600">Aybek T.</span><span class="cap gl2">Group 11-B</span></div></div>
+        </nav>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const topics = [
+      { name: 'Constitutional law', score: '9 / 11', pct: '81.8%' },
+      { name: 'Civil law', score: '7 / 10', pct: '70%' },
+      { name: 'Administrative law', score: '6 / 9', pct: '66.7%' },
+      { name: 'Criminal law', score: '5 / 8', pct: '62.5%' },
+      { name: 'Human rights', score: '4 / 7', pct: '57.1%' }
+    ];
+    const OK = { bg: 'var(--ok-soft)', fg: 'var(--ok-text)', ok: true };
+    const BAD = { bg: 'var(--bad-soft)', fg: 'var(--bad-text)', bad: true };
+    const PEND = { bg: 'var(--surface-2)', fg: 'var(--label-2)', pend: true };
+    const all = [
+      { n: 9, sub: 'Correct', topic: 'Constitutional', flag: true, ...OK },
+      { n: 10, sub: 'Correct', topic: 'Civil', ...OK },
+      { n: 11, sub: 'Correct', topic: 'Civil', ...OK },
+      { n: 12, sub: 'Your answer D · correct C', topic: 'Constitutional', ...BAD },
+      { n: 13, sub: 'Correct', topic: 'Administrative', ...OK },
+      { n: 17, sub: 'Not answered', topic: 'Criminal', ...BAD },
+      { n: 22, sub: 'Your answer A · correct B', topic: 'Human rights', flag: true, ...BAD },
+      { n: 41, sub: 'Written · awaiting grading', topic: 'Civil', ...PEND },
+      { n: 44, sub: 'Not answered · written', topic: 'Criminal', ...BAD }
+    ];
+    const inc = all.filter((r) => r.bad).concat([
+      { n: 26, sub: 'Your answer C · correct A', topic: 'Administrative', ...BAD },
+      { n: 29, sub: 'Not answered', topic: 'Human rights', ...BAD },
+      { n: 33, sub: 'Your answer B · correct D', topic: 'Criminal', ...BAD },
+      { n: 39, sub: 'Written · marked incorrect', topic: 'Constitutional', ...BAD }
+    ]);
+    return {
+      frames: [
+        { label: 'Light', sub: 'Filter: All', cls: 't-light', topics, review: all, allCls: 'on', allSel: 'true', incCls: '', incSel: 'false' },
+        { label: 'Dark', sub: 'Filter: Incorrect', cls: 't-dark', topics, review: inc, allCls: '', allSel: 'false', incCls: 'on', incSel: 'true' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

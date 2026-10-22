@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Keyboard target visible and unobscured: button[type=submit]",
+    "passed": true
+  },
+  {
+    "name": "Empty sign-in focuses invalid named phone field",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: button[type=submit]",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: .otp input",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: button[type=submit]",
+    "passed": true
+  },
+  {
+    "name": "Keyboard demo sign-in persists identity",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: a[href=\"/tests\"]",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: #open-practice-1",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: .prep-actions .btn-primary",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: button.opt",
+    "passed": true
+  },
+  {
+    "name": "Keyboard answer saved locally",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: .assessment-actions button:nth-child(2)",
+    "passed": true
+  },
+  {
+    "name": "Map closes and restores keyboard trigger",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: .ux-finish",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: #submit-now",
+    "passed": true
+  },
+  {
+    "name": "Keyboard submission writes one attempt and removes session",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: .learning-question-link",
+    "passed": true
+  },
+  {
+    "name": "Review heading receives route focus",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: .learning-response button[aria-pressed]",
+    "passed": true
+  },
+  {
+    "name": "Keyboard save for practice persists",
+    "passed": true
+  },
+  {
+    "name": "Keyboard target visible and unobscured: a[href^=\"/mistakes?question=\"]",
+    "passed": true
+  },
+  {
+    "name": "Saved question destination reached by keyboard",
+    "passed": true
+  },
+  {
+    "name": "No production browser exceptions",
+    "passed": true
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Overview counts unfinished fixture responses",
+    "passed": true
+  },
+  {
+    "name": "Overview has no fake live statistic selector",
+    "passed": true
+  },
+  {
+    "name": "Editor empty fields validate without publishing",
+    "passed": true
+  },
+  {
+    "name": "Editor preview uses assessment question and correct choice",
+    "passed": true
+  },
+  {
+    "name": "Completion explicitly states no publication",
+    "passed": true
+  },
+  {
+    "name": "Question draft has kind source time revision validated fields",
+    "passed": true
+  },
+  {
+    "name": "Reload asks to resume and prevents editing source before decision",
+    "passed": true
+  },
+  {
+    "name": "Resume restores full new question draft",
+    "passed": true
+  },
+  {
+    "name": "Type change is consequential dialog",
+    "passed": true
+  },
+  {
+    "name": "Escape preserves populated choice fields",
+    "passed": true
+  },
+  {
+    "name": "Confirmed type change clears only incompatible fields",
+    "passed": true
+  },
+  {
+    "name": "Automatic written grading needs accepted answer",
+    "passed": true
+  },
+  {
+    "name": "Manual written preview valid without accepted answer",
+    "passed": true
+  },
+  {
+    "name": "Existing and new question identities remain separate",
+    "passed": true
+  },
+  {
+    "name": "Existing draft survives reload with source version",
+    "passed": true
+  },
+  {
+    "name": "Failed write retains full in-memory field",
+    "passed": true
+  },
+  {
+    "name": "App navigation guard retains unsaved data",
+    "passed": true
+  },
+  {
+    "name": "Native unload warning protects failed draft",
+    "passed": true
+  },
+  {
+    "name": "Retry durably saves latest fields",
+    "passed": true
+  },
+  {
+    "name": "Newer tab draft creates conflict, preserving local fields",
+    "passed": true
+  },
+  {
+    "name": "Explicit conflict choice saves own fields",
+    "passed": true
+  },
+  {
+    "name": "Use saved conflict choice restores newer payload",
+    "passed": true
+  },
+  {
+    "name": "Cancel discard preserves fields",
+    "passed": true
+  },
+  {
+    "name": "Discard restores source and keeps unrelated new draft",
+    "passed": true
+  },
+  {
+    "name": "Unknown ID never opens blank edit form",
+    "passed": true
+  },
+  {
+    "name": "Bank actual displayed rows equal fixture",
+    "passed": true
+  },
+  {
+    "name": "Bank preview initially closed",
+    "passed": true
+  },
+  {
+    "name": "Bank filters update URL and count",
+    "passed": true
+  },
+  {
+    "name": "Bank inline preview contains full matching definitions",
+    "passed": true
+  },
+  {
+    "name": "Editor retains bank query context",
+    "passed": true
+  },
+  {
+    "name": "Return restores bank filter",
+    "passed": true
+  },
+  {
+    "name": "Hide confirmation names actual IDs",
+    "passed": true
+  },
+  {
+    "name": "Confirmed local hide removes sample row",
+    "passed": true
+  },
+  {
+    "name": "Hiding does not imply server mutation",
+    "passed": true
+  },
+  {
+    "name": "Import discloses sample-only behavior before file selection",
+    "passed": true
+  },
+  {
+    "name": "Import uses actual ten-row fixture and three errors",
+    "passed": true
+  },
+  {
+    "name": "Import restores metadata and decisions without file bytes",
+    "passed": true
+  },
+  {
+    "name": "Import review keeps errors explicit",
+    "passed": true
+  },
+  {
+    "name": "Import finish never adds bank records",
+    "passed": true
+  },
+  {
+    "name": "Replacement confirms loss of prior decisions",
+    "passed": true
+  },
+  {
+    "name": "Confirmed replacement resets mapping and duplicate",
+    "passed": true
+  },
+  {
+    "name": "Builder validates missing name",
+    "passed": true
+  },
+  {
+    "name": "Auto selection reflects real sample IDs",
+    "passed": true
+  },
+  {
+    "name": "Builder rejects pool overflow",
+    "passed": true
+  },
+  {
+    "name": "Manual selection validates empty count",
+    "passed": true
+  },
+  {
+    "name": "Builder search has resettable empty state",
+    "passed": true
+  },
+  {
+    "name": "Builder validates group selection",
+    "passed": true
+  },
+  {
+    "name": "Builder rejects reversed time window",
+    "passed": true
+  },
+  {
+    "name": "Builder reload restores step groups dates and selected IDs",
+    "passed": true
+  },
+  {
+    "name": "Builder finish independent from draft persistence",
+    "passed": true
+  },
+  {
+    "name": "Authoring writes only additive draft key",
+    "passed": true
+  },
+  {
+    "name": "No uncaught browser exceptions",
+    "passed": true
+  },
+  {
+    "name": "Incompatible record cannot resume or edit",
+    "passed": true
+  },
+  {
+    "name": "Incompatible record is never silently overwritten",
+    "passed": true
+  },
+  {
+    "name": "Explicit discard clears only invalid route record",
+    "passed": true
+  },
+  {
+    "name": "Corrupt global store is preserved on attempted write",
+    "passed": true
+  }
+]

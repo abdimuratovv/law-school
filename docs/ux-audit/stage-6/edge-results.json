@@ -1,0 +1,62 @@
+[
+  {
+    "name": "All-correct result offers review without claiming mistakes",
+    "passed": true
+  },
+  {
+    "name": "Result filter End selects last and keeps one tab stop",
+    "passed": true
+  },
+  {
+    "name": "Result filter Home restores all rows without losing focus",
+    "passed": true
+  },
+  {
+    "name": "Keyboard entry focuses review heading with full prompt",
+    "passed": true
+  },
+  {
+    "name": "Keyboard review step focuses new question heading",
+    "passed": true
+  },
+  {
+    "name": "Pending-only result offers written review as primary action",
+    "passed": true
+  },
+  {
+    "name": "Manual-only retry exposes one deliberate reveal and no claimed model",
+    "passed": true
+  },
+  {
+    "name": "Manual retry stays pending and does not fabricate an accepted answer",
+    "passed": true
+  },
+  {
+    "name": "Pending-only history has no final average or chart",
+    "passed": true
+  },
+  {
+    "name": "One final result displays a point and exact table row",
+    "passed": true
+  },
+  {
+    "name": "Statistics use all finals while chart limits to recent ten",
+    "passed": true
+  },
+  {
+    "name": "Sample-only history remains labeled and excluded from personal statistics",
+    "passed": true
+  },
+  {
+    "name": "Edge setup retains one durable result after cleanup failure",
+    "passed": true
+  },
+  {
+    "name": "Durable result awaiting cleanup is not called unsaved at sign-out",
+    "passed": true
+  },
+  {
+    "name": "Sign-out never renews an active timed deadline",
+    "passed": true
+  }
+]

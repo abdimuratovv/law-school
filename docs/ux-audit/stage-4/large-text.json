@@ -1,0 +1,164 @@
+[
+  {
+    "name": "entry",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "home",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "catalog",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "sample",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "practice-lobby",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "preview-lobby",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "entry",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "home",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "catalog",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "sample",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "practice-lobby",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "preview-lobby",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "entry",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "home",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "catalog",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "sample",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "practice-lobby",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  },
+  {
+    "name": "preview-lobby",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "passed": true
+  }
+]

@@ -1,0 +1,1238 @@
+[
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "body",
+    "selector": ".ds-hero .body",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 8.77,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "quiet code",
+    "selector": ".ds-token code",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.47,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "glass label",
+    "selector": ".ds-controls .flab",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      254,
+      254,
+      255
+    ],
+    "ratio": 9.4,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "selected radio",
+    "selector": ".ds-controls [role=\"radio\"][aria-checked=\"true\"]",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "success text",
+    "selector": ".notice-success strong",
+    "foreground": [
+      22.0,
+      101.0,
+      52.0
+    ],
+    "sampledBackground": [
+      231,
+      246,
+      236
+    ],
+    "ratio": 6.38,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "warning text",
+    "selector": ".notice-warning strong",
+    "foreground": [
+      138.0,
+      75.0,
+      0.0
+    ],
+    "sampledBackground": [
+      254,
+      243,
+      226
+    ],
+    "ratio": 6.2,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "error text",
+    "selector": ".notice-error strong",
+    "foreground": [
+      180.0,
+      35.0,
+      24.0
+    ],
+    "sampledBackground": [
+      253,
+      238,
+      236
+    ],
+    "ratio": 5.83,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "state": "Default",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "state": "Hover",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      67,
+      56,
+      202
+    ],
+    "ratio": 7.9,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "state": "Pressed",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255,
+      255,
+      255
+    ],
+    "sampledBackground": [
+      84,
+      74,
+      243
+    ],
+    "ratio": 5.75,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "state": "Focus",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "state": "Selected",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "state": "Error",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      194,
+      55,
+      47
+    ],
+    "ratio": 5.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "state": "Success",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      21,
+      128,
+      61
+    ],
+    "ratio": 5.02,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "--control-border against --surface",
+    "ratio": 4.02,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "--control-border against --surface-2",
+    "ratio": 3.59,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "--focus against --surface",
+    "ratio": 6.29,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "light",
+    "opaque": false,
+    "name": "--focus against --bg",
+    "ratio": 5.82,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "body",
+    "selector": ".ds-hero .body",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 8.77,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "quiet code",
+    "selector": ".ds-token code",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.47,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "glass label",
+    "selector": ".ds-controls .flab",
+    "foreground": [
+      69.0,
+      69.0,
+      79.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 8.77,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "selected radio",
+    "selector": ".ds-controls [role=\"radio\"][aria-checked=\"true\"]",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "success text",
+    "selector": ".notice-success strong",
+    "foreground": [
+      22.0,
+      101.0,
+      52.0
+    ],
+    "sampledBackground": [
+      231,
+      246,
+      236
+    ],
+    "ratio": 6.38,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "warning text",
+    "selector": ".notice-warning strong",
+    "foreground": [
+      138.0,
+      75.0,
+      0.0
+    ],
+    "sampledBackground": [
+      254,
+      243,
+      226
+    ],
+    "ratio": 6.2,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "error text",
+    "selector": ".notice-error strong",
+    "foreground": [
+      180.0,
+      35.0,
+      24.0
+    ],
+    "sampledBackground": [
+      253,
+      238,
+      236
+    ],
+    "ratio": 5.83,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "state": "Default",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "state": "Hover",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      67,
+      56,
+      202
+    ],
+    "ratio": 7.9,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "state": "Pressed",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255,
+      255,
+      255
+    ],
+    "sampledBackground": [
+      84,
+      74,
+      243
+    ],
+    "ratio": 5.75,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "state": "Focus",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "state": "Selected",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      79,
+      70,
+      229
+    ],
+    "ratio": 6.29,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "state": "Error",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      194,
+      55,
+      47
+    ],
+    "ratio": 5.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "state": "Success",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      21,
+      128,
+      61
+    ],
+    "ratio": 5.02,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "--control-border against --surface",
+    "ratio": 4.02,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "--control-border against --surface-2",
+    "ratio": 3.59,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "--focus against --surface",
+    "ratio": 6.29,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "light",
+    "opaque": true,
+    "name": "--focus against --bg",
+    "ratio": 5.82,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "body",
+    "selector": ".ds-hero .body",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      27
+    ],
+    "ratio": 10.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "quiet code",
+    "selector": ".ds-token code",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "glass label",
+    "selector": ".ds-controls .flab",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      26,
+      31,
+      41
+    ],
+    "ratio": 9.82,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "selected radio",
+    "selector": ".ds-controls [role=\"radio\"][aria-checked=\"true\"]",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "success text",
+    "selector": ".notice-success strong",
+    "foreground": [
+      91.0,
+      217.0,
+      138.0
+    ],
+    "sampledBackground": [
+      32,
+      57,
+      49
+    ],
+    "ratio": 6.94,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "warning text",
+    "selector": ".notice-warning strong",
+    "foreground": [
+      251.0,
+      191.0,
+      75.0
+    ],
+    "sampledBackground": [
+      61,
+      52,
+      41
+    ],
+    "ratio": 7.35,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "error text",
+    "selector": ".notice-error strong",
+    "foreground": [
+      255.0,
+      143.0,
+      135.0
+    ],
+    "sampledBackground": [
+      52,
+      27,
+      32
+    ],
+    "ratio": 7.2,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "state": "Default",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "state": "Hover",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      75,
+      67,
+      217
+    ],
+    "ratio": 6.77,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "state": "Pressed",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255,
+      255,
+      255
+    ],
+    "sampledBackground": [
+      93,
+      85,
+      250
+    ],
+    "ratio": 5.07,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "state": "Focus",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "state": "Selected",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "state": "Error",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      194,
+      55,
+      47
+    ],
+    "ratio": 5.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "state": "Success",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      23,
+      130,
+      68
+    ],
+    "ratio": 4.87,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "--control-border against --surface",
+    "ratio": 5.13,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "--control-border against --surface-2",
+    "ratio": 4.35,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "--focus against --surface",
+    "ratio": 7.43,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": false,
+    "name": "--focus against --bg",
+    "ratio": 8.41,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "body",
+    "selector": ".ds-hero .body",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      17,
+      20,
+      27
+    ],
+    "ratio": 10.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "quiet code",
+    "selector": ".ds-token code",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "glass label",
+    "selector": ".ds-controls .flab",
+    "foreground": [
+      199.0,
+      199.0,
+      206.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 9.69,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "selected radio",
+    "selector": ".ds-controls [role=\"radio\"][aria-checked=\"true\"]",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "success text",
+    "selector": ".notice-success strong",
+    "foreground": [
+      91.0,
+      217.0,
+      138.0
+    ],
+    "sampledBackground": [
+      32,
+      57,
+      49
+    ],
+    "ratio": 6.94,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "warning text",
+    "selector": ".notice-warning strong",
+    "foreground": [
+      251.0,
+      191.0,
+      75.0
+    ],
+    "sampledBackground": [
+      61,
+      52,
+      41
+    ],
+    "ratio": 7.35,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "error text",
+    "selector": ".notice-error strong",
+    "foreground": [
+      255.0,
+      143.0,
+      135.0
+    ],
+    "sampledBackground": [
+      52,
+      27,
+      32
+    ],
+    "ratio": 7.2,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "state": "Default",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "state": "Hover",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      75,
+      67,
+      217
+    ],
+    "ratio": 6.77,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "state": "Pressed",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255,
+      255,
+      255
+    ],
+    "sampledBackground": [
+      93,
+      85,
+      250
+    ],
+    "ratio": 5.07,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "state": "Focus",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "state": "Selected",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      88,
+      80,
+      236
+    ],
+    "ratio": 5.56,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "state": "Error",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      194,
+      55,
+      47
+    ],
+    "ratio": 5.41,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "state": "Success",
+    "name": "primary button",
+    "selector": "#state-button",
+    "foreground": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "sampledBackground": [
+      23,
+      130,
+      68
+    ],
+    "ratio": 4.87,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "--control-border against --surface",
+    "ratio": 5.13,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "--control-border against --surface-2",
+    "ratio": 4.35,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "--focus against --surface",
+    "ratio": 7.43,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  },
+  {
+    "theme": "dark",
+    "opaque": true,
+    "name": "--focus against --bg",
+    "ratio": 8.41,
+    "threshold": 3,
+    "passed": true,
+    "method": "opaque resolved token pair; composed text measured separately"
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "route": "/tests",
+    "theme": "light",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "theme": "light",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      254,
+      254,
+      255
+    ],
+    "ratio": 18.7,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "light",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "light",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      254,
+      254,
+      255
+    ],
+    "ratio": 18.7,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "theme": "light",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "theme": "light",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 17.45,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "light",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 18.85,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "light",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      17.0,
+      17.0,
+      20.0
+    ],
+    "sampledBackground": [
+      245,
+      246,
+      250
+    ],
+    "ratio": 17.45,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "theme": "dark",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "theme": "dark",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      27,
+      32,
+      42
+    ],
+    "ratio": 14.99,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "dark",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "dark",
+    "opaque": false,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      26,
+      31,
+      41
+    ],
+    "ratio": 15.16,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "theme": "dark",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/tests",
+    "theme": "dark",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "dark",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-menu span",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  },
+  {
+    "route": "/admin/bank",
+    "theme": "dark",
+    "opaque": true,
+    "scrollTop": 400,
+    "name": "scrolled navigation text",
+    "selector": ".workspace-current",
+    "foreground": [
+      245.0,
+      245.0,
+      247.0
+    ],
+    "sampledBackground": [
+      28,
+      32,
+      42
+    ],
+    "ratio": 14.96,
+    "threshold": 4.5,
+    "passed": true
+  }
+]

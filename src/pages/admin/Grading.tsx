@@ -1,0 +1,48 @@
+import { useEffect, useRef, useState } from 'react';
+import { useBlocker } from 'react-router-dom';
+import { Button, Segmented, Switch } from '@/components/ui/basic';
+import { Progress } from '@/components/ui/data';
+import { Confirm } from '@/components/authoring/Draft';
+import { type Grade } from '@/data/admin';
+import { useTeacherReview } from '@/state/TeacherReview';
+import { useMediaQuery, useHotkeys } from '@/lib/hooks';
+import { useText } from '@/i18n/LanguageProvider';
+
+type Draft = { id: string; grade?: Grade; comment: string };
+const gradeLabel = (g?: Grade) => g === 'ok' ? 'Correct' : g === 'part' ? 'Partial' : g === 'bad' ? 'Incorrect' : 'Awaiting sample review';
+export default function Grading() {
+ const wide = useMediaQuery('(min-width:1051px)');
+ const t = useText(); const review = useTeacherReview();
+ const [selected, setSelected] = useState(() => review.items.find(x => !x.grade)?.id ?? review.items[0]?.id ?? '');
+ const [draft, setDraft] = useState<Draft | null>(null); const [pending, setPending] = useState<(() => void) | null>(null); const [hidden, setHidden] = useState(true); const [shortcuts, setShortcuts] = useState(true); const [notice, setNotice] = useState('');
+ const actions = useRef<HTMLDivElement>(null); const heading = useRef<HTMLHeadingElement>(null); const note = useRef<HTMLTextAreaElement>(null);
+ const pos = review.items.findIndex(x => x.id === selected); const cur = review.items[pos];
+ const value: Draft = draft?.id === selected ? draft : { id: selected, grade: cur?.grade, comment: review.comments[selected] ?? '' };
+ const dirty = !!cur && (value.grade !== cur.grade || value.comment !== (review.comments[selected] ?? ''));
+ const blocker = useBlocker(dirty);
+ useEffect(() => { if (!dirty) return; const unload = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = ''; }; window.addEventListener('beforeunload', unload); return () => window.removeEventListener('beforeunload', unload); }, [dirty]);
+ const request = (action: () => void) => { if (dirty) setPending(() => action); else action(); };
+ const select = (id: string) => { if (id === selected) return; request(() => { setDraft(null); setSelected(id); requestAnimationFrame(() => heading.current?.focus()); }); };
+ const move = (delta: number) => { const id = review.items[pos + delta]?.id; if (id) select(id); };
+ const skip = () => { for (let i = 1; i < review.items.length; i++) { const item = review.items[(pos + i) % review.items.length]; if (!item.grade) { select(item.id); return; } } };
+ const choose = (grade: Grade) => { if (cur) setDraft({ ...value, grade }); };
+ useHotkeys({ '1': () => choose('ok'), '2': () => choose('part'), '3': () => choose('bad'), j: () => move(1), k: () => move(-1), s: skip, c: () => note.current?.focus() }, shortcuts && !!cur);
+ const apply = () => {
+  if (!value.grade || !dirty || !cur || !review.apply(cur.id, value.grade, value.comment)) return;
+  setDraft(null); setNotice('Sample grade applied. Student results were not changed.'); requestAnimationFrame(() => actions.current?.focus());
+ };
+ const undo = () => request(() => { const id = review.undoLast(); if (id) { setDraft(null); setSelected(id); setNotice('Last sample grade and note restored.'); requestAnimationFrame(() => heading.current?.focus()); } });
+ const done = review.items.filter(x => x.grade).length; const unfinished = review.items.length - done;
+ return <div data-no-translate className="authoring-page teacher-review-page"><header><div><h1>{t('Grading')}</h1><p>{t('{pending} awaiting review · {done} applied sample grades', { pending: unfinished, done })}</p></div><Button variant="secondary" to="/admin">{t('Back to overview')}</Button></header>
+ <section className="review-scope"><strong>{t('Session-only sample grading')}</strong><p>{t('Applied sample grades and notes stay while this teacher workspace is open. Leaving it or reloading resets them; student results never change.')}</p><Progress value={done} max={review.items.length} label={t('{done} of {total} sample responses graded', { done, total: review.items.length })} /></section>
+ {notice && <p role="status" className="review-feedback">{t(notice)}</p>}
+ {!unfinished && review.items.length > 0 && <section className="authoring-card review-card"><h2>{t('Sample queue complete')}</h2><p>{t('All sample responses have an applied grade. Student results remain independent.')}</p><Button variant="secondary" to="/admin">{t('Back to overview')}</Button></section>}
+ {!cur ? <section className="authoring-card review-card"><h2>{t('No response available')}</h2><p>{t('Choose an available sample response or return to the overview.')}</p></section> : <div className="review-grading-grid"><section className="authoring-card review-card review-queue" aria-labelledby="queue-title"><h2 id="queue-title">{t('Sample response queue')}</h2><details open={wide}><summary>{t('Show response queue')}</summary><ol>{review.items.map((item, i) => <li key={item.id}><button className="review-queue-button" type="button" aria-current={item.id === selected ? 'true' : undefined} onClick={() => select(item.id)}><strong>{t('Response {number}', { number: i + 1 })} · Q{item.q}</strong><span>{t(gradeLabel(item.grade))}</span>{!hidden && <span>{item.student} · {item.group}</span>}</button></li>)}</ol></details></section>
+ <div className="review-response"><section className="authoring-card review-card"><h2 ref={heading} tabIndex={-1} id="response-title">{t('Response {number}', { number: pos + 1 })} · Q{cur.q}</h2><div className="review-switch"><span>{t('Hide student identifiers')}</span><Switch on={hidden} onChange={setHidden} label={t('Hide student identifiers')} /></div><p>{t(hidden ? 'Student identity hidden' : 'Sample student')}{!hidden && ` ${cur.student} · ${cur.group}`}</p><h3>{t('Question')}</h3><p className="review-material" lang="kaa">{cur.stem}</p><h3>{t('Student answer')}</h3><p className="review-answer" lang="kaa">{cur.answer}</p><p className="review-status">{t('Applied state')}: {t(gradeLabel(cur.grade))}</p></section>
+ <section className="authoring-card review-card"><h2>{t('Model and rubric')}</h2>{cur.accepted.length ? <><h3>{t('Accepted answers')}</h3><ul className="review-models" lang="kaa">{cur.accepted.map(a => <li key={a}>{a}</li>)}</ul></> : <p>{t('No accepted model is set. Review the meaning using the rubric; an empty model does not imply an incorrect response.')}</p>}<dl className="review-rubric">{[['Correct', '1 point', 'The answer expresses the required concept.'], ['Partial', '0.5 point', 'The core idea is present but incomplete.'], ['Incorrect', '0 points', 'The required concept is absent or contradicted.']].map(([label, points, help]) => <div key={label}><dt>{t(label)} · {t(points)}</dt><dd>{t(help)}</dd></div>)}</dl></section>
+ <section className="authoring-card review-card"><h2>{t('Draft grade and note')}</h2><p role="status">{t(dirty ? 'Unapplied changes. Apply or discard before leaving.' : 'No unapplied changes.')}</p><Segmented<Grade> label={t('Choose a draft grade')} value={value.grade ?? '' as Grade} onChange={choose} options={(['ok','part','bad'] as Grade[]).map(g => ({ value: g, label: t(gradeLabel(g)) }))} /><label htmlFor="review-note">{t('Local review note (optional)')}</label><textarea id="review-note" ref={note} value={value.comment} rows={3} onChange={e => setDraft({ ...value, comment: e.target.value })} /><p>{t('This note is part of the sample grade, not a message to a student.')}</p><div className="authoring-actions review-actions review-grade-actions" ref={actions} tabIndex={-1} role="group" aria-label={t('Draft grade and note')}><Button disabled={!value.grade || !dirty} onClick={apply}>{t('Apply sample grade')}</Button><Button variant="secondary" disabled={!dirty} onClick={() => request(() => { setDraft(null); setNotice('Unapplied changes discarded.'); })}>{t('Discard unapplied changes')}</Button><Button variant="secondary" disabled={!review.undo} onClick={event => { if (event.detail <= 1) undo(); }}>{t('Undo last applied sample grade')}</Button></div></section>
+ <section className="authoring-card review-card"><div className="authoring-actions review-actions"><Button variant="secondary" disabled={pos <= 0} onClick={() => move(-1)}>{t('Previous')}</Button><Button variant="secondary" disabled={!review.items.some(x => !x.grade && x.id !== selected)} onClick={skip}>{t('Skip to next unfinished')}</Button><Button variant="secondary" disabled={pos >= review.items.length - 1} onClick={() => move(1)}>{t('Next')}</Button></div><div className="review-switch"><span>{t('Keyboard shortcuts')}</span><Switch on={shortcuts} onChange={setShortcuts} label={t('Keyboard shortcuts')} /></div><p>{t('1 / 2 / 3 choose a draft grade; J / K move; S skips; C focuses the note. Shortcuts pause while typing or in dialogs.')}</p></section></div></div>}
+ <Confirm open={!!pending && blocker.state !== 'blocked'} title="Discard unapplied review changes?" action="Discard and continue" onCancel={() => setPending(null)} onConfirm={() => { setDraft(null); const action = pending; setPending(null); action?.(); }}><p>{t('The draft grade and note have not been applied. Continuing discards these edits only.')}</p></Confirm>
+ <Confirm open={blocker.state === 'blocked'} title="Leave with unapplied review changes?" action="Leave anyway" onCancel={() => blocker.state === 'blocked' && blocker.reset()} onConfirm={() => blocker.state === 'blocked' && blocker.proceed()}><p>{t('The draft grade and note have not been applied. Leaving discards these edits. Applied grades remain only while the teacher workspace stays open.')}</p></Confirm>
+ </div>;
+}

@@ -1,0 +1,2810 @@
+[
+  {
+    "width": 1366,
+    "theme": "light",
+    "language": "uz",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 198,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "language": "ru",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 198,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 198,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 214,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "light",
+    "language": "uz",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 182,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "light",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 182,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "light",
+    "language": "ru",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 182,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "light",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 182,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 182,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "student",
+    "compact": false,
+    "links": [
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 66,
+        "width": 182,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 182,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 1024,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "language": "uz",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "language": "ru",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 318,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "light",
+    "language": "uz",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "light",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "light",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "light",
+    "language": "ru",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "light",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Bosh sahifa",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Testlar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Natijalar dinamikasi",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Xatolarim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Asosiy navigatsiya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "dark",
+    "language": "uz",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Umumiy ko‘rinish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Savollar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Test tuzish",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Baholash",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "O‘quvchilar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Tahlil",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "O‘quvchi ilovasi",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "O‘qituvchi navigatsiyasi",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Bas bet",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Testler",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Nátiyjeler dinamikası",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Qátelerim",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Profil",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Tiykarǵı navigaciya",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "dark",
+    "language": "kaa",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Ulıwma kórinis",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Sorawlar banki",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Import",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Test dúziw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Bahalaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Oqıwshılar",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Talqılaw",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Oqıwshı qosımshası",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Muǵallim navigaciyası",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "student",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Главная",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Тесты",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Прогресс",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Мои ошибки",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Профиль",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Основная навигация",
+    "overflow": false,
+    "passed": true
+  },
+  {
+    "width": 320,
+    "theme": "dark",
+    "language": "ru",
+    "kind": "teacher",
+    "compact": true,
+    "links": [
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Обзор",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Банк вопросов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Импорт",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Конструктор тестов",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Оценивание",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Ученики",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Аналитика",
+        "visible": true
+      },
+      {
+        "height": 48,
+        "width": 262,
+        "clipped": false,
+        "label": "Приложение ученика",
+        "visible": true
+      }
+    ],
+    "current": 1,
+    "name": "Навигация преподавателя",
+    "overflow": false,
+    "passed": true
+  }
+]

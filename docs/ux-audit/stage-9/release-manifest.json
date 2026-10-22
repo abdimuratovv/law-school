@@ -1,0 +1,30 @@
+{
+  "stage": 9,
+  "status": "Automated validation and release preparation delivered; full Stage 9 acceptance pending loading-performance finding S9-P01 and human reviews; not deployed",
+  "artifacts": {
+    "source-before.zip": {
+      "sha256": "fee4199a29d5ad1048973195e4658c1292c7673684b6c7723fb1dee1175fdfc4",
+      "bytes": 223462
+    },
+    "release-dist.zip": {
+      "sha256": "9e7f2566bc0448bd5aefff735f5397e72d310fcdeada3fa437b35f5a5de0b574",
+      "bytes": 210336
+    },
+    "release-source.zip": {
+      "sha256": "c1201c70d9e56de980c0ba98f7d6dba8e1dbd98a77d83d093776b8dff4c57361",
+      "bytes": 1411921
+    }
+  },
+  "verificationSHA256": "fb8ae61ef6ee69c939da87a7b74dce29b35b216d88faed6265e99fde2767c65d",
+  "distFiles": {
+    "dist/assets/AdminRoutes-D4RfYnuf.js": "0a8c005c0b1bbb3dad49c14a61418c7fa578a31cdafe9c41c31c1b7165376b31",
+    "dist/assets/DesignSystem-CfOrviya.js": "23836cc376f5f0b93863cb2d3236b7327f245757c6c4d58e2c90da09bfc78bf4",
+    "dist/assets/index-CoQWZ6c5.css": "27299ba9534752459ecb0d311e4108344ae3e106ecf03dcfbd73721c34999886",
+    "dist/assets/index-KefI9Drs.js": "69e8d7b18b6a553874dec3aae5b18351fac184830ef27e0f87134c7bdc1a08b2",
+    "dist/favicon.svg": "e0ec592e186e11ad0ff501a3caeddc6eeb25fbd7934f6f0a00025efbab3b72a0",
+    "dist/index.html": "7c1f866b335b7234b4367eef383fd619e25af3a38f0eecf83f5e4c015422cf8d"
+  },
+  "sourceArchiveScope": "Application source/public/build inputs, README, audit documents, reports and runners. Screenshot files, historical backup zips, baseline benchmark workspace and dependencies are excluded. Inspect screenshots in the original workspace.",
+  "rollback": "Stage 8 checkpoint; preserves data schema but restores known static-label and teacher-scroll defects. See RELEASE-AND-ROLLBACK.md.",
+  "performanceAcceptance": "Pending: unresolved loading regression S9-P01; no blur-specific cause established"
+}

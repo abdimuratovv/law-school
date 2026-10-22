@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Question map · desktop popover</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 2984px; height: 1000px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="2">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>Popover anchored to the toolbar · Esc or M closes</span></div>
+      <div class="screen desk {{f.cls}}">
+        <div class="mesh calm"></div>
+        <article class="card col" style="position: absolute; left: 148px; top: 104px; width: 640px; bottom: 112px; padding: 32px 40px; gap: 22px">
+          <div class="row" style="gap: 8px"><span class="hl">Question 12</span><span class="tag acc">Constitutional law</span><span class="tag">Single choice</span></div>
+          <p class="body" lang="kaa">Huqıqıy atamalar hám olardıń anıqlamaları ortasındaǵı durıs sáykeslikti anıqlań.</p>
+          <p class="body l2" lang="kaa">Atamalar: 1. Deputat 2. Legitimlik 3. Ministr 4. Referendum 5. Nızam ústinligi</p>
+        </article>
+        <section class="card col" style="position: absolute; left: 812px; top: 104px; width: 480px; padding: 24px; gap: 12px">
+          <h2 class="hl">Choose one answer</h2>
+          <div class="opt"><span class="lt-badge">A</span><span class="txt">1-b; 2-d; 3-a; 4-c; 5-e</span><span class="end"></span></div>
+          <div class="opt"><span class="lt-badge">B</span><span class="txt">1-d; 2-b; 3-g; 4-e; 5-f</span><span class="end"></span></div>
+          <div class="opt sel"><span class="lt-badge">C</span><span class="txt">1-d; 2-b; 3-a; 4-e; 5-c</span><span class="end"><svg class="i" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span></div>
+          <div class="opt"><span class="lt-badge">D</span><span class="txt">1-b; 2-a; 3-d; 4-e; 5-c</span><span class="end"></span></div>
+        </section>
+        <header class="glass row" style="position: absolute; left: 24px; right: 24px; top: 16px; height: 68px; border-radius: 34px; padding: 0 12px 0 8px; gap: 12px">
+          <span class="icon-btn"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></span>
+          <div class="col" style="width: 300px"><span class="hl">Mock exam No. 7</span><span class="saved">All answers saved</span></div>
+          <div class="row" style="flex: 1; justify-content: center; gap: 14px"><div class="prog" style="flex: none; width: 420px"><i style="width: 26.6%"></i></div><span class="callout b600 num">12 / 45</span></div>
+          <div class="row" style="width: 300px; justify-content: flex-end"><span class="timer num">1:48:20</span></div>
+        </header>
+
+        <section class="glass strong popover col" role="dialog" aria-labelledby="mp-{{f.cls}}" style="left: 594px; bottom: 106px; width: 400px; padding: 22px 24px 24px; gap: 14px">
+          <div class="row" style="justify-content: space-between; align-items: flex-start">
+            <div class="col" style="gap: 2px"><h2 class="t2" id="mp-{{f.cls}}">Question map</h2><p class="fn gl2 num">19 answered · 3 flagged · 23 left</p></div>
+            <button class="icon-btn press" aria-label="Close question map"><svg class="i" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></button>
+          </div>
+          <div class="row" style="gap: 14px; flex-wrap: wrap">
+            <span class="row cap" style="gap: 6px"><span class="cell ans cur" style="width: 24px; height: 24px; font-size: 0; border-radius: 7px; outline-offset: 1.5px; outline-width: 2px"></span>Current</span>
+            <span class="row cap" style="gap: 6px"><span class="cell ans" style="width: 24px; height: 24px; border-radius: 7px"></span>Answered</span>
+            <span class="row cap" style="gap: 6px"><span class="cell un" style="width: 24px; height: 24px; border-radius: 7px"></span>Unanswered</span>
+            <span class="row cap" style="gap: 6px"><span class="cell flg" style="width: 24px; height: 24px; border-radius: 7px"></span>Flagged</span>
+          </div>
+          <p class="eyebrow">Single choice · 1–35</p>
+          <div class="grid7">
+            <sc-for list="{{f.single}}" as="c" hint-placeholder-count="35"><a class="cell press {{c.cls}}" href="Exam-Desktop.dc.html" aria-label="{{c.label}}" style="text-decoration: none">{{c.n}}</a></sc-for>
+          </div>
+          <p class="eyebrow">Written · 36–45</p>
+          <div class="grid7">
+            <sc-for list="{{f.written}}" as="c" hint-placeholder-count="10"><a class="cell press {{c.cls}}" href="Written-Desktop.dc.html" aria-label="{{c.label}}" style="text-decoration: none">{{c.n}}</a></sc-for>
+          </div>
+        </section>
+        <div class="glass" style="position: absolute; left: 785px; bottom: 98px; width: 18px; height: 18px; transform: rotate(45deg); border-radius: 3px; border-top: 0; border-left: 0; box-shadow: none; background-color: var(--glass-strong)"></div>
+
+        <nav class="glass toolbar" aria-label="Question navigation" style="left: 50%; right: auto; width: 600px; margin-left: -300px; bottom: 24px">
+          <button class="tool press"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"></path></svg>Previous</span><span class="kb">←</span></button>
+          <button class="tool press"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><path d="M5.5 21V4.5"></path><path d="M5.5 4.5h11l-2.2 4 2.2 4h-11"></path></svg>Flag</span><span class="kb">F</span></button>
+          <button class="tool press" aria-expanded="true" style="background: var(--accent-soft); color: var(--accent-text)"><span class="row" style="gap: 6px"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.8"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.8"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.8"></rect></svg>Question map</span><span class="kb">M</span></button>
+          <button class="tool primary press"><span class="row" style="gap: 6px">Next<svg class="i" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg></span><span class="kb">→</span></button>
+        </nav>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2984,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const ans = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 15, 16, 20, 21, 23, 36, 37];
+    const flg = [9, 14, 22];
+    const mk = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => {
+      const n = a + i;
+      const s = flg.indexOf(n) > -1 ? 'flg' : ans.indexOf(n) > -1 ? 'ans' : 'un';
+      const word = s === 'flg' ? 'flagged' : s === 'ans' ? 'answered' : 'unanswered';
+      return { n, cls: s + (n === 12 ? ' cur' : ''), label: 'Question ' + n + ', ' + word + (n === 12 ? ', current' : '') };
+    });
+    const single = mk(1, 35);
+    const written = mk(36, 45);
+    return { frames: [ { label: 'Light', cls: 't-light', single, written }, { label: 'Dark', cls: 't-dark', single, written } ] };
+  }
+}
+</script>
+</body>
+</html>

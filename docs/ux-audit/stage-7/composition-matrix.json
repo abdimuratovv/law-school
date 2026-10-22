@@ -1,0 +1,6692 @@
+[
+  {
+    "case": "overview",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1440-light-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1440-light-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1440-light-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1440-light-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1440-light-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1440-light-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1440-light-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1440-light-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1440-light-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1440-light-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1440-light-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1440-light-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1440-light-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1440-light-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1440-light-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1440-light-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1440-light-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1440-light-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1440-light-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1440-light-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1440-light-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1440-light-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1440-light-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1440-light-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1440-light-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1440-light-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1440-light-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1440-light-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1440-light-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1440-light-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1440-light-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1440-light-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1440-light-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1440-dark-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1440-dark-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1440-dark-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1440-dark-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1440-dark-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1440-dark-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1440-dark-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1440-dark-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1440-dark-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1440-dark-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1440-dark-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1440-dark-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1440-dark-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1440-dark-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1440-dark-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1440-dark-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1440-dark-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1440-dark-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1440-dark-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1440-dark-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1440-dark-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1440-dark-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1440-dark-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1440-dark-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1440-dark-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1440-dark-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1440-dark-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1440-dark-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1440-dark-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1440-dark-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1440-dark-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1440-dark-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1440-dark-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1366-light-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1366-light-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1366-light-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1366-light-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1366-light-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1366-light-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1366-light-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1366-light-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1366-light-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1366-light-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1366-light-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1366-light-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1366-light-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1366-light-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1366-light-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1366-light-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1366-light-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1366-light-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1366-light-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1366-light-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1366-light-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1366-light-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1366-light-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1366-light-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1366-light-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1366-light-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1366-light-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1366-light-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1366-light-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1366-light-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1366-light-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1366-light-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1366-light-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1366-dark-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1366-dark-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1366-dark-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1366-dark-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1366-dark-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1366-dark-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1366-dark-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1366-dark-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1366-dark-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1366-dark-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1366-dark-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1366-dark-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1366-dark-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1366-dark-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1366-dark-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1366-dark-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1366-dark-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1366-dark-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1366-dark-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1366-dark-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1366-dark-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1366-dark-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1366-dark-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1366-dark-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1366-dark-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1366-dark-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1366-dark-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1366-dark-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1366-dark-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1366-dark-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1366-dark-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1366-dark-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1366-dark-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1024-light-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1024-light-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1024-light-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1024-light-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1024-light-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1024-light-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1024-light-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1024-light-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1024-light-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1024-light-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1024-light-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1024-light-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1024-light-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1024-light-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1024-light-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1024-light-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1024-light-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1024-light-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1024-light-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1024-light-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1024-light-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1024-light-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1024-light-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1024-light-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1024-light-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1024-light-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1024-light-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1024-light-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1024-light-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1024-light-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1024-light-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1024-light-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1024-light-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1024-dark-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1024-dark-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1024-dark-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1024-dark-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1024-dark-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1024-dark-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1024-dark-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1024-dark-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1024-dark-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1024-dark-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1024-dark-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1024-dark-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1024-dark-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1024-dark-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1024-dark-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1024-dark-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1024-dark-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1024-dark-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1024-dark-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1024-dark-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1024-dark-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1024-dark-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-1024-dark-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-1024-dark-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-1024-dark-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-1024-dark-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-1024-dark-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-1024-dark-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-1024-dark-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-1024-dark-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-1024-dark-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-1024-dark-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-1024-dark-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-390-light-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-390-light-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-390-light-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-390-light-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-390-light-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-390-light-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-390-light-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-390-light-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-390-light-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-390-light-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-390-light-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-390-light-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-390-light-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-390-light-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-390-light-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-390-light-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-390-light-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-390-light-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-390-light-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-390-light-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-390-light-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-390-light-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-390-light-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-390-light-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-390-light-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-390-light-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-390-light-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-390-light-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-390-light-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-390-light-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-390-light-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-390-light-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-390-light-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-390-dark-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-390-dark-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-390-dark-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-390-dark-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-390-dark-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-390-dark-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-390-dark-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-390-dark-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-390-dark-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-390-dark-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-390-dark-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-390-dark-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-390-dark-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-390-dark-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-390-dark-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-390-dark-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-390-dark-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-390-dark-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-390-dark-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-390-dark-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-390-dark-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-390-dark-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-390-dark-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-390-dark-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-390-dark-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-390-dark-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-390-dark-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-390-dark-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-390-dark-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-390-dark-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-390-dark-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-390-dark-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-390-dark-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-320-light-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-320-light-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-320-light-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-320-light-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-320-light-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-320-light-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-320-light-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-320-light-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-320-light-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-320-light-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-320-light-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-320-light-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-320-light-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-320-light-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-320-light-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-320-light-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-320-light-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-320-light-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-320-light-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-320-light-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-320-light-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-320-light-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-320-light-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-320-light-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-320-light-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-320-light-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-320-light-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-320-light-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-320-light-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-320-light-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-320-light-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-320-light-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-320-light-ru.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-320-dark-uz.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-320-dark-uz.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-320-dark-uz.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-320-dark-uz.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-320-dark-uz.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-320-dark-uz.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-320-dark-uz.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-320-dark-uz.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-320-dark-uz.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-320-dark-uz.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-320-dark-uz.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-320-dark-kaa.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-320-dark-kaa.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-320-dark-kaa.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-320-dark-kaa.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-320-dark-kaa.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-320-dark-kaa.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-320-dark-kaa.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-320-dark-kaa.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-320-dark-kaa.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-320-dark-kaa.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-320-dark-kaa.png"
+  },
+  {
+    "case": "overview",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/overview-320-dark-ru.png"
+  },
+  {
+    "case": "bank",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/bank-320-dark-ru.png"
+  },
+  {
+    "case": "editor-new",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-new-320-dark-ru.png"
+  },
+  {
+    "case": "editor-matching",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/editor-matching-320-dark-ru.png"
+  },
+  {
+    "case": "builder-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-1-320-dark-ru.png"
+  },
+  {
+    "case": "builder-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-2-320-dark-ru.png"
+  },
+  {
+    "case": "builder-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-3-320-dark-ru.png"
+  },
+  {
+    "case": "builder-4",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/builder-4-320-dark-ru.png"
+  },
+  {
+    "case": "import-1",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-1-320-dark-ru.png"
+  },
+  {
+    "case": "import-2",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-2-320-dark-ru.png"
+  },
+  {
+    "case": "import-3",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": null,
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/import-3-320-dark-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1440-light-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1440-light-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1440-light-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1440-dark-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1440-dark-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1440,
+      900
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 420,
+      "right": 1020,
+      "top": 342.0078125,
+      "bottom": 557.9921875,
+      "width": 1440,
+      "height": 900
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1440-dark-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1366-light-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1366-light-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1366-light-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1366-dark-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1366-dark-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1366,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 383,
+      "right": 983,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1366,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1366-dark-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1024-light-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1024-light-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1024-light-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1024-dark-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1024-dark-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      1024,
+      768
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 212,
+      "right": 812,
+      "top": 276.0078125,
+      "bottom": 491.9921875,
+      "width": 1024,
+      "height": 768
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-1024-dark-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-390-light-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-390-light-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 264.8125,
+      "bottom": 579.1875,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-390-light-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-390-dark-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 277.609375,
+      "bottom": 566.390625,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-390-dark-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      390,
+      844
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 378,
+      "top": 264.8125,
+      "bottom": 579.1875,
+      "width": 390,
+      "height": 844
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-390-dark-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 126.8125,
+      "bottom": 441.1875,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-320-light-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 126.8125,
+      "bottom": 441.1875,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-320-light-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "light",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 112.21875,
+      "bottom": 455.78125,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-320-light-ru.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "uz",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 126.8125,
+      "bottom": 441.1875,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-320-dark-uz.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "kaa",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 126.8125,
+      "bottom": 441.1875,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-320-dark-kaa.png"
+  },
+  {
+    "case": "discard-dialog",
+    "viewport": [
+      320,
+      568
+    ],
+    "theme": "dark",
+    "language": "ru",
+    "overflow": false,
+    "main": 1,
+    "h1": 1,
+    "small": [],
+    "clipped": [],
+    "dialog": {
+      "left": 12,
+      "right": 308,
+      "top": 112.21875,
+      "bottom": 455.78125,
+      "width": 320,
+      "height": 568
+    },
+    "passed": true,
+    "errors": [],
+    "screenshot": "screenshots/discard-dialog-320-dark-ru.png"
+  }
+]

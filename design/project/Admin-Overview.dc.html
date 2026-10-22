@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Admin · overview</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./hm.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="board" style="width: 3858px; height: 1294px">
+  <sc-for list="{{frames}}" as="f" hint-placeholder-count="3">
+    <div class="fcol">
+      <div class="flabel">{{f.label}} <span>{{f.sub}}</span></div>
+      <div class="screen admin {{f.kind}} {{f.cls}}">
+        <div class="mesh"></div>
+        <div class="shell">
+          <nav class="glass aside" aria-label="Admin">
+            <div class="brand"><div class="mark"><svg class="i s" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7.5h14"></path><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z"></path></svg></div><div class="col hide-t"><span class="hl" style="font-size: 15px">Huqıq Mektebi</span><span class="cap gl2">Teacher workspace</span></div></div>
+            <a class="nav-i on" href="Admin-Overview.dc.html" aria-current="page"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 16a7.5 7.5 0 1 1 15 0"></path><path d="M12 16l3.5-4"></path></svg>Overview</a>
+            <p class="sec">Content</p>
+            <a class="nav-i" href="Admin-Bank.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="3"></rect><path d="M9 8.5h6M9 12h6M9 15.5h3.5"></path></svg>Question bank</a>
+            <a class="nav-i" href="Admin-Import.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19.5h14"></path></svg>Import</a>
+            <a class="nav-i" href="Admin-Builder.dc.html"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="3"></rect><path d="M9 11h6M9 15h4M9.5 3.5h5"></path></svg>Tests</a>
+            <p class="sec">Students</p>
+            <a class="nav-i" href="Admin-Grading.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg>Grading<span class="tag warn num">14</span></a>
+            <a class="nav-i" href="Admin-Students.dc.html"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.3"></circle><path d="M3.5 19c.9-3 3-4.5 5.5-4.5s4.6 1.5 5.5 4.5"></path><path d="M15.5 6a3 3 0 0 1 0 6M17 14.7c1.7.6 3 1.9 3.5 4.3"></path></svg>Students</a>
+            <a class="nav-i" href="Admin-Analytics.dc.html"><svg class="i" viewBox="0 0 24 24"><path d="M5 20V11M10 20V5M15 20v-7M20 20v-4"></path></svg>Analytics</a>
+            <div style="flex: 1"></div>
+            <div class="row" style="gap: 10px; padding: 8px; justify-content: center"><span class="mark" style="border-radius: 999px; background: var(--surface-2); color: var(--label); font: 600 13px/18px Inter, sans-serif">MN</span><div class="col hide-t" style="flex: 1"><span class="fn b600">Malika N.</span><span class="cap gl2">Mentor · 3 groups</span></div></div>
+          </nav>
+
+          <div class="mainc">
+            <header class="glass atop">
+              <h1 class="atitle" style="flex: 1">Overview</h1>
+              <span class="pill-btn hide-t"><svg class="i s" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="3"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"></path></svg>This week · Sep 28 – Oct 4<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></span>
+              <span class="pill-btn">All groups<svg class="i xs" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></svg></span>
+              <a href="Admin-Builder.dc.html" class="btn btn-primary sm press" style="border-radius: 999px"><svg class="i s" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>New test</a>
+            </header>
+
+            <div class="work">
+              <div class="g-kpi">
+                <div class="kpi"><span class="k">Active students</span><span class="v">128</span><span class="fn l2 row" style="gap: 6px"><span class="tag ok"><svg class="i xs" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>6</span>new this week</span></div>
+                <div class="kpi"><span class="k">Tests taken this week</span><span class="v">342</span><span class="fn l2 row" style="gap: 6px"><span class="tag ok"><svg class="i xs" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>18 %</span>vs last week</span></div>
+                <div class="kpi"><span class="k">Average score</span><span class="v">64 %</span><span class="fn l2 row" style="gap: 6px"><span class="tag ok"><svg class="i xs" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>3 pts</span>mock exams only</span></div>
+                <a class="kpi" href="Admin-Grading.dc.html" style="text-decoration: none; color: var(--label); box-shadow: inset 0 0 0 2px var(--warn-line), var(--card-shadow)"><span class="k row" style="gap: 6px"><svg class="i s warnc" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"></path></svg>Awaiting manual grading</span><span class="v">14</span><span class="fn row" style="gap: 6px; justify-content: space-between"><span class="l2">Oldest waits 2 days</span><span class="acc b600">Grade now →</span></span></a>
+              </div>
+
+              <div class="g-main" style="flex: 1">
+                <div class="col" style="gap: 16px; min-height: 0; min-width: 0">
+                  <section class="panel">
+                    <div class="ph"><h2 style="flex: 1">Tests taken · last 7 days</h2><span class="fn l2 num">342 total · peak Thu</span></div>
+                    <div class="pb" style="display: flex; align-items: flex-end; gap: 14px; height: 200px; padding-top: 8px" role="img" aria-label="Tests per day: Mon 38, Tue 52, Wed 47, Thu 74, Fri 61, Sat 44, Sun 26">
+                      <sc-for list="{{f.days}}" as="d" hint-placeholder-count="7">
+                        <div class="col" style="flex: 1; align-items: center; gap: 6px; height: 100%; justify-content: flex-end">
+                          <span class="cap l2 num">{{d.v}}</span>
+                          <div style="width: 100%; max-width: 56px; border-radius: 8px 8px 4px 4px; height: {{d.h}}; background: {{d.c}}"></div>
+                          <span class="cap l3">{{d.d}}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </section>
+                  <section class="panel" style="flex: 1">
+                    <div class="ph"><h2 style="flex: 1">Recently flagged problem questions</h2><a href="Admin-Analytics.dc.html" class="btn btn-plain sm" style="padding: 0 6px">Open analytics</a></div>
+                    <table class="tbl">
+                      <thead><tr><th style="padding-left: 16px">ID</th><th>Question</th><th class="hide-t">Topic</th><th>Signal</th><th class="n" style="padding-right: 16px">Correct</th></tr></thead>
+                      <tbody>
+                        <sc-for list="{{f.flags}}" as="q" hint-placeholder-count="4">
+                          <tr><td class="num fn b600" style="padding-left: 16px; width: 80px">{{q.id}}</td><td style="max-width: 260px"><span class="clip" lang="kaa">{{q.stem}}</span></td><td class="hide-t fn l2" style="white-space: nowrap">{{q.topic}}</td><td><span class="tag {{q.tc}}">{{q.issue}}</span></td><td class="n b600" style="padding-right: 16px">{{q.pc}}</td></tr>
+                        </sc-for>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+
+                <div class="col" style="gap: 16px; min-height: 0; min-width: 0">
+                  <section class="panel">
+                    <div class="ph"><h2 style="flex: 1">Grading queue</h2><span class="tag warn num">14 waiting</span></div>
+                    <div class="col" style="padding: 0 4px">
+                      <sc-for list="{{f.queue}}" as="g" hint-placeholder-count="3">
+                        <a class="li" href="Admin-Grading.dc.html" style="padding: 10px 12px"><div class="col" style="flex: 1"><span class="f14 b600">{{g.test}}</span><span class="fn l2">{{g.sub}}</span></div><span class="hl num">{{g.n}}</span><svg class="i s l3" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"></path></svg></a>
+                      </sc-for>
+                    </div>
+                    <div class="pb" style="padding-top: 8px"><a href="Admin-Grading.dc.html" class="btn btn-primary block press">Start grading</a></div>
+                  </section>
+                  <section class="panel" style="flex: 1">
+                    <div class="ph"><h2 style="flex: 1">Assigned tests</h2><a href="Admin-Builder.dc.html" class="btn btn-plain sm" style="padding: 0 6px">Manage</a></div>
+                    <div class="col pb" style="gap: 14px">
+                      <sc-for list="{{f.assigned}}" as="a" hint-placeholder-count="3">
+                        <div class="col" style="gap: 6px">
+                          <div class="row" style="justify-content: space-between; gap: 8px"><span class="f14 b600">{{a.name}}</span><span class="tag {{a.tc}}">{{a.due}}</span></div>
+                          <div class="row" style="gap: 10px"><div class="bar" style="flex: 1"><i style="width: {{a.pct}}"></i></div><span class="fn l2 num" style="white-space: nowrap">{{a.done}}</span></div>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3858,"height":1294}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const raw = [['Mon', 38], ['Tue', 52], ['Wed', 47], ['Thu', 74], ['Fri', 61], ['Sat', 44], ['Sun', 26]];
+    const days = raw.map(([d, v], i) => ({ d: i === 6 ? 'Today' : d, v, h: Math.round(v * 1.9) + 'px', c: i === 6 ? 'var(--accent)' : 'var(--accent-soft-2)' }));
+    const flags = [
+      { id: 'Q-0422', stem: 'Puqaralıq huqıqıy qatnasıqlardıń subyektleri kimler?', topic: 'Civil law', issue: 'Likely key error', tc: 'bad', pc: '18 %' },
+      { id: 'Q-0387', stem: 'Administrativlik huqıqbuzarlıq ushın qollanılatuǵın jazalar túrlerin kórsetiń.', topic: 'Administrative', issue: 'Ambiguous · B/C split', tc: 'warn', pc: '41 %' },
+      { id: 'Q-0119', stem: 'Neke jasın tómenletiw qanday jaǵdaylarda ruxsat etiledi?', topic: 'Family law', issue: '6 student reports', tc: 'warn', pc: '52 %' },
+      { id: 'Q-0051', stem: 'Insan huqıqları ulıwma deklaraciyası qashan qabıl etilgen?', topic: 'Human rights', issue: 'Too easy', tc: '', pc: '97 %' }
+    ];
+    const queue = [
+      { test: 'Mock exam No. 7', sub: '11-B · submitted today', n: 9 },
+      { test: 'Mock exam No. 6', sub: '11-A · oldest 2 days', n: 3 },
+      { test: 'Constitutional law · Practice set 3', sub: '11-A, 11-B', n: 2 }
+    ];
+    const assigned = [
+      { name: 'Constitutional law · Practice set 3', due: 'Due Oct 8', tc: 'warn', pct: '71%', done: '44 / 62 done' },
+      { name: 'Mock exam No. 8', due: 'Due Oct 12', tc: '', pct: '18%', done: '11 / 62 done' },
+      { name: 'Criminal law · Practice set 2', due: 'Closed', tc: 'ok', pct: '95%', done: '59 / 62 done' }
+    ];
+    const d = { days, flags, queue, assigned };
+    return {
+      frames: [
+        { label: 'Desktop 1440', sub: 'Light', cls: 't-light', kind: 'desk', ...d },
+        { label: 'Desktop 1440', sub: 'Dark', cls: 't-dark', kind: 'desk', ...d },
+        { label: 'Tablet 834', sub: 'Light · sidebar becomes a rail, grids reflow', cls: 't-light', kind: 'tabl', ...d }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

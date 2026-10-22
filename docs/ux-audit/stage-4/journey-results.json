@@ -1,0 +1,252 @@
+[
+  {
+    "name": "Phone error is associated and focused",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Incomplete code exposes associated error",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Whole code fills six positions without automatic navigation",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Code Backspace edits only final digit",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Change number retains value and focuses phone",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Blocked sign-in stays on form without false authentication",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Continue retries and restores full deep link",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "New learner has optional sample and no fabricated score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "New learner can bypass sample",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Visible-title search uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Search survives reload uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Catalog return restores filters, search and originating card uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "No-match state retains filters uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Clear filters resets mode, topic and search uz",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Visible-title search kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Search survives reload kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Catalog return restores filters, search and originating card kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "No-match state retains filters kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Clear filters resets mode, topic and search kaa",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Visible-title search ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Search survives reload ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Catalog return restores filters, search and originating card ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "No-match state retains filters ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Clear filters resets mode, topic and search ru",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Failed start stays in lobby and retains no new session",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Start creates one untimed practice session",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Resume preserves existing session and timestamp",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Sample checking reveals feedback",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Question-map selection focuses step heading",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Sample language change retains typed Karakalpak",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Failed sample completion preserves sample state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Completion returns to lobby and creates no attempt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Lobby origin survives introduction round trip",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Written sample can finish empty",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Skip returns home without changing introduction status",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Active session takes priority over completed introduction",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Home resumes directly with home origin",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Reopened sample skips back to profile",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Incomplete cards are explicitly preview-labelled",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Preview lobby has one primary preview action",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Timed start uses configured 150-minute deadline",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Timed resume keeps original deadline",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Expired lobby explains finishing existing attempt",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Expired attempt completes once instead of restarting",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Unavailable active record is explained and retained",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Missing test has named recovery and no Start",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Missing question prevents start without substitute content",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Empty catalog offers sample recovery",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Returning learner gets practice next and a genuine recent result",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Pending result is labelled preliminary on home",
+    "passed": true,
+    "detail": null
+  }
+]
