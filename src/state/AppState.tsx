@@ -1,21 +1,21 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import type { Attempt, ExamSession } from '@/data/types';
-import { load, remove, save } from '@/lib/storage';
+import { load as loadPreference, save as savePreference } from '@/lib/storage';
+import { accountStore } from '@/lib/accountStorage';
+import { useAuth } from './AuthState';
+import type { AuthenticatedUser } from '../../shared/contracts/auth';
 import { seedAttempts, seedSession } from './seed';
 import { sessionAttemptId, submissionSnapshot } from '@/lib/assessment';
 
 export type ThemePref = 'system' | 'light' | 'dark';
 
-export interface User {
-  phone: string;
-  name: string;
+export interface User extends AuthenticatedUser {
   group: string;
 }
 
 interface AppStateValue {
   user: User | null;
-  signIn: (phone: string) => boolean;
-  signOut: () => boolean;
+  signOut: () => Promise<boolean>;
 
   theme: ThemePref;
   resolvedTheme: 'light' | 'dark';
@@ -48,7 +48,7 @@ interface AppStateValue {
 const Ctx = createContext<AppStateValue | null>(null);
 const SEED_VERSION = 2;
 
-function ensureSeed() {
+function ensureSeed({ load, save }: ReturnType<typeof accountStore>) {
   if (load<number>('seed', 0) === SEED_VERSION) return;
   save('sessions', { 'mock-7': seedSession() });
   save('attempts', seedAttempts());
@@ -69,9 +69,14 @@ function useSystemDark() {
 }
 
 export function AppStateProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<User | null>(() => load('user', null));
-  const [theme, setThemeState] = useState<ThemePref>(() => load('theme', 'system'));
-  const [reduceTransparency, setRT] = useState<boolean>(() => load('rt', false));
+  const { user, signOut } = useAuth();
+  return <AccountState key={user?.id ?? 'guest'} user={user ? { ...user, group: '' } : null} signOut={signOut}>{children}</AccountState>;
+}
+
+function AccountState({ children, user, signOut }: { children: ReactNode; user: User | null; signOut: () => Promise<boolean> }) {
+  const { load, save, remove } = accountStore(user?.id ?? null);
+  const [theme, setThemeState] = useState<ThemePref>(() => loadPreference('theme', 'system'));
+  const [reduceTransparency, setRT] = useState<boolean>(() => loadPreference('rt', false));
   const [sessions, setSessions] = useState<Record<string, ExamSession>>(() => load('sessions', {}));
   const [attempts, setAttempts] = useState<Attempt[]>(() => load('attempts', []));
   const sessionsRef = useRef(sessions);
@@ -93,27 +98,13 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     el.classList.toggle('rt-on', reduceTransparency);
   }, [resolvedTheme, reduceTransparency]);
 
-  const signIn = useCallback((phone: string) => {
-    const u: User = { phone, name: '', group: '' };
-    if (!save('user', u)) return false;
-    setUser(u);
-    return true;
-  }, []);
-  const signOut = useCallback(() => {
-    try { localStorage.removeItem('hm.user'); } catch { return false; }
-    remove('introductionComplete');
-    setUser(null);
-    setIntroductionComplete(false);
-    return true;
-  }, []);
-
   const setTheme = useCallback((t: ThemePref) => {
-    if (!save('theme', t)) return false;
+    if (!savePreference('theme', t)) return false;
     setThemeState(t);
     return true;
   }, []);
   const setReduceTransparency = useCallback((v: boolean) => {
-    if (!save('rt', v)) return false;
+    if (!savePreference('rt', v)) return false;
     setRT(v);
     return true;
   }, []);
@@ -208,7 +199,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
   const resetDemo = useCallback(() => {
     remove('seed');
-    ensureSeed();
+    ensureSeed({ load, save, remove });
     setSessions(load('sessions', {}));
     setAttempts(load('attempts', []));
     sessionsRef.current = load('sessions', {});
@@ -224,7 +215,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<AppStateValue>(
     () => ({
-      user, signIn, signOut,
+      user, signOut,
       theme, resolvedTheme, setTheme, reduceTransparency, setReduceTransparency,
       sessions, saveSession, beginSession, dropSession, retrySession, sessionSaveErrors, frozenAttempts, finishSession,
       attempts, addAttempt,
@@ -232,7 +223,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
       introductionComplete, completeIntroduction, restartIntroduction,
       resetDemo
     }),
-    [user, signIn, signOut, theme, resolvedTheme, setTheme, reduceTransparency, setReduceTransparency, sessions, saveSession, beginSession, dropSession, retrySession, sessionSaveErrors, frozenAttempts, finishSession, attempts, addAttempt, mistakes, toggleMistake, introductionComplete, completeIntroduction, restartIntroduction, resetDemo]
+    [user, signOut, theme, resolvedTheme, setTheme, reduceTransparency, setReduceTransparency, sessions, saveSession, beginSession, dropSession, retrySession, sessionSaveErrors, frozenAttempts, finishSession, attempts, addAttempt, mistakes, toggleMistake, introductionComplete, completeIntroduction, restartIntroduction, resetDemo]
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

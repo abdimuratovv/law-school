@@ -1,0 +1,6 @@
+# Copy to .dev.vars (ignored by Git) for local Google login.
+# Register this exact callback in your Google Web application OAuth client:
+# http://localhost:8787/api/v1/auth/google/callback
+APP_ORIGIN=http://localhost:8787
+GOOGLE_CLIENT_ID=REPLACE_WITH_YOUR_CLIENT_ID.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=REPLACE_WITH_YOUR_CLIENT_SECRET

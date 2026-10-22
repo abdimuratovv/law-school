@@ -81,5 +81,6 @@ Exit: all accepted capacity/integrity gates pass and the operator can restore da
 
 - Architecture: accepted.
 - Stage 1: completed locally on October 22, 2026. Evidence: frontend/server/test typechecks, frontend build, 36 Worker/D1 tests, two locally applied migrations, Worker bundle dry run, clean `npm ci`, zero npm audit findings, and five HTTP checks through the live local Worker (health, readiness, two API navigation 404s, nested SPA route).
-- Stages 2–6: queued in dependency order.
+- Stage 2: local implementation verified: 65 Worker/D1 tests, 17 browser checks, three typechecks, frontend build, Worker dry run, clean install, zero audit findings and local migration 0003. Real staging Google acceptance remains pending owner-configured OAuth credentials/origin; see [Google setup and acceptance](../../GOOGLE-AUTH.md).
+- Stages 3–6: queued in dependency order.
 - Production deployment: not performed.

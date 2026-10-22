@@ -2,7 +2,7 @@
 
 A multilingual law certificate preparation frontend with student practice exams and a teacher workspace. Built with React, TypeScript, and Vite.
 
-**Status:** frontend prototype with a Cloudflare Workers/D1 backend foundation. Real authentication, exam APIs, and shared student data are not connected yet. This intermediate version is not ready to administer real exams. See the [backend setup guide](docs/BACKEND.md), [accepted architecture](docs/superpowers/specs/2026-10-22-backend-design.md), and [implementation plan](docs/superpowers/plans/2026-10-22-backend-implementation.md).
+**Status:** Google authentication and account/group APIs are implemented on Cloudflare Workers/D1. OAuth credentials are required for real sign-in. Exam APIs and shared exam data are not connected yet. This intermediate version is not ready to administer real exams. See the [backend setup guide](docs/BACKEND.md), [accepted architecture](docs/superpowers/specs/2026-10-22-backend-design.md), and [implementation plan](docs/superpowers/plans/2026-10-22-backend-implementation.md).
 
 ## Features
 
@@ -28,9 +28,9 @@ npm run dev
 
 Open `http://localhost:5173`. If the port is occupied, use the address printed by Vite.
 
-For demo sign-in, enter any nine-digit phone number after `+998`, then any six-digit code. No SMS is sent. Use sample information when trying the demo.
+Sign-in now uses Google. For the combined frontend/API development server and OAuth configuration, follow [Google authentication setup](docs/GOOGLE-AUTH.md). The former phone/code demo login has been removed.
 
-No environment variables or external services are required for the current frontend.
+Automated Worker tests do not need external credentials. Actual Google sign-in requires a Web OAuth client and an ignored local `.dev.vars` file or deployed Worker secrets. Without configuration, sign-in is disabled; there is no demo bypass.
 
 ## Commands
 
@@ -91,8 +91,8 @@ The shared design reference is available at `/design`.
 
 ## Demo data and limitations
 
-- Student data uses browser `localStorage` under the `hm.*` prefix. It is not synchronized between devices or securely separated between accounts. Clearing site data removes local progress and drafts.
-- Sign-in is a simulation, and teacher routes have no real authentication or role enforcement. Answer keys and grading logic are included in the frontend bundle.
+- Preview exam data uses browser `localStorage` under `hm.account.<user-id>.demo.*`. It is scoped to the signed-in account and cleared on logout/account changes, but is not synchronized between devices. Historical `hm.*` demo records are preserved and are not imported as real results. Clearing site data removes local progress and drafts.
+- Google sign-in, server sessions, CSRF protection and account/group role enforcement are implemented. Teacher pages require a teacher/admin session. Exam answer keys and sample grading logic still remain in the frontend bundle until the exam integration stage; do not administer real exams with this intermediate build.
 - Timed exam deadlines continue while the student is away from the page. Browser-local timing and scores are not authoritative or tamper-resistant.
 - Question editing, test building, and import screens save local drafts. Import validates sample decisions and file metadata; it does not parse spreadsheet contents, publish questions, or assign tests on a server.
 - Teacher grading uses in-memory fixtures. Reloading or leaving the teacher workspace resets reviews; teacher grades do not update student results.
@@ -105,7 +105,7 @@ The historical [performance report](docs/ux-audit/stage-9/PERFORMANCE.md) record
 
 Build the frontend with `npm run build` and serve the contents of `dist/` over HTTPS. Use Node.js 22.12 or later in the build environment. The host must serve `index.html` for client-side application routes so that direct visits and refreshes work.
 
-The accepted Cloudflare architecture is Workers Static Assets for the frontend, Workers for the API, and D1 for persistent data. Local configuration, health/readiness API endpoints, database migrations and staging/production templates are included. Real Google authentication and exam functionality are not implemented yet; the frontend still uses demo data. Connecting a GitHub repository alone does not configure cloud resources or OAuth credentials. Follow the [backend guide](docs/BACKEND.md) for the current supported local setup.
+The accepted Cloudflare architecture is Workers Static Assets for the frontend, Workers for the API, and D1 for persistent data. Local configuration, health/readiness API endpoints, database migrations and staging/production templates are included. Google authentication and account/group APIs are implemented; real provider sign-in requires credentials and an exact registered callback. Exam and teacher-content screens still use scoped sample data. Connecting a GitHub repository alone does not configure cloud resources or OAuth credentials. Follow the [backend guide](docs/BACKEND.md) for the current supported local setup.
 
 The current page loads the Inter font from Google Fonts and falls back to system fonts when it is unavailable.
 
@@ -126,7 +126,7 @@ Review the staged file list before committing. Dependencies, build output, envir
 
 ## Next development steps
 
-1. Implement real authentication and server-enforced student/teacher roles.
+1. Configure Google OAuth and complete the real staging sign-in acceptance check; see [the setup guide](docs/GOOGLE-AUTH.md).
 2. Add persistent question banks, tests, attempts, and teacher reviews.
 3. Move answer keys, grading, and exam deadline enforcement to the server.
 4. Add retry-safe answer synchronization and submission handling.

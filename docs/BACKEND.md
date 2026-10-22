@@ -4,11 +4,11 @@ The [backend architecture](superpowers/specs/2026-10-22-backend-design.md) was a
 
 ## Current scope
 
-Stage 1 implements a Worker API foundation and the identity/group database schema. Google login, session enforcement, exam APIs, server grading, and frontend API integration are subsequent stages. The browser application remains a local demo, including its public teacher screens and bundled sample answer keys. Do not deploy this intermediate state for real student assessments.
+Stage 1 provides the Worker API foundation. Stage 2 adds Google login, revocable sessions, CSRF enforcement, scoped group/staff APIs and authenticated frontend routing. See [Google authentication setup](GOOGLE-AUTH.md) for credentials, API paths and admin bootstrap. Exam APIs and server grading remain subsequent stages. The browser exam/content screens still contain sample data and sample answer keys. Do not deploy this intermediate state for real student assessments.
 
 ## Local setup
 
-Use Node.js 22.12 or later and npm. No Cloudflare account, token, paid resource, or Google credential is needed for foundation development.
+Use Node.js 22.12 or later and npm. No Cloudflare account, token, paid resource or Google credential is needed for automated local tests. Real sign-in requires a configured Google Web OAuth client.
 
 ```bash
 npm ci
@@ -33,7 +33,7 @@ Local D1 persists under `.wrangler/`, which is ignored by Git. Reapplying migrat
 
 Both successful endpoints return `{"status":"ok","requestId":"..."}`. API responses have a server-generated `X-Request-Id`, `Cache-Control: no-store`, and `X-Content-Type-Options: nosniff`. Expected errors use `{"error":{"code":"...","message":"..."},"requestId":"..."}`. Unexpected errors never echo exception text, SQL, headers or request bodies; logs contain a fixed event and request ID only.
 
-Readiness is an operational schema check, not a guarantee that authentication or exams have been implemented. The schema initially has no users, groups or login sessions.
+Readiness is an operational schema check; it does not check Google provider configuration or exam functionality. The schema initially has no users, groups or login sessions. Real registrations occur only after validated Google login; tests use isolated synthetic accounts.
 
 ## Boundaries and layout
 
@@ -54,7 +54,7 @@ Browser, server and test TypeScript configurations are separate. Do not import `
 
 The JSON reader enforces a 256 KiB limit against actual streamed bytes, including requests without a Content-Length header. Answer schemas cap snapshots at 100 answers, each written answer at 1,000 Unicode characters, and list pages at 100 items. The combined byte limit applies in addition to per-field limits. Handlers must additionally verify question membership, stable choice IDs, role/ownership, active attempt state, deadline and revision in their domain services; schema validation alone does not authorize an exam mutation.
 
-The first migration creates users, Google identities, hashed sessions, transient login flows, groups, staff/group links, memberships and audit events. It enforces role/status enums, foreign keys, identity/enrollment uniqueness and maximum session/login-flow lifetimes. It does not implement the authentication flow or replace permission checks.
+The first migration creates users, Google identities, hashed sessions, transient login flows, groups, staff/group links, memberships and audit events. It enforces role/status enums, foreign keys, identity/enrollment uniqueness and maximum session/login-flow lifetimes. The third migration adds user revisions and a one-time operator bootstrap trigger. Application routes enforce sessions, CSRF and group access; SQL constraints alone do not replace authorization.
 
 ## Verification
 
@@ -80,8 +80,8 @@ Foundation verification on October 22, 2026: all three TypeScript configurations
 - Staging and production have separate checked-in `.example.jsonc` templates with deliberately invalid placeholder database IDs. Copy them to `wrangler.staging.jsonc` / `wrangler.production.jsonc` only when preparing the respective environment. Local copies are ignored.
 - Each environment needs its own D1 binding and OAuth redirect configuration. Do not use production bindings in preview builds.
 - Google client secrets and future session secrets belong in Worker secrets; local secret files belong in ignored `.dev.vars` files. Never use `VITE_*` for secrets.
-- Actual database IDs, origins, OAuth settings and deployment commands will be filled in during their implementation stages. There is intentionally no automatic deploy workflow or `deploy` npm script at this stage.
+- Actual remote database IDs and origins are filled in when preparing a deployment; local Google settings are described in GOOGLE-AUTH.md. There is intentionally no automatic deploy workflow or `deploy` npm script at this stage.
 
 ## Next stage
 
-Implement Google authorization-code login, single-use PKCE/state/nonce, revocable session cookies, CSRF enforcement and scoped group access. Real staging login validation will require a configured Google OAuth client and an exact registered callback URL. Provider secrets should be configured directly in the environment, never sent through chat.
+Complete real staging Google login using the OAuth setup guide, then implement the server-backed student exam path: immutable published questions/tests, attempt synchronization, deadline enforcement and server grading. Provider secrets are configured directly in the environment, never sent through chat.

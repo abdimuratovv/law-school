@@ -3,6 +3,7 @@ import { useBlocker } from 'react-router-dom';
 import { Button } from '@/components/ui/basic';
 import { Overlay } from '@/components/ui/overlay';
 import { useFormatting, useText } from '@/i18n/LanguageProvider';
+import { useAuth } from '@/state/AuthState';
 import { commitDraft, compatibleDraft, fingerprint, readDraftStore, type DraftKind, type DraftRecord } from '@/lib/authoring';
 
 export function Confirm({ open, title, children, onCancel, onConfirm, action = 'Continue', safe = 'Keep editing' }: { open: boolean; title: string; children: ReactNode; onCancel: () => void; onConfirm: () => void; action?: string; safe?: string }) {
@@ -18,8 +19,10 @@ export function Confirm({ open, title, children, onCancel, onConfirm, action = '
 }
 
 export function useDraft<T>({ identity, kind, sourceVersion, initial, validate }: { identity: string; kind: DraftKind; sourceVersion: string; initial: T; validate: (x: unknown) => x is T }) {
+  const { user } = useAuth();
+  const storageKey = `hm.account.${user?.id ?? 'guest'}.demo.authoringDrafts.v1`;
   const [entry] = useState(() => {
-    try { const raw = readDraftStore().drafts[identity]; return { raw, blocked: false }; }
+    try { const raw = readDraftStore(storageKey).drafts[identity]; return { raw, blocked: false }; }
     catch { return { raw: undefined, blocked: true }; }
   });
   const [value, setValue] = useState(initial);
@@ -39,10 +42,10 @@ export function useDraft<T>({ identity, kind, sourceVersion, initial, validate }
     if (gate) return;
     if (!validate(latest.current)) { setStatus('invalid'); return; }
     const record: DraftRecord<T> = { kind, sourceVersion, updatedAt: Date.now(), revision: crypto.randomUUID(), payload: latest.current };
-    const result = commitDraft(identity, expected.current, record);
+    const result = commitDraft(identity, expected.current, record, storageKey);
     if (result === 'saved') { expected.current = fingerprint(record); durable.current = JSON.stringify(latest.current); setSavedJSON(durable.current); setSavedAt(record.updatedAt); setStatus('saved'); }
-    else { setStatus(result); if (result === 'conflict') { try { competing.current = fingerprint(readDraftStore().drafts[identity]); } catch { competing.current = ''; } setConflict(true); } }
-  }, [gate, identity, kind, sourceVersion, validate]);
+    else { setStatus(result); if (result === 'conflict') { try { competing.current = fingerprint(readDraftStore(storageKey).drafts[identity]); } catch { competing.current = ''; } setConflict(true); } }
+  }, [gate, identity, kind, sourceVersion, validate, storageKey]);
   useEffect(() => {
     if (!dirty || gate || status === 'failed' || status === 'conflict' || status === 'invalid') return;
     const timer = setTimeout(save, 700); return () => clearTimeout(timer);
@@ -51,22 +54,22 @@ export function useDraft<T>({ identity, kind, sourceVersion, initial, validate }
   const blocker = useBlocker(dirty);
   const resume = () => { if (compatible) { const record = entry.raw as DraftRecord<T>; setValue(record.payload); durable.current = JSON.stringify(record.payload); setSavedJSON(durable.current); setSavedAt(record.updatedAt); setStatus('saved'); setGate(false); } };
   const reset = () => {
-    const result = commitDraft<T>(identity, expected.current, null);
+    const result = commitDraft<T>(identity, expected.current, null, storageKey);
     setDiscard(false);
-    if (result !== 'saved') { setStatus(result); if (result === 'conflict') { try { competing.current = fingerprint(readDraftStore().drafts[identity]); } catch { competing.current = ''; } setConflict(true); } return; }
+    if (result !== 'saved') { setStatus(result); if (result === 'conflict') { try { competing.current = fingerprint(readDraftStore(storageKey).drafts[identity]); } catch { competing.current = ''; } setConflict(true); } return; }
     expected.current = ''; setValue(initial); durable.current = JSON.stringify(initial); setSavedJSON(durable.current); setSavedAt(null); setStatus('idle'); setGate(false);
   };
   const adopt = () => {
-    try { const raw = readDraftStore().drafts[identity]; if (!compatibleDraft(raw, kind, sourceVersion, validate)) { setStatus('invalid'); setConflict(false); return; } expected.current = fingerprint(raw); setValue(raw.payload); durable.current = JSON.stringify(raw.payload); setSavedJSON(durable.current); setSavedAt(raw.updatedAt); setStatus('saved'); setGate(false); setConflict(false); }
+    try { const raw = readDraftStore(storageKey).drafts[identity]; if (!compatibleDraft(raw, kind, sourceVersion, validate)) { setStatus('invalid'); setConflict(false); return; } expected.current = fingerprint(raw); setValue(raw.payload); durable.current = JSON.stringify(raw.payload); setSavedJSON(durable.current); setSavedAt(raw.updatedAt); setStatus('saved'); setGate(false); setConflict(false); }
     catch { setStatus('invalid'); setConflict(false); }
   };
   // Replace only the competing record observed when the conflict was presented.
   const retain = () => {
     if (!validate(latest.current)) { setStatus('invalid'); setConflict(false); return; }
     const record: DraftRecord<T> = { kind, sourceVersion, updatedAt: Date.now(), revision: crypto.randomUUID(), payload: latest.current };
-    const result = commitDraft(identity, competing.current, record);
+    const result = commitDraft(identity, competing.current, record, storageKey);
     if (result === 'saved') { expected.current = fingerprint(record); durable.current = JSON.stringify(latest.current); setSavedJSON(durable.current); setSavedAt(record.updatedAt); setGate(false); setConflict(false); setStatus('saved'); }
-    else { setStatus(result); if (result === 'conflict') { try { competing.current = fingerprint(readDraftStore().drafts[identity]); } catch { competing.current = ''; } } }
+    else { setStatus(result); if (result === 'conflict') { try { competing.current = fingerprint(readDraftStore(storageKey).drafts[identity]); } catch { competing.current = ''; } } }
   };
   return { value, setValue, dirty, gate, compatible, status, savedAt, save, resume, reset, discard, setDiscard, conflict, setConflict, adopt, retain, blocker };
 }

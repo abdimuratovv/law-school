@@ -1,5 +1,6 @@
 import { createApi } from './app';
 import type { WorkerBindings } from './env';
+import { cleanupAuthentication } from './repositories/auth';
 
 const api = createApi();
 
@@ -8,5 +9,8 @@ export default {
     const path = new URL(request.url).pathname;
     if (path === '/api' || path.startsWith('/api/')) return api.fetch(request, env, ctx);
     return env.ASSETS.fetch(request);
+  },
+  async scheduled(_controller, env): Promise<void> {
+    await cleanupAuthentication(env.DB);
   },
 } satisfies ExportedHandler<WorkerBindings>;
