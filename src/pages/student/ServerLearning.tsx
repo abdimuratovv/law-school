@@ -1,5 +1,7 @@
 import { useEffect,useState } from 'react';
 import { Button,Segmented } from '@/components/ui/basic';
+import { SystemSelect } from '@/components/ui/SystemSelect';
+import { Icon } from '@/components/ui/Icon';
 import { useAuth } from '@/state/AuthState';
 import { useText,useFormatting } from '@/i18n/LanguageProvider';
 import { TOPICS } from '@/data/topics';
@@ -7,8 +9,27 @@ import { examRequest } from '@/lib/examApi';
 import type { LearningSummary,ProgressResponse,StudyPage } from '../../../shared/contracts/learning';
 
 export function LearningStats({summary:s}:{summary:LearningSummary}){const t=useText();return <section className="card learning-card"><div className="learning-actions"><p>{t('Completed')}: <strong>{s.completed}</strong></p><p>{t('Final results')}: <strong>{s.final}</strong></p><p>{t('Awaiting grading')}: <strong>{s.provisional}</strong></p><p>{t('Average final score')}: <strong>{s.averagePercent===null?'—':s.averagePercent+'%'}</strong></p></div><div className="report-table"><table><thead><tr><th>{t('Topic')}</th><th>{t('Correct')}</th><th>{t('Partial')}</th><th>{t('Incorrect')}</th><th>{t('Awaiting grading')}</th></tr></thead><tbody>{Object.entries(s.topics).map(([topic,v])=><tr key={topic}><td>{t(TOPICS[topic as keyof typeof TOPICS]?.name??topic)}</td><td>{v.correct}</td><td>{v.partial}</td><td>{v.incorrect}</td><td>{v.pending}</td></tr>)}</tbody></table></div><p className="fn l2">{t('Pending results are excluded from the average. Topic details follow feedback release rules.')}</p></section>;}
-export function ReportFilters({onChange}:{onChange:(query:string)=>void}){const t=useText();const [from,setFrom]=useState('');const [until,setUntil]=useState('');const [mode,setMode]=useState('');const [topic,setTopic]=useState('');
- return <form className="card learning-card" onSubmit={e=>{e.preventDefault();const q=new URLSearchParams();if(from)q.set('from',String(Date.parse(from+'T00:00:00+05:00')));if(until)q.set('until',String(Date.parse(until+'T00:00:00+05:00')+86400000));if(mode)q.set('mode',mode);if(topic)q.set('topic',topic);onChange(q.toString());}}><div className="learning-actions"><label>{t('From date')}<input type="date" value={from} onChange={e=>setFrom(e.target.value)} /></label><label>{t('Through date')}<input type="date" value={until} min={from||undefined} onChange={e=>setUntil(e.target.value)} /></label><label>{t('Test type')}<select value={mode} onChange={e=>setMode(e.target.value)}><option value="">{t('All')}</option><option value="practice">{t('Practice')}</option><option value="mock">{t('Mock exam')}</option></select></label><label>{t('Topic')}<select value={topic} onChange={e=>setTopic(e.target.value)}><option value="">{t('All')}</option>{['constitutional','civil','criminal','administrative','human-rights','labor','family','theory'].map(v=><option key={v} value={v}>{t(TOPICS[v as keyof typeof TOPICS]?.name??v)}</option>)}</select></label><Button type="submit">{t('Apply filters')}</Button></div><p className="fn l2">{t('Dates use Asia/Tashkent. Topic filters select attempts containing that topic; scores cover the whole attempt.')}</p></form>;
+export function ReportFilters({ onChange }: { onChange: (query: string) => void }) {
+  const t = useText();
+  const [from, setFrom] = useState(''); const [until, setUntil] = useState('');
+  const [mode, setMode] = useState(''); const [topic, setTopic] = useState('');
+  return <form className="card learning-card report-filters" aria-label={t('Filters')} onSubmit={event => {
+    event.preventDefault();
+    const query = new URLSearchParams();
+    if (from) query.set('from', String(Date.parse(from + 'T00:00:00+05:00')));
+    if (until) query.set('until', String(Date.parse(until + 'T00:00:00+05:00') + 86400000));
+    if (mode) query.set('mode', mode);
+    if (topic) query.set('topic', topic);
+    onChange(query.toString());
+  }}>
+    <div className="report-filter-grid">
+      <label className="system-field"><span>{t('From date')}</span><input className="system-date" type="date" aria-describedby="report-filter-note" value={from} max={until || undefined} onChange={event => setFrom(event.target.value)} /></label>
+      <label className="system-field"><span>{t('Through date')}</span><input className="system-date" type="date" aria-describedby="report-filter-note" value={until} min={from || undefined} onChange={event => setUntil(event.target.value)} /></label>
+      <SystemSelect label={t('Test type')} icon="tests" value={mode} onChange={setMode} options={['', 'practice', 'mock'].map((value, index) => ({ value, label: t(['All', 'Practice', 'Mock exam'][index]!) }))} />
+      <SystemSelect label={t('Topic')} icon="book" value={topic} onChange={setTopic} options={[{ value: '', label: t('All') }, ...['constitutional', 'civil', 'criminal', 'administrative', 'human-rights', 'labor', 'family', 'theory'].map(value => ({ value, label: t(TOPICS[value as keyof typeof TOPICS]?.name ?? value) }))]} />
+    </div>
+    <div className="report-filter-footer"><p id="report-filter-note" className="report-filter-note"><Icon name="info" size="s" /><span>{t('Dates use Asia/Tashkent. Topic filters select attempts containing that topic; scores cover the whole attempt.')}</span></p><Button type="submit" icon="check">{t('Apply filters')}</Button></div>
+  </form>;
 }
 export function ServerProgress({dashboard=false}:{dashboard?:boolean}){
  const t=useText();const format=useFormatting();const [data,setData]=useState<ProgressResponse>();const [query,setQuery]=useState('');const [error,setError]=useState(false);const [generation,setGeneration]=useState(0);

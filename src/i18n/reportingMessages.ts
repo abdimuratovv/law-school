@@ -1,5 +1,6 @@
 import type { Language } from './LanguageProvider';
 const rows:[string,string,string,string][]=[
+ ['Filters','Filtrlar','Filtrler','Фильтры'],
  ['Import questions','Savollarni import qilish','Sorawlardı importlaw','Импорт вопросов'],
  ['CSV or XLSX, up to 5 MB and 1000 rows. Imported questions remain drafts.','CSV yoki XLSX: 5 MB va 1000 qatorgacha. Savollar draft sifatida saqlanadi.','CSV yamasa XLSX: 5 MB hám 1000 qatarǵa shekem. Sorawlar draft bolıp saqlanadı.','CSV или XLSX: до 5 МБ и 1000 строк. Вопросы сохраняются как черновики.'],
  ['Download CSV template','CSV namunasini yuklash','CSV úlgisin júklew','Скачать шаблон CSV'],
