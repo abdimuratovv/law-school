@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { CharBar, OptionButton, QuestionBody } from '@/components/exam/parts';
 import { Explanation } from '@/components/exam/LearningParts';
-import { Avatar, Button, Segmented, Switch, Tag } from '@/components/ui/basic';
+import { Avatar, Button, Segmented, Tag } from '@/components/ui/basic';
 import { Overlay } from '@/components/ui/overlay';
 import { getQuestion } from '@/data/questions';
 import { LETTERS } from '@/data/types';
@@ -40,7 +40,7 @@ function RetryQuestion({ id, onClose }: { id:string; onClose:()=>void }) {
 }
 
 export function Profile() {
-  const { user, signOut, theme, setTheme, reduceTransparency, setReduceTransparency, restartIntroduction, sessions, sessionSaveErrors, frozenAttempts, attempts } = useApp();
+  const { user, signOut, theme, setTheme, restartIntroduction, sessions, sessionSaveErrors, frozenAttempts, attempts } = useApp();
   const { language, setLanguage, languageSaved } = useLanguage(); const t = useText(); const nav = useNavigate();
   const [status, setStatus] = useState<boolean | null>(null); const [confirm, setConfirm] = useState(false); const [signOutError, setSignOutError] = useState(false);
   const retry = useRef<null | (() => boolean)>(null);
@@ -56,7 +56,7 @@ export function Profile() {
     <div className="learning-setting"><span className="hl">{t('Theme')}</span><Segmented<ThemePref> label={t('Theme')} value={theme} onChange={value => update(() => setTheme(value))} options={[{ value:'system',label:t('Auto') },{ value:'light',label:t('Light') },{ value:'dark',label:t('Dark') }]} /></div>
     <p className="fn" role={status === false ? 'alert' : 'status'}>{status != null && t(status ? 'Preference saved on this device.' : 'Could not save this preference. The previous setting is unchanged.')}</p>{status === false && <Button variant="secondary" onClick={() => retry.current && update(retry.current)}>{t('Retry saving')}</Button>}
     </section>
-    <section className="card learning-card"><h2 className="t2">{t('Accessibility')}</h2><div className="learning-setting"><div><strong className="hl">{t('Reduce transparency')}</strong><p className="fn l2">{t('Use solid navigation surfaces instead of translucent glass.')}</p></div><Switch on={reduceTransparency} onChange={value => update(() => setReduceTransparency(value))} label={t('Reduce transparency')} /></div><p className="fn l2">{t('Use browser zoom to enlarge this interface. Motion follows your system preference; larger exam text is available in Exam options.')}</p></section>
+    <section className="card learning-card"><h2 className="t2">{t('Accessibility')}</h2><p className="fn l2">{t('Use browser zoom to enlarge this interface. Motion follows your system preference; larger exam text is available in Exam options.')}</p></section>
     <section className="card learning-card"><h2 className="t2">{t('Learning and account')}</h2><Button variant="secondary" onClick={() => { restartIntroduction(); nav('/getting-started', { state:{ from:'/profile' } }); }}>{t('Repeat the introduction')}</Button><p className="fn l2">{t('Signing out revokes this session and clears this account’s local preview work.')}</p><Button id="profile-signout" disabled={leaving} variant="plain" onClick={() => active || unsaved ? setConfirm(true) : leave()}>{t('Sign out')}</Button>{signOutError && <p role="alert">{t('Could not sign out. Check your connection and try again.')}</p>}</section>
     <Overlay open={confirm} onClose={() => setConfirm(false)} variant="dialog" className="learning-dialog" labelledBy="signout-title" alert initialFocus="#keep-signed-in"><div className="learning-dialog-content" data-no-translate><h2 id="signout-title" className="t2">{t('Sign out with active work?')}</h2><p className="body">{t(unsaved ? 'Some work is unsaved in this tab. Stay signed in and retry saving before closing or reloading.' : 'Signing out clears this account’s local preview work. Keep working if you want to retain it.')}</p><div className="learning-actions"><Button id="keep-signed-in" variant="secondary" onClick={() => setConfirm(false)}>{t('Stay signed in')}</Button><Button disabled={leaving} onClick={() => { void leave(); }}>{t('Sign out')}</Button></div>{signOutError && <p role="alert">{t('Could not sign out. Check your connection and try again.')}</p>}</div></Overlay>
   </main>;

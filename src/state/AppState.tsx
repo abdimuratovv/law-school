@@ -19,8 +19,6 @@ interface AppStateValue {
   theme: ThemePref;
   resolvedTheme: 'light' | 'dark';
   setTheme: (t: ThemePref) => boolean;
-  reduceTransparency: boolean;
-  setReduceTransparency: (v: boolean) => boolean;
 
   sessions: Record<string, ExamSession>;
   saveSession: (s: ExamSession) => boolean;
@@ -65,7 +63,6 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 function AccountState({ children, user, signOut }: { children: ReactNode; user: User | null; signOut: () => Promise<boolean> }) {
   const { load, save, remove } = accountStore(user?.id ?? null);
   const [theme, setThemeState] = useState<ThemePref>(() => loadPreference('theme', 'system'));
-  const [reduceTransparency, setRT] = useState<boolean>(() => loadPreference('rt', false));
   const [sessions, setSessions] = useState<Record<string, ExamSession>>(() => load('sessions', {}));
   const [attempts, setAttempts] = useState<Attempt[]>(() => load('attempts', []));
   const sessionsRef = useRef(sessions);
@@ -84,20 +81,13 @@ function AccountState({ children, user, signOut }: { children: ReactNode; user: 
     const el = document.documentElement;
     el.classList.toggle('t-light', resolvedTheme === 'light');
     el.classList.toggle('t-dark', resolvedTheme === 'dark');
-    el.classList.toggle('rt-on', reduceTransparency);
-  }, [resolvedTheme, reduceTransparency]);
+  }, [resolvedTheme]);
 
   const setTheme = useCallback((t: ThemePref) => {
     if (!savePreference('theme', t)) return false;
     setThemeState(t);
     return true;
   }, []);
-  const setReduceTransparency = useCallback((v: boolean) => {
-    if (!savePreference('rt', v)) return false;
-    setRT(v);
-    return true;
-  }, []);
-
   const saveSession = useCallback((s: ExamSession) => {
     if (frozenRef.current[s.testId]) return false;
     const next = { ...sessionsRef.current, [s.testId]: s };
@@ -205,14 +195,14 @@ function AccountState({ children, user, signOut }: { children: ReactNode; user: 
   const value = useMemo<AppStateValue>(
     () => ({
       user, signOut,
-      theme, resolvedTheme, setTheme, reduceTransparency, setReduceTransparency,
+      theme, resolvedTheme, setTheme,
       sessions, saveSession, beginSession, dropSession, retrySession, sessionSaveErrors, frozenAttempts, finishSession,
       attempts, addAttempt,
       mistakes, toggleMistake,
       introductionComplete, completeIntroduction, restartIntroduction,
       resetDemo
     }),
-    [user, signOut, theme, resolvedTheme, setTheme, reduceTransparency, setReduceTransparency, sessions, saveSession, beginSession, dropSession, retrySession, sessionSaveErrors, frozenAttempts, finishSession, attempts, addAttempt, mistakes, toggleMistake, introductionComplete, completeIntroduction, restartIntroduction, resetDemo]
+    [user, signOut, theme, resolvedTheme, setTheme, sessions, saveSession, beginSession, dropSession, retrySession, sessionSaveErrors, frozenAttempts, finishSession, attempts, addAttempt, mistakes, toggleMistake, introductionComplete, completeIntroduction, restartIntroduction, resetDemo]
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

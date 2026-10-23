@@ -21,7 +21,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
 
 export default function DesignSystem() {
   const t = useText();
-  const { theme, setTheme, reduceTransparency, setReduceTransparency } = useApp();
+  const { theme, setTheme } = useApp();
   const [density, setDensity] = useState<'comfortable' | 'compact'>('comfortable');
   const [state, setState] = useState<typeof STATES[number]>('Default');
   const [phone, setPhone] = useState('');
@@ -52,7 +52,7 @@ export default function DesignSystem() {
     <div className="ds-controls glass" aria-label={t('Design reference')} role="region">
       <div className="field"><span className="flab">{t('Theme')}</span><Segmented<ThemePref> label={t('Theme')} value={theme} onChange={setTheme} options={[{ value: 'system', label: t('Auto') }, { value: 'light', label: t('Light') }, { value: 'dark', label: t('Dark') }]} /></div>
       <div className="field"><span className="flab">{t('Density')}</span><Segmented label={t('Density')} value={density} onChange={setDensity} options={[{ value: 'comfortable', label: t('Comfortable') }, { value: 'compact', label: t('Compact') }]} /></div>
-      <LanguageSwitcher /><div className="row" style={{ gap: 8 }}><Switch on={reduceTransparency} onChange={setReduceTransparency} label={t('Reduce transparency')} /><span className="fn">{t('Reduce transparency')}</span></div>
+      <LanguageSwitcher />
     </div>
     <nav className="ds-index" aria-label={t('Design reference')}>{SECTIONS.map((title, i) => <a href={`#section-${i}`} key={title}>{t(title)}</a>)}</nav>
     <p className="fn l2">{t('Interactive examples only. No answers, questions or grades are saved here.')}</p>

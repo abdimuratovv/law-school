@@ -90,7 +90,8 @@ with sync_playwright() as p:
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         check(role + ': form fits 390px mobile viewport')
         for language, label in [('ru', 'Личные данные'), ('kaa', 'Jeke maǵlıwmatlar'), ('uz', 'Shaxsiy ma’lumotlar')]:
-            page.locator('.language-field select').select_option(language)
+            page.locator('.profile-language-trigger').click()
+            page.get_by_role('option').filter(has_text={'ru':'Русский','kaa':'Qaraqalpaqsha','uz':'O‘zbekcha'}[language]).click()
             expect(page.locator('#personal-profile-title')).to_have_text(label)
         check(role + ': all three languages translate profile form')
         page.screenshot(path='.worker-build/onboarding-ui/'+role+'.png', full_page=True)

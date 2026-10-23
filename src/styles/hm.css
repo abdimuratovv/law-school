@@ -455,7 +455,7 @@
 .overlay[data-scrim="false"]::backdrop{background:transparent}
 .overlay p{line-height:1.5}
 .overlay .grab{flex:none}
-.rt-on .glass,.rt-on .btn-glass,.rt-on .icon-btn.glass,.rt .glass{background:var(--glass-solid);-webkit-backdrop-filter:none;backdrop-filter:none}
+.rt .glass{background:var(--glass-solid);-webkit-backdrop-filter:none;backdrop-filter:none}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass,.btn-glass{background:var(--glass-solid)}}
 @media (prefers-reduced-transparency:reduce){.glass,.btn-glass,.icon-btn.glass{background:var(--glass-solid);-webkit-backdrop-filter:none;backdrop-filter:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto !important;animation:none !important;transition:none !important}.press:active,.is-pressed,.opt:active{transform:none;filter:none}}

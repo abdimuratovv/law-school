@@ -1,5 +1,16 @@
 import type { Language } from './LanguageProvider';
 const rows: [string, string, string, string][] = [
+  ['Your personal details and platform preferences.', 'Shaxsiy ma’lumotlar va platforma sozlamalari.', 'Jeke maǵlıwmatlar hám platforma sazlamaları.', 'Личные данные и настройки платформы.'],
+  ['Signed in with Google', 'Google orqali kirilgan', 'Google arqalı kirilgen', 'Вход через Google'],
+  ['Update your account details here.', 'Hisobingizdagi ma’lumotlarni shu yerda yangilang.', 'Esabıńızdaǵı maǵlıwmatlardı usı jerde jańalań.', 'Обновите данные своего аккаунта здесь.'],
+  ['Platform language', 'Platforma tili', 'Platforma tili', 'Язык платформы'],
+  ['Language for menus and buttons.', 'Menyu va tugmalar uchun til.', 'Menyu hám túymeler ushın til.', 'Язык меню и кнопок.'],
+  ['Interface theme', 'Interfeys mavzusi', 'Interfeys teması', 'Тема интерфейса'],
+  ['Auto follows your device appearance.', 'Avto rejimi qurilmangizga moslashadi.', 'Avto rejimi qurılmańızǵa sáykeslesedi.', 'Авторежим следует настройкам устройства.'],
+  ['Save your test answers before signing out.', 'Chiqishdan oldin test javoblaringizni saqlang.', 'Shıǵıwdan aldın test juwaplarıńızdı saqlań.', 'Сохраните ответы перед выходом.'],
+  ['All changes saved', 'O‘zgarishlar saqlangan', 'Ózgerisler saqlanǵan', 'Все изменения сохранены'],
+  ['Unsaved changes', 'Saqlanmagan o‘zgarishlar', 'Saqlanbaǵan ózgerisler', 'Несохранённые изменения'],
+  ['Your profile has unsaved changes. Stay signed in to save them.', 'Profilda saqlanmagan o‘zgarishlar bor. Ularni saqlash uchun hisobda qoling.', 'Profilde saqlanbaǵan ózgerisler bar. Olardı saqlaw ushın esapta qalıń.', 'В профиле есть несохранённые изменения. Останьтесь, чтобы сохранить их.'],
   ['Complete your profile', 'Profilingizni to‘ldiring', 'Profilińizdi toltırıń', 'Заполните профиль'],
   ['Complete this form once. You can edit these details later in your profile.', 'Bu so‘rovnoma bir marta to‘ldiriladi. Ma’lumotlarni keyin profilingizda o‘zgartirishingiz mumkin.', 'Bul sorawnama bir márte toltırıladı. Maǵlıwmatlardı keyin profilińizde ózgertiwińiz múmkin.', 'Заполните анкету один раз. Позже данные можно изменить в профиле.'],
   ['Step {step} of 2', '2 bosqichdan {step}-bosqich', '2 basqıshtan {step}-basqısh', 'Шаг {step} из 2'],

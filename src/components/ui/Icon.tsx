@@ -2,6 +2,8 @@ import type { CSSProperties, ReactNode } from 'react';
 
 /** Stroke icons lifted 1:1 from the design artboards (24×24, 1.8 stroke via `.i`). */
 const paths = {
+  monitor: <><rect x="3" y="4" width="18" height="13" rx="2" /><path d="M8 21h8m-4-4v4" /></>,
+  globe: <><circle cx="12" cy="12" r="9" /><ellipse cx="12" cy="12" rx="4" ry="9" /><path d="M3 12h18" /></>,
   menu: <path d="M4 6h16M4 12h16M4 18h16" />,
   info: <><circle cx="12" cy="12" r="9" /><path d="M12 11v6M12 7v1" /></>,
   logo: <><path d="M12 4v16M7 20h10M5 7.5h14" /><path d="M5 7.5 2.8 13a2.6 2.6 0 0 0 4.4 0zM19 7.5 16.8 13a2.6 2.6 0 0 0 4.4 0z" /></>,

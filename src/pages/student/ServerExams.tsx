@@ -3,12 +3,10 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { z } from 'zod';
 import { examSummarySchema, attemptSchema, type ExamSummary } from '../../../shared/contracts/exams';
 import { Screen } from '@/components/layout/StudentShell';
-import { Button, Segmented, Switch, Tag } from '@/components/ui/basic';
+import { Button, Segmented, Tag } from '@/components/ui/basic';
 import { OptionButton, Timer } from '@/components/exam/parts';
-import { useText, LanguageSwitcher, useFormatting } from '@/i18n/LanguageProvider';
+import { useText, useFormatting } from '@/i18n/LanguageProvider';
 import { useAuth } from '@/state/AuthState';
-import { PersonalProfileForm } from '@/components/profile/PersonalProfileForm';
-import { useApp, type ThemePref } from '@/state/AppState';
 import { useServerAttempt } from '@/state/useServerAttempt';
 import { examRequest } from '@/lib/examApi';
 import { SaveQuestion } from './ServerLearning';
@@ -90,9 +88,5 @@ export function ServerHistory() {
   useEffect(() => { void load(); },[]);
   return <Page><h1 className="lt">{t('View attempt history')}</h1>{error&&<ErrorNotice message="Could not load tests." retry={() => { void load(); }} />}{data?.items.map(a=><article key={a.id} className="card learning-card"><h2 className="t2">{a.name}</h2><p>{format.date(a.startedAt,true)} · {t(a.state==='active'?'In progress':a.result?.final?'Completed':'Awaiting grading')}</p>{a.result&&<p>{format.number(a.result.units/2)} / {format.number(a.result.maxUnits/2)}</p>}<Button to={(a.state==='active'?'/exam/':'/results/')+a.id}>{t(a.state==='active'?'Resume test':'View results')}</Button></article>)}{data&&!data.items.length&&<p>{t('No attempts yet.')}</p>}{data?.next&&<Button onClick={()=>{void load(data.next!);}}>{t('Load more')}</Button>}</Page>;
 }
-export function ServerProfile({ embedded = false }: { embedded?: boolean }) {
-  const { user,signOut } = useAuth(); const {theme,setTheme,reduceTransparency,setReduceTransparency} = useApp(); const t=useText(); const nav=useNavigate(); const [error,setError]=useState(false); const [confirm,setConfirm]=useState(false);
-  const content = <><h1 className="lt">{t('Profile')}</h1><section className="card learning-card"><h2 className="t2">{user?.name}</h2><p>{user?.email}</p><p className="fn l2">{t('Account ID')}: <code>{user?.id}</code></p></section><section className="card learning-card"><PersonalProfileForm /></section><section className="card learning-card"><h2 className="t2">{t('Language and appearance')}</h2><LanguageSwitcher /><Segmented<ThemePref> label={t('Theme')} value={theme} onChange={value=>setTheme(value)} options={[{value:'system',label:t('Auto')},{value:'light',label:t('Light')},{value:'dark',label:t('Dark')}]} /><div className="learning-setting"><span>{t('Reduce transparency')}</span><Switch on={reduceTransparency} onChange={value=>setReduceTransparency(value)} label={t('Reduce transparency')} /></div></section><section className="card learning-card"><p>{t('Signing out clears local drafts. Sync unfinished work before signing out.')}</p><Button id="profile-signout" onClick={()=>setConfirm(true)}>{t('Sign out')}</Button>{confirm&&<><p>{t('Sign out with active work?')}</p><Button onClick={()=>{void signOut().then(ok=>{if(ok)nav('/sign-in');else setError(true);});}}>{t('Confirm sign out')}</Button><Button variant="plain" onClick={()=>setConfirm(false)}>{t('Stay signed in')}</Button></>}{error&&<p role="alert">{t('Could not sign out. Check your connection and try again.')}</p>}</section></>;
-  return embedded ? <section className="authoring-page learning-page" data-no-translate>{content}</section> : <Page>{content}</Page>;
-}
+export { ServerProfile } from '@/components/profile/ProfileSettings';
 export function PendingFeature() { const t=useText(); return <Page><h1 className="lt">{t('This section is being connected.')}</h1><p>{t('Tests and attempt history are available now.')}</p><Button to="/tests">{t('Find a test')}</Button><Button to="/progress" variant="secondary">{t('View attempt history')}</Button></Page>; }
