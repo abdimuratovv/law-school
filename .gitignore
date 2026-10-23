@@ -19,6 +19,7 @@ coverage/
 .codex/
 wrangler.staging.jsonc
 wrangler.production.jsonc
+wrangler.github.generated.jsonc
 .idea/
 .vscode/
 *.log

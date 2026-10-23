@@ -76,12 +76,14 @@ Foundation verification on October 22, 2026: all three TypeScript configurations
 
 ## Environment separation
 
+For the first dashboard/GitHub deployment, follow [Cloudflare GitHub setup](CLOUDFLARE-GITHUB.md). Its dedicated commands generate a staging configuration from a real database ID; plain `wrangler deploy` still targets the local configuration.
+
 - `wrangler.jsonc` uses a deliberately synthetic local database ID. Use it with `--local`; it is not a remote deployment configuration.
 - Staging and production have separate checked-in `.example.jsonc` templates with deliberately invalid placeholder database IDs. Copy them to `wrangler.staging.jsonc` / `wrangler.production.jsonc` only when preparing the respective environment. Local copies are ignored.
 - Each environment needs its own D1 binding and OAuth redirect configuration. Do not use production bindings in preview builds.
 - Google client secrets and future session secrets belong in Worker secrets; local secret files belong in ignored `.dev.vars` files. Never use `VITE_*` for secrets.
-- Actual remote database IDs and origins are filled in when preparing a deployment; local Google settings are described in GOOGLE-AUTH.md. There is intentionally no automatic deploy workflow or `deploy` npm script at this stage.
+- Actual remote database IDs and origins are filled in when preparing a deployment; local Google settings are described in GOOGLE-AUTH.md. GitHub deployment uses the explicit `build:cloudflare` and `deploy:cloudflare` commands documented in CLOUDFLARE-GITHUB.md; regular local build/test commands never deploy.
 
 ## Next stage
 
-Stage 5 connects validated imports, learner bookmarks and progress reporting. Real staging Google login and reviewed production content remain prerequisites; provider secrets are configured directly in the environment, never sent through chat.
+Stage 5 is implemented locally. Stage 6 covers hosted capacity, backup/restore and deployment acceptance. Real staging Google login and reviewed production content remain prerequisites; provider secrets are configured directly in the environment, never sent through chat.
