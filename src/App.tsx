@@ -6,6 +6,7 @@ import { ServerProgress,ServerMistakes } from '@/pages/student/ServerLearning';
 import SignIn from '@/pages/student/SignIn';
 import { useApp } from '@/state/AppState';
 import { useAuth } from '@/state/AuthState';
+import { ProfileOnboarding } from '@/components/profile/PersonalProfileForm';
 import { useText } from '@/i18n/LanguageProvider';
 import { Button } from '@/components/ui/basic';
 import { RouteAccess, RouteErrorBoundary, RouteLoading, RouteUnavailable, SkipNavigation } from '@/components/layout/RouteAccess';
@@ -18,12 +19,13 @@ const GettingStarted = lazy(() => import('@/pages/student/GettingStarted'));
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const { user } = useApp();
-  const { status, refresh } = useAuth();
+  const { status, refresh, user: account } = useAuth();
   const t = useText();
   const loc = useLocation();
   if (status === 'loading') return <RouteLoading />;
   if (status === 'error') return <main id="main-content" className="route-state"><h1>{t('Sign-in is temporarily unavailable.')}</h1><Button onClick={() => { void refresh(); }}>{t('Try again')}</Button></main>;
   if (!user) return <Navigate to="/sign-in" replace state={{ from: loc.pathname + loc.search + loc.hash }} />;
+  if (!account?.profile) return <ProfileOnboarding key={account?.id} />;
   return <>{children}</>;
 }
 

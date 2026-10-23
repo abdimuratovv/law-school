@@ -21,7 +21,7 @@ with sync_playwright() as p:
     browser = p.chromium.launch(channel='chrome', headless=True)
     for role in ['student', 'admin']:
         context = browser.new_context(viewport={'width': 1366, 'height': 900})
-        identity = {'user': {'id': '00000000-0000-4000-8000-000000000001', 'name': 'Kira', 'email': 'fixture@example.test', 'role': role, 'revision': 0}}
+        identity = {'user': {'id': '00000000-0000-4000-8000-000000000001', 'name': 'Kira', 'email': 'fixture@example.test', 'role': role, 'revision': 0, 'profile': {'firstName': 'Kira', 'lastName': 'Fixture', 'patronymic': 'Fixture', 'birthDate': '2003-01-01'}}}
 
         def api(route):
             path = __import__('urllib.parse', fromlist=['urlparse']).urlparse(route.request.url).path

@@ -1,10 +1,10 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
-import { currentUserSchema, type AuthenticatedUser } from '../../shared/contracts/auth';
+import { authenticatedUserSchema, currentUserSchema, type AuthenticatedUser, type PersonalProfile } from '../../shared/contracts/auth';
 import { clearDraftsExcept } from '@/lib/examDrafts';
 import { clearAccountCaches } from '@/lib/accountStorage';
 
 type AuthState = { user: AuthenticatedUser | null; csrfToken: string | null; status: 'loading' | 'ready' | 'error'; googleEnabled: boolean };
-type AuthContext = AuthState & { refresh: () => Promise<void>; signOut: () => Promise<boolean> };
+type AuthContext = AuthState & { refresh: () => Promise<void>; signOut: () => Promise<boolean>; saveProfile: (profile: PersonalProfile) => Promise<void> };
 const Context = createContext<AuthContext | null>(null);
 const initial: AuthState = { user: null, csrfToken: null, status: 'loading', googleEnabled: false };
 
@@ -70,7 +70,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     finally { leaving.current = false; }
   }, []);
 
-  return <Context.Provider value={{ ...state, refresh, signOut }}>{children}</Context.Provider>;
+  const saveProfile = async (profile: PersonalProfile) => {
+    const owner = current.current.user;
+    if (!owner || leaving.current) throw new Error('Sign in to continue');
+    const response = await fetch('/api/v1/auth/profile', {
+      method: 'PUT', credentials: 'same-origin', cache: 'no-store', signal: AbortSignal.timeout(15000),
+      headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': current.current.csrfToken ?? '' },
+      body: JSON.stringify({ ...profile, revision: owner.revision }),
+    });
+    if (!response.ok) {
+      if (response.status === 409) { void refresh(); throw new Error('Profile changed. Try saving again.'); }
+      throw new Error('Could not save your profile. Check the fields and try again.');
+    }
+    const user = authenticatedUserSchema.parse((await response.json() as { user: unknown }).user);
+    if (leaving.current || current.current.user?.id !== owner.id) throw new Error('Sign in to continue');
+    generation.current++;
+    setState(previous => ({ ...previous, user }));
+    channel.current?.postMessage('changed');
+  };
+  return <Context.Provider value={{ ...state, refresh, signOut, saveProfile }}>{children}</Context.Provider>;
 }
 export function useAuth() {
   const auth = useContext(Context);

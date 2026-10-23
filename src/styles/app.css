@@ -528,3 +528,10 @@ textarea{font:inherit}
 .language-flag svg { width: 100%; height: 100%; object-fit: cover; }
 .language-flag:hover { border-color: var(--accent-text); }
 .language-flag:active { transform: scale(.95); }
+.profile-onboarding { min-height: 100dvh; display: grid; place-items: center; padding: 24px 16px; }
+.profile-onboarding > section { width: min(100%, 520px); }
+.personal-profile-form { display: grid; gap: 20px; }
+.personal-profile-fields { display: grid; gap: 16px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.personal-profile-fields .input { box-sizing: border-box; }
+.personal-profile-fields .input:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.personal-profile-form h2:focus { outline: none; }

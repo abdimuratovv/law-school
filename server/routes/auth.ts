@@ -4,10 +4,12 @@ import { safeAppReturn } from '../../shared/contracts/navigation';
 import { cookieName, cookieOptions, googleConfig } from '../auth/config';
 import { csrfForSession, hash, randomToken } from '../auth/crypto';
 import { createGoogleProvider, type IdentityProvider } from '../auth/google';
-import { requireAuthentication, requireCsrf } from '../auth/session';
+import { requireAuthentication, requireCsrf, limitMutation } from '../auth/session';
 import type { ApiEnv } from '../env';
 import { ApiError } from '../http/errors';
-import { registerGoogleUser } from '../repositories/auth';
+import { registerGoogleUser, publicUser, type UserRow } from '../repositories/auth';
+import { updateProfileSchema } from '../../shared/contracts/auth';
+import { readJson } from '../http/validation';
 
 const google = createGoogleProvider();
 const SESSION_AGE = 7 * 24 * 60 * 60;
@@ -96,6 +98,18 @@ export function authRoutes(provider: IdentityProvider = google) {
   app.get('/me', requireAuthentication, c => {
     const auth = c.get('auth');
     return c.json({ user: auth.user, csrfToken: auth.csrfToken });
+  });
+  app.put('/profile', requireAuthentication, requireCsrf, async c => {
+    await limitMutation(c);
+    const value = await readJson(c.req.raw, updateProfileSchema);
+    const now = Date.now();
+    const row = await c.env.DB.prepare(`UPDATE users SET first_name = ?, last_name = ?, patronymic = ?, birth_date = ?,
+      display_name = ?, profile_completed_at = COALESCE(profile_completed_at, ?), updated_at = max(updated_at, ?), revision = revision + 1
+      WHERE id = ? AND revision = ? AND status = 'active' RETURNING *`)
+      .bind(value.firstName, value.lastName, value.patronymic, value.birthDate,
+        [...[value.firstName, value.lastName].join(' ')].slice(0, 100).join(''), now, now, c.get('auth').user.id, value.revision).first<UserRow>();
+    if (!row) throw new ApiError(409, 'CONFLICT', 'Your profile has changed. Reload and try again.');
+    return c.json({ user: publicUser(row) });
   });
   app.post('/logout', requireAuthentication, requireCsrf, async c => {
     await c.env.DB.prepare('DELETE FROM sessions WHERE token_hash = ?').bind(c.get('auth').sessionHash).run();
