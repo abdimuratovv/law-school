@@ -15,11 +15,11 @@ export type PrivateQuestion = z.infer<typeof privateQuestionSchema>;
 export const startSchema = z.strictObject({ operationId: z.uuid() });
 export const checkSchema = saveAnswersSchema.extend({ questionId: z.string().min(1).max(100) });
 export const gradeSchema = z.object({
-  verdict: z.enum(['correct', 'incorrect', 'pending', 'unanswered']),
+  verdict: z.enum(['correct', 'incorrect', 'pending', 'unanswered', 'partial']),
   units: z.number().int().min(0).max(2).nullable(),
 });
 export type Grade = z.infer<typeof gradeSchema>;
-export const feedbackSchema = gradeSchema.extend({ correctOptionId: z.string().optional(), accepted: z.array(z.string()), explanation: z.string() });
+export const feedbackSchema = gradeSchema.extend({ correctOptionId: z.string().optional(), accepted: z.array(z.string()), explanation: z.string(), reviewComment:z.string().optional() });
 export const snapshotSchema = z.object({ answers: z.record(z.string(), z.string()), flags: z.array(z.string()), currentQuestionId: z.string().optional() });
 export type Snapshot = z.infer<typeof snapshotSchema>;
 export const examSummarySchema = z.object({ id: z.string(), name: z.string(), mode: z.enum(['practice', 'mock']), questionCount: z.number(), durationSeconds: z.number().nullable(), closesAt: z.number().nullable() });

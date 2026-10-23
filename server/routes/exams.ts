@@ -7,7 +7,7 @@ import { saveAnswersSchema } from '../../shared/contracts/api';
 import { checkSchema, startSchema } from '../../shared/contracts/exams';
 import { missing, mutate, owned, questions, settleOwned, shuffled, SQL_NOW, view, type TestRow } from '../exams/service';
 
-const eligible = `SELECT 'p_' || t.id AS exam_id, t.*, NULL AS opens_at, NULL AS closes_at, NULL AS assignment_id FROM test_versions t WHERE t.is_public = 1
+const eligible = `SELECT 'p_' || t.id AS exam_id, t.*, NULL AS opens_at, NULL AS closes_at, NULL AS assignment_id FROM test_versions t WHERE t.is_public = 1 AND NOT EXISTS(SELECT 1 FROM test_publications p WHERE p.version_id=t.id AND p.archived=1)
   UNION ALL SELECT 'a_' || a.id AS exam_id, t.*, a.opens_at, a.closes_at, a.id AS assignment_id
   FROM assignments a JOIN test_versions t ON t.id = a.test_version_id
   JOIN group_memberships m ON m.group_id = a.group_id WHERE m.student_id = ?`;

@@ -1,6 +1,9 @@
 import type { Grade, PrivateQuestion } from '../../shared/contracts/exams';
 
 export const ALGORITHM = 'nfc-distance2-v1';
+export function withOverride(item:PrivateQuestion,answer:string|undefined,review?:{units:number}):Grade {
+  return review ? {units:review.units,verdict:review.units===2?'correct':review.units===1?'partial':'incorrect'} : grade(item,answer);
+}
 export const normalize = (value: string) => value.normalize('NFC').trim().replace(/\s+/gu, ' ').toLocaleLowerCase('und');
 // Banded distance, O(5*n), bounded input and no unbounded quadratic matrix.
 export function closeEnough(a: string, b: string): boolean {

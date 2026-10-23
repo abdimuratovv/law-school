@@ -89,10 +89,10 @@ with sync_playwright() as p:
     check('a real student session cannot enter the teacher UI', page.locator('.teacher-main').count() == 0)
     identity['user'] = user(3, 'Teacher A', 'teacher')
     page.goto(BASE + '/admin/builder')
+    page.on('dialog', lambda dialog: dialog.accept())
     page.locator('#tn').fill('Private teacher draft A')
     authoring_key = 'hm.account.' + identity['user']['id'] + '.demo.authoringDrafts.v1'
-    page.wait_for_function('(key)=>!!localStorage.getItem(key)', arg=authoring_key)
-    check('teacher drafts use their account namespace', 'Private teacher draft A' in page.evaluate('(key)=>localStorage.getItem(key)', authoring_key))
+    check('teacher content is not stored in the former demo cache', page.evaluate('(key)=>localStorage.getItem(key)', authoring_key) is None)
     identity['user'] = user(4, 'Teacher B', 'teacher')
     page.goto(BASE + '/admin/builder')
     expect(page.locator('#tn')).to_have_value('')

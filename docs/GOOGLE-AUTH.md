@@ -1,6 +1,6 @@
 # Google authentication and account access
 
-Stage 2 provides Google OpenID Connect login, application sessions, CSRF enforcement, staff roles and scoped group APIs. The login screen now uses the server's session rather than the historical phone/OTP demo. Exam storage and teacher content screens still use account-scoped sample data until later stages.
+Stage 2 provides Google OpenID Connect login, application sessions, CSRF enforcement, staff roles and scoped group APIs. The login screen now uses the server's session rather than the historical phone/OTP demo. Learner exams and teacher authoring/review now use D1; see [exam setup](EXAM-API.md) and [teacher setup](TEACHING-API.md).
 
 ## Configure local Google login
 
@@ -61,13 +61,13 @@ All paths below are relative to `/api/v1`. Responses are no-store. Protected end
 
 List routes accept `limit` (default 25, max 100) and a `cursor` from the previous response's `nextCursor`. A null cursor means no further page. Only admins can use the global user list; teachers obtain membership details only for assigned groups. Enrollments never create users from arbitrary submitted email addresses.
 
-Staff actions are audited. Stale revisions return 409; the final active administrator cannot be demoted or suspended. A teacher accessing another teacher's group receives 404. These APIs provide the account/group backend; connecting the existing teacher dashboard's sample tables is scheduled for the authoring stage.
+Staff actions are audited. Stale revisions return 409; the final active administrator cannot be demoted or suspended. A teacher accessing another teacher's group receives 404. The teacher group/enrollment screen now uses these endpoints. Import and full analytics remain subsequent work.
 
 Rate limits are applied per browser (20 login starts/minute), with a separate high IP ceiling (1,000/minute) to accommodate shared school networks, and per account for staff writes (120/minute). These edge limits are approximate per Cloudflare location; they are not a global quota guarantee. Logout remains available independently of the staff write limit.
 
 ## Browser data migration
 
-The historical `hm.user`, `hm.sessions`, `hm.attempts`, mistakes and `hm.authoringDrafts.v1` are preserved as old demo records, but are not read as authenticated identity or uploaded as results. New local preview work uses `hm.account.<user-id>.demo.*`, including teacher drafts. Logout/account changes clear these caches; language, theme and other appearance preferences are preserved. Private cached preview data is not a substitute for server persistence.
+The historical `hm.user`, `hm.sessions`, `hm.attempts`, mistakes and `hm.authoringDrafts.v1` are preserved as old demo records, but are not read as authenticated identity or uploaded as results. Historical preview caches use `hm.account.<user-id>.demo.*`; real exam drafts use account-scoped IndexedDB and real teacher drafts save explicitly to D1. Logout/account changes clear these caches; language, theme and other appearance preferences are preserved. Private cached preview data is not a substitute for server persistence.
 
 The UI warns before interactive logout with active work. If browser storage itself is blocked, cache cleanup is best-effort; the server session is still revoked and the application clears its in-memory account state. No Google/application bearer tokens are stored in browser localStorage.
 
@@ -77,9 +77,9 @@ Local protocol, security and database tests verify signed-token acceptance, inva
 
 Local verification on October 22, 2026: 65 Worker/D1 tests passed, all three TypeScript configurations passed, the frontend build and Worker bundle dry run passed, a clean `npm ci` succeeded, and npm audit reported zero known vulnerabilities. Migration 0003 applied to local D1. The operator command was checked in dry-run mode; no real user was promoted.
 
-Seventeen browser checks passed in disposable Chrome contexts, including three interface languages, rejection of a forged historical `hm.user`, Google-button navigation, student/staff routing, account-scoped answers and teacher drafts, localized logout copy, CSRF delivery and cache cleanup while retaining legacy demo data and appearance preferences. With the built local Worker running, reproduce them using `python scripts/verify-auth-ui.py` (Python Playwright and Google Chrome required). These browser fixtures are not included in the current GitHub Actions workflow.
+The current authentication UI script passes 15 checks in disposable Chrome contexts, including three languages, rejection of a forged historical `hm.user`, Google-button navigation, student/staff routing, CSRF delivery and cache cleanup while retaining legacy demo records and appearance preferences. Teacher content no longer uses the former local demo cache. With the built local Worker running, reproduce using `python -X utf8 scripts/verify-auth-ui.py` (Python Playwright and Google Chrome required). Actual learner/teacher database journeys are covered separately in the exam and teacher guides. Browser tests remain outside the current GitHub Actions workflow.
 
-The main browser JavaScript bundle is approximately 658 kB (204 kB gzip); the existing bundle-size/performance warning remains open. Hosted CPU/latency and 200-user capacity have not been measured in this stage.
+The current main browser JavaScript bundle is approximately 627 kB (197 kB gzip); the existing bundle-size/performance warning remains open. Hosted CPU/latency and 200-user capacity have not been measured in this stage.
 
 **Real staging Google sign-in remains pending until the project owner configures an OAuth client and staging origin.** Automated fixture tests are not evidence that a live consent screen, callback registration, or hosted CPU quota is configured correctly. No cloud deployment or paid resource was created in this stage.
 

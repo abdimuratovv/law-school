@@ -6,7 +6,7 @@ import type { WorkerBindings } from '../env';
 export const authEnv: WorkerBindings = { ...env, APP_ORIGIN: 'https://school.test',
   GOOGLE_CLIENT_ID: 'fixture.apps.googleusercontent.com', GOOGLE_CLIENT_SECRET: 'fixture-not-a-real-credential' };
 export async function resetAuthDatabase() {
-  for (const table of ['attempt_starts', 'attempts', 'assignments', 'test_versions', 'question_versions', 'admin_bootstrap', 'audit_events', 'group_memberships', 'group_teachers', 'groups', 'login_flows', 'sessions', 'identities', 'users']) {
+  for (const table of ['attempt_item_reviews', 'assignment_authors', 'test_publications', 'test_drafts', 'question_publications', 'question_drafts', 'attempt_starts', 'attempts', 'assignments', 'test_versions', 'question_versions', 'admin_bootstrap', 'audit_events', 'group_memberships', 'group_teachers', 'groups', 'login_flows', 'sessions', 'identities', 'users']) {
     await env.DB.prepare(`DELETE FROM ${table}`).run();
   }
 }

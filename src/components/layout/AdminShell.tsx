@@ -1,7 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { WorkspaceNavigation, type NavigationItem } from './WorkspaceNavigation';
-import { TeacherReviewProvider, useTeacherReview } from '@/state/TeacherReview';
-import { useText } from '@/i18n/LanguageProvider';
+import { useAuth } from '@/state/AuthState';
 
 const NAV: NavigationItem[] = [
   { to: '/admin', label: 'Overview', icon: 'gauge' },
@@ -10,22 +9,20 @@ const NAV: NavigationItem[] = [
   { to: '/admin/import', label: 'Import', icon: 'download' },
   { to: '/admin/builder', label: 'Test builder', icon: 'builder' },
   { section: 'Students' },
-  { to: '/admin/grading', label: 'Grading', icon: 'pencil', countLabel: '{count} sample responses awaiting review' },
+  { to: '/admin/grading', label: 'Grading', icon: 'pencil', countLabel: '{count} responses awaiting review' },
   { to: '/admin/students', label: 'Students', icon: 'users' },
   { to: '/admin/analytics', label: 'Analytics', icon: 'bars' },
 ];
 
-export function AdminShell() { return <TeacherReviewProvider><TeacherFrame /></TeacherReviewProvider>; }
+export function AdminShell() { return <TeacherFrame />; }
 
 function TeacherFrame() {
-  const { items } = useTeacherReview();
-  const navigation = NAV.map(item => 'to' in item && item.to === '/admin/grading' ? { ...item, count: items.filter(x => !x.grade).length } : item);
+  const { user } = useAuth();
   const { pathname } = useLocation();
-  const t = useText();
   const active = /^\/admin\/editor(?:\/|$)/.test(pathname) ? '/admin/bank' : pathname;
   return <div className="admin app-admin workspace workspace-teacher">
     <div className="mesh app-mesh calm" aria-hidden="true" />
-    <WorkspaceNavigation teacher active={active} items={navigation} identity={<span className="workspace-demo">{t('Sample data')}</span>} />
+    <WorkspaceNavigation teacher active={active} items={NAV} identity={<span className="workspace-demo">{user?.name}</span>} />
     <main id="main-content" tabIndex={-1} className="mainc teacher-main"><Outlet /></main>
   </div>;
 }

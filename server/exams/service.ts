@@ -2,7 +2,7 @@ import { privateQuestionSchema, type PrivateQuestion, type ServerAttempt, type S
 import type { SaveAnswersRequest } from '../../shared/contracts/api';
 import { studentQuestionSchema, type StudentQuestion } from '../../shared/contracts/questions';
 import { ApiError } from '../http/errors';
-import { ALGORITHM, grade } from './grading';
+import { ALGORITHM, grade, withOverride } from './grading';
 import { hash } from '../auth/crypto';
 
 export const SQL_NOW = "CAST(unixepoch('subsec') * 1000 AS INTEGER)";
@@ -58,11 +58,13 @@ export async function view(db: D1Database, row: AttemptRow): Promise<ServerAttem
   const checked: string[] = JSON.parse(row.checked); const snapshot: Snapshot = JSON.parse(row.snapshot);
   const assignment = row.assignment_id ? await db.prepare('SELECT closes_at FROM assignments WHERE id = ?').bind(row.assignment_id).first<{ closes_at: number }>() : null;
   const result = row.result ? JSON.parse(row.result) as ServerAttempt['result'] : null;
+  const overrides=row.state==='final' ? (await db.prepare('SELECT question_version_id,units,comment FROM attempt_item_reviews WHERE attempt_id=?').bind(row.id).all<{question_version_id:string;units:number;comment:string}>()).results : [];
   const release = row.state === 'final' && result?.final && (!assignment || assignment.closes_at <= Date.now());
   const feedback: ServerAttempt['feedback'] = {};
   const safe: StudentQuestion[] = bank.map((item, i) => {
     if (release || (!assignment && test.mode === 'practice' && checked.includes(item.question.id))) {
-      feedback[item.question.id] = { ...grade(item, snapshot.answers[item.question.id]), accepted: item.accepted,
+      const override=overrides.find(r=>r.question_version_id===item.question.id);
+      feedback[item.question.id] = { ...withOverride(item, snapshot.answers[item.question.id],override), ...(override ? {reviewComment:override.comment}:{}), accepted: item.accepted,
         explanation: item.explanation, ...(item.correctOptionId ? { correctOptionId: item.correctOptionId } : {}) };
     }
     const q = studentQuestionSchema.parse(item.question);

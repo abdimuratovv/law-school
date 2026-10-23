@@ -1,6 +1,6 @@
 # Server-backed examinations
 
-Stage 3 implements the learner examination path on the existing same-origin Worker/D1 backend. Google login configuration is described in [GOOGLE-AUTH.md](GOOGLE-AUTH.md). Real Google-provider acceptance, reviewed production content, teacher publishing/manual review, reporting and hosted capacity acceptance remain release prerequisites.
+Stage 3 implements the learner examination path on the existing same-origin Worker/D1 backend. Google login configuration is described in [GOOGLE-AUTH.md](GOOGLE-AUTH.md). Real Google-provider acceptance, reviewed production content, reporting and hosted capacity acceptance remain release prerequisites.
 
 ## Local sample
 
@@ -41,13 +41,13 @@ Exam IDs use `p_<test-version-id>` for public practice and `a_<assignment-id>` f
 - Answers live in one bounded JSON document per attempt. A save increments its revision in a single conditional SQL update. Stale tabs get 409 and cannot overwrite newer snapshots. The last 16 operation receipts recognize uncertain save/check retries; receipt eviction never permits a stale revision to overwrite newer answers.
 - SQL enforces the deadline on every answer mutation. The deadline is the earlier of duration and assignment close. Untimed public practice has no deadline. Late submission freezes and grades only the last acknowledged snapshot, ignoring late browser edits and browser timestamps.
 - Submission/expiry freezes first, then computes a grade from the immutable version and frozen revision. Conditional result persistence makes interrupted grading resumable. Requests finalize overdue attempts independently of the scheduled job; the existing 15-minute cron also processes at most 25 overdue/submitted attempts per invocation. Catalog/history list reads do not sweep an entire account.
-- Correct choice answers receive 2 integer half-point units; wrong/unanswered receive 0. Written answers normalize NFC, whitespace and case. Exact matches receive 2; distance at most 2 or no model answer stays pending; other answers receive 0. Distance checking is banded and bounded. The result records algorithm `nfc-distance2-v1`. Pending results remain provisional until stage 4 manual review.
-- The safe question response is allowlisted. Active exams do not receive keys, accepted answers or explanations. Public practice receives feedback only for checked/locked questions. Group checks are disabled; group feedback requires assignment closure **and** a final result. Teachers do not gain access through the learner endpoints; scoped teacher review is stage 4.
+- Correct choice answers receive 2 integer half-point units; wrong/unanswered receive 0. Written answers normalize NFC, whitespace and case. Exact matches receive 2; distance at most 2 or no model answer stays pending; other answers receive 0. Distance checking is banded and bounded. The result records algorithm `nfc-distance2-v1`. Pending results remain provisional until an authorized manual review; see [teacher review](TEACHING-API.md).
+- The safe question response is allowlisted. Active exams do not receive keys, accepted answers or explanations. Public practice receives feedback only for checked/locked questions. Group checks are disabled; group feedback requires assignment closure **and** a final result. Teachers do not gain access through the learner endpoints; scoped teacher review is available through the separate staff API.
 - Current membership is checked again when saving an assigned attempt. Former members may still read their own existing attempt, but cannot write new group answers.
 
 ## Browser recovery
 
-Real exam screens use API data and server grading. Local legacy `hm.*` scores and `hm.account.*.demo.*` exam records never become real results. Teacher screens remain explicitly labeled previews until their publishing/review APIs are connected. The mistakes/reporting section shows an unavailable state until stage 5.
+Real exam screens use API data and server grading. Local legacy `hm.*` scores and `hm.account.*.demo.*` exam records never become real results. Teacher authoring and review now use the scoped staff API. The mistakes/reporting section shows an unavailable state until stage 5.
 
 IndexedDB database `hm-exam-drafts-v1` stores draft records under `<user-id>:<attempt-id>`. Edits persist locally immediately; dirty drafts sync every 15–17 seconds with jitter and on reconnection. Explicit check, submit and Sync now actions may send immediately. In-flight operations keep their original ID and payload for retry. Server acknowledgements are displayed separately from local changes, alongside the last server save time. Unload warns about unsynced work; correctness does not rely on an unload network request.
 
