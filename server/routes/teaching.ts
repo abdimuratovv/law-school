@@ -8,6 +8,8 @@ import { audit,changed,groupScope,ownerScope,reviewScope,staffActor,unavailable 
 import { draftRow,draftView,publishQuestion,publishTest,type DraftRow,type DraftTable } from '../teaching/content';
 import { accessibleAttempt,applyReview,reviewView } from '../teaching/reviews';
 import { SQL_NOW } from '../exams/service';
+import { importRoutes } from './imports';
+import { reportFilter,summarize } from './learning';
 
 type Content=QuestionDraftContent|TestDraftContent;
 function draftRoutes(kind:DraftTable,createSchema:z.ZodType<{operationId:string;content:Content}>,updateSchema:z.ZodType<{revision:number;content:Content}>) {
@@ -52,6 +54,15 @@ export function teachingRoutes() {
   app.use('*',requireAuthentication,requireRole('teacher','admin'));
   app.use('*',async(c,next)=>{if(!['GET','HEAD'].includes(c.req.method))return requireCsrf(c,async()=>{await limitMutation(c);await next();});await next();});
   app.route('/questions',draftRoutes('question',createQuestionSchema,updateQuestionSchema));
+  app.route('/imports',importRoutes());
+  app.get('/analytics',async c=>{
+    const id=validate(z.uuid(),c.req.query('assignmentId'));const f=validate(reportFilter,c.req.query());const actor=c.get('auth').user.id;
+    if(!await c.env.DB.prepare(`SELECT a.id FROM assignments a WHERE a.id=? AND ${groupScope('a.group_id')}`).bind(id,actor).first())throw unavailable();
+    const rows=await c.env.DB.prepare(`SELECT r.*,t.name,t.mode,1 AS released FROM (SELECT * FROM attempt_reports WHERE assignment_id=? ORDER BY submitted_at DESC,attempt_id LIMIT 200) r JOIN attempts a ON a.id=r.attempt_id JOIN test_versions t ON t.id=a.test_version_id
+      WHERE r.submitted_at>=? AND r.submitted_at<? AND (? IS NULL OR t.mode=?) AND (? IS NULL OR EXISTS(SELECT 1 FROM json_each(r.outcomes) WHERE json_extract(value,'$.topic')=?)) ORDER BY r.submitted_at DESC,r.attempt_id`)
+      .bind(id,f.from,f.until,f.mode??null,f.mode??null,f.topic??null,f.topic??null).all<Parameters<typeof summarize>[0][number]>();
+    return c.json({summary:summarize(rows.results,f.topic),window:200});
+  });
   app.route('/tests',draftRoutes('test',createTestSchema,updateTestSchema));
   app.get('/question-versions',async c=>{
     const {limit,after}=validate(teachingPageSchema,c.req.query());const actor=c.get('auth').user.id;

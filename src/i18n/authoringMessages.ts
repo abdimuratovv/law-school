@@ -595,10 +595,10 @@ export const authoringCopy: Record<string, Record<Language, string>> = {
     "kaa": "Tańlanǵan fayllar talqılanbaydı. Hár faylda birdey úlgi qatarlar kórsetiledi. Tek atı, kólemi hám sheshimlerińiz jergilikli saqlanadı; fayl mazmunı saqlanbaydı.",
     "ru": "Выбранные файлы не разбираются. Для любого файла показаны одинаковые строки примера. Локально сохраняются только имя, размер и решения; содержимое файла не сохраняется."
   },
-  "Excel .xlsx or .xls, up to 5 MB. One question per row.": {
-    "uz": "Excel .xlsx yoki .xls, 5 MB gacha. Har satrda bir savol.",
-    "kaa": "Excel .xlsx yamasa .xls, 5 MB ǵa shekem. Hár qatarda bir soraw.",
-    "ru": "Excel .xlsx или .xls, до 5 МБ. Один вопрос в строке."
+  "Excel .csv or .xlsx, up to 5 MB. One question per row.": {
+    "uz": "Excel .csv yoki .xlsx, 5 MB gacha. Har satrda bir savol.",
+    "kaa": "Excel .csv yamasa .xlsx, 5 MB ǵa shekem. Hár qatarda bir soraw.",
+    "ru": "Excel .csv или .xlsx, до 5 МБ. Один вопрос в строке."
   },
   "Use sample": {
     "uz": "Namunani ishlatish",
@@ -715,10 +715,10 @@ export const authoringCopy: Record<string, Record<Language, string>> = {
     "kaa": "Bul kórinistegi fayl atın, tema sáykeslestiriwin hám tákirar boyınsha sheshimdi tazalaydı. Fayl mazmunı saqlanbaydı.",
     "ru": "Это сбросит имя файла, сопоставление темы и решение о дубликате. Содержимое файла не сохраняется."
   },
-  "Choose an .xlsx or .xls file up to 5 MB.": {
-    "uz": "5 MB gacha .xlsx yoki .xls fayl tanlang.",
-    "kaa": "5 MB ǵa shekem .xlsx yamasa .xls fayl tańlań.",
-    "ru": "Выберите файл .xlsx или .xls размером до 5 МБ."
+  "Choose an .csv or .xlsx file up to 5 MB.": {
+    "uz": "5 MB gacha .csv yoki .xlsx fayl tanlang.",
+    "kaa": "5 MB ǵa shekem .csv yamasa .xlsx fayl tańlań.",
+    "ru": "Выберите файл .csv или .xlsx размером до 5 МБ."
   },
   "Option B references an item missing from the question.": {
     "uz": "B varianti savolda yo‘q bandga ishora qiladi.",

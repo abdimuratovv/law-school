@@ -116,7 +116,8 @@ describe('server examinations', () => {
   it('preserves the last saved snapshot on late submission and finalizes on read without cron', async () => {
     const u = await account(); await publish(); const a = await start(u);
     const saved = await (await request(u, `/attempts/${a.id}/save`, body(a, { 'choice-v1': 'beta' }))).json() as ServerAttempt;
-    await env.DB.prepare('UPDATE attempts SET ends_at = ? WHERE id = ?').bind(Date.now()-1,a.id).run();
+    // Keep expiry fixtures clear of separate JavaScript/SQLite clock ticks.
+    await env.DB.prepare('UPDATE attempts SET ends_at = ? WHERE id = ?').bind(Date.now()-10000,a.id).run();
     const late = await (await request(u, `/attempts/${a.id}/submit`, body(saved, { 'choice-v1': 'alpha' }))).json() as ServerAttempt;
     expect(late.state).toBe('final'); expect(late.snapshot.answers['choice-v1']).toBe('beta'); expect(late.result?.units).toBe(0);
     expect((await request(u, `/attempts/${a.id}/save`, body(late))).status).toBe(409);
@@ -154,7 +155,8 @@ describe('server examinations', () => {
   });
   it('finalizes expired attempts on GET without trusting the scheduled sweeper', async () => {
     const u=await account(); await publish(); const a=await start(u);
-    await env.DB.prepare('UPDATE attempts SET ends_at = ? WHERE id = ?').bind(Date.now()-1,a.id).run();
+    // Keep expiry fixtures clear of separate JavaScript/SQLite clock ticks.
+    await env.DB.prepare('UPDATE attempts SET ends_at = ? WHERE id = ?').bind(Date.now()-10000,a.id).run();
     const expired=await (await request(u,`/attempts/${a.id}`)).json() as ServerAttempt;
     expect(expired.state).toBe('final'); expect(expired.result?.units).toBe(0);
   });
@@ -189,7 +191,8 @@ describe('server examinations', () => {
     const u = await account(); await publish(); let a = await start(u);
     for (let i=0;i<20;i++) a = await (await request(u,`/attempts/${a.id}/save`,body(a,{ 'written-v1': String(i) }))).json() as ServerAttempt;
     expect(await env.DB.prepare('SELECT json_array_length(receipts) n FROM attempts WHERE id = ?').bind(a.id).first('n')).toBe(16);
-    await env.DB.prepare('UPDATE attempts SET ends_at = ? WHERE id = ?').bind(Date.now()-1,a.id).run();
+    // Keep expiry fixtures clear of separate JavaScript/SQLite clock ticks.
+    await env.DB.prepare('UPDATE attempts SET ends_at = ? WHERE id = ?').bind(Date.now()-10000,a.id).run();
     await sweepExpired(env.DB,1); expect(await env.DB.prepare('SELECT state FROM attempts WHERE id = ?').bind(a.id).first('state')).toBe('final');
   });
 });

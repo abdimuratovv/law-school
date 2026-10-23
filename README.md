@@ -84,7 +84,7 @@ Generated audit screenshots, archives, Python caches, and the historical benchma
 | `/exam/:attemptId` | `/admin/builder` |
 | `/results/:attemptId` | `/admin/grading` |
 | `/results/:attemptId/q/:n` | `/admin/students` |
-| `/mistakes`, `/progress`, `/profile` | `/admin/analytics` |
+| `/mistakes`, `/progress`, `/history`, `/profile` | `/admin/analytics` |
 | `/getting-started` | |
 
 The shared design reference is available at `/design`.
@@ -93,7 +93,7 @@ The shared design reference is available at `/design`.
 
 - Real learner tests use same-origin Worker APIs and immutable D1 versions. Answers are graded on the server. IndexedDB retains account-scoped unsynced drafts; legacy demo scores are preserved separately and never imported.
 - Active exams do not expose answer keys. The public design tutorial uses trivial controls examples. Former artboard question/grading fixtures are archived under `server/fixtures/` and are not bundled into the browser.
-- Teacher authoring, groups, assignment overview and review use actual records. Import, mistakes and full progress/analytics reporting remain pending stage 5. See [teacher setup and API](docs/TEACHING-API.md).
+- Teacher authoring, groups, assignment overview and review use actual records. CSV/XLSX draft import, saved questions, mistakes and bounded progress/assignment analytics also use actual authorized records; see [imports and reports](docs/IMPORTS-AND-REPORTS.md). See [teacher setup and API](docs/TEACHING-API.md).
 - A fresh database contains no exam bank. An optional synthetic local exercise is documented in [EXAM-API.md](docs/EXAM-API.md); real legal content must be reviewed and published before use.
 - Real Google acceptance needs owner-configured OAuth credentials. Hosted 200-user capacity, quota headroom and production deployment remain stage 6 release gates.
 - For local browser tests and recovery semantics, see the [exam API guide](docs/EXAM-API.md).
@@ -124,7 +124,7 @@ Review the staged file list before committing. Dependencies, build output, envir
 ## Next development steps
 
 1. Configure Google OAuth and complete the real staging sign-in acceptance check; see [the setup guide](docs/GOOGLE-AUTH.md).
-2. Connect import, bookmarks and progress reporting to actual records.
+2. Verify staging data, import reviewed content and complete hosted load/quota checks.
 3. Prepare reviewed production question content and rehearse backup/restore.
 4. Validate capacity with realistic concurrent exam sessions before production deployment.
 

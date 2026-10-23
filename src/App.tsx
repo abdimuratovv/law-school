@@ -1,7 +1,8 @@
 import { lazy, Suspense, type ReactNode } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { StudentShell } from '@/components/layout/StudentShell';
-import { ServerCatalog as Catalog, ServerCatalog as Dashboard, ServerExam as Exam, ServerExam as Results, ServerExam as Review, ServerLobby as Lobby, ServerHistory as ProgressPage, ServerProfile as Profile, PendingFeature } from '@/pages/student/ServerExams';
+import { ServerCatalog as Catalog, ServerExam as Exam, ServerExam as Results, ServerExam as Review, ServerLobby as Lobby, ServerHistory, ServerProfile as Profile } from '@/pages/student/ServerExams';
+import { ServerProgress,ServerMistakes } from '@/pages/student/ServerLearning';
 import SignIn from '@/pages/student/SignIn';
 import { useApp } from '@/state/AppState';
 import { useAuth } from '@/state/AuthState';
@@ -12,7 +13,7 @@ import { RouteAccess, RouteErrorBoundary, RouteLoading, RouteUnavailable, SkipNa
 // These previews use public artboard samples, never the server question bank.
 const AdminRoutes = lazy(() => import('@/pages/admin/AdminRoutes'));
 const DesignSystem = lazy(() => import('@/pages/DesignSystem'));
-const Mistakes = PendingFeature;
+
 const GettingStarted = lazy(() => import('@/pages/student/GettingStarted'));
 
 function RequireAuth({ children }: { children: ReactNode }) {
@@ -46,11 +47,12 @@ export default function App() {
         <Route path="/results/:attemptId/q/:n" element={<RequireAuth><Review /></RequireAuth>} />
 
         <Route element={<RequireAuth><StudentShell /></RequireAuth>}>
-          <Route index element={<Dashboard />} />
+          <Route index element={<ServerProgress dashboard />} />
           <Route path="tests" element={<Catalog />} />
           <Route path="getting-started" element={<GettingStarted />} />
-          <Route path="progress" element={<ProgressPage />} />
-          <Route path="mistakes" element={<Mistakes />} />
+          <Route path="history" element={<ServerHistory />} />
+          <Route path="progress" element={<ServerProgress />} />
+          <Route path="mistakes" element={<ServerMistakes />} />
           <Route path="profile" element={<Profile />} />
           <Route path="results/:attemptId" element={<Results />} />
         </Route>

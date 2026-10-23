@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import { AdminShell } from '@/components/layout/AdminShell';
-import { ServerBank as Bank,ServerBuilder as Builder,ServerEditor as Editor,ServerGrading as Grading,ServerOverview as Overview,ServerGroups,TeacherPending } from './ServerTeaching';
+import { ServerBank as Bank,ServerBuilder as Builder,ServerEditor as Editor,ServerGrading as Grading,ServerOverview as Overview,ServerGroups } from './ServerTeaching';
+import ServerImport from './ServerImport';
+import ServerAnalytics from './ServerAnalytics';
 import { RouteUnavailable } from '@/components/layout/RouteAccess';
 
 export default function AdminRoutes() {
@@ -10,11 +12,11 @@ export default function AdminRoutes() {
         <Route index element={<Overview />} />
         <Route path="bank" element={<Bank />} />
         <Route path="editor/:id?" element={<Editor />} />
-        <Route path="import" element={<TeacherPending />} />
+        <Route path="import" element={<ServerImport />} />
         <Route path="builder" element={<Builder />} />
         <Route path="grading" element={<Grading />} />
         <Route path="students" element={<ServerGroups />} />
-        <Route path="analytics" element={<TeacherPending />} />
+        <Route path="analytics" element={<ServerAnalytics />} />
         <Route path="*" element={<RouteUnavailable teacher embedded />} />
       </Route>
     </Routes>

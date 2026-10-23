@@ -2,6 +2,7 @@ import type { ServerAttempt, Snapshot } from '../../shared/contracts/exams';
 import type { ReviewItemRequest } from '../../shared/contracts/teaching';
 import { withOverride as reviewedGrade } from '../exams/grading';
 import { hash } from '../auth/crypto';
+import { reportOutcomes,reportStatement } from '../exams/reporting';
 import { finalize, questions, type AttemptRow } from '../exams/service';
 import { ApiError } from '../http/errors';
 import { audit, changed, reviewScope, unavailable } from './access';
@@ -49,6 +50,7 @@ export async function applyReview(db:D1Database,id:string,actor:string,body:Revi
     db.prepare(`UPDATE attempts AS a SET result=?,grade_revision=grade_revision+1,last_review_operation=?,last_review_digest=?
       WHERE a.id=? AND a.state='final' AND a.grade_revision=? AND ${reviewScope}`)
       .bind(JSON.stringify(result),body.operationId,digest,id,body.revision,actor),
+    reportStatement(db,id,result,reportOutcomes(bank,grades)),
     db.prepare(`INSERT INTO attempt_item_reviews(attempt_id,question_version_id,units,comment,reviewer_id,revision,updated_at)
       SELECT ?,?,?,?,?,1,? WHERE changes()>0 ON CONFLICT(attempt_id,question_version_id) DO UPDATE SET
       units=excluded.units,comment=excluded.comment,reviewer_id=excluded.reviewer_id,revision=attempt_item_reviews.revision+1,updated_at=excluded.updated_at`)

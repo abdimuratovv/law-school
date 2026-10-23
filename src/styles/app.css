@@ -512,3 +512,9 @@ textarea{font:inherit}
 @media(max-width:540px){.review-filters,.review-stat-grid{grid-template-columns:1fr}.review-queue ol{grid-template-columns:1fr}.review-queue{padding:16px}.review-scope{padding:16px}.review-chart-row{gap:8px;grid-template-columns:20px minmax(0,1fr) 48px}.review-chart-scale{margin:0 56px 8px 28px}}
 
 .teacher-review-page .review-status,.teacher-review-page .review-response p[role=status]{min-height:3.2em}
+
+/* Bounded report and import previews stay usable on narrow screens. */
+.report-table { overflow-x: auto; margin-block: 1rem; }
+.report-table table { width: 100%; border-collapse: collapse; text-align: start; }
+.report-table th, .report-table td { padding: .65rem; border-bottom: 1px solid var(--sep); vertical-align: top; }
+.report-table td { overflow-wrap: anywhere; }

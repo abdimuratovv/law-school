@@ -27,12 +27,12 @@ export function Screen({ calm, children, className }: { calm?: boolean; children
 
 /** Persistent learning navigation; focused assessment routes live outside this shell. */
 export function StudentShell() {
-  const { user, mistakes } = useApp();
+  const { user } = useApp();
   const t = useText();
   const { pathname } = useLocation();
-  const active = pathname === '/getting-started' ? '/' : pathname.startsWith('/results/') ? '/progress' : pathname;
+  const active = pathname === '/getting-started' ? '/' : (pathname.startsWith('/results/') || pathname === '/history') ? '/progress' : pathname;
   return <Screen calm className="workspace workspace-student">
-    <WorkspaceNavigation active={active} items={NAV.map(item => ({ ...item, count: item.to === '/mistakes' ? mistakes.length : undefined, countLabel: '{count} saved practice questions' }))} identity={user && <div className="workspace-identity"><span className="avatar" aria-hidden="true">{user.name ? initials(user.name) : 'T'}</span><div><strong>{user.name || t('Student')}</strong>{user.group && <p className="fn l2">{t('Group')} {user.group}</p>}</div></div>} />
+    <WorkspaceNavigation active={active} items={NAV.map(item => ({ ...item, count: undefined, countLabel: '{count} saved practice questions' }))} identity={user && <div className="workspace-identity"><span className="avatar" aria-hidden="true">{user.name ? initials(user.name) : 'T'}</span><div><strong>{user.name || t('Student')}</strong>{user.group && <p className="fn l2">{t('Group')} {user.group}</p>}</div></div>} />
     <div className="learning-content"><Outlet /></div>
   </Screen>;
 }

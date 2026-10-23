@@ -9,7 +9,7 @@ async function addUser(id: string, role = 'student') {
 }
 
 beforeEach(async () => {
-  for (const table of ['attempt_item_reviews', 'assignment_authors', 'test_publications', 'test_drafts', 'question_publications', 'question_drafts', 'attempt_starts', 'attempts', 'assignments', 'test_versions', 'question_versions', 'admin_bootstrap', 'audit_events', 'group_memberships', 'group_teachers', 'groups', 'login_flows', 'sessions', 'identities', 'users']) {
+  for (const table of ['saved_questions', 'attempt_reports', 'import_rows', 'import_jobs', 'attempt_item_reviews', 'assignment_authors', 'test_publications', 'test_drafts', 'question_publications', 'question_drafts', 'attempt_starts', 'attempts', 'assignments', 'test_versions', 'question_versions', 'admin_bootstrap', 'audit_events', 'group_memberships', 'group_teachers', 'groups', 'login_flows', 'sessions', 'identities', 'users']) {
     await env.DB.prepare(`DELETE FROM ${table}`).run();
   }
 });

@@ -4,6 +4,7 @@ import { studentQuestionSchema, type StudentQuestion } from '../../shared/contra
 import { ApiError } from '../http/errors';
 import { ALGORITHM, grade, withOverride } from './grading';
 import { hash } from '../auth/crypto';
+import { reportOutcomes,reportStatement } from './reporting';
 
 export const SQL_NOW = "CAST(unixepoch('subsec') * 1000 AS INTEGER)";
 export interface TestRow { id: string; name: string; mode: 'practice' | 'mock'; duration_seconds: number | null; question_ids: string; is_public: number }
@@ -43,8 +44,8 @@ export async function finalize(db: D1Database, id: string): Promise<void> {
   const grades = bank.map(q => ({ id: q.question.id, ...grade(q, snapshot.answers[q.question.id]) }));
   const pending = grades.filter(g => g.units === null).length;
   const result = { units: grades.reduce((sum, g) => sum + (g.units ?? 0), 0), maxUnits: bank.length * 2, pending, final: pending === 0, algorithm: ALGORITHM };
-  await db.prepare("UPDATE attempts SET state = 'final', result = ? WHERE id = ? AND state = 'submitted' AND revision = ?")
-    .bind(JSON.stringify(result), row.id, row.revision).run();
+  await db.batch([db.prepare("UPDATE attempts SET state = 'final', result = ? WHERE id = ? AND state = 'submitted' AND revision = ?")
+    .bind(JSON.stringify(result), row.id, row.revision),reportStatement(db,row.id,result,reportOutcomes(bank,grades))]);
 }
 export async function sweepExpired(db: D1Database, limit = 25) {
   const rows = await db.prepare(`SELECT id FROM attempts WHERE (state = 'active' AND ends_at <= ${SQL_NOW}) OR state = 'submitted' LIMIT ?`).bind(Math.min(25, Math.max(1, limit))).all<{ id: string }>();

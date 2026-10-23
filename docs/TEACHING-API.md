@@ -20,7 +20,7 @@ After configuring Google and bootstrapping the first administrator:
 6. The enrolled learner completes the assigned test using the [exam API](EXAM-API.md). A result containing pending written answers remains provisional.
 7. Open `/admin/grading`, select a queued attempt, and apply 1, 0.5 or 0 points with an optional comment. The actual learner result updates. Completed group attempts can also be opened from the assignment overview for deliberate, audited corrections.
 
-Drafts save explicitly to D1. The interface warns before leaving with unsaved edits; unsaved authoring work is held in that page's memory and is not guaranteed after reload. Reloading the saved version requires confirmation before discarding local edits. Former browser-only teacher drafts are preserved separately and are never silently uploaded or published. Import and analytics remain pending stage 5.
+Drafts save explicitly to D1. The interface warns before leaving with unsaved edits; unsaved authoring work is held in that page's memory and is not guaranteed after reload. Reloading the saved version requires confirmation before discarding local edits. Former browser-only teacher drafts are preserved separately and are never silently uploaded or published. CSV/XLSX import and assignment analytics are connected in stage 5; see [imports and reports](IMPORTS-AND-REPORTS.md).
 
 ## Authorization
 

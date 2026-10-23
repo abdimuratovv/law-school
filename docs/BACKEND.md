@@ -4,7 +4,7 @@ The [backend architecture](superpowers/specs/2026-10-22-backend-design.md) was a
 
 ## Current scope
 
-Stages 1–4 provide the Worker foundation, Google authentication, scoped accounts/groups and the server-backed student exam path. Catalog, start/resume, answer synchronization, checks, submission, expiry and grading now use D1. See [exam API and recovery](EXAM-API.md) and [Google setup](GOOGLE-AUTH.md). Teacher drafts, immutable publishing, scoped assignments and manual review are connected; see [teacher workflow and API](TEACHING-API.md). Import/reporting are next. Real provider configuration, reviewed content and hosted load acceptance are still required before real assessments.
+Stages 1–5 provide the Worker foundation, Google authentication, scoped accounts/groups and the server-backed student exam path. Catalog, start/resume, answer synchronization, checks, submission, expiry and grading now use D1. See [exam API and recovery](EXAM-API.md) and [Google setup](GOOGLE-AUTH.md). Teacher drafts, immutable publishing, scoped assignments and manual review are connected; see [teacher workflow and API](TEACHING-API.md). CSV/XLSX draft imports, saved questions, mistakes and bounded reports are connected; see [imports and reports](IMPORTS-AND-REPORTS.md). Real provider configuration, reviewed content and hosted load acceptance are still required before real assessments.
 
 ## Local setup
 
