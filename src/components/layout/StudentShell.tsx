@@ -11,8 +11,7 @@ const NAV: { to: string; label: string; icon: IconName; tab: boolean }[] = [
   { to: '/', label: 'Home', icon: 'home', tab: true },
   { to: '/tests', label: 'Tests', icon: 'tests', tab: true },
   { to: '/progress', label: 'Progress', icon: 'progress', tab: true },
-  { to: '/mistakes', label: 'My mistakes', icon: 'bookmark', tab: true },
-  { to: '/profile', label: 'Profile', icon: 'profile', tab: true }
+  { to: '/mistakes', label: 'My mistakes', icon: 'bookmark', tab: true }
 ];
 
 /** Mesh background + content layer. Every screen sits on this. */

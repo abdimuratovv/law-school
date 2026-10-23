@@ -4,7 +4,8 @@ import { Screen } from '@/components/layout/StudentShell';
 import { Brand, Button, Tag } from '@/components/ui/basic';
 import { Notice } from '@/components/ui/patterns';
 import { useAuth } from '@/state/AuthState';
-import { LanguageSwitcher, useText } from '@/i18n/LanguageProvider';
+import { useText } from '@/i18n/LanguageProvider';
+import { LanguageFlag } from '@/components/ui/LanguageFlag';
 import { safeAppReturn } from '../../../shared/contracts/navigation';
 
 export default function SignIn() {
@@ -16,7 +17,7 @@ export default function SignIn() {
   const failure = params.get('auth');
   const unavailable = status === 'error' || status === 'ready' && !googleEnabled;
   return <Screen calm><main id="main-content" tabIndex={-1} className="entry-page" data-no-translate>
-    <header className="entry-top"><Brand /><LanguageSwitcher compact /></header>
+    <header className="entry-top"><Brand /><LanguageFlag /></header>
     <div className="entry-layout">
       <section className="entry-intro"><p className="eyebrow">Huqıq Mektebi</p><h1 className="lt">{t('Welcome to Huqıq Mektebi')}</h1><p className="entry-lead">{t('Learn the format. Build your confidence.')}</p><div className="entry-points"><p>{t('Practice at your own pace')}</p><p>{t('Question material is in Karakalpak.')}</p></div></section>
       <section className="card entry-form"><Tag tone="acc">{t('Google sign-in')}</Tag><h2 className="t2">{t('Sign in to continue')}</h2><p className="callout l2">{t('Use your Google account to sign in or register.')}</p>

@@ -1,6 +1,8 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { WorkspaceNavigation, type NavigationItem } from './WorkspaceNavigation';
 import { useAuth } from '@/state/AuthState';
+import { initials } from '@/lib/format';
+import { useText } from '@/i18n/LanguageProvider';
 
 const NAV: NavigationItem[] = [
   { to: '/admin', label: 'Overview', icon: 'gauge' },
@@ -18,11 +20,12 @@ export function AdminShell() { return <TeacherFrame />; }
 
 function TeacherFrame() {
   const { user } = useAuth();
+  const t = useText();
   const { pathname } = useLocation();
   const active = /^\/admin\/editor(?:\/|$)/.test(pathname) ? '/admin/bank' : pathname;
   return <div className="admin app-admin workspace workspace-teacher">
     <div className="mesh app-mesh calm" aria-hidden="true" />
-    <WorkspaceNavigation teacher active={active} items={NAV} identity={<span className="workspace-demo">{user?.name}</span>} />
+    <WorkspaceNavigation teacher active={active} items={NAV} identity={<div className="workspace-identity"><span className="avatar" aria-hidden="true">{user?.name ? initials(user.name) : 'T'}</span><strong>{user?.name || t('Teacher')}</strong></div>} />
     <main id="main-content" tabIndex={-1} className="mainc teacher-main"><Outlet /></main>
   </div>;
 }

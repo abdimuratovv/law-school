@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Icon, type IconName } from '@/components/ui/Icon';
 import { IconButton, Mark, cx } from '@/components/ui/basic';
 import { Overlay } from '@/components/ui/overlay';
-import { LanguageSwitcher, useText } from '@/i18n/LanguageProvider';
+import { useText } from '@/i18n/LanguageProvider';
 import { localizedNumber } from '@/i18n/formatting';
 import { useLanguage } from '@/i18n/LanguageProvider';
 import { useMediaQuery } from '@/lib/hooks';
@@ -20,6 +20,8 @@ export function WorkspaceNavigation({ teacher = false, items, active, identity }
   const previousPath = useRef(location.pathname);
   const name = t(teacher ? 'Teacher navigation' : 'Main navigation');
   const title = t(teacher ? 'Teacher workspace' : 'Learning workspace');
+  const profileTo = teacher ? '/admin/profile' : '/profile';
+  const profileActive = location.pathname === profileTo;
   const currentLabel = items.find(item => 'to' in item && item.to === active);
   useEffect(() => {
     if (previousPath.current !== location.pathname) {
@@ -46,12 +48,12 @@ export function WorkspaceNavigation({ teacher = false, items, active, identity }
     </Link>)}
     {teacher && <Link className="workspace-link workspace-student-return" to="/" onClick={event => select(event, '/')}><Icon name="back" /><span>{t('Student app')}</span></Link>}
   </nav>;
-  const footer = <footer className="workspace-footer" data-no-translate>{identity}<span className="fn l2">{t('Local preferences')}</span><LanguageSwitcher /></footer>;
+  const footer = <footer className="workspace-footer" data-no-translate><Link to={profileTo} className={cx('workspace-profile', profileActive && 'is-current')} aria-label={t('Profile')} aria-current={profileActive ? 'page' : undefined} onClick={event => select(event, profileTo)}>{identity}</Link></footer>;
   const brand = <div className="workspace-brand"><Mark /><div><strong>Huqıq Mektebi</strong><p className="fn l2">{title}</p></div></div>;
   return <>
     {wide ? <aside className="workspace-sidebar glass" data-no-translate>{brand}{links}{footer}</aside> : <header className="workspace-topbar glass" data-no-translate>
       <button type="button" className="workspace-menu" aria-haspopup="dialog" aria-expanded={open} aria-controls={open ? 'workspace-drawer' : undefined} onClick={() => { restore.current = true; setOpen(true); }}><Icon name="menu" /><span>{t('Navigation')}</span><span className="sr-only">{t('Open navigation')}</span></button>
-      <span className="workspace-current">{currentLabel && 'label' in currentLabel ? t(currentLabel.label) : title}</span>
+      <span className="workspace-current">{profileActive ? t('Profile') : currentLabel && 'label' in currentLabel ? t(currentLabel.label) : title}</span>
     </header>}
     <Overlay open={open && !wide} onClose={() => setOpen(false)} variant="dialog" labelledBy="workspace-drawer-title" className="workspace-drawer" id="workspace-drawer" restoreFocus={restore.current} initialFocus='[aria-current="page"]'>
       <div className="workspace-drawer-heading"><h2 id="workspace-drawer-title" className="t2">{title}</h2><IconButton icon="close" label={t('Close navigation')} onClick={() => setOpen(false)} /></div>
