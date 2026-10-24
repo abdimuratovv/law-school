@@ -1,5 +1,18 @@
 # Backend development
 
+## Current user workflow: public collections
+
+Every registered account sees published test collections without enrollment or copying account IDs. Admin navigation contains Test collections, Question bank, Results and Users. Import and manual grading are actions inside these workflows.
+
+Create a collection from an imported file or saved questions, choose always-available access or a shared Asia/Tashkent window, and click Publish collection. The browser prepares question versions in batches of five and publishes the immutable test version plus public catalog entry. Draft questions remain private until selected for publication. No separate per-question publishing action or group assignment is required.
+
+`test_collections` and `attempts.collection_id` support group-free eligibility, reporting, scheduled uniqueness and reopening. All mutation endpoints keep authentication, CSRF, active-role and ownership checks. Scheduled scores are available after submission, while answer keys remain withheld until the shared deadline. Always-available collections permit a fresh attempt after submission. Written answers without an accepted model remain provisional until reviewed.
+
+Apply migration `0009_public_test_collections.sql` before deploying the new Worker. It retains the latest legacy assignment window and adopts its attempts under the public collection without changing attempt IDs, saved answers or grades. Older histories and group tables remain for compatibility; groups are no longer required by the product workflow. Admin result history includes legacy attempts.
+
+Validation commands: `npm run typecheck`, `npm test`, `python scripts/verify-collection-migration.py`, and (with a local production preview) `python scripts/verify-public-collections-ui.py`. The latter uses synthetic HTTP fixtures and never signs in to the live site.
+
+
 The [backend architecture](superpowers/specs/2026-10-22-backend-design.md) was accepted on October 22, 2026. The [implementation plan](superpowers/plans/2026-10-22-backend-implementation.md) tracks six stages.
 
 ## Current scope

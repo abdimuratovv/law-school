@@ -7,12 +7,14 @@ import { saveAnswersSchema } from '../../shared/contracts/api';
 import { checkSchema, startSchema } from '../../shared/contracts/exams';
 import { missing, mutate, owned, questions, settleOwned, shuffled, SQL_NOW, view, type TestRow } from '../exams/service';
 
-const eligible = `SELECT 'p_' || t.id AS exam_id, t.*, NULL AS opens_at, NULL AS closes_at, NULL AS assignment_id FROM test_versions t WHERE t.is_public = 1 AND NOT EXISTS(SELECT 1 FROM test_publications p WHERE p.version_id=t.id AND p.archived=1)
-  UNION ALL SELECT 'a_' || a.id AS exam_id, t.*, a.opens_at, a.closes_at, a.id AS assignment_id
-  FROM assignments a JOIN test_versions t ON t.id = a.test_version_id
-  JOIN group_memberships m ON m.group_id = a.group_id WHERE m.student_id = ?`;
-type Eligible = TestRow & { exam_id: string; opens_at: number | null; closes_at: number | null; assignment_id: string | null };
-const summary = (r: Eligible) => ({ id: r.exam_id, name: r.name, mode: r.mode, questionCount: (JSON.parse(r.question_ids) as string[]).length, durationSeconds: r.assignment_id?null:r.duration_seconds,opensAt:r.opens_at, closesAt: r.closes_at,serverNow:Date.now() });
+const eligible = `SELECT 'c_' || c.id AS exam_id,t.*,c.opens_at,c.closes_at,NULL AS assignment_id,c.id AS collection_id
+  FROM test_collections c JOIN test_versions t ON t.id=c.test_version_id WHERE c.retired=0
+  UNION ALL SELECT 'p_' || t.id AS exam_id,t.*,NULL AS opens_at,NULL AS closes_at,NULL AS assignment_id,NULL AS collection_id FROM test_versions t WHERE t.is_public=1 AND NOT EXISTS(SELECT 1 FROM test_collections c WHERE c.test_version_id=t.id) AND NOT EXISTS(SELECT 1 FROM test_publications p WHERE p.version_id=t.id AND p.archived=1)
+  UNION ALL SELECT 'a_' || a.id AS exam_id,t.*,a.opens_at,a.closes_at,a.id AS assignment_id,NULL AS collection_id
+  FROM assignments a JOIN test_versions t ON t.id=a.test_version_id JOIN group_memberships m ON m.group_id=a.group_id WHERE m.student_id=? AND NOT EXISTS(SELECT 1 FROM test_collections c WHERE c.test_version_id=t.id)`;
+
+type Eligible = TestRow & { exam_id: string; opens_at: number | null; closes_at: number | null; assignment_id: string | null;collection_id:string|null };
+const summary = (r: Eligible) => ({ id: r.exam_id, name: r.name, mode: r.mode, questionCount: (JSON.parse(r.question_ids) as string[]).length, durationSeconds: r.assignment_id||r.collection_id?null:r.duration_seconds,opensAt:r.opens_at, closesAt: r.closes_at,serverNow:Date.now() });
 
 export function examRoutes() {
   const app = new Hono<ApiEnv>();
@@ -25,7 +27,7 @@ export function examRoutes() {
   });
   app.get('/exams', async c => {
     const query = validate(z.object({ limit: z.coerce.number().int().min(1).max(100).default(25), after: z.string().max(150).default('') }), c.req.query());
-    const list = await c.env.DB.prepare(`SELECT * FROM (${eligible}) WHERE exam_id > ? AND (closes_at IS NULL OR closes_at > ${SQL_NOW}) ORDER BY exam_id LIMIT ?`)
+    const list = await c.env.DB.prepare(`SELECT * FROM (${eligible}) available WHERE exam_id > ? AND (collection_id IS NOT NULL OR NOT EXISTS(SELECT 1 FROM test_collections visible WHERE visible.test_version_id=available.id)) AND (collection_id IS NOT NULL OR closes_at IS NULL OR closes_at > ${SQL_NOW}) ORDER BY exam_id LIMIT ?`)
       .bind(c.get('auth').user.id, query.after, query.limit + 1).all<Eligible>();
     return c.json({ items: list.results.slice(0, query.limit).map(summary), next: list.results.length > query.limit ? list.results[query.limit - 1]!.exam_id : null });
   });
@@ -39,7 +41,7 @@ export function examRoutes() {
     const test = await c.env.DB.prepare(`SELECT * FROM (${eligible}) WHERE exam_id = ?`).bind(user, c.req.param('id')).first<Eligible>();
     if (!test) throw missing();
     const known = await c.env.DB.prepare(`SELECT id, exam_id FROM attempts WHERE user_id = ? AND (id = (SELECT attempt_id FROM attempt_starts WHERE user_id = ? AND operation_id = ?) OR start_operation = ? OR
-      (exam_id = ? AND (assignment_id IS NOT NULL OR state = 'active'))) ORDER BY started_at LIMIT 1`).bind(user, user, body.operationId, body.operationId, test.exam_id).first<{ id: string; exam_id: string }>();
+      (exam_id = ? AND (assignment_id IS NOT NULL OR (collection_id IS NOT NULL AND ends_at IS NOT NULL) OR state = 'active'))) ORDER BY started_at LIMIT 1`).bind(user, user, body.operationId, body.operationId, test.exam_id).first<{ id: string; exam_id: string }>();
     if (known && known.exam_id !== test.exam_id) throw missing();
     let id = known?.id;
     if (!id) {
@@ -47,14 +49,15 @@ export function examRoutes() {
       const order = bank.map(q => ({ id: q.question.id, ...(q.question.kind === 'single' ? { options: shuffled(q.question.options.map(o => o.id)) } : {}) }));
       const candidate = crypto.randomUUID();
       // INSERT...SELECT checks schedule, eligibility and active account at the write itself.
-      await c.env.DB.prepare(`INSERT OR IGNORE INTO attempts(id,user_id,exam_id,test_version_id,assignment_id,start_operation,started_at,ends_at,question_order,saved_at)
-        SELECT ?,?,?,?,?,?,${SQL_NOW},CASE WHEN ? IS NOT NULL THEN ? WHEN ? IS NULL THEN NULL ELSE ${SQL_NOW} + ? * 1000 END,?,${SQL_NOW}
+      await c.env.DB.prepare(`INSERT OR IGNORE INTO attempts(id,user_id,exam_id,test_version_id,assignment_id,collection_id,start_operation,started_at,ends_at,question_order,saved_at)
+        SELECT ?,?,?,?,?,?,?,${SQL_NOW},CASE WHEN ? IS NOT NULL THEN ? WHEN ? IS NULL THEN NULL ELSE ${SQL_NOW} + ? * 1000 END,?,${SQL_NOW}
         WHERE (? IS NULL OR ? <= ${SQL_NOW}) AND (? IS NULL OR ? > ${SQL_NOW})
         AND EXISTS(SELECT 1 FROM users WHERE id = ? AND status = 'active')
-        AND (? IS NULL OR EXISTS(SELECT 1 FROM group_memberships WHERE student_id = ? AND group_id = (SELECT group_id FROM assignments WHERE id = ?)))`)
-        .bind(candidate,user,test.exam_id,test.id,test.assignment_id,body.operationId,test.assignment_id,test.closes_at,
-          test.duration_seconds,test.duration_seconds,JSON.stringify(order),test.opens_at,test.opens_at,test.closes_at,test.closes_at,user,test.assignment_id,user,test.assignment_id).run();
-      const created = await c.env.DB.prepare(`SELECT id FROM attempts WHERE user_id = ? AND (start_operation = ? OR (exam_id = ? AND (assignment_id IS NOT NULL OR state = 'active'))) LIMIT 1`)
+        AND (? IS NULL OR EXISTS(SELECT 1 FROM group_memberships WHERE student_id = ? AND group_id = (SELECT group_id FROM assignments WHERE id = ?)))
+        AND (? IS NULL OR EXISTS(SELECT 1 FROM test_collections WHERE id=? AND retired=0))`)
+        .bind(candidate,user,test.exam_id,test.id,test.assignment_id,test.collection_id,body.operationId,test.assignment_id??test.collection_id,test.closes_at,
+          test.duration_seconds,test.duration_seconds,JSON.stringify(order),test.opens_at,test.opens_at,test.closes_at,test.closes_at,user,test.assignment_id,user,test.assignment_id,test.collection_id,test.collection_id).run();
+      const created = await c.env.DB.prepare(`SELECT id FROM attempts WHERE user_id = ? AND (start_operation = ? OR (exam_id = ? AND (assignment_id IS NOT NULL OR (collection_id IS NOT NULL AND ends_at IS NOT NULL) OR state = 'active'))) LIMIT 1`)
         .bind(user, body.operationId, test.exam_id).first<{ id: string }>();
       id = created?.id;
     }

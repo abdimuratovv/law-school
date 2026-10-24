@@ -12,6 +12,7 @@ import { importRoutes } from './imports';
 import { reportFilter,summarize } from './learning';
 import { questionBankRoutes } from './question-bank';
 import { reopenAssignmentSchema } from '../../shared/contracts/teaching';
+import { collectionRoutes,staffUserRoutes } from './collections';
 
 type Content=QuestionDraftContent|TestDraftContent;
 function draftRoutes(kind:DraftTable,createSchema:z.ZodType<{operationId:string;content:Content}>,updateSchema:z.ZodType<{revision:number;content:Content}>) {
@@ -58,6 +59,8 @@ export function teachingRoutes() {
   app.route('/questions',draftRoutes('question',createQuestionSchema,updateQuestionSchema));
   app.route('/question-bank',questionBankRoutes());
   app.route('/imports',importRoutes());
+  app.route('/collections',collectionRoutes());
+  app.route('/users',staffUserRoutes());
   app.get('/analytics',async c=>{
     const id=validate(z.uuid(),c.req.query('assignmentId'));const f=validate(reportFilter,c.req.query());const actor=c.get('auth').user.id;
     if(!await c.env.DB.prepare(`SELECT a.id FROM assignments a WHERE a.id=? AND ${groupScope('a.group_id')}`).bind(id,actor).first())throw unavailable();

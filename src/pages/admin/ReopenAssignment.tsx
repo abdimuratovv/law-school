@@ -4,7 +4,7 @@ import { useText } from '@/i18n/LanguageProvider';
 import { useAuth } from '@/state/AuthState';
 import { teachingRequest,tashkentInput,tashkentTimestamp } from '@/lib/teachingApi';
 
-export function ReopenAssignment({id,onReopened}:{id:string;onReopened:()=>void}){
+export function ReopenAssignment({id,onReopened,collection=false}:{id:string;onReopened:()=>void;collection?:boolean}){
   const t=useText(),{csrfToken}=useAuth();
   const [open,setOpen]=useState(false),[busy,setBusy]=useState(false),[message,setMessage]=useState('');
   const [opens,setOpens]=useState(()=>tashkentInput()),[closes,setCloses]=useState(()=>tashkentInput(Date.now()+7200000));
@@ -15,7 +15,7 @@ export function ReopenAssignment({id,onReopened}:{id:string;onReopened:()=>void}
     const serialized=JSON.stringify(body);
     if(operation.current?.body!==serialized)operation.current={body:serialized,id:crypto.randomUUID()};
     try{
-      await teachingRequest('/staff/assignments/'+id+'/reopen',csrfToken,{...body,operationId:operation.current.id});
+      await teachingRequest('/staff/'+(collection?'collections':'assignments')+'/'+id+'/reopen',csrfToken,{...body,operationId:operation.current.id});
       setOpen(false);setMessage('Test reopened. Students can start a new attempt in the new window.');onReopened();
     }catch{setMessage('Could not reopen. The previous window must be closed and the new deadline must be in the future.');}
     finally{setBusy(false);}

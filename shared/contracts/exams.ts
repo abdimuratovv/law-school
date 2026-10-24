@@ -29,6 +29,7 @@ export const attemptSchema = z.object({
   state: z.enum(['active', 'submitted', 'final']), revision: z.number(), startedAt: z.number(), endsAt: z.number().nullable(), savedAt: z.number(), serverNow: z.number(),
   snapshot: snapshotSchema, questions: z.array(studentQuestionSchema).max(100), checked: z.array(z.string()),
   feedback: z.record(z.string(), feedbackSchema),
+  answerCounts:z.object({correct:z.number(),incorrect:z.number(),partial:z.number(),pending:z.number(),unanswered:z.number()}).optional(),
   result: z.object({ units: z.number(), maxUnits: z.number(), pending: z.number(), final: z.boolean(), algorithm: z.string() }).nullable(),
 });
 export type ServerAttempt = z.infer<typeof attemptSchema>;

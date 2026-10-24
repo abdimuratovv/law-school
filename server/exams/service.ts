@@ -9,7 +9,7 @@ import { reportOutcomes,reportStatement } from './reporting';
 export const SQL_NOW = "CAST(unixepoch('subsec') * 1000 AS INTEGER)";
 export interface TestRow { id: string; name: string; mode: 'practice' | 'mock'; duration_seconds: number | null; question_ids: string; is_public: number }
 export interface AttemptRow {
-  id: string; user_id: string; exam_id: string; test_version_id: string; assignment_id: string | null;
+  id: string; user_id: string; exam_id: string; test_version_id: string; assignment_id: string | null;collection_id:string|null;
   state: 'active' | 'submitted' | 'final'; revision: number; snapshot: string; question_order: string;
   checked: string; receipts: string; started_at: number; ends_at: number | null; saved_at: number; result: string | null;
 }
@@ -57,10 +57,10 @@ export async function view(db: D1Database, row: AttemptRow): Promise<ServerAttem
   const order = JSON.parse(row.question_order) as { id: string; options?: string[] }[];
   const bank = await questions(db, order.map(q => q.id));
   const checked: string[] = JSON.parse(row.checked); const snapshot: Snapshot = JSON.parse(row.snapshot);
-  const assignment = row.assignment_id ? await db.prepare('SELECT closes_at FROM assignments WHERE id = ?').bind(row.assignment_id).first<{ closes_at: number }>() : null;
+  const assignment = row.assignment_id ? await db.prepare('SELECT closes_at FROM assignments WHERE id = ?').bind(row.assignment_id).first<{ closes_at: number }>() : row.collection_id ? await db.prepare('SELECT closes_at FROM test_collections WHERE id=?').bind(row.collection_id).first<{closes_at:number|null}>() : null;
   const result = row.result ? JSON.parse(row.result) as ServerAttempt['result'] : null;
   const overrides=row.state==='final' ? (await db.prepare('SELECT question_version_id,units,comment FROM attempt_item_reviews WHERE attempt_id=?').bind(row.id).all<{question_version_id:string;units:number;comment:string}>()).results : [];
-  const release = row.state === 'final' && result?.final && (!assignment || assignment.closes_at <= Date.now());
+  const release = row.state === 'final' && result?.final && (!assignment || assignment.closes_at===null || assignment.closes_at <= Date.now());
   const feedback: ServerAttempt['feedback'] = {};
   const safe: StudentQuestion[] = bank.map((item, i) => {
     if (release || (!assignment && test.mode === 'practice' && checked.includes(item.question.id))) {
@@ -75,7 +75,9 @@ export async function view(db: D1Database, row: AttemptRow): Promise<ServerAttem
     }
     return q;
   });
-  return { id: row.id, examId: row.exam_id, name: test.name, mode: test.mode, state: row.state, revision: row.revision,
+  const answerCounts={correct:0,incorrect:0,partial:0,pending:0,unanswered:0};
+  if(row.state==='final')for(const item of bank){const override=overrides.find(r=>r.question_version_id===item.question.id);const verdict=withOverride(item,snapshot.answers[item.question.id],override).verdict;answerCounts[verdict]++;}
+  return { id: row.id, examId: row.exam_id, name: test.name, mode: test.mode, state: row.state, revision: row.revision,...(row.state==='final'?{answerCounts}:{}),
     startedAt: row.started_at, endsAt: row.ends_at, savedAt: row.saved_at, serverNow: Date.now(), snapshot,
     questions: safe, checked, feedback, result };
 }
@@ -109,7 +111,7 @@ export async function mutate(db: D1Database, row: AttemptRow, user: string, body
   if (checked.some(id => (previous.answers[id] ?? '') !== (body.answers[id] ?? ''))) throw conflict();
   if (action === 'check') {
     const test = await db.prepare('SELECT mode FROM test_versions WHERE id = ?').bind(row.test_version_id).first<{ mode: string }>();
-    if (row.assignment_id || test?.mode !== 'practice') throw new ApiError(403, 'FORBIDDEN', 'Answer checking is unavailable for this test.');
+    if (row.assignment_id || row.collection_id || test?.mode !== 'practice') throw new ApiError(403, 'FORBIDDEN', 'Answer checking is unavailable for this test.');
     if (!questionId || !ids.has(questionId) || !body.answers[questionId]?.trim()) throw new ApiError(422, 'VALIDATION_ERROR', 'Choose an answer before checking.');
     if (!checked.includes(questionId)) checked.push(questionId);
   }

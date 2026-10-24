@@ -15,6 +15,8 @@ export type QuestionDraftContent = z.infer<typeof questionDraftContentSchema>;
 export const testDraftContentSchema = z.strictObject({
   name:z.string().max(200),mode:z.enum(['mock','practice']),durationSeconds:z.number().int().min(1).max(86400).nullable(),
   questionVersionIds:z.array(id).max(100).refine(ids=>new Set(ids).size===ids.length),isPublic:z.boolean(),
+  questionDraftIds:z.array(z.uuid()).max(100).refine(ids=>new Set(ids).size===ids.length).optional(),
+  opensAt:z.number().int().min(0).max(4102444800000).nullable().optional(),closesAt:z.number().int().min(0).max(4102444800000).nullable().optional(),
 });
 export type TestDraftContent = z.infer<typeof testDraftContentSchema>;
 export const createQuestionSchema = z.strictObject({operationId:z.uuid(),content:questionDraftContentSchema});

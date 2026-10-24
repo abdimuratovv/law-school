@@ -7,7 +7,9 @@ export function ownerScope(alias:string) {
 export function groupScope(groupExpression:string) {
   return `EXISTS(SELECT 1 FROM users actor WHERE actor.id=? AND actor.status='active' AND (actor.role='admin' OR (actor.role='teacher' AND EXISTS(SELECT 1 FROM group_teachers gt WHERE gt.teacher_id=actor.id AND gt.group_id=${groupExpression}))))`;
 }
-export const reviewScope = groupScope('(SELECT group_id FROM assignments WHERE id=a.assignment_id)');
+export const reviewScope = `EXISTS(SELECT 1 FROM users actor WHERE actor.id=? AND actor.status='active' AND (actor.role='admin' OR (actor.role='teacher' AND (
+ EXISTS(SELECT 1 FROM group_teachers gt JOIN assignments g ON g.group_id=gt.group_id WHERE g.id=a.assignment_id AND gt.teacher_id=actor.id)
+ OR EXISTS(SELECT 1 FROM test_collections c WHERE c.id=a.collection_id AND c.owner_id=actor.id)))))`;
 export const unavailable = () => new ApiError(404,'NOT_FOUND','This staff record is unavailable.');
 export const changed = () => new ApiError(409,'CONFLICT','The record changed. Reload before continuing.');
 export function audit(db:D1Database,actor:string,action:string,target:string,metadata:object={}) {

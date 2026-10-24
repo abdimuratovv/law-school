@@ -2,15 +2,26 @@
 
 A multilingual law certificate preparation application with student exams and a teacher workspace. Built with React, TypeScript, Vite, Cloudflare Workers and D1.
 
-**Status:** Google authentication and account/group APIs are implemented on Cloudflare Workers/D1. OAuth credentials are required for real sign-in. The learner catalog, attempts, synchronization, results and grading now use the backend. Teacher drafts, immutable publishing, scoped assignments and audited manual grading are connected. Import and full reporting are pending. This intermediate version is not ready to administer real exams. See the [backend setup guide](docs/BACKEND.md), [accepted architecture](docs/superpowers/specs/2026-10-22-backend-design.md), and [implementation plan](docs/superpowers/plans/2026-10-22-backend-implementation.md).
+**Status:** Google sign-in, profile onboarding, public test collections, resumable CSV/XLSX imports, server-backed attempts, results and manual grading are implemented on Cloudflare Workers/D1. Every registered user can access published collections without group enrollment. Collections may be always available or use a shared opening/deadline window. Hosted capacity/load validation and backup/restore rehearsal remain release checks. See [backend setup](docs/BACKEND.md) and the [public collection design](docs/superpowers/specs/2026-10-24-public-collections.md).
 
 ## Features
 
-- Student dashboard, test catalog, timed mock exams, and untimed practice.
-- Server-backed multiple-choice/written answers, flags, provisional/final results and attempt history. Bookmarks and full progress reporting are pending.
-- Server-backed teacher question drafts, immutable publishing, test building, group enrollment/assignments and revisioned manual grading.
-- Uzbek (default), Karakalpak, and Russian interface translations. Question material remains in Karakalpak.
+- Student dashboard, public collection catalog, shared scheduled deadlines, and always-available tests.
+- Server-backed multiple-choice/written answers, flags, immediate/provisional scores, answer counts, bookmarks, progress and attempt history.
+- One-action collection publishing with automatic private question preparation, collection results, automatic user directory and revisioned manual grading. Historical groups and assignments are retained for compatibility.
+- Uzbek (default), Karakalpak, and Russian interface translations. Question material preserves its original language.
 - Responsive layouts, light/dark themes, keyboard navigation, and a design reference at `/design`.
+
+## Publishing a collection
+
+1. Open **Test collections → Create collection**. Import CSV/XLSX questions or select saved bank questions.
+2. Enter a name and choose **Always available** or a shared schedule in Asia/Tashkent.
+3. Click **Publish collection**. Question validation/version preparation happens automatically; no per-question publishing or enrollment is required.
+4. Every signed-in user sees the collection. Scores and pending written reviews appear under **Results**; the **Users** directory populates automatically.
+
+The importer supports up to 1000 rows per file; an individual collection currently supports up to 100 questions. Completed imports can be turned into a preselected collection directly from import history. A scheduled window permits one attempt per account; always-available collections allow another attempt after submission. Admins can reopen closed windows while keeping previous results.
+
+Migration `0009_public_test_collections.sql` adopts existing published tests and the latest assignment window without deleting old attempts, answers or results. Apply remote migrations before deploying the new Worker.
 
 ## Requirements
 
