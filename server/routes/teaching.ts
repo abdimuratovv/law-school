@@ -69,9 +69,12 @@ export function teachingRoutes() {
   app.route('/tests',draftRoutes('test',createTestSchema,updateTestSchema));
   app.get('/question-versions',async c=>{
     const {limit,after}=validate(teachingPageSchema,c.req.query());const actor=c.get('auth').user.id;
-    const rows=await c.env.DB.prepare(`SELECT p.version_id AS id,p.question_id AS questionId,p.draft_revision AS revision,json_extract(v.payload,'$.question.stem') AS stem,json_extract(v.payload,'$.question.kind') AS kind
+    const rows=await c.env.DB.prepare(`SELECT p.version_id AS id,p.question_id AS questionId,p.draft_revision AS revision,json_extract(v.payload,'$.question.stem') AS stem,json_extract(v.payload,'$.question.kind') AS kind,
+      r.row_number-1 AS sourceNumber,j.filename AS sourceName,coalesce(j.id,q.id) AS sourceId,coalesce(j.created_at,q.created_at) AS sourceCreated
       FROM question_publications p JOIN question_drafts q ON q.id=p.question_id JOIN question_versions v ON v.id=p.version_id
-      WHERE p.version_id>? AND ${ownerScope('q')} ORDER BY p.version_id LIMIT ?`).bind(after,actor,limit+1).all<{id:string}>();
+      LEFT JOIN import_rows r ON r.draft_id=q.id LEFT JOIN import_jobs j ON j.id=r.job_id
+      WHERE p.version_id>? AND p.draft_revision=(SELECT max(latest.draft_revision) FROM question_publications latest WHERE latest.question_id=p.question_id)
+      AND ${ownerScope('q')} ORDER BY p.version_id LIMIT ?`).bind(after,actor,limit+1).all<{id:string}>();
     return c.json({items:rows.results.slice(0,limit),next:rows.results.length>limit?rows.results[limit-1]!.id:null});
   });
   app.post('/assignments',async c=>{

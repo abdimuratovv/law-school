@@ -31,6 +31,14 @@ const body = (a: ServerAttempt, answers: Record<string,string> = {}) => ({ revis
 beforeEach(resetAuthDatabase);
 
 describe('server examinations', () => {
+  it('keeps the exact authored question sequence for every learner',async()=>{
+    await publish();
+    for(let i=0;i<3;i++){
+      const student=await account();const attempt=await start(student);
+      expect(attempt.questions.map(q=>q.id)).toEqual(['choice-v1','written-v1']);
+      const resumed=await start(student);expect(resumed.questions.map(q=>q.id)).toEqual(['choice-v1','written-v1']);
+    }
+  });
   it('validates the synthetic local seed with the same published-content contract', () => {
     for (const item of localSeed) expect(privateQuestionSchema.safeParse(item).success).toBe(true);
     expect(new Set(localSeed.map(item=>item.question.id)).size).toBe(localSeed.length);

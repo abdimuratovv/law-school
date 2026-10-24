@@ -40,6 +40,19 @@ async function assignedAttempt() {
 beforeEach(resetAuthDatabase);
 
 describe('staff authoring',()=>{
+  it('lists only the latest published version with authoritative source numbers',async()=>{
+    const teacher=await account('teacher'),other=await account('teacher');const q=await question(teacher);
+    const first=await publishQuestion(teacher,q);
+    const changed=await (await request(teacher,`/staff/questions/${q.id}`,{revision:0,content:{...q.content,stem:'23. Synthetic revised question'}},'PATCH')).json() as TeachingDraft<QuestionDraftContent>;
+    const latest=await publishQuestion(teacher,changed);
+    const job=crypto.randomUUID();
+    await env.DB.prepare(`INSERT INTO import_jobs(id,owner_id,filename,file_hash,source_bytes,total_rows,duplicate_policy,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?)`).bind(job,teacher.id,'synthetic.csv','a'.repeat(64),100,1,'skip',1,1).run();
+    await env.DB.prepare('INSERT INTO import_rows(job_id,row_number,content,content_hash,content_bytes,draft_id) VALUES(?,?,?,?,?,?)').bind(job,24,JSON.stringify(q.content),'a'.repeat(64),10,q.id).run();
+    const pool=await (await request(teacher,'/staff/question-versions?limit=100')).json() as {items:{id:string;sourceNumber:number;sourceName:string}[]};
+    expect(pool.items.map(row=>row.id)).toEqual([latest]);expect(pool.items[0]!.sourceNumber).toBe(23);expect(pool.items[0]!.sourceName).toBe('synthetic.csv');
+    expect(JSON.stringify(pool)).not.toContain(first);expect(JSON.stringify(pool)).not.toContain('correctOptionId');
+    expect((await (await request(other,'/staff/question-versions')).json() as {items:unknown[]}).items).toEqual([]);
+  });
   it('bulk publishes valid questions once, reports invalid/changed/foreign drafts and enforces access',async()=>{
     const teacher=await account('teacher'),other=await account('teacher'),student=await account();
     const good=await question(teacher,'single'),invalid=await question(teacher,'single'),stale=await question(teacher),foreign=await question(other);

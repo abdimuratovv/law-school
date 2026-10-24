@@ -10,6 +10,7 @@ import { TOPICS } from '@/data/topics';
 import { ExamError } from '@/lib/examApi';
 import { teachingRequest,tashkentInput,tashkentTimestamp } from '@/lib/teachingApi';
 import { ReopenAssignment } from './ReopenAssignment';
+import { PublishedQuestionPicker } from './PublishedQuestionPicker';
 import { useNow } from '@/lib/hooks';
 
 type Page<T>={items:T[];next:string|null};
@@ -81,13 +82,12 @@ function QuestionEditor({id}:{id?:string}){
   </div>;
 }
 const emptyTest=():TestDraftContent=>({name:'',mode:'mock',durationSeconds:null,questionVersionIds:[],isPublic:false});
-type Version={id:string;questionId:string;revision:number;stem:string;kind:'single'|'written'};
 type Group={id:string;name:string};
 function useGroups(){const [groups,setGroups]=useState<Group[]>([]),[error,setError]=useState(false);async function load(){setError(false);try{const all:Group[]=[];let cursor:string|null=null;do{const page:{groups:Group[];nextCursor:string|null}=await teachingRequest<{groups:Group[];nextCursor:string|null}>('/groups?limit=100'+(cursor?'&cursor='+cursor:''));all.push(...page.groups);cursor=page.nextCursor;}while(cursor&&all.length<1000);setGroups(all);}catch{setError(true);}}useEffect(()=>{void load();},[]);return {groups,error,load};}
 export function ServerBuilder(){const [params]=useSearchParams();const id=params.get('draft')??undefined;return <TestBuilder key={id??'new'} id={id}/>;}
 function TestBuilder({id}:{id?:string}){
   const t=useText();const {csrfToken}=useAuth();const draft=useDraft('tests',id,emptyTest,value=>testDraftContentSchema.parse(value));const v=draft.value;
-  const pool=usePage<Version>('/staff/question-versions');const groups=useGroups();const tests=usePage<TeachingDraft<TestDraftContent>>('/staff/tests');
+  const groups=useGroups();const tests=usePage<TeachingDraft<TestDraftContent>>('/staff/tests');
   const [groupId,setGroupId]=useState(''),[opens,setOpens]=useState(()=>tashkentInput(Date.now()-60000)),[closes,setCloses]=useState(()=>tashkentInput(Date.now()+86400000)),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
   const operation=useRef<{body:string;id:string}>();const navigate=useNavigate();
   const set=<K extends keyof TestDraftContent>(key:K,value:TestDraftContent[K])=>draft.setValue(previous=>({...previous,[key]:value}));
@@ -99,8 +99,8 @@ function TestBuilder({id}:{id?:string}){
   return <div className="authoring-page" data-no-translate><header><h1>{t('Test builder')}</h1><Button to="/admin" variant="secondary">{t('Overview')}</Button></header>
     <section className="authoring-card"><label>{t('Open a saved test')}<select value={id??''} onChange={e=>navigate('/admin/builder'+(e.target.value?'?draft='+e.target.value:''))}><option value="">{t('New test')}</option>{tests.items.map(test=><option key={test.id} value={test.id}>{test.content.name||t('Untitled draft')}</option>)}</select></label><More page={tests}/></section>
     {!draft.loaded?<><Status message={draft.message||'Loading'}/><Button onClick={()=>{void draft.load();}}>{t('Try again')}</Button></>:<><fieldset className="authoring-form" disabled={draft.busy}><legend className="sr-only">{t('Test fields')}</legend><section className="authoring-card"><h2>{t('Details')}</h2><label htmlFor="tn">{t('Name')}</label><input id="tn" value={v.name} onChange={e=>set('name',e.target.value)}/><Segmented label={t('Mode')} value={v.mode} onChange={value=>draft.setValue(previous=>({...previous,mode:value,isPublic:value==='mock'?false:previous.isPublic,durationSeconds:null}))} options={[{value:'mock',label:t('Mock exam')},{value:'practice',label:t('Practice')}]}/>{v.mode==='mock'&&<p>{t('This test uses a shared opening time and deadline. There is no personal timer.')}</p>}{v.mode==='practice'&&<Checkbox on={v.isPublic} label={t('Publish as open practice')} onChange={value=>set('isPublic',value)}/>}</section>
-    <section className="authoring-card"><h2>{t('Published questions')}</h2><p>{t('Selected: {count}',{count:v.questionVersionIds.length})} / 100</p><p>{t('Selections pin the exact published question versions.')}</p><ul className="authoring-picks">{pool.items.map(q=><li key={q.id}><Checkbox on={v.questionVersionIds.includes(q.id)} label={t('Select question')+' '+q.stem} onChange={on=>set('questionVersionIds',on?[...v.questionVersionIds,q.id]:v.questionVersionIds.filter(id=>id!==q.id))}/><div><strong lang="kaa">{q.stem}</strong><p>{t(q.kind==='single'?'Single choice':'Written')} · {t('Draft revision')} {q.revision}</p></div></li>)}</ul><More page={pool}/></section></fieldset>
-    <DraftActions draft={draft}/><section className="authoring-card"><h2>{t('Assign to group')}</h2><p>{t('This test uses a shared opening time and deadline. There is no personal timer.')}</p><p>{t('All schedule times are Asia/Tashkent (UTC+05:00).')}</p><p>{t('Question and option order are randomized. Group feedback waits until closing and final grading.')}</p><label>{t('Group')}<select id="assign-group" value={groupId} onChange={e=>setGroupId(e.target.value)}><option value="">{t('Choose a group')}</option>{groups.groups.map(group=><option value={group.id} key={group.id}>{group.name}</option>)}</select></label>
+    <PublishedQuestionPicker selected={v.questionVersionIds} onChange={ids=>set('questionVersionIds',ids)}/></fieldset>
+    <DraftActions draft={draft}/><section className="authoring-card"><h2>{t('Assign to group')}</h2><p>{t('This test uses a shared opening time and deadline. There is no personal timer.')}</p><p>{t('All schedule times are Asia/Tashkent (UTC+05:00).')}</p><p>{t('Questions follow the selected number order. Group feedback waits until closing and final grading.')}</p><label>{t('Group')}<select id="assign-group" value={groupId} onChange={e=>setGroupId(e.target.value)}><option value="">{t('Choose a group')}</option>{groups.groups.map(group=><option value={group.id} key={group.id}>{group.name}</option>)}</select></label>
     <div className="authoring-grid"><label>{t('Available from')}<input id="opens" type="datetime-local" value={opens} onChange={e=>setOpens(e.target.value)}/></label><label>{t('Available until')}<input id="closes" type="datetime-local" value={closes} onChange={e=>setCloses(e.target.value)}/></label></div>{groups.error&&<Button variant="secondary" onClick={()=>{void groups.load();}}>{t('Try again')}</Button>}<Button data-testid="assign-test" disabled={busy||draft.busy||!draft.version||draft.dirty||draft.draft?.publishedRevision!==draft.draft?.revision||!groupId} onClick={()=>{void assign();}}>{t('Assign published test')}</Button><Status message={message}/></section></>}
   </div>;
 }

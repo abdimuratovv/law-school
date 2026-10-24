@@ -1,5 +1,12 @@
 import type { Language } from './LanguageProvider';
 const rows:[string,string,string,string][]=[
+ ["Questions appear to students in the order shown here. The selected published versions are preserved.", "Savollar o‘quvchilarga shu ketma-ketlikda chiqadi. Tanlangan e’lon qilingan versiyalar saqlanadi.", "Sorawlar oqıwshılarǵa usı tártipte kórinedi. Tańlanǵan járiyalanǵan versiyalar saqlanadı.", "Ученики увидят вопросы в указанном порядке. Выбранные опубликованные версии сохраняются."],
+ ["From question number", "Boshlang‘ich savol raqami", "Baslanǵısh soraw nomeri", "С номера вопроса"],
+ ["To question number", "Oxirgi savol raqami", "Sońǵı soraw nomeri", "По номер вопроса"],
+ ["The last question number must not be smaller than the first.", "Oxirgi savol raqami boshlang‘ich raqamdan kichik bo‘lmasin.", "Sońǵı soraw nomeri baslanǵısh nomerden kishi bolmasın.", "Конечный номер не должен быть меньше начального."],
+ ["A test can contain up to 100 questions. Narrow the number range.", "Testga 100 tagacha savol qo‘shiladi. Raqam oralig‘ini qisqartiring.", "Testke 100 ge shekem soraw qosıladı. Nomer aralıǵın qısqartıń.", "В тесте может быть до 100 вопросов. Сузьте диапазон номеров."],
+ ["Questions follow the selected number order. Group feedback waits until closing and final grading.", "Savollar tanlangan raqamlar tartibida chiqadi. Guruh natijalari muddat tugab, baholash yakunlangach ochiladi.", "Sorawlar tańlanǵan nomerler tártibinde kórinedi. Topar nátiyjeleri múddet tamamlanıp, bahalaw juwmaqlanǵannan keyin ashıladı.", "Вопросы идут в порядке номеров. Обратная связь откроется после закрытия и завершения проверки."],
+
  ["This test uses a shared opening time and deadline. There is no personal timer.", "Test uchun umumiy ochilish va tugash vaqti belgilanadi. Shaxsiy taymer yo‘q.", "Test ushın ulıwma ashılıw hám tamamlanıw waqtı belgilenedi. Jeke taymer joq.", "Тест доступен в общем временном окне. Личного таймера нет."],
  ["Shared deadline", "Umumiy deadline", "Ulıwma deadline", "Общий срок"],
  ["Deadline", "Tugash vaqti", "Tamamlanıw waqtı", "Срок сдачи"],

@@ -44,7 +44,7 @@ export function examRoutes() {
     let id = known?.id;
     if (!id) {
       const bank = await questions(c.env.DB, JSON.parse(test.question_ids) as string[]);
-      const order = shuffled(bank).map(q => ({ id: q.question.id, ...(q.question.kind === 'single' ? { options: shuffled(q.question.options.map(o => o.id)) } : {}) }));
+      const order = bank.map(q => ({ id: q.question.id, ...(q.question.kind === 'single' ? { options: shuffled(q.question.options.map(o => o.id)) } : {}) }));
       const candidate = crypto.randomUUID();
       // INSERT...SELECT checks schedule, eligibility and active account at the write itself.
       await c.env.DB.prepare(`INSERT OR IGNORE INTO attempts(id,user_id,exam_id,test_version_id,assignment_id,start_operation,started_at,ends_at,question_order,saved_at)
