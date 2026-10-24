@@ -47,3 +47,8 @@ export interface BankQuestion {
   revision:number; published:number; sourceName:string|null; sourceNumber:number|null;
 }
 export interface QuestionBankPage { items:BankQuestion[]; total:number; page:number; pageSize:number }
+export const bulkPublishQuestionsSchema=z.strictObject({
+  items:z.array(z.strictObject({id:z.uuid(),revision:z.number().int().min(0)})).min(1).max(5)
+    .refine(items=>new Set(items.map(item=>item.id)).size===items.length),
+});
+export interface BulkPublishResult { results:({id:string;versionId:string;status:'published'}|{id:string;status:'failed';code:'invalid'|'changed'|'unavailable'})[] }

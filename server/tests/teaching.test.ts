@@ -40,6 +40,24 @@ async function assignedAttempt() {
 beforeEach(resetAuthDatabase);
 
 describe('staff authoring',()=>{
+  it('bulk publishes valid questions once, reports invalid/changed/foreign drafts and enforces access',async()=>{
+    const teacher=await account('teacher'),other=await account('teacher'),student=await account();
+    const good=await question(teacher,'single'),invalid=await question(teacher,'single'),stale=await question(teacher),foreign=await question(other);
+    await request(teacher,`/staff/questions/${invalid.id}`,{revision:0,content:{...invalid.content,correctOptionId:null}},'PATCH');
+    await request(teacher,`/staff/questions/${stale.id}`,{revision:0,content:{...stale.content,stem:'Changed synthetic question'}},'PATCH');
+    const body={items:[{id:good.id,revision:0},{id:invalid.id,revision:1},{id:stale.id,revision:0},{id:foreign.id,revision:0}]};
+    const response=await request(teacher,'/staff/question-bank/publish',body);expect(response.status).toBe(200);
+    const data=await response.json() as {results:{id:string;status:string;code?:string;versionId?:string}[]};
+    expect(data.results.map(r=>r.status==='published'?'published':r.code)).toEqual(['published','invalid','changed','unavailable']);
+    const repeat=await (await request(teacher,'/staff/question-bank/publish',{items:[body.items[0]]})).json() as typeof data;
+    expect(repeat.results[0]!.versionId).toBe(data.results[0]!.versionId);
+    expect(await env.DB.prepare('SELECT count(*) FROM question_publications').first('count(*)')).toBe(1);
+    expect(await env.DB.prepare("SELECT count(*) FROM audit_events WHERE action='question.publish'").first('count(*)')).toBe(1);
+    expect((await request(student,'/staff/question-bank/publish',body)).status).toBe(403);
+    expect((await api.request('/api/v1/staff/question-bank/publish',{method:'POST',headers:{Cookie:teacher.headers.Cookie,'Content-Type':'application/json'},body:JSON.stringify(body)},authEnv)).status).toBe(403);
+    expect((await request(teacher,'/staff/question-bank/publish',{items:Array(6).fill(body.items[0])})).status).toBe(422);
+    expect((await request(teacher,'/staff/question-bank/publish',{items:[body.items[0],body.items[0]]})).status).toBe(422);
+  });
   it('lists a scoped question bank with global filters, pagination and no answer keys',async()=>{
     const teacher=await account('teacher'),other=await account('teacher'),student=await account();
     const drafts=[];

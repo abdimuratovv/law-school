@@ -1,12 +1,28 @@
 import { Hono } from 'hono';
-import { questionBankSchema,type BankQuestion } from '../../shared/contracts/teaching';
+import { bulkPublishQuestionsSchema,questionBankSchema,type BankQuestion,type BulkPublishResult } from '../../shared/contracts/teaching';
 import type { ApiEnv } from '../env';
-import { validate } from '../http/validation';
+import { readJson,validate } from '../http/validation';
 import { ownerScope } from '../teaching/access';
+import { publishQuestion } from '../teaching/content';
+import { ApiError } from '../http/errors';
 
 // Mounted inside the authenticated staff router. Only list metadata leaves this route.
 export function questionBankRoutes(){
   const app=new Hono<ApiEnv>();
+  app.post('/publish',async c=>{
+    const body=await readJson(c.req.raw,bulkPublishQuestionsSchema);
+    const results:BulkPublishResult['results']=[];
+    for(const item of body.items){
+      try{
+        const versionId=await publishQuestion(c.env.DB,item.id,c.get('auth').user.id,item.revision);
+        results.push({id:item.id,versionId,status:'published'});
+      }catch(error){
+        if(!(error instanceof ApiError)||![404,409,422].includes(error.status))throw error;
+        results.push({id:item.id,status:'failed',code:error.status===422?'invalid':error.status===409?'changed':'unavailable'});
+      }
+    }
+    return c.json({results});
+  });
   app.get('/',async c=>{
     const filter=validate(questionBankSchema,c.req.query());
     const published="EXISTS(SELECT 1 FROM question_publications p WHERE p.question_id=d.id AND p.draft_revision=d.revision)";

@@ -1,5 +1,21 @@
 import type { Language } from './LanguageProvider';
 const rows:[string,string,string,string][]=[
+ ["Select all results ({count})", "Barchasini tanlash ({count})", "Barlıǵın tańlaw ({count})", "Выбрать все ({count})"],
+ ["{count} selected", "{count} ta tanlangan", "{count} tańlanǵan", "Выбрано: {count}"],
+ ["Clear selection", "Tanlovni bekor qilish", "Tańlawdı biykar etiw", "Снять выделение"],
+ ["Publish selected ({count})", "Tanlanganlarni e’lon qilish ({count})", "Tańlanǵanlardı járiyalaw ({count})", "Опубликовать выбранные ({count})"],
+ ["Publishing questions: {done} / {total}", "E’lon qilinmoqda: {done} / {total}", "Járiyalanbaqta: {done} / {total}", "Публикация: {done} / {total}"],
+ ["Published: {done} / {total}", "E’lon qilindi: {done} / {total}", "Járiyalandı: {done} / {total}", "Опубликовано: {done} / {total}"],
+ ["Selecting questions…", "Savollar tanlanmoqda…", "Sorawlar tańlanbaqta…", "Выбор вопросов…"],
+ ["Select up to 1000 questions. Narrow your filters.", "Bir safar 1000 tagacha savol tanlang. Filtrlardan foydalaning.", "Bir márte 1000 ǵa shekem soraw tańlań. Filtrlerden paydalanıń.", "За один раз можно выбрать до 1000 вопросов. Уточните фильтры."],
+ ["Could not select all questions. Try again.", "Barcha savollarni tanlab bo‘lmadi. Qayta urining.", "Barlıq sorawlardı tańlap bolmadı. Qayta urınıń.", "Не удалось выбрать все вопросы. Повторите попытку."],
+ ["Complete the required question fields.", "Savolning majburiy maydonlarini to‘ldiring.", "Sorawdıń májbúriy maydanların toltırıń.", "Заполните обязательные поля вопроса."],
+ ["This question changed. Clear selection and select it again.", "Savol o‘zgargan. Tanlovni bekor qilib, qayta tanlang.", "Soraw ózgergen. Tańlawdı biykar etip, qayta tańlań.", "Вопрос изменился. Снимите выделение и выберите его снова."],
+ ["This question is unavailable.", "Bu savol mavjud emas yoki unga ruxsat yo‘q.", "Bul soraw joq yamasa oǵan ruqsat joq.", "Вопрос недоступен."],
+ ["Some questions could not be published. Fix the listed questions and retry.", "Ayrim savollar e’lon qilinmadi. Quyidagi savollarni tuzatib, qayta urining.", "Ayırım sorawlar járiyalanbadı. Tómendegi sorawlardı dúzetip, qayta urınıń.", "Часть вопросов не опубликована. Исправьте вопросы из списка и повторите."],
+ ["Selected questions published. You can now add them to a test.", "Tanlangan savollar e’lon qilindi. Endi ularni testga qo‘shishingiz mumkin.", "Tańlanǵan sorawlar járiyalandı. Endi olardı testke qosıwıńız múmkin.", "Выбранные вопросы опубликованы. Теперь их можно добавить в тест."],
+ ["Publishing stopped. Your selection keeps unfinished questions. Try again; published versions will not be duplicated.", "E’lon qilish to‘xtadi. Tugallanmagan savollar tanlangan holda qoldi. Qayta bosing — e’lon qilinganlar takrorlanmaydi.", "Járiyalaw toqtadı. Tamamlanbaǵan sorawlar tańlanǵan halda qaldı. Qayta basıń — járiyalanǵanlar tákirarlanbaydı.", "Публикация остановлена. Незавершённые вопросы остались выделенными. Повторите — опубликованные версии не дублируются."],
+
  ["Review questions, then publish them for your tests.", "Savollarni tekshiring va test uchun e’lon qiling.", "Sorawlardı tekseriń hám test ushın járiyalań.", "Проверьте вопросы и опубликуйте их для тестов."],
  ["Imported questions are saved as drafts.", "Import qilingan savollar qoralama sifatida saqlanadi.", "Importlanǵan sorawlar qaralama túrinde saqlanadı.", "Импортированные вопросы сохранены как черновики."],
  ["Publish the questions you need, create a test, then publish it as open practice or assign it to a group.", "Kerakli savollarni e’lon qiling, ulardan test tuzing. Testni ochiq mashq qiling yoki guruhga biriktiring.", "Kerekli sorawlardı járiyalań, olardan test dúziń. Testti ashıq shınıǵıw etiń yamasa toparǵa biriktiriń.", "Опубликуйте нужные вопросы, создайте тест и откройте его для практики или назначьте группе."],
