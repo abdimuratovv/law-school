@@ -33,6 +33,8 @@ export const assignTestSchema = z.strictObject({
 export const reviewItemSchema = z.strictObject({
   revision:z.number().int().min(0),operationId:z.uuid(),questionId:id,units:z.number().int().min(0).max(2),comment:z.string().trim().max(2000),
 });
+export const reopenAssignmentSchema = z.strictObject({operationId:z.uuid(),timeZone:z.literal('Asia/Tashkent'),opensAt:tashkentDate,closesAt:tashkentDate})
+  .refine(value=>Date.parse(value.closesAt)>Date.parse(value.opensAt));
 export type ReviewItemRequest = z.infer<typeof reviewItemSchema>;
 export interface TeachingDraft<T> { id:string; revision:number; content:T; publishedVersionId:string|null; publishedRevision:number|null }
 export const questionBankSchema = z.object({

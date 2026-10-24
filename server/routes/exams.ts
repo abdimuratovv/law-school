@@ -12,7 +12,7 @@ const eligible = `SELECT 'p_' || t.id AS exam_id, t.*, NULL AS opens_at, NULL AS
   FROM assignments a JOIN test_versions t ON t.id = a.test_version_id
   JOIN group_memberships m ON m.group_id = a.group_id WHERE m.student_id = ?`;
 type Eligible = TestRow & { exam_id: string; opens_at: number | null; closes_at: number | null; assignment_id: string | null };
-const summary = (r: Eligible) => ({ id: r.exam_id, name: r.name, mode: r.mode, questionCount: (JSON.parse(r.question_ids) as string[]).length, durationSeconds: r.duration_seconds, closesAt: r.closes_at });
+const summary = (r: Eligible) => ({ id: r.exam_id, name: r.name, mode: r.mode, questionCount: (JSON.parse(r.question_ids) as string[]).length, durationSeconds: r.assignment_id?null:r.duration_seconds,opensAt:r.opens_at, closesAt: r.closes_at,serverNow:Date.now() });
 
 export function examRoutes() {
   const app = new Hono<ApiEnv>();
@@ -48,12 +48,12 @@ export function examRoutes() {
       const candidate = crypto.randomUUID();
       // INSERT...SELECT checks schedule, eligibility and active account at the write itself.
       await c.env.DB.prepare(`INSERT OR IGNORE INTO attempts(id,user_id,exam_id,test_version_id,assignment_id,start_operation,started_at,ends_at,question_order,saved_at)
-        SELECT ?,?,?,?,?,?,${SQL_NOW},CASE WHEN ? IS NULL THEN ? WHEN ? IS NULL THEN ${SQL_NOW} + ? * 1000 ELSE min(?, ${SQL_NOW} + ? * 1000) END,?,${SQL_NOW}
+        SELECT ?,?,?,?,?,?,${SQL_NOW},CASE WHEN ? IS NOT NULL THEN ? WHEN ? IS NULL THEN NULL ELSE ${SQL_NOW} + ? * 1000 END,?,${SQL_NOW}
         WHERE (? IS NULL OR ? <= ${SQL_NOW}) AND (? IS NULL OR ? > ${SQL_NOW})
         AND EXISTS(SELECT 1 FROM users WHERE id = ? AND status = 'active')
         AND (? IS NULL OR EXISTS(SELECT 1 FROM group_memberships WHERE student_id = ? AND group_id = (SELECT group_id FROM assignments WHERE id = ?)))`)
-        .bind(candidate,user,test.exam_id,test.id,test.assignment_id,body.operationId,test.duration_seconds,test.closes_at,
-          test.closes_at,test.duration_seconds,test.closes_at,test.duration_seconds,JSON.stringify(order),test.opens_at,test.opens_at,test.closes_at,test.closes_at,user,test.assignment_id,user,test.assignment_id).run();
+        .bind(candidate,user,test.exam_id,test.id,test.assignment_id,body.operationId,test.assignment_id,test.closes_at,
+          test.duration_seconds,test.duration_seconds,JSON.stringify(order),test.opens_at,test.opens_at,test.closes_at,test.closes_at,user,test.assignment_id,user,test.assignment_id).run();
       const created = await c.env.DB.prepare(`SELECT id FROM attempts WHERE user_id = ? AND (start_operation = ? OR (exam_id = ? AND (assignment_id IS NOT NULL OR state = 'active'))) LIMIT 1`)
         .bind(user, body.operationId, test.exam_id).first<{ id: string }>();
       id = created?.id;

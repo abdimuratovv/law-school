@@ -44,17 +44,18 @@ export async function publishTest(db:D1Database,id:string,actor:string,revision:
   if(known) return known.version_id;
   if(row.revision!==revision) throw changed();
   const content=JSON.parse(row.content) as TestDraftContent;
-  if(!content.name.trim() || !content.questionVersionIds.length || (content.mode==='mock' && !content.durationSeconds) || (content.isPublic && content.mode!=='practice'))
+  if(!content.name.trim() || !content.questionVersionIds.length || (content.isPublic && content.mode!=='practice'))
     throw new ApiError(422,'VALIDATION_ERROR','Set a name, published questions and valid test mode/duration.');
   const accessible=`NOT EXISTS(SELECT 1 FROM json_each(?) ids WHERE NOT EXISTS(SELECT 1 FROM question_publications p JOIN question_drafts q ON q.id=p.question_id WHERE p.version_id=ids.value AND ${ownerScope('q')}))`;
   const allowed=await db.prepare(`SELECT 1 WHERE ${accessible}`).bind(JSON.stringify(content.questionVersionIds),actor).first();
   if(!allowed) throw unavailable();
+  // Retain the legacy mock-duration constraint; assigned attempts use only assignments.closes_at.
   const version=crypto.randomUUID();
   await db.batch([
     db.prepare(`INSERT INTO test_versions(id,name,mode,duration_seconds,question_ids,is_public,created_at)
       SELECT ?,?,?,?,?,?,? FROM test_drafts d WHERE d.id=? AND d.revision=? AND ${ownerScope('d')} AND ${accessible}
       AND NOT EXISTS(SELECT 1 FROM test_publications WHERE test_id=d.id AND draft_revision=d.revision)`)
-      .bind(version,content.name.trim(),content.mode,content.durationSeconds,JSON.stringify(content.questionVersionIds),Number(content.isPublic),Date.now(),id,revision,actor,JSON.stringify(content.questionVersionIds),actor),
+      .bind(version,content.name.trim(),content.mode,content.mode==='mock'?86400:null,JSON.stringify(content.questionVersionIds),Number(content.isPublic),Date.now(),id,revision,actor,JSON.stringify(content.questionVersionIds),actor),
     db.prepare('INSERT INTO test_publications(test_id,draft_revision,version_id,created_at) SELECT ?,?,?,? WHERE changes()>0').bind(id,revision,version,Date.now()),
     audit(db,actor,'test.publish',id,{versionId:version,revision}),
     db.prepare(`UPDATE test_publications SET archived=1 WHERE test_id=? AND version_id<>? AND archived=0 AND EXISTS(SELECT 1 FROM test_publications WHERE test_id=? AND version_id=?)`).bind(id,version,id,version),

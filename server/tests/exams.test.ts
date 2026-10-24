@@ -136,6 +136,22 @@ describe('server examinations', () => {
     expect((await request(u,'/exams/a_assignment/start',{ operationId:crypto.randomUUID() })).status).toBe(404);
     expect(await env.DB.prepare('SELECT count(*) n FROM attempts').first('n')).toBe(0);
   });
+  it('uses one shared closing instant even when the legacy personal duration would end earlier',async()=>{
+    const early=await account(),late=await account();const closes=Date.now()+3*3600000;
+    await groupExam(early.id,Date.now()-3600000,closes);
+    await env.DB.prepare("INSERT INTO group_memberships(group_id,student_id,enrolled_by,created_at) VALUES('g',?,?,?)").bind(late.id,early.id,Date.now()).run();
+    const first=await start(early,'a_assignment'),second=await start(late,'a_assignment');
+    expect(first.endsAt).toBe(closes);expect(second.endsAt).toBe(closes);
+    expect(first.endsAt!-first.startedAt).toBeGreaterThan(2*3600000);
+    const metadata=await (await request(early,'/exams/a_assignment')).json() as {durationSeconds:number|null;closesAt:number;opensAt:number};
+    expect(metadata.durationSeconds).toBeNull();expect(metadata.closesAt).toBe(closes);expect(metadata.opensAt).toBeLessThan(Date.now());
+  });
+  it('does not create an attempt after a shared window has closed',async()=>{
+    const u=await account();await groupExam(u.id,Date.now()-20000,Date.now()-10000);
+    expect((await request(u,'/exams/a_assignment/start',{operationId:crypto.randomUUID()})).status).toBe(404);
+    expect(await env.DB.prepare('SELECT count(*) FROM attempts').first('count(*)')).toBe(0);
+    const list=await (await request(u,'/exams')).json() as {items:unknown[]};expect(list.items).toEqual([]);
+  });
   it('does not accept group changes after membership is revoked', async () => {
     const u = await account(); await groupExam(u.id); const a = await start(u,'a_assignment');
     await env.DB.prepare('DELETE FROM group_memberships WHERE student_id = ?').bind(u.id).run();

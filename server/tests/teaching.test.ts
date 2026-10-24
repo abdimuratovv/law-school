@@ -154,6 +154,31 @@ describe('staff authoring',()=>{
 });
 
 describe('assignments and scope',()=>{
+  it('lets only admins reopen closed tests, keeps old results and creates one fresh attempt per new window',async()=>{
+    const f=await assignedAttempt(),admin=await account('admin');const source=crypto.randomUUID();
+    await env.DB.prepare('INSERT INTO assignments VALUES(?,?,?,?,?)').bind(source,f.t.versionId,f.g,Date.now()-120000,Date.now()-60000).run();
+    const body={operationId:crypto.randomUUID(),timeZone:'Asia/Tashkent',opensAt:localTime(Date.now()-60000),closesAt:localTime(Date.now()+7200000)};
+    const path=`/staff/assignments/${source}/reopen`;
+    expect((await request(f.teacher,path,body)).status).toBe(403);
+    expect((await request(f.student,path,body)).status).toBe(403);
+    expect((await request(admin,path,body)).status).toBe(201);
+    expect((await request(admin,path,body)).status).toBe(201);
+    expect((await request(admin,path,{...body,closesAt:localTime(Date.now()+10800000)})).status).toBe(409);
+    expect((await request(admin,`/staff/assignments/${f.assignment.operationId}/reopen`,{...body,operationId:crypto.randomUUID()})).status).toBe(409);
+    const newAttempt=await (await request(f.student,`/exams/a_${body.operationId}/start`,{operationId:crypto.randomUUID()})).json() as ServerAttempt;
+    expect(newAttempt.id).not.toBe(f.attempt.id);expect(newAttempt.endsAt).toBe(Date.parse(body.closesAt));expect(newAttempt.snapshot.answers).toEqual({});
+    const repeat=await (await request(f.student,`/exams/a_${body.operationId}/start`,{operationId:crypto.randomUUID()})).json() as ServerAttempt;
+    expect(repeat.id).toBe(newAttempt.id);
+    const old=await (await request(f.student,`/attempts/${f.attempt.id}`)).json() as ServerAttempt;
+    expect(old.snapshot).toEqual(f.attempt.snapshot);expect(old.result).toEqual(f.attempt.result);
+    expect(await env.DB.prepare("SELECT count(*) FROM audit_events WHERE action='assignment.reopen'").first('count(*)')).toBe(1);
+  });
+  it('publishes scheduled mock tests without a personal duration',async()=>{
+    const teacher=await account('teacher'),q=await question(teacher),version=await publishQuestion(teacher,q);
+    const response=await request(teacher,'/staff/tests',{operationId:crypto.randomUUID(),content:{name:'Shared deadline test',mode:'mock',durationSeconds:null,questionVersionIds:[version],isPublic:false}});
+    const draft=await response.json() as TeachingDraft<TestDraftContent>;
+    expect((await request(teacher,`/staff/tests/${draft.id}/publish`,{revision:0})).status).toBe(200);
+  });
   it('pins a test to an authorized group using explicit Tashkent times and retries safely',async()=>{
     const f=await assignedAttempt();expect((await request(f.teacher,'/staff/assignments',f.assignment)).status).toBe(201);
     const row=await env.DB.prepare('SELECT opens_at,closes_at FROM assignments WHERE id=?').bind(f.assignment.operationId).first<{opens_at:number;closes_at:number}>();

@@ -1,5 +1,20 @@
 import type { Language } from './LanguageProvider';
 const rows:[string,string,string,string][]=[
+ ["This test uses a shared opening time and deadline. There is no personal timer.", "Test uchun umumiy ochilish va tugash vaqti belgilanadi. Shaxsiy taymer yo‘q.", "Test ushın ulıwma ashılıw hám tamamlanıw waqtı belgilenedi. Jeke taymer joq.", "Тест доступен в общем временном окне. Личного таймера нет."],
+ ["Shared deadline", "Umumiy deadline", "Ulıwma deadline", "Общий срок"],
+ ["Deadline", "Tugash vaqti", "Tamamlanıw waqtı", "Срок сдачи"],
+ ["Tashkent time (UTC+05:00)", "Toshkent vaqti (UTC+05:00)", "Tashkent waqtı (UTC+05:00)", "Ташкентское время (UTC+05:00)"],
+ ["Everyone has the same deadline. Joining later does not extend it. Late answers are not accepted.", "Tugash vaqti hamma uchun bir xil. Kechroq kirish muddatni uzaytirmaydi. Muddatdan keyin javob qabul qilinmaydi.", "Tamamlanıw waqtı hámme ushın birdey. Keshirek kiriw múddetti uzaytpaydı. Múddetten keyin juwap qabıl etilmeydi.", "Срок сдачи общий для всех. Поздний вход его не продлевает. После закрытия ответы не принимаются."],
+ ["The deadline has passed. Only answers saved before closing are accepted.", "Muddat tugadi. Faqat yopilishdan oldin saqlangan javoblar qabul qilinadi.", "Múddet tamamlandı. Tek jabılıwdan aldın saqlanǵan juwaplar qabıl etiledi.", "Срок истёк. Учтены только ответы, сохранённые до закрытия."],
+ ["Reopen test", "Testni qayta ochish", "Testti qayta ashıw", "Открыть тест повторно"],
+ ["Choose a new window in Asia/Tashkent. Previous attempts and results are kept; students get a new attempt.", "Yangi vaqt oralig‘ini Toshkent vaqti bilan belgilang. Avvalgi urinish va natijalar saqlanadi; o‘quvchilar yangi urinish boshlaydi.", "Jańa waqıt aralıǵın Tashkent waqtı menen belgileń. Aldınǵı urınıwlar hám nátiyjeler saqlanadı; oqıwshılar jańa urınıw baslaydı.", "Укажите новое окно по ташкентскому времени. Старые попытки и результаты сохраняются, ученики начинают новую попытку."],
+ ["Reopen for this window", "Shu vaqt oralig‘ida qayta ochish", "Usı waqıt aralıǵında qayta ashıw", "Открыть на указанный период"],
+ ["Test reopened. Students can start a new attempt in the new window.", "Test qayta ochildi. O‘quvchilar yangi vaqt oralig‘ida yangi urinish boshlashi mumkin.", "Test qayta ashıldı. Oqıwshılar jańa waqıt aralıǵında jańa urınıw baslawı múmkin.", "Тест открыт повторно. В новом окне ученикам доступна новая попытка."],
+ ["Could not reopen. The previous window must be closed and the new deadline must be in the future.", "Qayta ochib bo‘lmadi. Avvalgi muddat tugagan, yangi tugash vaqti esa kelajakda bo‘lishi kerak.", "Qayta ashıp bolmadı. Aldınǵı múddet tamamlanǵan, jańa tamamlanıw waqtı bolsa keleshekte bolıwı kerek.", "Не удалось открыть. Предыдущее окно должно быть закрыто, а новый срок — в будущем."],
+ ["Closed", "Yopilgan", "Jabılǵan", "Закрыт"],
+ ["Not open yet", "Hali ochilmagan", "Ele ashılmaǵan", "Ещё не открыт"],
+ ["Available now", "Hozir ochiq", "Házir ashıq", "Доступен сейчас"],
+
  ["Select all results ({count})", "Barchasini tanlash ({count})", "Barlıǵın tańlaw ({count})", "Выбрать все ({count})"],
  ["{count} selected", "{count} ta tanlangan", "{count} tańlanǵan", "Выбрано: {count}"],
  ["Clear selection", "Tanlovni bekor qilish", "Tańlawdı biykar etiw", "Снять выделение"],

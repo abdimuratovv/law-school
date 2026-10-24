@@ -11,6 +11,7 @@ import { SQL_NOW } from '../exams/service';
 import { importRoutes } from './imports';
 import { reportFilter,summarize } from './learning';
 import { questionBankRoutes } from './question-bank';
+import { reopenAssignmentSchema } from '../../shared/contracts/teaching';
 
 type Content=QuestionDraftContent|TestDraftContent;
 function draftRoutes(kind:DraftTable,createSchema:z.ZodType<{operationId:string;content:Content}>,updateSchema:z.ZodType<{revision:number;content:Content}>) {
@@ -87,6 +88,27 @@ export function teachingRoutes() {
     const row=await c.env.DB.prepare(`SELECT a.* FROM assignments a WHERE a.id=? AND ${groupScope('a.group_id')}`).bind(body.operationId,actor).first<{test_version_id:string;group_id:string;opens_at:number;closes_at:number}>();
     if(!row)throw unavailable();
     if(row.test_version_id!==body.testVersionId||row.group_id!==body.groupId||row.opens_at!==opens||row.closes_at!==closes)throw changed();
+    return c.json({id:body.operationId},201);
+  });
+  app.post('/assignments/:id/reopen',requireRole('admin'),async c=>{
+    const body=await readJson(c.req.raw,reopenAssignmentSchema),actor=c.get('auth').user.id,source=c.req.param('id');
+    const opens=Date.parse(body.opensAt),closes=Date.parse(body.closesAt);
+    const original=await c.env.DB.prepare('SELECT test_version_id,group_id FROM assignments WHERE id=?').bind(source).first<{test_version_id:string;group_id:string}>();
+    if(!original)throw unavailable();
+    await c.env.DB.batch([
+      c.env.DB.prepare(`INSERT OR IGNORE INTO assignments(id,test_version_id,group_id,opens_at,closes_at)
+        SELECT ?,test_version_id,group_id,?,? FROM assignments WHERE id=? AND closes_at<=${SQL_NOW} AND ?>${SQL_NOW}
+        AND NOT EXISTS(SELECT 1 FROM test_publications p WHERE p.version_id=assignments.test_version_id AND p.archived=1)
+        AND EXISTS(SELECT 1 FROM users WHERE id=? AND status='active' AND role='admin')`)
+        .bind(body.operationId,opens,closes,source,closes,actor),
+      c.env.DB.prepare('INSERT INTO assignment_authors SELECT ?,?,? WHERE changes()>0').bind(body.operationId,actor,Date.now()),
+      audit(c.env.DB,actor,'assignment.reopen',body.operationId,{reopenedFrom:source,opensAt:opens,closesAt:closes,timeZone:'Asia/Tashkent'}),
+    ]);
+    const row=await c.env.DB.prepare(`SELECT a.*,json_extract(e.metadata_json,'$.reopenedFrom') AS source FROM assignments a
+      JOIN audit_events e ON e.target_id=a.id AND e.action='assignment.reopen' WHERE a.id=?`).bind(body.operationId)
+      .first<{test_version_id:string;group_id:string;opens_at:number;closes_at:number;source:string}>();
+    if(!row)throw changed();
+    if(row.source!==source||row.test_version_id!==original.test_version_id||row.group_id!==original.group_id||row.opens_at!==opens||row.closes_at!==closes)throw changed();
     return c.json({id:body.operationId},201);
   });
   app.get('/assignments',async c=>{
