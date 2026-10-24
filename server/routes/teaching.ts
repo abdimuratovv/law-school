@@ -10,6 +10,7 @@ import { accessibleAttempt,applyReview,reviewView } from '../teaching/reviews';
 import { SQL_NOW } from '../exams/service';
 import { importRoutes } from './imports';
 import { reportFilter,summarize } from './learning';
+import { questionBankRoutes } from './question-bank';
 
 type Content=QuestionDraftContent|TestDraftContent;
 function draftRoutes(kind:DraftTable,createSchema:z.ZodType<{operationId:string;content:Content}>,updateSchema:z.ZodType<{revision:number;content:Content}>) {
@@ -54,6 +55,7 @@ export function teachingRoutes() {
   app.use('*',requireAuthentication,requireRole('teacher','admin'));
   app.use('*',async(c,next)=>{if(!['GET','HEAD'].includes(c.req.method))return requireCsrf(c,async()=>{await limitMutation(c);await next();});await next();});
   app.route('/questions',draftRoutes('question',createQuestionSchema,updateQuestionSchema));
+  app.route('/question-bank',questionBankRoutes());
   app.route('/imports',importRoutes());
   app.get('/analytics',async c=>{
     const id=validate(z.uuid(),c.req.query('assignmentId'));const f=validate(reportFilter,c.req.query());const actor=c.get('auth').user.id;

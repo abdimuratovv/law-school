@@ -3,7 +3,7 @@ import { useBlocker,useNavigate,useParams,useSearchParams } from 'react-router-d
 import type { QuestionDraftContent,TeachingDraft,TestDraftContent } from '../../../shared/contracts/teaching';
 import { questionDraftContentSchema,testDraftContentSchema } from '../../../shared/contracts/teaching';
 import type { StudentQuestion } from '../../../shared/contracts/questions';
-import { Button,Checkbox,Segmented,Tag } from '@/components/ui/basic';
+import { Button,Checkbox,Segmented } from '@/components/ui/basic';
 import { useAuth } from '@/state/AuthState';
 import { useText } from '@/i18n/LanguageProvider';
 import { TOPICS } from '@/data/topics';
@@ -58,10 +58,7 @@ function useDraft<T>(kind:'questions'|'tests',id:string|undefined,initial:()=>T,
 function DraftActions<T>({draft}:{draft:ReturnType<typeof useDraft<T>>}){
   const t=useText();return <><Status message={draft.message}/><div className="authoring-actions"><Button data-testid="save-draft" disabled={draft.busy||draft.conflict} onClick={()=>{void draft.save();}}>{t('Save draft')}</Button><Button data-testid="publish-draft" variant="secondary" disabled={draft.busy||draft.dirty||!draft.draft||draft.conflict} onClick={()=>{void draft.publish();}}>{t('Publish saved version')}</Button><Button variant="plain" disabled={draft.busy} onClick={()=>{void draft.load(true);}}>{t('Reload saved version')}</Button></div><p className="fn l2">{t(draft.dirty?'Unsaved changes':'Saved changes only can be published')}</p><UnsavedGuard dirty={draft.dirty}/></>;
 }
-export function ServerBank(){
-  const t=useText();const page=usePage<TeachingDraft<QuestionDraftContent>>('/staff/questions');
-  return <div className="authoring-page" data-no-translate><header><h1>{t('Question bank')}</h1><Button to="/admin/editor">{t('New question')}</Button></header><div className="learning-stack">{page.items.map(q=><article key={q.id} className="authoring-card"><Tag>{t(q.content.kind==='single'?'Single choice':'Written')}</Tag><h2 className="t2" lang="kaa">{q.content.stem||t('Untitled draft')}</h2><p>{t('Draft revision')}: {q.revision} · {t(q.publishedVersionId?'Published version available':'Not published')}</p><Button variant="secondary" to={'/admin/editor/'+q.id}>{t('Edit question')}</Button></article>)}</div>{!page.busy&&!page.message&&!page.items.length&&<p>{t('No questions yet. Create and publish your first question.')}</p>}<More page={page}/></div>;
-}
+export { default as ServerBank } from './ServerBank';
 export function ServerEditor(){const {id}=useParams();return <QuestionEditor key={id??'new'} id={id}/>;}
 function QuestionEditor({id}:{id?:string}){
   const t=useText();const draft=useDraft('questions',id,emptyQuestion,value=>questionDraftContentSchema.parse(value));const v=draft.value;
@@ -109,7 +106,7 @@ type Assignment={id:string;name:string;groupName:string;opensAt:number;closesAt:
 type Result={units:number;maxUnits:number;pending:number;final:boolean};
 export function ServerOverview(){
   const t=useText();const page=usePage<Assignment>('/staff/assignments');const [selected,setSelected]=useState<string>();
-  return <div className="authoring-page" data-no-translate><header><h1>{t('Overview')}</h1><div className="authoring-actions"><Button to="/admin/editor">{t('New question')}</Button><Button to="/admin/builder" variant="secondary">{t('Test builder')}</Button><Button to="/admin/grading" variant="secondary">{t('Grading')}</Button></div></header><h2>{t('Group assignments')}</h2>{page.items.map(a=><article key={a.id} className="authoring-card"><h3>{a.name}</h3><p>{a.groupName} · {tashkentInput(a.opensAt).replace('T',' ')} — {tashkentInput(a.closesAt).replace('T',' ')} (Asia/Tashkent)</p><Button variant="secondary" onClick={()=>setSelected(a.id)}>{t('View student attempts')}</Button>{selected===a.id&&<AssignmentAttempts id={a.id}/>}</article>)}<More page={page}/></div>;
+  return <div className="authoring-page" data-no-translate><header><h1>{t('Overview')}</h1><div className="authoring-actions"><Button to="/admin/editor">{t('New question')}</Button><Button to="/admin/builder" variant="secondary">{t('Test builder')}</Button><Button to="/admin/grading" variant="secondary">{t('Grading')}</Button></div></header><h2>{t('Group assignments')}</h2>{!page.busy&&!page.message&&!page.items.length&&<section className="authoring-card authoring-empty"><h3>{t('No tests assigned to groups yet.')}</h3><p>{t('Imported questions live in the question bank. This page shows tests after you assign them to a group.')}</p><div className="authoring-actions"><Button to="/admin/bank">{t('Question bank')}</Button><Button to="/admin/builder" variant="secondary">{t('Test builder')}</Button></div></section>}{page.items.map(a=><article key={a.id} className="authoring-card"><h3>{a.name}</h3><p>{a.groupName} · {tashkentInput(a.opensAt).replace('T',' ')} — {tashkentInput(a.closesAt).replace('T',' ')} (Asia/Tashkent)</p><Button variant="secondary" onClick={()=>setSelected(a.id)}>{t('View student attempts')}</Button>{selected===a.id&&<AssignmentAttempts id={a.id}/>}</article>)}<More page={page}/></div>;
 }
 function AssignmentAttempts({id}:{id:string}){const t=useText();const page=usePage<{id:string;student:string;state:string;result:Result|null}>('/staff/assignments/'+id+'/attempts');return <><ul>{page.items.map(a=><li key={a.id}><strong>{a.student}</strong> · {t(a.state==='active'?'In progress':a.result?.final?'Completed':'Awaiting grading')} {a.result&&`${a.result.units/2} / ${a.result.maxUnits/2}`} <Button variant="plain" to={'/admin/grading?attempt='+a.id}>{t('Open review')}</Button></li>)}</ul><More page={page}/></>;}
 type Review={id:string;revision:number;result:Result;items:{question:StudentQuestion;correctOptionId?:string;accepted:string[];explanation:string;answer:string;grade:{units:number|null;verdict:string};review:{units:number;comment:string;revision:number;updatedAt:number}|null}[]};

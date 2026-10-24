@@ -40,6 +40,39 @@ async function assignedAttempt() {
 beforeEach(resetAuthDatabase);
 
 describe('staff authoring',()=>{
+  it('lists a scoped question bank with global filters, pagination and no answer keys',async()=>{
+    const teacher=await account('teacher'),other=await account('teacher'),student=await account();
+    const drafts=[];
+    for(let i=1;i<=23;i++){
+      const response=await request(teacher,'/staff/questions',{operationId:crypto.randomUUID(),content:{...content(i%2?'written':'single'),stem:`Synthetic item ${String(i).padStart(2,'0')}`}});
+      drafts.push(await response.json() as TeachingDraft<QuestionDraftContent>);
+    }
+    await question(other);await publishQuestion(teacher,drafts[0]!);
+    const read=async(query='')=>await (await request(teacher,'/staff/question-bank'+query)).json() as {total:number;page:number;items:{id:string;stem:string;published:number}[]};
+    const first=await read();expect(first.total).toBe(23);expect(first.items).toHaveLength(20);
+    const last=await read('?page=2');expect(last.items).toHaveLength(3);expect(new Set([...first.items,...last.items].map(q=>q.id)).size).toBe(23);
+    expect(JSON.stringify(first)).not.toContain('Private synthetic explanation');expect(JSON.stringify(first)).not.toContain('correctOptionId');
+    expect((await read('?status=published')).items.map(q=>q.id)).toEqual([drafts[0]!.id]);
+    expect((await read('?status=draft')).total).toBe(22);
+    expect((await read('?search=item%2002&kind=single&topic=theory')).items.map(q=>q.id)).toEqual([drafts[1]!.id]);
+    expect((await read('?topic=civil')).total).toBe(0);
+    expect((await read('?page=999')).page).toBe(2);
+    expect((await request(student,'/staff/question-bank')).status).toBe(403);
+    expect((await api.request('/api/v1/staff/question-bank',{},authEnv)).status).toBe(401);
+    expect((await request(teacher,'/staff/question-bank?kind=invalid')).status).toBe(422);
+  });
+  it('preserves original import row order across question bank pages',async()=>{
+    const teacher=await account('teacher');const jobId=crypto.randomUUID();
+    await env.DB.prepare(`INSERT INTO import_jobs(id,owner_id,filename,file_hash,source_bytes,total_rows,duplicate_policy,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?)`).bind(jobId,teacher.id,'synthetic.csv','a'.repeat(64),100,23,'skip',1,1).run();
+    for(let i=23;i>=1;i--){
+      const q=await question(teacher);
+      await env.DB.prepare('INSERT INTO import_rows(job_id,row_number,content,content_hash,content_bytes,draft_id) VALUES(?,?,?,?,?,?)').bind(jobId,i+1,JSON.stringify(content()),'a'.repeat(64),10,q.id).run();
+    }
+    const one=await (await request(teacher,'/staff/question-bank')).json() as {items:{sourceNumber:number;sourceName:string}[]};
+    const two=await (await request(teacher,'/staff/question-bank?page=2')).json() as typeof one;
+    expect([...one.items,...two.items].map(q=>q.sourceNumber)).toEqual(Array.from({length:23},(_,i)=>i+1));
+    expect(one.items[0]!.sourceName).toBe('synthetic.csv');
+  });
   it('rejects students, anonymous users and cross-origin/CSRF mutations',async()=>{
     const student=await account(),teacher=await account('teacher');
     expect((await request(student,'/staff/questions')).status).toBe(403);

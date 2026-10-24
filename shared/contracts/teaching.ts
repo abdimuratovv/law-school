@@ -35,3 +35,15 @@ export const reviewItemSchema = z.strictObject({
 });
 export type ReviewItemRequest = z.infer<typeof reviewItemSchema>;
 export interface TeachingDraft<T> { id:string; revision:number; content:T; publishedVersionId:string|null; publishedRevision:number|null }
+export const questionBankSchema = z.object({
+  page:z.coerce.number().int().min(1).max(50000).default(1),
+  search:z.string().trim().max(200).default(''),
+  kind:z.enum(['all','single','written']).default('all'),
+  topic:z.union([z.literal('all'),studentQuestionSchema.options[0].shape.topic]).default('all'),
+  status:z.enum(['all','draft','published']).default('all'),
+});
+export interface BankQuestion {
+  id:string; stem:string; kind:QuestionDraftContent['kind']; topic:QuestionDraftContent['topic'];
+  revision:number; published:number; sourceName:string|null; sourceNumber:number|null;
+}
+export interface QuestionBankPage { items:BankQuestion[]; total:number; page:number; pageSize:number }

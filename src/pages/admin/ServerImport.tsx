@@ -123,7 +123,7 @@ export default function ServerImport() {
     {jobs.map(j=><article key={j.id} className="card learning-card import-history-item"><h3>{j.filename}</h3><Progress job={j} />
       {['ready','committing'].includes(j.status)&&<Button disabled={busy} onClick={()=>{void perform(j);}}>{t('Resume import')}</Button>}
       {j.status==='uploading'&&<><p>{t('Select the same file to resume.')}</p><Button variant="secondary" icon="upload" disabled={busy} onClick={()=>{target.current=j;if(picker.current){picker.current.value='';picker.current.click();}}}>{t('Continue upload')}</Button></>}
-      {j.status==='complete'&&<span className="import-complete"><Icon name="checkCircle" size="s" />{t('Import complete')}</span>}
+      {j.status==='complete'&&<><span className="import-complete"><Icon name="checkCircle" size="s" />{t('Import complete')}</span><p>{t('Imported questions are saved as drafts.')}</p><Button to="/admin/bank" variant="secondary" icon="forward">{t('Review imported questions')}</Button></>}
     </article>)}
     {next&&<Button disabled={busy} onClick={()=>{void load(next);}}>{t('Load more')}</Button>}
     <Button to="/admin/bank" variant="secondary">{t('Question bank')}</Button>
