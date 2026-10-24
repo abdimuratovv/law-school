@@ -9,7 +9,7 @@ import { staffActor,changed,unavailable } from '../teaching/access';
 import { hash } from '../auth/crypto';
 
 interface JobRow {id:string;owner_id:string;filename:string;file_hash:string;source_bytes:number;total_rows:number;duplicate_policy:'skip'|'keep';status:ImportJob['status'];uploaded_rows:number;payload_bytes:number;cursor:number;created_count:number;skipped_count:number}
-const jobView=(j:JobRow):ImportJob=>({id:j.id,filename:j.filename,status:j.status,totalRows:j.total_rows,uploadedRows:j.uploaded_rows,payloadBytes:j.payload_bytes,cursor:j.cursor,created:j.created_count,skipped:j.skipped_count,duplicatePolicy:j.duplicate_policy});
+const jobView=(j:JobRow):ImportJob=>({id:j.id,filename:j.filename,fileHash:j.file_hash,status:j.status,totalRows:j.total_rows,uploadedRows:j.uploaded_rows,payloadBytes:j.payload_bytes,cursor:j.cursor,created:j.created_count,skipped:j.skipped_count,duplicatePolicy:j.duplicate_policy});
 async function ownedJob(db:D1Database,id:string,actor:string){const job=await db.prepare(`SELECT * FROM import_jobs WHERE id=? AND owner_id=? AND ${staffActor}`).bind(id,actor,actor).first<JobRow>();if(!job)throw unavailable();return job;}
 export function importRoutes(){
  const app=new Hono<ApiEnv>();
@@ -22,6 +22,11 @@ export function importRoutes(){
   if(!j)throw changed();if(j.file_hash!==b.fileHash||j.source_bytes!==b.bytes||j.total_rows!==b.totalRows||j.duplicate_policy!==b.duplicatePolicy)throw changed();return c.json(jobView(j),201);
  });
  app.get('/:id',async c=>c.json(jobView(await ownedJob(c.env.DB,c.req.param('id'),c.get('auth').user.id))));
+ app.get('/:id/rows',async c=>{
+  const j=await ownedJob(c.env.DB,c.req.param('id'),c.get('auth').user.id);
+  const rows=await c.env.DB.prepare('SELECT row_number FROM import_rows WHERE job_id=? ORDER BY row_number LIMIT 1000').bind(j.id).all<{row_number:number}>();
+  return c.json({rowNumbers:rows.results.map(row=>row.row_number)});
+ });
  app.post('/:id/rows',async c=>{
   const b=await readJson(c.req.raw,importChunkSchema);const actor=c.get('auth').user.id;const j=await ownedJob(c.env.DB,c.req.param('id'),actor);
   const rows=await Promise.all(b.rows.map(async row=>{

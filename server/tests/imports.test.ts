@@ -48,6 +48,13 @@ describe('bounded draft imports',()=>{
   expect(await env.DB.prepare('SELECT count(*) n FROM question_drafts').first('n')).toBe(0);
  });
  it('cannot seal an incomplete upload',async()=>{const u=await account('teacher');const j=await job(u);await upload(u,j,[{rowNumber:2,content}]);expect((await req(u,'/'+j.id+'/validate',{cursor:1})).status).toBe(409);});
+ it('returns only saved row numbers for the owner, including noncontiguous uploads',async()=>{
+  const u=await account('teacher'),other=await account('admin');const j=await job(u,5);
+  await upload(u,j,[{rowNumber:2,content},{rowNumber:6,content}]);
+  expect(await (await req(u,'/'+j.id+'/rows')).json()).toEqual({rowNumbers:[2,6]});
+  expect((await req(other,'/'+j.id+'/rows')).status).toBe(404);
+  expect(await (await req(u,'/'+j.id)).json()).toMatchObject({fileHash:'a'.repeat(64)});
+ });
  it('deduplicates canonical rows, commits concurrently once and never publishes',async()=>{
   const u=await account('teacher');const j=await job(u);await upload(u,j,[{rowNumber:2,content},{rowNumber:3,content:{...content,stem:'  '+content.stem+'  '}}]);await req(u,'/'+j.id+'/validate',{cursor:1});
   const results=await Promise.all([req(u,'/'+j.id+'/commit',{cursor:1}),req(u,'/'+j.id+'/commit',{cursor:1})]);expect(results.map(r=>r.status)).toEqual([200,200]);

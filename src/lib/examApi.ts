@@ -1,6 +1,7 @@
 import { attemptSchema, type ServerAttempt } from '../../shared/contracts/exams';
 
-export class ExamError extends Error { constructor(public status: number, message: string) { super(message); } }
+import { ExamError } from './requestError';
+export { ExamError } from './requestError';
 export async function examRequest<T>(path: string, csrf?: string | null, body?: unknown): Promise<T> {
   const response = await fetch('/api/v1' + path, { credentials: 'same-origin', cache: 'no-store', signal: AbortSignal.timeout(15000),
     ...(body === undefined ? {} : { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrf ?? '' }, body: JSON.stringify(body) }) });
