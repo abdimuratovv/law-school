@@ -25,7 +25,7 @@ export async function reviewView(db:D1Database,row:ReviewAttempt) {
   const order=JSON.parse(row.question_order) as {id:string}[];
   const [bank,reviews]=await Promise.all([questions(db,order.map(q=>q.id)),loadReviews(db,row.id)]);
   const snapshot=JSON.parse(row.snapshot) as Snapshot;
-  return {id:row.id,revision:row.grade_revision,result:row.result?JSON.parse(row.result) as ServerAttempt['result']:null,
+  return {id:row.id,language:row.language,revision:row.grade_revision,result:row.result?JSON.parse(row.result) as ServerAttempt['result']:null,
     items:bank.map(item=>{const review=reviews.results.find(r=>r.question_version_id===item.question.id);return {
       question:item.question,correctOptionId:item.correctOptionId,accepted:item.accepted,explanation:item.explanation,
       answer:snapshot.answers[item.question.id]??'',grade:reviewedGrade(item,snapshot.answers[item.question.id],review),

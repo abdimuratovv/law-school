@@ -674,3 +674,8 @@ textarea{font:inherit}
 @media(max-width:1000px){.collection-grid{grid-template-columns:1fr}}@media(max-width:600px){.collection-save{bottom:6px;padding:12px}.collection-save .authoring-actions{width:100%}.collection-save .btn{flex:1;min-height:44px;font-size:.875rem}.collection-draft{padding:14px;flex-wrap:wrap}.collection-card-head{flex-wrap:wrap}.collection-card{padding:18px}.collection-card .authoring-actions{gap:8px}}
 
 .bank-page .bank-filters{grid-template-columns:minmax(200px,1.5fr) repeat(2,minmax(130px,1fr))}@media(max-width:800px){.bank-page .bank-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.bank-search{grid-column:1/-1}.bank-filters>.system-select:last-child{grid-column:auto}}
+/* Content language is chosen separately from the interface language. */
+.test-language-picker { margin: 1.25rem 0; padding: 1rem; border: 1px solid var(--border, #cbd5e1); border-radius: 12px; }
+.test-language-picker legend { padding: 0 .35rem; font-weight: 600; }
+.test-language-picker > label { display: flex; align-items: center; gap: .75rem; padding: .75rem; cursor: pointer; min-height: 44px; }
+.test-language-picker input { width: 1.1rem; height: 1.1rem; accent-color: var(--acc, #2563eb); }

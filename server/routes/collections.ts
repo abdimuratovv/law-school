@@ -17,6 +17,22 @@ function cursor(value:string):[number,string]{
 const nextCursor=(rows:{id:string;startedAt:number}[],limit:number)=>rows.length>limit?btoa(JSON.stringify([rows[limit-1]!.startedAt,rows[limit-1]!.id])):null;
 export function collectionRoutes(){
  const app=new Hono<ApiEnv>();
+ app.post('/:id/languages',async c=>{
+  const body=await readJson(c.req.raw,z.strictObject({language:z.literal('kaa'),testVersionId:z.uuid()}));
+  const actor=c.get('auth').user.id,id=c.req.param('id');
+  const source=await c.env.DB.prepare(`SELECT c.test_version_id,t.mode,json_array_length(t.question_ids) AS count FROM test_collections c JOIN test_versions t ON t.id=c.test_version_id WHERE c.id=? AND c.retired=0 AND ${ownerScope('c')}`).bind(id,actor).first<{test_version_id:string;mode:string;count:number}>();
+  if(!source)throw unavailable();
+  const variant=await c.env.DB.prepare(`SELECT t.mode,t.is_public,json_array_length(t.question_ids) AS count FROM test_versions t JOIN test_publications p ON p.version_id=t.id JOIN test_drafts d ON d.id=p.test_id WHERE t.id=? AND ${ownerScope('d')}`).bind(body.testVersionId,actor).first<{mode:string;is_public:number;count:number}>();
+  if(!variant)throw unavailable();
+  if(source.test_version_id===body.testVersionId||variant.is_public||source.mode!==variant.mode||source.count!==variant.count)throw new ApiError(422,'VALIDATION_ERROR','Language variants must have the same mode and question count, and use a private published version.');
+  const result=await c.env.DB.batch([
+   c.env.DB.prepare(`INSERT INTO collection_languages(collection_id,language,test_version_id) SELECT c.id,?,? FROM test_collections c WHERE c.id=? AND c.retired=0 AND ${ownerScope('c')}
+    ON CONFLICT(collection_id,language) DO UPDATE SET test_version_id=excluded.test_version_id`).bind(body.language,body.testVersionId,id,actor),
+   audit(c.env.DB,actor,'collection.language',id,{language:body.language,testVersionId:body.testVersionId}),
+  ]);
+  if(!result[0]?.meta.changes)throw changed();
+  return c.json({collectionId:id,language:body.language,testVersionId:body.testVersionId});
+ });
  app.get('/drafts',async c=>{
   const {after,limit}=validate(pageSchema,c.req.query());
   const rows=await c.env.DB.prepare(`SELECT d.id,json_extract(d.content,'$.name') AS name,coalesce(json_array_length(json_extract(d.content,'$.questionDraftIds')),json_array_length(json_extract(d.content,'$.questionVersionIds'))) AS questionCount
@@ -69,7 +85,7 @@ export function collectionRoutes(){
   const id=c.req.param('id'),actor=c.get('auth').user.id,{after,limit}=validate(pageSchema,c.req.query());
   const [time,last]=cursor(after);
   const collection=await c.env.DB.prepare(`SELECT c.id,t.name FROM test_collections c JOIN test_versions t ON t.id=c.test_version_id WHERE c.id=? AND ${ownerScope('c')}`).bind(id,actor).first();if(!collection)throw unavailable();
-  const rows=await c.env.DB.prepare(`SELECT a.id,u.display_name AS student,u.email,a.state,a.started_at AS startedAt,a.submitted_at AS submittedAt,a.result
+  const rows=await c.env.DB.prepare(`SELECT a.id,u.display_name AS student,u.email,a.language,a.state,a.started_at AS startedAt,a.submitted_at AS submittedAt,a.result
    FROM attempts a JOIN users u ON u.id=a.user_id WHERE a.collection_id=? AND (a.started_at<? OR(a.started_at=? AND a.id>?)) ORDER BY a.started_at DESC,a.id LIMIT ?`).bind(id,time,time,last,limit+1).all<{id:string;startedAt:number;result:string|null}>();
   const summary=await c.env.DB.prepare(`SELECT count(*) AS attempts,count(DISTINCT user_id) AS participants,sum(state='final') AS completed,
    avg(CASE WHEN json_extract(result,'$.final')=1 THEN 100.0*json_extract(result,'$.units')/json_extract(result,'$.maxUnits') END) AS averagePercent
@@ -79,7 +95,7 @@ export function collectionRoutes(){
  app.get('/results',async c=>{
   const {after,limit}=validate(pageSchema,c.req.query());
   const [time,last]=cursor(after);
-  const rows=await c.env.DB.prepare(`SELECT a.id,a.collection_id AS collectionId,t.name,u.display_name AS student,u.email,a.state,a.started_at AS startedAt,a.submitted_at AS submittedAt,a.result
+  const rows=await c.env.DB.prepare(`SELECT a.id,a.collection_id AS collectionId,t.name,u.display_name AS student,u.email,a.language,a.state,a.started_at AS startedAt,a.submitted_at AS submittedAt,a.result
    FROM attempts a JOIN users u ON u.id=a.user_id JOIN test_versions t ON t.id=a.test_version_id WHERE (a.started_at<? OR(a.started_at=? AND a.id>?)) AND ${reviewScope} ORDER BY a.started_at DESC,a.id LIMIT ?`).bind(time,time,last,c.get('auth').user.id,limit+1).all<{id:string;startedAt:number;result:string|null}>();
   return c.json({items:rows.results.slice(0,limit).map(r=>({...r,result:r.result?JSON.parse(r.result):null})),next:nextCursor(rows.results,limit)});
  });
@@ -92,6 +108,8 @@ export function collectionRoutes(){
     AND EXISTS(SELECT 1 FROM users WHERE id=? AND role='admin' AND status='active')`).bind(body.operationId,opens,closes,Date.now(),source,closes,actor),
    audit(c.env.DB,actor,'collection.reopen',body.operationId,{source,opensAt:opens,closesAt:closes}),
    c.env.DB.prepare('UPDATE test_collections SET retired=1 WHERE id=? AND EXISTS(SELECT 1 FROM test_collections n WHERE n.id=? AND n.reopened_from=?)').bind(source,body.operationId,source),
+   c.env.DB.prepare(`INSERT OR IGNORE INTO collection_languages(collection_id,language,test_version_id)
+    SELECT n.id,l.language,l.test_version_id FROM test_collections n JOIN collection_languages l ON l.collection_id=n.reopened_from WHERE n.id=? AND n.reopened_from=?`).bind(body.operationId,source),
   ]);
   const row=await c.env.DB.prepare('SELECT reopened_from,opens_at,closes_at FROM test_collections WHERE id=?').bind(body.operationId).first<{reopened_from:string;opens_at:number;closes_at:number}>();
   if(!row||row.reopened_from!==source||row.opens_at!==opens||row.closes_at!==closes)throw changed();

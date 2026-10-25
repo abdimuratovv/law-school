@@ -44,11 +44,27 @@ with tempfile.TemporaryDirectory(prefix='hm-exam-e2e-') as folder:
     token = secrets.token_hex(32)
     csrf = hashlib.sha256(('hm-csrf:' + token).encode()).hexdigest()
     now = int(time.time() * 1000)
+    admin_id, admin_token = str(uuid.uuid4()), secrets.token_hex(32)
+    admin_csrf = hashlib.sha256(('hm-csrf:' + admin_token).encode()).hexdigest()
+    language_collection, uz_version, kaa_version = (str(uuid.uuid4()) for _ in range(3))
+    uz_draft, kaa_draft = str(uuid.uuid4()), str(uuid.uuid4())
     sql_execute((ROOT / 'server/fixtures/local-exam.sql').read_text(encoding='utf-8') + f"""
       INSERT INTO users(id,display_name,email,created_at,updated_at) VALUES('{user_id}','Exam Learner','exam@example.test',{now},{now});
       UPDATE users SET first_name='Exam',last_name='Learner',patronymic='Fixture',birth_date='2000-01-01',profile_completed_at={now} WHERE id='{user_id}';
       INSERT INTO sessions(token_hash,user_id,csrf_hash,created_at,expires_at) VALUES(
         '{hashlib.sha256(token.encode()).hexdigest()}','{user_id}','{hashlib.sha256(csrf.encode()).hexdigest()}',{now},{now+3600000});
+      INSERT INTO users(id,display_name,email,role,created_at,updated_at,first_name,last_name,patronymic,birth_date,profile_completed_at)
+        VALUES('{admin_id}','Language Admin','language-admin@example.test','admin',{now},{now},'Language','Admin','Fixture','2000-01-01',{now});
+      INSERT INTO sessions(token_hash,user_id,csrf_hash,created_at,expires_at) VALUES(
+        '{hashlib.sha256(admin_token.encode()).hexdigest()}','{admin_id}','{hashlib.sha256(admin_csrf.encode()).hexdigest()}',{now},{now+3600000});
+      INSERT INTO question_versions VALUES('language-uz-q','{{"question":{{"id":"language-uz-q","kind":"written","topic":"theory","stem":"O‘zbekcha fixture savoli"}},"accepted":["salom"],"explanation":"Synthetic"}}',{now});
+      INSERT INTO question_versions VALUES('language-kaa-q','{{"question":{{"id":"language-kaa-q","kind":"written","topic":"theory","stem":"Qaraqalpaqsha fixture sorawı"}},"accepted":["sálem"],"explanation":"Synthetic"}}',{now});
+      INSERT INTO test_versions VALUES('{uz_version}','Bilingual fixture','mock',86400,'["language-uz-q"]',0,{now});
+      INSERT INTO test_versions VALUES('{kaa_version}','Bilingual fixture','mock',86400,'["language-kaa-q"]',0,{now});
+      INSERT INTO test_drafts(id,owner_id,content,created_at,updated_at) VALUES('{uz_draft}','{admin_id}','{{}}',{now},{now});
+      INSERT INTO test_drafts(id,owner_id,content,created_at,updated_at) VALUES('{kaa_draft}','{admin_id}','{{}}',{now},{now});
+      INSERT INTO test_publications(test_id,draft_revision,version_id,created_at) VALUES('{kaa_draft}',0,'{kaa_version}',{now});
+      INSERT INTO test_collections(id,test_id,test_version_id,owner_id,created_at) VALUES('{language_collection}','{uz_draft}','{uz_version}','{admin_id}',{now});
     """, folder)
     with open(Path(folder) / 'worker.log', 'w', encoding='utf-8') as log:
         server = subprocess.Popen(WRANGLER + ['dev', '--local', '--port', '8788', '--persist-to', folder,
@@ -187,6 +203,57 @@ with tempfile.TemporaryDirectory(prefix='hm-exam-e2e-') as folder:
                 expect(second.locator('article')).to_contain_text('2 / 2')
                 check('history reads the actual submitted result', True)
                 check('browser exam flow has no uncaught errors', not errors)
+                admin_context = browser.new_context(viewport={'width': 1366, 'height': 900})
+                admin_context.add_cookies([{'name': 'hm_session', 'value': admin_token, 'url': BASE, 'httpOnly': True, 'sameSite': 'Lax'}])
+                attached = admin_context.request.post(BASE + '/api/v1/staff/collections/' + language_collection + '/languages',
+                    headers={'Origin': BASE, 'X-CSRF-Token': admin_csrf}, data={'language': 'kaa', 'testVersionId': kaa_version})
+                check('staff attaches a translation to the same collection', attached.status == 200)
+                language_page = context.new_page()
+                language_attempts = {}
+                for code, label, answer, stem in [('kaa', 'Qaraqalpaqsha', 'sálem', 'Qaraqalpaqsha fixture sorawı'), ('uz', 'O‘zbekcha', 'salom', 'O‘zbekcha fixture savoli')]:
+                    language_page.goto(BASE + '/tests/c_' + language_collection)
+                    language_page.wait_for_load_state('networkidle')
+                    start_button = language_page.get_by_role('button', name='Boshlash yoki davom etish', exact=True)
+                    expect(start_button).to_be_disabled()
+                    language_page.get_by_role('radio', name=label, exact=True).check()
+                    start_button.click()
+                    expect(language_page).to_have_url(__import__('re').compile('/exam/[a-f0-9-]+$'))
+                    attempt = language_page.url.rsplit('/', 1)[-1]
+                    language_attempts[code] = attempt
+                    expect(language_page.locator('p.body')).to_have_text(stem)
+                    expect(language_page.locator('p.body')).to_have_attribute('lang', code)
+                    if code == 'kaa':
+                        language_page.evaluate("localStorage.setItem('hm.language','ru')")
+                        language_page.reload()
+                        expect(language_page.locator('p.body')).to_have_text(stem)
+                        language_page.evaluate("localStorage.setItem('hm.language','uz')")
+                        language_page.reload()
+                        expect(language_page.locator('textarea')).to_be_visible()
+                        language_page.goto(BASE + '/tests/c_' + language_collection)
+                        expect(language_page.get_by_role('radio', name='Qaraqalpaqsha', exact=True)).to_be_checked()
+                        expect(language_page.get_by_role('radio', name='O‘zbekcha', exact=True)).to_be_disabled()
+                        language_page.get_by_role('button', name='Boshlash yoki davom etish', exact=True).click()
+                        expect(language_page).to_have_url(BASE + '/exam/' + attempt)
+                        check('resume pins question language independently of interface language', True)
+                    language_page.locator('textarea').fill(answer)
+                    language_page.get_by_role('button', name='Hozir saqlash', exact=True).click()
+                    expect(language_page.get_by_text('Serverda saqlandi', exact=True)).to_be_visible()
+                    data = api.get(BASE + '/api/v1/attempts/' + attempt).json()
+                    check(code + ' questions and saved attempt retain selected language', data['language'] == code and data['questions'][0]['stem'] == stem)
+                    submitted = api.post(BASE + '/api/v1/attempts/' + attempt + '/submit', headers={'Origin': BASE, 'X-CSRF-Token': csrf},
+                        data={**data['snapshot'], 'revision': data['revision'], 'operationId': str(uuid.uuid4())})
+                    check(code + ' grades with its own language answer key', submitted.status == 200 and submitted.json()['result']['units'] == 2)
+                admin_page = admin_context.new_page()
+                admin_page.goto(BASE + '/admin/results?collection=' + language_collection)
+                expect(admin_page.get_by_role('columnheader', name='Test tili', exact=True)).to_be_visible()
+                expect(admin_page.locator('tbody tr')).to_have_count(2)
+                expect(admin_page.locator('tbody')).to_contain_text('Qaraqalpaqsha')
+                expect(admin_page.locator('tbody')).to_contain_text('O‘zbekcha')
+                check('admin sees language for both attempts in one collection', True)
+                admin_page.goto(BASE + '/admin/results?attempt=' + language_attempts['kaa'])
+                expect(admin_page.get_by_text('Test tili: Qaraqalpaqsha', exact=True)).to_be_visible()
+                check('admin grading view also identifies question language', True)
+                check('bilingual browser flow has no uncaught errors', not errors)
                 browser.close()
         finally:
             if os.name == 'nt':

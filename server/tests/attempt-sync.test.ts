@@ -3,7 +3,7 @@ import { pendingSave, resolveSaveResponse } from '../../src/lib/attemptSync';
 import type { ServerAttempt } from '../../shared/contracts/exams';
 import type { Draft } from '../../src/lib/attemptDraft';
 
-const server: ServerAttempt = { id: '117fc717-0167-4569-852d-cb6744d04562', examId: 'p_test', name: 'Fixture', mode: 'practice',
+const server: ServerAttempt = { id: '117fc717-0167-4569-852d-cb6744d04562', examId: 'p_test', name: 'Fixture', mode: 'practice', language:'uz',
   state: 'active', revision: 3, startedAt: 1, endsAt: null, savedAt: 2, serverNow: 3,
   snapshot: { answers: { a: 'one', b: 'two' }, flags: [] }, questions: [], checked: [], feedback: {}, result: null };
 

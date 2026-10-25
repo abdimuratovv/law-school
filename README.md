@@ -14,6 +14,8 @@ A multilingual law certificate preparation application with student exams and a 
 
 ## Publishing a collection
 
+Collections can have Uzbek and Karakalpak question versions under one catalog entry. Students choose a question language before starting; the saved attempt language appears in staff results and remains fixed during the attempt. See [bilingual collections and DOCX conversion](docs/TEST-LANGUAGES.md). Deploy migration `0010_collection_languages.sql` before the updated Worker.
+
 1. Open **Test collections → Create collection**. Import CSV/XLSX questions or select saved bank questions.
 2. Enter a name and choose **Always available** or a shared schedule in Asia/Tashkent.
 3. Click **Publish collection**. Question validation/version preparation happens automatically; no per-question publishing or enrollment is required.

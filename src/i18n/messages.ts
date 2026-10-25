@@ -4,6 +4,8 @@ type Row = [string, string, string, string];
 const rows: Row[] = [
   // Navigation, account and common controls. Source text is the key.
   ['Language', 'Til', 'Til', 'Язык'],
+  ['Test language', 'Test tili', 'Test tili', 'Язык теста'],
+  ['Choose the language of the questions. It cannot change after you start.', 'Savollar tilini tanlang. Test boshlanganidan keyin uni o‘zgartirib bo‘lmaydi.', 'Sorawlar tilin tańlań. Test baslanǵannan keyin onı ózgertip bolmaydı.', 'Выберите язык вопросов. После начала теста изменить его нельзя.'],
   ['Home', 'Bosh sahifa', 'Bas bet', 'Главная'],
   ['Tests', 'Testlar', 'Testler', 'Тесты'],
   ['Progress', 'Natijalar dinamikasi', 'Nátiyjeler dinamikası', 'Прогресс'],

@@ -5,12 +5,13 @@ import { ApiError } from '../http/errors';
 import { ALGORITHM, grade, withOverride } from './grading';
 import { hash } from '../auth/crypto';
 import { reportOutcomes,reportStatement } from './reporting';
+import type { TestLanguage } from '../../shared/contracts/languages';
 
 export const SQL_NOW = "CAST(unixepoch('subsec') * 1000 AS INTEGER)";
 export interface TestRow { id: string; name: string; mode: 'practice' | 'mock'; duration_seconds: number | null; question_ids: string; is_public: number }
 export interface AttemptRow {
   id: string; user_id: string; exam_id: string; test_version_id: string; assignment_id: string | null;collection_id:string|null;
-  state: 'active' | 'submitted' | 'final'; revision: number; snapshot: string; question_order: string;
+  state: 'active' | 'submitted' | 'final'; language: TestLanguage; revision: number; snapshot: string; question_order: string;
   checked: string; receipts: string; started_at: number; ends_at: number | null; saved_at: number; result: string | null;
 }
 export const missing = () => new ApiError(404, 'NOT_FOUND', 'This test or attempt is unavailable.');
@@ -100,7 +101,7 @@ export async function view(db: D1Database, row: AttemptRow, content?: ExamConten
   });
   const answerCounts={correct:0,incorrect:0,partial:0,pending:0,unanswered:0};
   if(row.state==='final')for(const item of bank){const override=overrides.find(r=>r.question_version_id===item.question.id);const verdict=withOverride(item,snapshot.answers[item.question.id],override).verdict;answerCounts[verdict]++;}
-  return { id: row.id, examId: row.exam_id, name: test.name, mode: test.mode, state: row.state, revision: row.revision,...(row.state==='final'?{answerCounts}:{}),
+  return { id: row.id, examId: row.exam_id, name: test.name, mode: test.mode, language: row.language, state: row.state, revision: row.revision,...(row.state==='final'?{answerCounts}:{}),
     startedAt: row.started_at, endsAt: row.ends_at, savedAt: row.saved_at, serverNow: Date.now(), snapshot,
     questions: safe, checked, feedback, result };
 }

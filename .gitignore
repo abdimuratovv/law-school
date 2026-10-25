@@ -33,3 +33,6 @@ docs/ux-audit/**/*.tgz
 docs/ux-audit/stage-9/baseline-workspace/
 __pycache__/
 *.py[cod]
+
+# Private teaching material and generated answer-key CSV exports
+/exports/
