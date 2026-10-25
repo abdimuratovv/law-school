@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { studentQuestionSchema } from './questions';
+import type { TestLanguage } from './languages';
 
 const id = z.string().regex(/^[A-Za-z0-9_-]{1,100}$/);
 const option = z.object({ id, text:z.string().max(20000) });
@@ -16,6 +17,10 @@ export const testDraftContentSchema = z.strictObject({
   name:z.string().max(200),mode:z.enum(['mock','practice']),durationSeconds:z.number().int().min(1).max(86400).nullable(),
   questionVersionIds:z.array(id).max(100).refine(ids=>new Set(ids).size===ids.length),isPublic:z.boolean(),
   questionDraftIds:z.array(z.uuid()).max(100).refine(ids=>new Set(ids).size===ids.length).optional(),
+  translations:z.strictObject({kaa:z.strictObject({
+    questionVersionIds:z.array(id).max(100).refine(ids=>new Set(ids).size===ids.length),
+    questionDraftIds:z.array(z.uuid()).max(100).refine(ids=>new Set(ids).size===ids.length),
+  })}).optional(),
   opensAt:z.number().int().min(0).max(4102444800000).nullable().optional(),closesAt:z.number().int().min(0).max(4102444800000).nullable().optional(),
 });
 export type TestDraftContent = z.infer<typeof testDraftContentSchema>;
@@ -49,6 +54,7 @@ export const questionBankSchema = z.object({
 export interface BankQuestion {
   id:string; stem:string; kind:QuestionDraftContent['kind']; topic:QuestionDraftContent['topic'];
   revision:number; published:number; sourceName:string|null; sourceNumber:number|null;
+  language?:TestLanguage;
 }
 export interface QuestionBankPage { items:BankQuestion[]; total:number; page:number; pageSize:number }
 export const bulkPublishQuestionsSchema=z.strictObject({

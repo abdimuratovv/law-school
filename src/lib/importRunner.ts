@@ -1,5 +1,6 @@
 import type { ImportJob, ImportRow } from '../../shared/contracts/imports';
 import { TeachingRequestError } from './requestError';
+import type { TestLanguage } from '../../shared/contracts/languages';
 
 export type ImportTransport = <T>(path:string,body?:unknown)=>Promise<T>;
 export type ImportPhase = 'uploading'|'validating'|'committing'|'complete';
@@ -45,8 +46,8 @@ export async function commitImport(current:ImportJob,options:Options):Promise<Im
   options.progress(current,'complete');return current;
 }
 
-export async function uploadImport(input:{filename:string;bytes:number;fileHash:string;rows:ImportRow[];keep:boolean},options:Options):Promise<ImportJob> {
-  const metadata={operationId:crypto.randomUUID(),filename:input.filename,bytes:input.bytes,totalRows:input.rows.length,fileHash:input.fileHash,duplicatePolicy:input.keep?'keep':'skip'};
+export async function uploadImport(input:{filename:string;bytes:number;fileHash:string;rows:ImportRow[];keep:boolean;language?:TestLanguage},options:Options):Promise<ImportJob> {
+  const metadata={operationId:crypto.randomUUID(),filename:input.filename,bytes:input.bytes,totalRows:input.rows.length,fileHash:input.fileHash,duplicatePolicy:input.keep?'keep':'skip',language:input.language??'uz'};
   let current=await retry(options,()=>options.request<ImportJob>('/staff/imports',metadata));
   options.progress(current,current.status==='complete'?'complete':current.status==='uploading'?'uploading':'committing');
   if(current.status==='uploading'){

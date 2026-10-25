@@ -1,4 +1,4 @@
-const REQUIRED_MIGRATION = '0010_collection_languages.sql';
+const REQUIRED_MIGRATION = '0011_authoring_languages.sql';
 
 /** A schema check, not a write or a scan of student data. */
 export async function isDatabaseReady(db: D1Database): Promise<boolean> {

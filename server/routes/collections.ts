@@ -5,7 +5,8 @@ import { requireRole } from '../auth/session';
 import { readJson,validate } from '../http/validation';
 import { ApiError } from '../http/errors';
 import { ownerScope,reviewScope,audit,changed,unavailable } from '../teaching/access';
-import { draftRow,draftView,publishTest } from '../teaching/content';
+import { draftRow,draftView } from '../teaching/content';
+import { publishCollection } from '../teaching/collection-publishing';
 import { reopenAssignmentSchema,testDraftContentSchema } from '../../shared/contracts/teaching';
 import { SQL_NOW } from '../exams/service';
 
@@ -46,31 +47,25 @@ export function collectionRoutes(){
    const mapping=await c.env.DB.prepare('SELECT version_id,question_id FROM question_publications WHERE version_id IN(SELECT value FROM json_each(?))').bind(JSON.stringify(content.questionVersionIds)).all<{version_id:string;question_id:string}>();
    content.questionDraftIds=content.questionVersionIds.map(id=>mapping.results.find(q=>q.version_id===id)?.question_id).filter((id):id is string=>!!id);
   }
+  if(content.translations?.kaa&&!content.translations.kaa.questionDraftIds.length){
+   const variant=content.translations.kaa;
+   const mapping=await c.env.DB.prepare('SELECT version_id,question_id FROM question_publications WHERE version_id IN(SELECT value FROM json_each(?))').bind(JSON.stringify(variant.questionVersionIds)).all<{version_id:string;question_id:string}>();
+   variant.questionDraftIds=variant.questionVersionIds.map(id=>mapping.results.find(q=>q.version_id===id)?.question_id).filter((id):id is string=>!!id);
+  }
   return c.json({...draft,content});
  });
  app.get('/import/:id',async c=>{
-  const rows=await c.env.DB.prepare(`SELECT d.id,j.filename FROM import_rows r JOIN question_drafts d ON d.id=r.draft_id JOIN import_jobs j ON j.id=r.job_id
-   WHERE j.id=? AND ${ownerScope('d')} ORDER BY r.row_number`).bind(c.req.param('id'),c.get('auth').user.id).all<{id:string;filename:string}>();
+  const rows=await c.env.DB.prepare(`SELECT d.id,j.filename,j.language FROM import_rows r JOIN question_drafts d ON d.id=r.draft_id JOIN import_jobs j ON j.id=r.job_id
+   WHERE j.id=? AND ${ownerScope('d')} ORDER BY r.row_number`).bind(c.req.param('id'),c.get('auth').user.id).all<{id:string;filename:string;language:string}>();
   if(!rows.results.length)throw unavailable();
-  return c.json({ids:rows.results.map(r=>r.id),name:rows.results[0]!.filename.replace(/\.(csv|xlsx)$/i,'')});
+  return c.json({ids:rows.results.map(r=>r.id),language:rows.results[0]!.language,name:rows.results[0]!.filename.replace(/\.(csv|xlsx)$/i,'')});
  });
  app.post('/',async c=>{
   const body=await readJson(c.req.raw,z.strictObject({draftId:z.uuid(),revision:z.number().int().min(0)}));
   const actor=c.get('auth').user.id,row=await draftRow(c.env.DB,'test',body.draftId,actor);
   if(row.revision!==body.revision)throw changed();
-  const known=await c.env.DB.prepare('SELECT c.id FROM test_collections c JOIN test_publications p ON p.version_id=c.id WHERE p.test_id=? AND p.draft_revision=?').bind(row.id,body.revision).first<{id:string}>();
-  if(known)return c.json({id:known.id,examId:'c_'+known.id},201);
-  const content=testDraftContentSchema.parse(JSON.parse(row.content)),opens=content.opensAt??null,closes=content.closesAt??null;
-  if((opens===null)!==(closes===null)||(opens!==null&&closes!==null&&(closes<=opens||closes<=Date.now())))throw new ApiError(422,'VALIDATION_ERROR','Choose a valid future deadline.');
-  const version=await publishTest(c.env.DB,row.id,actor,body.revision);
-  await c.env.DB.batch([
-   c.env.DB.prepare(`INSERT OR IGNORE INTO test_collections(id,test_id,test_version_id,owner_id,opens_at,closes_at,created_at)
-    SELECT ?,d.id,?,d.owner_id,?,?,? FROM test_drafts d WHERE d.id=? AND d.revision=? AND ${ownerScope('d')}`)
-    .bind(version,version,opens,closes,Date.now(),row.id,body.revision,actor),
-   audit(c.env.DB,actor,'collection.publish',version,{testId:row.id,revision:body.revision}),
-   c.env.DB.prepare(`UPDATE test_collections SET retired=1 WHERE test_id=? AND id<>? AND EXISTS(SELECT 1 FROM test_collections n WHERE n.id=? AND n.test_id=?)`).bind(row.id,version,version,row.id),
-  ]);
-  const found=await c.env.DB.prepare('SELECT id FROM test_collections WHERE id=?').bind(version).first();if(!found)throw changed();
+  const content=testDraftContentSchema.parse(JSON.parse(row.content));
+  const version=await publishCollection(c.env.DB,row,actor,content);
   return c.json({id:version,examId:'c_'+version},201);
  });
  app.get('/',async c=>{

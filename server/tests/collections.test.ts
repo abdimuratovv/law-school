@@ -83,3 +83,36 @@ describe('public test collections',()=>{
   expect((await request(admin,'/staff/collections/results?after=invalid')).status).toBe(422);
  });
 });
+
+describe('bilingual authoring',()=>{
+ it('publishes a single catalog entry with independent variants and preserves old attempts',async()=>{
+  const owner=await account('teacher'),student=await account();const first=await collection(owner);
+  const kaaId=crypto.randomUUID();
+  await request(owner,'/staff/questions',{operationId:kaaId,content:{kind:'written',topic:'theory',stem:'Qaraqalpaqsha synthetic',options:[{id:'a',text:''},{id:'b',text:''},{id:'c',text:''},{id:'d',text:''}],correctOptionId:null,accepted:['sálem'],explanation:''}});
+  await env.DB.prepare("UPDATE question_drafts SET language='kaa' WHERE id=?").bind(kaaId).run();
+  const published=await (await request(owner,'/staff/question-bank/publish',{items:[{id:kaaId,revision:0}]})).json() as {results:{versionId:string}[]};
+  const kaa=published.results[0]!.versionId;
+  const content={name:'Two languages',mode:'mock',durationSeconds:null,isPublic:false,questionVersionIds:[first.version],questionDraftIds:[first.qid],translations:{kaa:{questionVersionIds:[kaa],questionDraftIds:[kaaId]}}};
+  const update=await api.request('/api/v1/staff/tests/'+first.draftId,{method:'PATCH',headers:owner.headers,body:JSON.stringify({revision:0,content})},authEnv);expect(update.status).toBe(200);
+  const old=await start(student,first.examId);
+  const response=await request(owner,'/staff/collections',{draftId:first.draftId,revision:1});expect(response.status).toBe(201);const next=await response.json() as {id:string;examId:string};
+  expect((await (await request(owner,'/staff/collections',{draftId:first.draftId,revision:1})).json() as {id:string}).id).toBe(next.id);
+  expect(await env.DB.prepare('SELECT count(*) n FROM test_collections WHERE retired=0').first('n')).toBe(1);
+  const variants=await env.DB.prepare('SELECT l.language,json_array_length(t.question_ids) n FROM collection_languages l JOIN test_versions t ON t.id=l.test_version_id WHERE l.collection_id=? ORDER BY l.language').bind(next.id).all();expect(variants.results).toEqual([{language:'kaa',n:1},{language:'uz',n:1}]);
+  const fresh=await account();const attempt=await (await request(fresh,'/exams/'+next.examId+'/start',{operationId:crypto.randomUUID(),language:'kaa'})).json() as ServerAttempt;
+  expect(attempt.language).toBe('kaa');expect(attempt.questions[0]?.stem).toBe('Qaraqalpaqsha synthetic');expect(attempt.questions).toHaveLength(1);
+  expect((await request(student,'/attempts/'+old.id)).status).toBe(200);
+ });
+ it('rejects a mixed primary list before replacing an existing collection',async()=>{
+  const owner=await account('teacher'),first=await collection(owner);
+  await env.DB.prepare("UPDATE question_drafts SET language='kaa' WHERE id=?").bind(first.qid).run();
+  expect((await request(owner,'/staff/collections',{draftId:first.draftId,revision:0})).status).toBe(422);
+  expect(await env.DB.prepare('SELECT retired FROM test_collections WHERE id=?').bind(first.id).first('retired')).toBe(0);
+ });
+ it('rejects a translation referencing Uzbek questions',async()=>{
+  const owner=await account('teacher'),first=await collection(owner);const id=crypto.randomUUID();
+  await request(owner,'/staff/tests',{operationId:id,content:{name:'Invalid pair',mode:'mock',durationSeconds:null,isPublic:false,questionVersionIds:[first.version],translations:{kaa:{questionVersionIds:[first.version],questionDraftIds:[first.qid]}}}});
+  expect((await request(owner,'/staff/collections',{draftId:id,revision:0})).status).toBe(422);
+  expect(await env.DB.prepare('SELECT count(*) n FROM test_collections WHERE retired=0').first('n')).toBe(1);
+ });
+});

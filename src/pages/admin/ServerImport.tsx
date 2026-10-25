@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/basic';
+import { testLanguageLabel,type TestLanguage } from '../../../shared/contracts/languages';
 import { Icon } from '@/components/ui/Icon';
 import { useAuth } from '@/state/AuthState';
 import { useText } from '@/i18n/LanguageProvider';
@@ -37,6 +38,7 @@ function errorLabel(error:unknown):string {
 
 export default function ServerImport() {
   const t=useText();const {csrfToken}=useAuth();
+  const [language,setLanguage]=useState<TestLanguage>('uz');
   const [parsed,setParsed]=useState<ParsedImport>();const [file,setFile]=useState<File>();
   const [busy,setBusy]=useState(false);const [parsing,setParsing]=useState(false);const [error,setError]=useState('');
   const [detail,setDetail]=useState('');const [keep,setKeep]=useState(false);const [job,setJob]=useState<ImportJob>();
@@ -67,7 +69,7 @@ export default function ServerImport() {
         setBusy(false);setParsing(false);const result=event.data.result;
         if(expected&&result&&expected.fileHash!==result.fileHash){setError('The selected file does not match this import. Choose the original file.');return;}
         setParsed(result);setError(event.data.error??'');
-        if(expected){setKeep(expected.duplicatePolicy==='keep');setJob(expected);}
+        if(expected){setLanguage(expected.language??'uz');setKeep(expected.duplicatePolicy==='keep');setJob(expected);}
       };
       w.postMessage({bytes,filename:selected.name},[bytes]);
     } catch {if(alive.current&&ticket===generation.current){setBusy(false);setParsing(false);setError('Could not read the file.');}}
@@ -87,7 +89,7 @@ export default function ServerImport() {
     setBusy(true);setError('');setDetail('');setRetrying(null);const options=operation();
     try {
       if(existing){setJob(existing);await commitImport(existing,options);}
-      else await uploadImport({filename:file!.name,bytes:file!.size,fileHash:parsed!.fileHash,rows:parsed!.rows,keep},options);
+      else await uploadImport({filename:file!.name,bytes:file!.size,fileHash:parsed!.fileHash,rows:parsed!.rows,keep,language},options);
       if(alive.current)await load();
     } catch(problem) {
       if(alive.current){
@@ -98,12 +100,12 @@ export default function ServerImport() {
     } finally {if(alive.current){setBusy(false);setRetrying(null);}}
   };
   const download=()=>{const url=URL.createObjectURL(new Blob([IMPORT_TEMPLATE],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='questions-template.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-  const matching=parsed?jobs.find(j=>j.fileHash===parsed.fileHash&&j.duplicatePolicy===(keep?'keep':'skip')):undefined;
+  const matching=parsed?jobs.find(j=>j.fileHash===parsed.fileHash&&(j.language??'uz')===language&&j.duplicatePolicy===(keep?'keep':'skip')):undefined;
   return <section className="authoring-page learning-page import-page" data-no-translate>
     <header><h1>{t('Import questions')}</h1><p>{t('CSV or XLSX, up to 5 MB and 1000 rows. Imported questions remain drafts.')}</p></header>
     <section className="card learning-card">
       <Button variant="secondary" icon="download" onClick={download}>{t('Download CSV template')}</Button>
-      <label className="field"><span>{t('Choose file')}</span><input ref={picker} type="file" accept=".csv,.xlsx" disabled={busy} onClick={event=>{if(event.isTrusted)target.current=null;}} onChange={event=>{void choose(event.target.files?.[0]);}} /></label>
+      <label className="field"><span>{t('Test language')}</span><select value={language} disabled={busy||!!job} onChange={e=>setLanguage(e.target.value as TestLanguage)}>{(['uz','kaa'] as const).map(v=><option key={v} value={v}>{testLanguageLabel(v)}</option>)}</select></label><label className="field"><span>{t('Choose file')}</span><input ref={picker} type="file" accept=".csv,.xlsx" disabled={busy} onClick={event=>{if(event.isTrusted)target.current=null;}} onChange={event=>{void choose(event.target.files?.[0]);}} /></label>
       {parsing&&<p role="status">{t('Reading and checking the file…')}</p>}
       {parsed&&<>
         <p>{t('Valid rows')}: <strong>{parsed.rows.length}</strong> · {t('Duplicate rows')}: {parsed.duplicates}</p>
@@ -120,7 +122,7 @@ export default function ServerImport() {
     </section>
     <h2>{t('Import history')}</h2>
     {historyError&&<div role="alert"><p>{t('Could not load import history.')}</p><Button variant="secondary" onClick={()=>{void load();}}>{t('Try again')}</Button></div>}
-    {jobs.map(j=><article key={j.id} className="card learning-card import-history-item"><h3>{j.filename}</h3><Progress job={j} />
+    {jobs.map(j=><article key={j.id} className="card learning-card import-history-item"><h3>{j.filename}</h3><p>{testLanguageLabel(j.language??'uz')}</p><Progress job={j} />
       {['ready','committing'].includes(j.status)&&<Button disabled={busy} onClick={()=>{void perform(j);}}>{t('Resume import')}</Button>}
       {j.status==='uploading'&&<><p>{t('Select the same file to resume.')}</p><Button variant="secondary" icon="upload" disabled={busy} onClick={()=>{target.current=j;if(picker.current){picker.current.value='';picker.current.click();}}}>{t('Continue upload')}</Button></>}
       {j.status==='complete'&&<><span className="import-complete"><Icon name="checkCircle" size="s" />{t('Import complete')}</span><p>{t('Questions are ready for your collections.')}</p><div className="authoring-actions"><Button to={'/admin/builder?import='+j.id} icon="plus">{t('Create collection from these questions')}</Button><Button to="/admin/bank" variant="secondary" icon="forward">{t('Review imported questions')}</Button></div></>}

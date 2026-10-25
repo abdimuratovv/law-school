@@ -1,5 +1,9 @@
 import type { Language } from "./LanguageProvider";
 export const authoringCopy: Record<string, Record<Language, string>> = {
+ "Uzbek questions": {uz:"O‘zbekcha savollar",kaa:"Ózbekshe sorawlar",ru:"Вопросы на узбекском"},
+ "Karakalpak questions": {uz:"Qoraqalpoqcha savollar",kaa:"Qaraqalpaqsha sorawlar",ru:"Вопросы на каракалпакском"},
+ "Choose the same number of questions for each language. Students choose one language.": {uz:"Har ikki tilda bir xil miqdorda savol tanlang. O‘quvchi testni boshlashda bitta tilni tanlaydi.",kaa:"Hár eki tilde teń sanda soraw tańlań. Oqıwshı bir tildi tańlaydı.",ru:"Выберите одинаковое количество вопросов для каждого языка. Ученик выбирает один язык."},
+ "Both languages must have the same question count.": {uz:"Ikki tildagi savollar soni teng bo‘lishi kerak.",kaa:"Eki tildegi sorawlar sanı teń bolıwı kerek.",ru:"Количество вопросов на обоих языках должно совпадать."},
   "Local draft": {
     "uz": "Mahalliy qoralama",
     "kaa": "Jergilikli qaralama",

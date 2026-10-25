@@ -81,3 +81,11 @@ describe('bounded draft imports',()=>{
   expect(await env.DB.prepare('SELECT count(*) n FROM question_drafts').first('n')).toBe(0);
  });
 });
+
+it('keeps the selected import language on every created draft and blocks relabelling retries',async()=>{
+ const u=await account('teacher');const metadata={operationId:crypto.randomUUID(),filename:'kaa.csv',bytes:100,totalRows:1,fileHash:'b'.repeat(64),duplicatePolicy:'keep',language:'kaa'};
+ const response=await req(u,'',metadata);expect(response.status).toBe(201);const j=await response.json() as ImportJob;expect(j.language).toBe('kaa');
+ await upload(u,j,[{rowNumber:2,content}]);await req(u,'/'+j.id+'/validate',{cursor:1});expect((await req(u,'/'+j.id+'/commit',{cursor:1})).status).toBe(200);
+ expect(await env.DB.prepare('SELECT language FROM question_drafts').first('language')).toBe('kaa');
+ expect((await req(u,'',{...metadata,language:'uz'})).status).toBe(409);
+});

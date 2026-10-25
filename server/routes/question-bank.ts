@@ -36,7 +36,7 @@ export function questionBankRoutes(){
     const pageSize=20,page=Math.min(filter.page,Math.max(1,Math.ceil(total/pageSize)));
     // The import row is authoritative even when a stem has no leading number.
     // Keep batches together, newest first, then preserve the entire file's row order.
-    const rows=await c.env.DB.prepare(`SELECT d.id,d.revision,
+    const rows=await c.env.DB.prepare(`SELECT d.id,d.revision,d.language,
       json_extract(d.content,'$.stem') AS stem,json_extract(d.content,'$.kind') AS kind,
       json_extract(d.content,'$.topic') AS topic,${published} AS published,
       j.filename AS sourceName,r.row_number-1 AS sourceNumber

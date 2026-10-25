@@ -6,16 +6,25 @@ Har til o‘zining immutable savollar versiyasi va javob kalitidan foydalanadi. 
 
 Adminning to‘plam bo‘yicha va umumiy natijalar jadvallarida **Test tili** ustuni bor. Tekshirish oynasida ham til ko‘rsatiladi. Tarixiy o‘zbekcha urinishlar `uz` deb belgilanadi, savollar va baholar o‘zgartirilmaydi.
 
+## Admin oynasida e’lon qilish
+
+1. Import sahifasida **Test tili**ni tanlang, so‘ng shu tildagi CSV/XLSX faylni import qiling. Har faylda bitta til bo‘lsin. Tayyor importning tili keyin almashtirilmaydi.
+2. Bitta to‘plam yarating yoki mavjud to‘plamni tahrirlang. **O‘zbekcha savollar** bo‘limida 45 ta, **Qoraqalpoqcha savollar** bo‘limida 45 ta mos savolni tanlang. Har bo‘limning “Barchasini tanlash” tugmasi faqat o‘sha tilni tanlaydi.
+3. Bitta **To‘plamni e’lon qilish** tugmasini bosing. Natija 45 savolli bitta katalog kartasi va ikki til variantidir. Ikki tildagi savollar soni teng bo‘lishi shart; tarjima tanlanmasa faqat o‘zbekcha nashr yaratiladi.
+4. O‘quvchi to‘plamga kirganda til tanlaydi. Admin natijalarda tanlangan tilni ko‘radi.
+
+Oldingi aralash qoralama ochilganda aniq til metama’lumotlari orqali ajratiladi. O‘zgartirishni saqlash va qayta e’lon qilish kerak. Eski urinishlar eski nashrda saqlanadi; ular yangi 45 savolli nashrga ko‘chirilmaydi.
+
 ## Tuzilishi va deploy tartibi
 
-Avval `0010_collection_languages.sql` migratsiyasini, so‘ng yangi Worker/frontendni deploy qilish kerak. Readiness ushbu migratsiyani talab qiladi. Migratsiya:
+Avval `0010_collection_languages.sql` va `0011_authoring_languages.sql` migratsiyalarini, so‘ng yangi Worker/frontendni deploy qilish kerak. Readiness `0011` migratsiyasini talab qiladi. `0011` savol qoralamalari va importlarga til qo‘shadi; mavjud qoraqalpoqcha savollarni oldingi aniq til bog‘lanishidan aniqlaydi, matndan taxmin qilmaydi. Migratsiya:
 
 - `collection_languages` jadvalini yaratadi;
 - mavjud to‘plamlarning o‘zbekcha versiyasini qayd etadi;
 - urinishga `language` maydonini qo‘shadi;
 - boshlangan urinishning tilini yoki savollar versiyasini SQL UPDATE bilan ham almashtirishni taqiqlaydi.
 
-Yangi qoraqalpoqcha versiya `is_public=0` bo‘lgan e’lon qilingan test versiyasi sifatida saqlanadi. Alohida katalog kartasi yaratilmaydi. Admin/egasi uni `POST /api/v1/staff/collections/:id/languages` orqali `{language:"kaa",testVersionId:"UUID"}` bilan biriktirishi mumkin. Savol soni va test rejimi asosiy variant bilan teng bo‘lishi, versiyaga murojaat qilish huquqi mavjud bo‘lishi kerak. Reopen shu savollarni ishlatadigan yangi oynaga til variantlarini ham nusxalaydi. Savollar tarkibi o‘zgargan yangi nashrga tarjima o‘z-o‘zidan ko‘chirilmaydi.
+Yangi qoraqalpoqcha versiya `is_public=0` bo‘lgan e’lon qilingan test versiyasi sifatida saqlanadi. Alohida katalog kartasi yaratilmaydi. Admin/egasi uni `POST /api/v1/staff/collections/:id/languages` orqali `{language:"kaa",testVersionId:"UUID"}` bilan biriktirishi mumkin. Savol soni va test rejimi asosiy variant bilan teng bo‘lishi, versiyaga murojaat qilish huquqi mavjud bo‘lishi kerak. Reopen shu savollarni ishlatadigan yangi oynaga til variantlarini ham nusxalaydi. Admin muharriri ikkala til tanlovini qoralamada saqlaydi. Yangi nashrda ikkala til serverda tekshiriladi va katalog yozuvi bilan bir tranzaksiyada biriktiriladi; keyingina oldingi to‘plam arxivlanadi.
 
 O‘quvchi `POST /api/v1/exams/:id/start` da `language` yuboradi. Eski frontend bilan moslik uchun maydon berilmasa mavjud urinish tili yoki `uz` ishlatiladi. `GET /exams/:id` `languages` va `attemptLanguage` beradi; urinish va admin natijalari `language` qaytaradi. Savol matnlari va kalitlari katalog metama’lumotlariga kiritilmaydi.
 
@@ -35,8 +44,8 @@ python -X utf8 scripts/convert-karakalpak-mock.py --source "DOCX_PATH" --keys ".
 
 ## Tekshiruv
 
-- 185 avtomatik Worker/D1 test o‘tdi, shu jumladan parallel til tanlash, variantga ruxsat, boshqa tilga o‘tishni rad etish, baholash, tarixiy moslik va reopen.
-- `python -X utf8 scripts/verify-exam-ui.py`: 23 haqiqiy lokal brauzer tekshiruvi o‘tdi. Til tanlash, interfeys tilidan mustaqillik, resume, saqlash va admin ustuni tekshirildi.
+- 189 avtomatik Worker/D1 test o‘tdi, shu jumladan parallel til tanlash, variantga ruxsat, boshqa tilga o‘tishni rad etish, baholash, tarixiy moslik va reopen.
+- `python -X utf8 scripts/verify-exam-ui.py`: 32 haqiqiy lokal brauzer tekshiruvi o‘tdi. Import tili, adminning alohida tanlovlari, teng bo‘lmagan sonni rad etish, bitta ikki tilli nashr, faqat tarjima o‘zgartirilganda saqlash, o‘quvchi til tanlovi va admin natijalari tekshirildi.
 - 45 savolli haqiqiy CSV import parseridan xatosiz, ogohlantirishsiz va dublikatsiz o‘tdi.
 - Tayyor SQL lokal bazada ikki marta bajarilib, aynan 45 savol va bitta til bog‘lanishi saqlanishi tekshirildi.
 - TypeScript, production build, Worker dry-run, maxfiy kalitlarning browser bundle’iga chiqmasligi va npm audit tekshirildi.

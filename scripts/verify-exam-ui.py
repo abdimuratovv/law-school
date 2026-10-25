@@ -254,6 +254,59 @@ with tempfile.TemporaryDirectory(prefix='hm-exam-e2e-') as folder:
                 expect(admin_page.get_by_text('Test tili: Qaraqalpaqsha', exact=True)).to_be_visible()
                 check('admin grading view also identifies question language', True)
                 check('bilingual browser flow has no uncaught errors', not errors)
+                # Exercise authoring through the real UI, not only the variant-attachment API.
+                headers = {'Origin': BASE, 'X-CSRF-Token': admin_csrf}
+                for code in ['uz', 'kaa']:
+                    metadata = {'operationId': str(uuid.uuid4()), 'filename': code + '-authoring.csv', 'bytes': 100,
+                        'totalRows': 2, 'fileHash': hashlib.sha256(('authoring-' + code).encode()).hexdigest(), 'duplicatePolicy': 'keep', 'language': code}
+                    created = admin_context.request.post(BASE + '/api/v1/staff/imports', headers=headers, data=metadata)
+                    check(code + ' import accepts explicit language', created.status == 201)
+                    job_id = created.json()['id']
+                    rows = [{'rowNumber': i + 2, 'content': {'kind': 'written', 'topic': 'theory', 'stem': code + ' authoring ' + str(i),
+                        'options': [{'id': key, 'text': ''} for key in ['a','b','c','d']], 'correctOptionId': None,
+                        'accepted': ['fixture'], 'explanation': ''}} for i in range(2)]
+                    for suffix, body in [('rows', {'rows': rows}), ('validate', {'cursor': 1}), ('commit', {'cursor': 1})]:
+                        r = admin_context.request.post(BASE + '/api/v1/staff/imports/' + job_id + '/' + suffix, headers=headers, data=body)
+                        assert r.status == 200, r.text()
+                admin_page.goto(BASE + '/admin/builder')
+                uz_picker = admin_page.get_by_role('region', name='O‘zbekcha savollar', exact=True)
+                kaa_picker = admin_page.get_by_role('region', name='Qoraqalpoqcha savollar', exact=True)
+                expect(uz_picker.get_by_role('checkbox')).to_have_count(2)
+                expect(kaa_picker.get_by_role('checkbox')).to_have_count(2)
+                uz_picker.get_by_role('button', name='Barchasini tanlash (2)', exact=True).click()
+                kaa_picker.get_by_role('checkbox').first.click()
+                admin_page.get_by_label('To‘plam nomi', exact=True).fill('UI bilingual publication')
+                publish_button = admin_page.get_by_role('button', name='To‘plamni e’lon qilish', exact=True)
+                expect(publish_button).to_be_disabled()
+                check('authoring blocks unequal language counts', True)
+                kaa_picker.get_by_role('checkbox').last.click()
+                with admin_page.expect_response(lambda r: r.url.endswith('/api/v1/staff/collections') and r.request.method == 'POST') as publication:
+                    publish_button.click()
+                response = publication.value
+                check('admin UI publishes both language groups as one collection', response.status == 201)
+                published_id = response.json()['id']
+                detail = api.get(BASE + '/api/v1/exams/c_' + published_id).json()
+                check('published catalog reports two questions instead of four', detail['questionCount'] == 2)
+                language_page.goto(BASE + '/tests/c_' + published_id)
+                expect(language_page.get_by_role('radio', name='O‘zbekcha', exact=True)).to_be_visible()
+                expect(language_page.get_by_role('radio', name='Qaraqalpaqsha', exact=True)).to_be_visible()
+                check('UI-authored bilingual collection offers learner language choice', True)
+                catalog = admin_context.request.get(BASE + '/api/v1/staff/collections').json()['items']
+                authored_draft = next(item['draftId'] for item in catalog if item['id'] == published_id)
+                admin_page.goto(BASE + '/admin/builder?draft=' + authored_draft)
+                expect(kaa_picker.get_by_role('checkbox').last).to_be_checked()
+                kaa_picker.get_by_role('checkbox').last.uncheck()
+                with admin_page.expect_response(lambda r: r.url.endswith('/staff/tests/' + authored_draft) and r.request.method == 'PATCH') as saved_translation:
+                    admin_page.locator('.collection-save button').first.click()
+                check('changing only translated selection persists a new draft revision', saved_translation.value.status == 200 and len(saved_translation.value.json()['content']['translations']['kaa']['questionDraftIds']) == 1)
+                admin_page.reload()
+                expect(kaa_picker.get_by_role('checkbox').first).to_be_checked()
+                expect(kaa_picker.get_by_role('checkbox').last).not_to_be_checked()
+                check('reopening draft retains independent language selections', True)
+                admin_page.goto(BASE + '/admin/import')
+                expect(admin_page.locator('select')).to_be_visible()
+                admin_page.locator('select').select_option('kaa')
+                check('import UI exposes an explicit question-language choice', admin_page.locator('select').input_value() == 'kaa')
                 browser.close()
         finally:
             if os.name == 'nt':
