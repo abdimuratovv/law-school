@@ -54,6 +54,7 @@ Automated Worker tests do not need external credentials. Actual Google sign-in r
 | `npm run preview` | Preview the production build locally |
 | `npm audit` | Check dependencies against npm security advisories |
 | `npm test` | Run Worker-runtime and D1 integration tests |
+| `npm run test:load -- autosave-background` | Run isolated local 100/200-user exam load profiles and save metrics |
 | `npm run db:migrate:local` | Apply schema migrations to local D1 |
 | `npm run dev:worker` | Serve built frontend and API together on port 8787 |
 | `npm run build:worker` | Bundle the Worker as a local dry run; no upload |
@@ -107,6 +108,7 @@ The shared design reference is available at `/design`.
 - Teacher authoring, groups, assignment overview and review use actual records. CSV/XLSX draft import, saved questions, mistakes and bounded progress/assignment analytics also use actual authorized records; see [imports and reports](docs/IMPORTS-AND-REPORTS.md). See [teacher setup and API](docs/TEACHING-API.md).
 - A fresh database contains no exam bank. An optional synthetic local exercise is documented in [EXAM-API.md](docs/EXAM-API.md); real legal content must be reviewed and published before use.
 - Real Google acceptance needs owner-configured OAuth credentials. Hosted 200-user capacity, quota headroom and production deployment remain stage 6 release gates.
+- Autosave now sends answer changes and receives a compact acknowledgement without rereading question content; legacy snapshot saves remain supported. The minute cron batches up to 25 expired attempts within the Free D1 invocation budget. See the [Uzbek optimization report](docs/load-test/2026-10-25-autosave-background.md) and [earlier load measurements](docs/load-test/2026-10-25-hisobot.md). Local results do not establish hosted capacity.
 - For local browser tests and recovery semantics, see the [exam API guide](docs/EXAM-API.md).
 
 ## Deployment

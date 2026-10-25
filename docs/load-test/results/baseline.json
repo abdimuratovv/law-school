@@ -1,0 +1,214 @@
+{
+  "generatedAt": "2026-10-25T07:19:22.270Z",
+  "node": "v22.12.0",
+  "runtime": "Local workerd + D1; in-process Hono requests; no external HTTP network or hosted CPU enforcement",
+  "exitCode": 0,
+  "results": [
+    {
+      "users": 100,
+      "questions": 100,
+      "savesPerUser": 4,
+      "pacing": "Accelerated: no think time; independent users, synchronized start",
+      "peakInFlight": 100,
+      "completed": 100,
+      "requests": 1100,
+      "errors": [],
+      "elapsedMs": 28290,
+      "requestsPerSecond": 38.88299752562743,
+      "reports": 100,
+      "phases": {
+        "catalog": {
+          "requests": 100,
+          "p50Ms": 856,
+          "p95Ms": 865,
+          "p99Ms": 866,
+          "callsPerRequest": 3,
+          "statementsPerRequest": 3,
+          "rowsRead": 800,
+          "rowsWritten": 0,
+          "responseBytes": 20100
+        },
+        "start": {
+          "requests": 100,
+          "p50Ms": 4295,
+          "p95Ms": 4345,
+          "p99Ms": 4347,
+          "callsPerRequest": 13,
+          "statementsPerRequest": 13,
+          "rowsRead": 61400,
+          "rowsWritten": 1500,
+          "responseBytes": 1840800
+        },
+        "save": {
+          "requests": 400,
+          "p50Ms": 3044,
+          "p95Ms": 3489,
+          "p99Ms": 3492,
+          "callsPerRequest": 8,
+          "statementsPerRequest": 8,
+          "rowsRead": 243600,
+          "rowsWritten": 1200,
+          "responseBytes": 7791500
+        },
+        "save-retry": {
+          "requests": 100,
+          "p50Ms": 2311,
+          "p95Ms": 2324,
+          "p99Ms": 2325,
+          "callsPerRequest": 6,
+          "statementsPerRequest": 6,
+          "rowsRead": 30600,
+          "rowsWritten": 0,
+          "responseBytes": 1926900
+        },
+        "reconnect": {
+          "requests": 100,
+          "p50Ms": 2051,
+          "p95Ms": 2094,
+          "p99Ms": 2095,
+          "callsPerRequest": 5,
+          "statementsPerRequest": 5,
+          "rowsRead": 30500,
+          "rowsWritten": 0,
+          "responseBytes": 1926900
+        },
+        "submit": {
+          "requests": 100,
+          "p50Ms": 3136,
+          "p95Ms": 3142,
+          "p99Ms": 3142,
+          "callsPerRequest": 14,
+          "statementsPerRequest": 15,
+          "rowsRead": 91500,
+          "rowsWritten": 800,
+          "responseBytes": 2024000
+        },
+        "submit-retry": {
+          "requests": 100,
+          "p50Ms": 1360,
+          "p95Ms": 1362,
+          "p99Ms": 1362,
+          "callsPerRequest": 7,
+          "statementsPerRequest": 7,
+          "rowsRead": 30600,
+          "rowsWritten": 0,
+          "responseBytes": 2024000
+        },
+        "result": {
+          "requests": 100,
+          "p50Ms": 1329,
+          "p95Ms": 1336,
+          "p99Ms": 1337,
+          "callsPerRequest": 6,
+          "statementsPerRequest": 6,
+          "rowsRead": 30500,
+          "rowsWritten": 0,
+          "responseBytes": 2024000
+        }
+      }
+    },
+    {
+      "users": 200,
+      "questions": 100,
+      "savesPerUser": 4,
+      "pacing": "Accelerated: no think time; independent users, synchronized start",
+      "peakInFlight": 200,
+      "completed": 200,
+      "requests": 2200,
+      "errors": [],
+      "elapsedMs": 50499,
+      "requestsPerSecond": 43.56521911324977,
+      "reports": 200,
+      "phases": {
+        "catalog": {
+          "requests": 200,
+          "p50Ms": 1070,
+          "p95Ms": 1075,
+          "p99Ms": 1076,
+          "callsPerRequest": 3,
+          "statementsPerRequest": 3,
+          "rowsRead": 1600,
+          "rowsWritten": 0,
+          "responseBytes": 40200
+        },
+        "start": {
+          "requests": 200,
+          "p50Ms": 5284,
+          "p95Ms": 5305,
+          "p99Ms": 5306,
+          "callsPerRequest": 13,
+          "statementsPerRequest": 13,
+          "rowsRead": 122800,
+          "rowsWritten": 3000,
+          "responseBytes": 3681600
+        },
+        "save": {
+          "requests": 800,
+          "p50Ms": 3634,
+          "p95Ms": 6264,
+          "p99Ms": 6281,
+          "callsPerRequest": 8,
+          "statementsPerRequest": 8,
+          "rowsRead": 487200,
+          "rowsWritten": 2400,
+          "responseBytes": 15583000
+        },
+        "save-retry": {
+          "requests": 200,
+          "p50Ms": 2739,
+          "p95Ms": 2744,
+          "p99Ms": 2744,
+          "callsPerRequest": 6,
+          "statementsPerRequest": 6,
+          "rowsRead": 61200,
+          "rowsWritten": 0,
+          "responseBytes": 3853800
+        },
+        "reconnect": {
+          "requests": 200,
+          "p50Ms": 2093,
+          "p95Ms": 2096,
+          "p99Ms": 2096,
+          "callsPerRequest": 5,
+          "statementsPerRequest": 5,
+          "rowsRead": 61000,
+          "rowsWritten": 0,
+          "responseBytes": 3853800
+        },
+        "submit": {
+          "requests": 200,
+          "p50Ms": 12155,
+          "p95Ms": 12181,
+          "p99Ms": 12184,
+          "callsPerRequest": 14,
+          "statementsPerRequest": 15,
+          "rowsRead": 183000,
+          "rowsWritten": 1600,
+          "responseBytes": 4048000
+        },
+        "submit-retry": {
+          "requests": 200,
+          "p50Ms": 5946,
+          "p95Ms": 5956,
+          "p99Ms": 5957,
+          "callsPerRequest": 7,
+          "statementsPerRequest": 7,
+          "rowsRead": 61200,
+          "rowsWritten": 0,
+          "responseBytes": 4048000
+        },
+        "result": {
+          "requests": 200,
+          "p50Ms": 3455,
+          "p95Ms": 3494,
+          "p99Ms": 3499,
+          "callsPerRequest": 6,
+          "statementsPerRequest": 6,
+          "rowsRead": 61000,
+          "rowsWritten": 0,
+          "responseBytes": 4048000
+        }
+      }
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { attemptSchema, type ServerAttempt, type Snapshot } from '../../shared/contracts/exams';
+import { type ServerAttempt, type Snapshot } from '../../shared/contracts/exams';
 import { useAuth } from './AuthState';
 import { ExamError, examRequest, fetchAttempt } from '@/lib/examApi';
 import { deleteDraft, draftKey, readDraft, writeDraft, type Draft } from '@/lib/examDrafts';
+import { pendingSave, resolveSaveResponse } from '@/lib/attemptSync';
 
 export function useServerAttempt(id: string) {
   const { user, csrfToken } = useAuth();
@@ -47,12 +48,14 @@ export function useServerAttempt(id: string) {
     current.sending = true; setBusy(true);
     const epoch = current.epoch;
     try {
-      const pending = current.draft.pending ?? { action, body: { ...current.draft.snapshot, revision:current.draft.revision, operationId:crypto.randomUUID(), ...(questionId ? { questionId } : {}) } };
+      const pending = current.draft.pending ?? (action === 'save' ? pendingSave(current.server, current.draft) : { action, body: { ...current.draft.snapshot, revision:current.draft.revision, operationId:crypto.randomUUID(), ...(questionId ? { questionId } : {}) } });
       current.draft = { ...current.draft, pending };
       await writeDraft(current.draft).catch(() => {});
-      const server = attemptSchema.parse(await examRequest('/attempts/' + id + '/' + pending.action, credentials.current, pending.body));
+      const endpoint = pending.action === 'save' && 'deletedAnswerIds' in pending.body ? 'save-changes' : pending.action;
+      const raw = await examRequest('/attempts/' + id + '/' + endpoint, credentials.current, pending.body);
+      const server = await resolveSaveResponse(raw, current.server, pending, () => fetchAttempt(id));
       if (epoch !== state.current.epoch) return;
-      const changedDuringRequest = JSON.stringify(current.draft.snapshot) !== JSON.stringify({ answers:pending.body.answers, flags:pending.body.flags, ...(pending.body.currentQuestionId ? { currentQuestionId:pending.body.currentQuestionId } : {}) });
+      const changedDuringRequest = JSON.stringify(current.draft.snapshot) !== JSON.stringify(pending.snapshot ?? { answers:pending.body.answers, flags:pending.body.flags, ...(pending.body.currentQuestionId ? { currentQuestionId:pending.body.currentQuestionId } : {}) });
       // A replay may return a newer tab's state. Never rebase additional local
       // edits onto a revision this operation did not create.
       if (changedDuringRequest && server.state === 'active' && server.revision !== pending.body.revision + 1) {

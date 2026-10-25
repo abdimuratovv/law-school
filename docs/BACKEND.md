@@ -85,6 +85,8 @@ npm audit
 
 These checks do not measure hosted CPU quotas, network latency or 200-user capacity. Those remain stage 6 release gates.
 
+The isolated local 100/200-user exam profiles can now be run with `npm run test:load -- autosave-background`. They exercise the frontend's partial-answer save/compact acknowledgement protocol, real session/CSRF handling and local D1, measure binding calls and row usage, and verify save/reconnect/submit correctness. See the [Uzbek optimization report](load-test/2026-10-25-autosave-background.md) and [earlier Free-tier findings](load-test/2026-10-25-hisobot.md). The full regression suite also checks the combined cron D1 budget, draining 200 expired attempts in eight runs, and autosave write amplification. Hosted acceptance remains separate.
+
 Foundation verification on October 22, 2026: all three TypeScript configurations and the frontend build passed; 36 Worker/D1 tests passed; both migrations applied locally; a clean `npm ci` succeeded and npm audit reported zero vulnerabilities. Five HTTP checks through a running local Worker confirmed health/readiness JSON, JSON 404s for two unknown API navigation requests, and the nested-route SPA fallback. The Worker dry-run bundle is approximately 60 KiB (16 KiB gzip). The existing frontend bundle-size warning remains; it is not a backend capacity result.
 
 ## Environment separation

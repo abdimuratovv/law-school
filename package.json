@@ -21,6 +21,7 @@
     "typecheck:tests": "tsc --noEmit -p tsconfig.tests.json",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:load": "node scripts/load-exams.mjs",
     "dev:worker": "wrangler dev --local",
     "db:migrate:local": "wrangler d1 migrations apply DB --local",
     "build:worker": "wrangler deploy --dry-run --outdir .worker-build",

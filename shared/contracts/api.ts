@@ -46,3 +46,8 @@ export const saveAnswersSchema = z.strictObject({
   currentQuestionId: idSchema.optional(),
 });
 export type SaveAnswersRequest = z.infer<typeof saveAnswersSchema>;
+// Answers contains only replacements; deletion is explicit so empty text remains valid.
+export const saveAnswerChangesSchema = saveAnswersSchema.extend({
+  deletedAnswerIds: z.array(idSchema).max(MAX_TEST_QUESTIONS),
+});
+export type SaveAnswerChangesRequest = z.infer<typeof saveAnswerChangesSchema>;

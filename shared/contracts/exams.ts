@@ -33,3 +33,7 @@ export const attemptSchema = z.object({
   result: z.object({ units: z.number(), maxUnits: z.number(), pending: z.number(), final: z.boolean(), algorithm: z.string() }).nullable(),
 });
 export type ServerAttempt = z.infer<typeof attemptSchema>;
+export const saveAcknowledgementSchema = attemptSchema.pick({
+  id: true, state: true, revision: true, savedAt: true, serverNow: true,
+});
+export type SaveAcknowledgement = z.infer<typeof saveAcknowledgementSchema>;

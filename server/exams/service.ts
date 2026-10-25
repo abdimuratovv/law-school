@@ -1,5 +1,5 @@
 import { privateQuestionSchema, type PrivateQuestion, type ServerAttempt, type Snapshot } from '../../shared/contracts/exams';
-import type { SaveAnswersRequest } from '../../shared/contracts/api';
+import type { SaveAnswersRequest, SaveAnswerChangesRequest } from '../../shared/contracts/api';
 import { studentQuestionSchema, type StudentQuestion } from '../../shared/contracts/questions';
 import { ApiError } from '../http/errors';
 import { ALGORITHM, grade, withOverride } from './grading';
@@ -15,7 +15,15 @@ export interface AttemptRow {
 }
 export const missing = () => new ApiError(404, 'NOT_FOUND', 'This test or attempt is unavailable.');
 export const conflict = () => new ApiError(409, 'CONFLICT', 'The attempt changed. Reload the server version before continuing.');
-export async function questions(db: D1Database, ids: string[]): Promise<PrivateQuestion[]> {
+// Owned by one request only: no isolate-wide cache of user state or content.
+export type ExamContent = Map<string, Promise<PrivateQuestion[]>>;
+export async function questions(db: D1Database, ids: string[], content?: ExamContent): Promise<PrivateQuestion[]> {
+  if (content) {
+    const key = JSON.stringify(ids);
+    let pending = content.get(key);
+    if (!pending) { pending = questions(db, ids); content.set(key, pending); }
+    return pending;
+  }
   if (ids.length < 1 || ids.length > 100 || new Set(ids).size !== ids.length) throw new Error('Invalid published test');
   const rows = await db.prepare('SELECT id, payload FROM question_versions WHERE id IN (SELECT value FROM json_each(?))').bind(JSON.stringify(ids)).all<{ id: string; payload: string }>();
   const map = new Map(rows.results.map(row => [row.id, privateQuestionSchema.parse(JSON.parse(row.payload))]));
@@ -26,36 +34,51 @@ export async function owned(db: D1Database, id: string, user: string): Promise<A
   if (!row) throw missing();
   return row;
 }
-export async function settleOwned(db: D1Database, row: AttemptRow): Promise<AttemptRow> {
+export async function settleOwned(db: D1Database, row: AttemptRow, content?: ExamContent): Promise<AttemptRow> {
   if (row.state === 'submitted' || (row.state === 'active' && row.ends_at !== null && row.ends_at <= Date.now())) {
-    await finalize(db,row.id);
+    await finalize(db,row.id,content);
     return owned(db,row.id,row.user_id);
   }
   return row;
 }
-export async function finalize(db: D1Database, id: string): Promise<void> {
+export async function finalize(db: D1Database, id: string, content?: ExamContent): Promise<void> {
   await db.prepare(`UPDATE attempts SET state = 'submitted', submitted_at = ends_at
     WHERE id = ? AND state = 'active' AND ends_at IS NOT NULL AND ends_at <= ${SQL_NOW}`).bind(id).run();
   const row = await db.prepare("SELECT * FROM attempts WHERE id = ? AND state = 'submitted'").bind(id).first<AttemptRow>();
   if (!row) return;
   const order = JSON.parse(row.question_order) as { id: string; options?: string[] }[];
-  const bank = await questions(db, order.map(q => q.id));
+  const bank = await questions(db, order.map(q => q.id), content);
+  await db.batch(finalizationStatements(db, row, bank));
+}
+
+function finalizationStatements(db: D1Database, row: AttemptRow, bank: PrivateQuestion[], includeExpired = false) {
   const snapshot = JSON.parse(row.snapshot) as Snapshot;
   const grades = bank.map(q => ({ id: q.question.id, ...grade(q, snapshot.answers[q.question.id]) }));
   const pending = grades.filter(g => g.units === null).length;
   const result = { units: grades.reduce((sum, g) => sum + (g.units ?? 0), 0), maxUnits: bank.length * 2, pending, final: pending === 0, algorithm: ALGORITHM };
-  await db.batch([db.prepare("UPDATE attempts SET state = 'final', result = ? WHERE id = ? AND state = 'submitted' AND revision = ?")
-    .bind(JSON.stringify(result), row.id, row.revision),reportStatement(db,row.id,result,reportOutcomes(bank,grades))]);
+  return [db.prepare(`UPDATE attempts SET state = 'final', result = ?,
+    submitted_at = CASE WHEN state = 'active' THEN ends_at ELSE submitted_at END
+    WHERE id = ? AND (state = 'submitted' ${includeExpired ? `OR (state = 'active' AND ends_at <= ${SQL_NOW})` : ''}) AND revision = ?`)
+    .bind(JSON.stringify(result), row.id, row.revision),reportStatement(db,row.id,result,reportOutcomes(bank,grades))];
 }
 export async function sweepExpired(db: D1Database, limit = 25) {
-  const rows = await db.prepare(`SELECT id FROM attempts WHERE (state = 'active' AND ends_at <= ${SQL_NOW}) OR state = 'submitted' LIMIT ?`).bind(Math.min(25, Math.max(1, limit))).all<{ id: string }>();
-  for (const row of rows.results) await finalize(db, row.id);
+  // One read + at most 25 distinct banks + one atomic batch = 27 calls.
+  // With cleanup (1) and backfill (11), the whole cron stays below 50.
+  const rows = await db.prepare(`SELECT * FROM attempts WHERE (state = 'active' AND ends_at <= ${SQL_NOW}) OR state = 'submitted'
+    ORDER BY coalesce(ends_at, submitted_at, started_at), id LIMIT ?`)
+    .bind(Math.min(25, Math.max(1, limit))).all<AttemptRow>();
+  const content: ExamContent = new Map(); const statements: D1PreparedStatement[] = [];
+  for (const row of rows.results) {
+    const ids = (JSON.parse(row.question_order) as { id: string }[]).map(q => q.id);
+    statements.push(...finalizationStatements(db, row, await questions(db, ids, content), true));
+  }
+  if (statements.length) await db.batch(statements);
 }
-export async function view(db: D1Database, row: AttemptRow): Promise<ServerAttempt> {
+export async function view(db: D1Database, row: AttemptRow, content?: ExamContent): Promise<ServerAttempt> {
   const test = await db.prepare('SELECT * FROM test_versions WHERE id = ?').bind(row.test_version_id).first<TestRow>();
   if (!test) throw missing();
   const order = JSON.parse(row.question_order) as { id: string; options?: string[] }[];
-  const bank = await questions(db, order.map(q => q.id));
+  const bank = await questions(db, order.map(q => q.id), content);
   const checked: string[] = JSON.parse(row.checked); const snapshot: Snapshot = JSON.parse(row.snapshot);
   const assignment = row.assignment_id ? await db.prepare('SELECT closes_at FROM assignments WHERE id = ?').bind(row.assignment_id).first<{ closes_at: number }>() : row.collection_id ? await db.prepare('SELECT closes_at FROM test_collections WHERE id=?').bind(row.collection_id).first<{closes_at:number|null}>() : null;
   const result = row.result ? JSON.parse(row.result) as ServerAttempt['result'] : null;
@@ -91,40 +114,49 @@ export function shuffled<T>(values: readonly T[]): T[] {
   }
   return list;
 }
-export async function mutate(db: D1Database, row: AttemptRow, user: string, body: SaveAnswersRequest, action: 'save' | 'submit' | 'check', questionId?: string) {
+export async function mutate(db: D1Database, row: AttemptRow, user: string, body: SaveAnswersRequest | SaveAnswerChangesRequest, action: 'save' | 'submit' | 'check', questionId?: string, content?: ExamContent) {
   const digest = await hash(JSON.stringify({ action, ...body, questionId }));
   const receipts: { id: string; digest: string }[] = JSON.parse(row.receipts);
   const receipt = receipts.find(r => r.id === body.operationId);
   if (receipt) { if (receipt.digest !== digest) throw conflict(); return; }
   if (row.state !== 'active') { if (action === 'save' || action === 'check') throw conflict(); return; }
   if (body.revision !== row.revision) throw conflict();
-  const order = JSON.parse(row.question_order) as { id: string }[];
-  const bank = await questions(db, order.map(q => q.id)); const ids = new Set(order.map(q => q.id));
-  if (Object.keys(body.answers).some(id => !ids.has(id)) || body.flags.some(id => !ids.has(id)) || (body.currentQuestionId && !ids.has(body.currentQuestionId)))
+  // This immutable, server-created order already holds every valid choice ID.
+  // Validation needs no question text, grading keys or question_versions reads.
+  const order = JSON.parse(row.question_order) as { id: string; options?: string[] }[];
+  const ids = new Set(order.map(q => q.id));
+  const deleted = 'deletedAnswerIds' in body ? body.deletedAnswerIds : [];
+  if (Object.keys(body.answers).some(id => !ids.has(id)) || deleted.some(id => !ids.has(id) || Object.hasOwn(body.answers, id)) || body.flags.some(id => !ids.has(id)) || (body.currentQuestionId && !ids.has(body.currentQuestionId)))
     throw new ApiError(422, 'VALIDATION_ERROR', 'Unknown question in answer snapshot.');
-  for (const item of bank) {
-    const answer = body.answers[item.question.id];
-    if (answer && item.question.kind === 'single' && !item.question.options.some(o => o.id === answer))
+  const previous: Snapshot = JSON.parse(row.snapshot);
+  const answers = 'deletedAnswerIds' in body ? { ...previous.answers, ...body.answers } : body.answers;
+  for (const id of deleted) delete answers[id];
+  for (const item of order) {
+    const answer = answers[item.id];
+    if (answer && item.options && !item.options.includes(answer))
       throw new ApiError(422, 'VALIDATION_ERROR', 'Unknown answer option.');
   }
-  const checked: string[] = JSON.parse(row.checked); const previous: Snapshot = JSON.parse(row.snapshot);
-  if (checked.some(id => (previous.answers[id] ?? '') !== (body.answers[id] ?? ''))) throw conflict();
+  const checked: string[] = JSON.parse(row.checked);
+  if (checked.some(id => (previous.answers[id] ?? '') !== (answers[id] ?? ''))) throw conflict();
   if (action === 'check') {
     const test = await db.prepare('SELECT mode FROM test_versions WHERE id = ?').bind(row.test_version_id).first<{ mode: string }>();
     if (row.assignment_id || row.collection_id || test?.mode !== 'practice') throw new ApiError(403, 'FORBIDDEN', 'Answer checking is unavailable for this test.');
-    if (!questionId || !ids.has(questionId) || !body.answers[questionId]?.trim()) throw new ApiError(422, 'VALIDATION_ERROR', 'Choose an answer before checking.');
+    if (!questionId || !ids.has(questionId) || !answers[questionId]?.trim()) throw new ApiError(422, 'VALIDATION_ERROR', 'Choose an answer before checking.');
     if (!checked.includes(questionId)) checked.push(questionId);
   }
-  const snapshot: Snapshot = { answers: body.answers, flags: [...new Set(body.flags)], ...(body.currentQuestionId ? { currentQuestionId: body.currentQuestionId } : {}) };
+  const snapshot: Snapshot = { answers, flags: [...new Set(body.flags)], ...(body.currentQuestionId ? { currentQuestionId: body.currentQuestionId } : {}) };
+  // Naming state in an UPDATE rewrites its partial indexes even when the value
+  // stays 'active'. Autosaves must not spend three billed writes instead of one.
+  const submission = action === 'submit' ? `, state = 'submitted', submitted_at = ${SQL_NOW}` : '';
   const changed = await db.prepare(`UPDATE attempts SET snapshot = ?, checked = ?, receipts = ?, revision = revision + 1,
-    saved_at = ${SQL_NOW}, state = ?, submitted_at = CASE WHEN ? = 'submit' THEN ${SQL_NOW} ELSE submitted_at END
+    saved_at = ${SQL_NOW}${submission}
     WHERE id = ? AND user_id = ? AND revision = ? AND state = 'active' AND (ends_at IS NULL OR ends_at > ${SQL_NOW})
     AND EXISTS(SELECT 1 FROM users WHERE id = ? AND status = 'active')
     AND (assignment_id IS NULL OR EXISTS(SELECT 1 FROM group_memberships m JOIN assignments a ON a.group_id = m.group_id WHERE a.id = attempts.assignment_id AND m.student_id = ?))`)
     .bind(JSON.stringify(snapshot), JSON.stringify(checked), JSON.stringify([...receipts, { id: body.operationId, digest }].slice(-16)),
-      action === 'submit' ? 'submitted' : 'active', action, row.id, user, body.revision, user, user).run();
+      row.id, user, body.revision, user, user).run();
   if (!changed.meta.changes) {
-    await finalize(db, row.id);
+    await finalize(db, row.id, content);
     const latest = await owned(db, row.id, user);
     const known = (JSON.parse(latest.receipts) as { id: string; digest: string }[]).find(r => r.id === body.operationId);
     if (known?.digest === digest || (action === 'submit' && latest.state !== 'active')) return;

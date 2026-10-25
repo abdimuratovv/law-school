@@ -10,7 +10,8 @@ export default defineConfig(async () => ({
     },
   })],
   test: {
-    include: ['server/**/*.test.ts'],
+    reporters: process.env.EXAM_LOAD_TEST ? ['default', './scripts/load-reporter.mjs'] : ['default'],
+    include: process.env.EXAM_LOAD_TEST ? ['server/tests/exam.load.ts'] : ['server/**/*.test.ts'],
     setupFiles: ['./server/tests/setup.ts'],
     fileParallelism: false,
   },

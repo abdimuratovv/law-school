@@ -5,8 +5,10 @@ import { reportOutcomes } from './reporting';
 
 /** Bounded migration work, independent of autosaves. Conditional writes cannot overwrite a newer review. */
 export async function backfillReports(db:D1Database){
+ // Maximum 11 binding calls, sharing the cron's 50-call budget with sweepExpired.
+ const limit=2;
  const state=await db.prepare('SELECT cursor,done FROM report_backfill WHERE singleton=1').first<{cursor:string;done:number}>();if(!state||state.done)return;
- const rows=await db.prepare('SELECT * FROM attempts WHERE id>? ORDER BY id LIMIT 10').bind(state.cursor).all<AttemptRow&{submitted_at:number;grade_revision:number}>();
+ const rows=await db.prepare('SELECT * FROM attempts WHERE id>? ORDER BY id LIMIT ?').bind(state.cursor,limit).all<AttemptRow&{submitted_at:number;grade_revision:number}>();
  for(const a of rows.results){
   if(a.state!=='final'||!a.result)continue;
   if(await db.prepare('SELECT attempt_id FROM attempt_reports WHERE attempt_id=?').bind(a.id).first())continue;
@@ -17,5 +19,5 @@ export async function backfillReports(db:D1Database){
   await db.prepare(`INSERT OR IGNORE INTO attempt_reports SELECT id,user_id,assignment_id,submitted_at,grade_revision,?,?,?,?,? FROM attempts WHERE id=? AND state='final' AND grade_revision=?`)
    .bind(result.units,result.maxUnits,result.pending,JSON.stringify(outcomes),result.algorithm,a.id,a.grade_revision).run();
  }
- await db.prepare('UPDATE report_backfill SET cursor=?,done=? WHERE singleton=1 AND cursor=?').bind(rows.results.at(-1)?.id??state.cursor,rows.results.length<10?1:0,state.cursor).run();
+ await db.prepare('UPDATE report_backfill SET cursor=?,done=? WHERE singleton=1 AND cursor=?').bind(rows.results.at(-1)?.id??state.cursor,rows.results.length<limit?1:0,state.cursor).run();
 }

@@ -3,9 +3,9 @@ import { z } from 'zod';
 import type { ApiEnv } from '../env';
 import { requireAuthentication, requireCsrf, limitMutation } from '../auth/session';
 import { readJson, validate } from '../http/validation';
-import { saveAnswersSchema } from '../../shared/contracts/api';
+import { saveAnswersSchema, saveAnswerChangesSchema } from '../../shared/contracts/api';
 import { checkSchema, startSchema } from '../../shared/contracts/exams';
-import { missing, mutate, owned, questions, settleOwned, shuffled, SQL_NOW, view, type TestRow } from '../exams/service';
+import { missing, mutate, owned, questions, settleOwned, shuffled, SQL_NOW, view, type TestRow, type ExamContent } from '../exams/service';
 
 const eligible = `SELECT 'c_' || c.id AS exam_id,t.*,c.opens_at,c.closes_at,NULL AS assignment_id,c.id AS collection_id
   FROM test_collections c JOIN test_versions t ON t.id=c.test_version_id WHERE c.retired=0
@@ -37,6 +37,7 @@ export function examRoutes() {
     return c.json({ ...summary(row), opensAt: row.opens_at });
   });
   app.post('/exams/:id/start', async c => {
+    const content: ExamContent = new Map();
     const body = await readJson(c.req.raw, startSchema); const user = c.get('auth').user.id;
     const test = await c.env.DB.prepare(`SELECT * FROM (${eligible}) WHERE exam_id = ?`).bind(user, c.req.param('id')).first<Eligible>();
     if (!test) throw missing();
@@ -45,7 +46,7 @@ export function examRoutes() {
     if (known && known.exam_id !== test.exam_id) throw missing();
     let id = known?.id;
     if (!id) {
-      const bank = await questions(c.env.DB, JSON.parse(test.question_ids) as string[]);
+      const bank = await questions(c.env.DB, JSON.parse(test.question_ids) as string[], content);
       const order = bank.map(q => ({ id: q.question.id, ...(q.question.kind === 'single' ? { options: shuffled(q.question.options.map(o => o.id)) } : {}) }));
       const candidate = crypto.randomUUID();
       // INSERT...SELECT checks schedule, eligibility and active account at the write itself.
@@ -65,8 +66,9 @@ export function examRoutes() {
     await c.env.DB.prepare('INSERT OR IGNORE INTO attempt_starts(user_id,operation_id,attempt_id) VALUES(?,?,?)').bind(user, body.operationId, id).run();
     const mapped = await c.env.DB.prepare('SELECT attempt_id FROM attempt_starts WHERE user_id = ? AND operation_id = ?').bind(user,body.operationId).first<{ attempt_id: string }>();
     if (mapped) id = mapped.attempt_id;
-    if ((await owned(c.env.DB,id,user)).exam_id !== test.exam_id) throw missing();
-    return c.json(await view(c.env.DB, await settleOwned(c.env.DB, await owned(c.env.DB, id, user))));
+    const row = await owned(c.env.DB,id,user);
+    if (row.exam_id !== test.exam_id) throw missing();
+    return c.json(await view(c.env.DB, await settleOwned(c.env.DB, row, content), content));
   });
   app.get('/attempts', async c => {
     const query = validate(z.object({ limit: z.coerce.number().int().min(1).max(100).default(25), before: z.string().max(200).optional() }), c.req.query());
@@ -84,18 +86,28 @@ export function examRoutes() {
     return c.json({ items: rows.results.slice(0, query.limit).map(row => ({ ...row, result: row.result ? JSON.parse(row.result) : null })), next: rows.results.length > query.limit && last ? btoa(JSON.stringify([last.startedAt,last.id])) : null });
   });
   app.get('/attempts/:id', async c => {
+    const content: ExamContent = new Map();
     const user = c.get('auth').user.id; const row = await owned(c.env.DB, c.req.param('id'), user);
-    return c.json(await view(c.env.DB, await settleOwned(c.env.DB,row)));
+    return c.json(await view(c.env.DB, await settleOwned(c.env.DB,row,content),content));
+  });
+  app.post('/attempts/:id/save-changes', async c => {
+    const body = await readJson(c.req.raw, saveAnswerChangesSchema);
+    const user = c.get('auth').user.id;
+    const row = await settleOwned(c.env.DB, await owned(c.env.DB, c.req.param('id'), user));
+    await mutate(c.env.DB, row, user, body, 'save');
+    const latest = await owned(c.env.DB, row.id, user);
+    return c.json({ id: latest.id, state: latest.state, revision: latest.revision, savedAt: latest.saved_at, serverNow: Date.now() });
   });
   for (const action of ['save', 'submit', 'check'] as const) {
     app.post(`/attempts/:id/${action}`, async c => {
+      const content: ExamContent = new Map();
       const body = await readJson(c.req.raw, action === 'check' ? checkSchema : saveAnswersSchema);
       const user = c.get('auth').user.id; const initial = await owned(c.env.DB, c.req.param('id'), user);
-      const row = await settleOwned(c.env.DB, initial);
+      const row = await settleOwned(c.env.DB, initial, content);
       // A late submit returns the frozen saved snapshot, discarding unsynced edits.
-      if (row.state === 'active') await mutate(c.env.DB, row, user, body, action, 'questionId' in body ? body.questionId as string : undefined);
-      else if (action !== 'submit') await mutate(c.env.DB, row, user, body, action);
-      return c.json(await view(c.env.DB, await settleOwned(c.env.DB, await owned(c.env.DB, row.id, user))));
+      if (row.state === 'active') await mutate(c.env.DB, row, user, body, action, 'questionId' in body ? body.questionId as string : undefined, content);
+      else if (action !== 'submit') await mutate(c.env.DB, row, user, body, action, undefined, content);
+      return c.json(await view(c.env.DB, await settleOwned(c.env.DB, await owned(c.env.DB, row.id, user), content), content));
     });
   }
   return app;

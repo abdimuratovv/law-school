@@ -11,6 +11,9 @@ export interface Authentication {
   user: AuthenticatedUser; sessionHash: string; csrfHash: string; csrfToken: string;
 }
 export const requireAuthentication: MiddlewareHandler<ApiEnv> = async (c, next) => {
+  // Exact and wildcard route middleware can both match. Authenticate once per
+  // request, while still checking revocation on every subsequent HTTP request.
+  if (c.get('auth')) { await next(); return; }
   const token = getCookie(c, cookieName(c.env, 'session'));
   if (!token || !/^[a-f0-9]{64}$/.test(token)) throw new ApiError(401, 'UNAUTHENTICATED', 'Sign in to continue.');
   const sessionHash = await hash(token);

@@ -46,6 +46,7 @@ with tempfile.TemporaryDirectory(prefix='hm-exam-e2e-') as folder:
     now = int(time.time() * 1000)
     sql_execute((ROOT / 'server/fixtures/local-exam.sql').read_text(encoding='utf-8') + f"""
       INSERT INTO users(id,display_name,email,created_at,updated_at) VALUES('{user_id}','Exam Learner','exam@example.test',{now},{now});
+      UPDATE users SET first_name='Exam',last_name='Learner',patronymic='Fixture',birth_date='2000-01-01',profile_completed_at={now} WHERE id='{user_id}';
       INSERT INTO sessions(token_hash,user_id,csrf_hash,created_at,expires_at) VALUES(
         '{hashlib.sha256(token.encode()).hexdigest()}','{user_id}','{hashlib.sha256(csrf.encode()).hexdigest()}',{now},{now+3600000});
     """, folder)
@@ -71,6 +72,7 @@ with tempfile.TemporaryDirectory(prefix='hm-exam-e2e-') as folder:
                 context.on('page', lambda page: page.on('pageerror', lambda error: errors.append(str(error))))
                 page = context.new_page()
                 page.goto(BASE + '/tests')
+                page.wait_for_load_state('networkidle')
                 page.locator('a[href="/tests/p_local-controls-v1"]').click()
                 page.get_by_role('button', name='Boshlash yoki davom etish', exact=True).click()
                 expect(page).to_have_url(__import__('re').compile('/exam/[a-f0-9-]+$'))
@@ -87,7 +89,10 @@ with tempfile.TemporaryDirectory(prefix='hm-exam-e2e-') as folder:
 
                 go_question(choice_index)
                 page.get_by_role('radio').filter(has_text='SERVER').click()
-                page.get_by_role('button', name='Hozir saqlash', exact=True).click()
+                with page.expect_response(lambda response: response.url.endswith('/save-changes')) as acknowledgement:
+                    page.get_by_role('button', name='Hozir saqlash', exact=True).click()
+                ack = acknowledgement.value
+                check('browser autosave uses a compact acknowledgement', ack.status == 200 and len(ack.body()) < 250 and 'questions' not in ack.json())
                 expect(page.get_by_text('Serverda saqlandi', exact=True)).to_be_visible()
                 saved = api.get(BASE + '/api/v1/attempts/' + attempt_id).json()
                 check('manual sync persists answer in real D1', saved['snapshot']['answers']['local-choice-v1'] == 'server-option')
@@ -120,7 +125,7 @@ with tempfile.TemporaryDirectory(prefix='hm-exam-e2e-') as folder:
                     else:
                         route.continue_()
 
-                pattern = '**/api/v1/attempts/' + attempt_id + '/save'
+                pattern = '**/api/v1/attempts/' + attempt_id + '/save-changes'
                 context.route(pattern, drop_ack)
                 page.locator('textarea').fill('uncertain saved draft')
                 page.get_by_role('button', name='Hozir saqlash', exact=True).click()
