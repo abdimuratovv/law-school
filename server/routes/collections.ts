@@ -70,7 +70,7 @@ export function collectionRoutes(){
  });
  app.get('/',async c=>{
   const {after,limit}=validate(pageSchema,c.req.query()),actor=c.get('auth').user.id;
-  const rows=await c.env.DB.prepare(`SELECT c.id,c.test_id AS draftId,t.name,json_array_length(t.question_ids) AS questionCount,c.opens_at AS opensAt,c.closes_at AS closesAt,c.retired,c.created_at AS createdAt,
+  const rows=await c.env.DB.prepare(`SELECT c.id,c.test_id AS draftId,t.name,json_array_length(t.question_ids) AS questionCount,c.opens_at AS opensAt,c.closes_at AS closesAt,c.retired,c.start_enabled AS startEnabled,c.availability_revision AS availabilityRevision,c.created_at AS createdAt,
    (SELECT count(*) FROM attempts a WHERE a.collection_id=c.id) AS attempts,
    (SELECT count(*) FROM attempts a WHERE a.collection_id=c.id AND a.state='final') AS completed
    FROM test_collections c JOIN test_versions t ON t.id=c.test_version_id WHERE c.id>? AND ${ownerScope('c')} ORDER BY c.id LIMIT ?`).bind(after,actor,limit+1).all<{id:string}>();
@@ -93,6 +93,18 @@ export function collectionRoutes(){
   const rows=await c.env.DB.prepare(`SELECT a.id,a.collection_id AS collectionId,t.name,u.display_name AS student,u.email,a.language,a.state,a.started_at AS startedAt,a.submitted_at AS submittedAt,a.result
    FROM attempts a JOIN users u ON u.id=a.user_id JOIN test_versions t ON t.id=a.test_version_id WHERE (a.started_at<? OR(a.started_at=? AND a.id>?)) AND ${reviewScope} ORDER BY a.started_at DESC,a.id LIMIT ?`).bind(time,time,last,c.get('auth').user.id,limit+1).all<{id:string;startedAt:number;result:string|null}>();
   return c.json({items:rows.results.slice(0,limit).map(r=>({...r,result:r.result?JSON.parse(r.result):null})),next:nextCursor(rows.results,limit)});
+ });
+ app.post('/:id/availability',requireRole('admin'),async c=>{
+  const body=await readJson(c.req.raw,z.strictObject({enabled:z.boolean(),revision:z.number().int().min(0)}));
+  const id=c.req.param('id'),actor=c.get('auth').user.id;
+  const result=await c.env.DB.batch([
+   c.env.DB.prepare(`UPDATE test_collections SET start_enabled=?,availability_revision=availability_revision+1
+    WHERE id=? AND retired=0 AND availability_revision=?
+    AND EXISTS(SELECT 1 FROM users WHERE id=? AND role='admin' AND status='active')`).bind(body.enabled?1:0,id,body.revision,actor),
+   audit(c.env.DB,actor,'collection.availability',id,{enabled:body.enabled,revision:body.revision+1}),
+  ]);
+  if(!result[0]?.meta.changes)throw changed();
+  return c.json({id,startEnabled:body.enabled,availabilityRevision:body.revision+1});
  });
  app.post('/:id/reopen',requireRole('admin'),async c=>{
   const body=await readJson(c.req.raw,reopenAssignmentSchema),source=c.req.param('id'),actor=c.get('auth').user.id;

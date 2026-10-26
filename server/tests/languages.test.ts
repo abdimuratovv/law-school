@@ -22,7 +22,7 @@ async function fixture(scheduled = true) {
   const uz = await version(owner, 'O‘zbekcha savol', 'salom');
   const kaa = await version(owner, 'Qaraqalpaqsha soraw', 'sálem');
   const id = crypto.randomUUID(), now = Date.now();
-  await env.DB.prepare('INSERT INTO test_collections(id,test_id,test_version_id,owner_id,opens_at,closes_at,created_at) VALUES(?,?,?,?,?,?,?)')
+  await env.DB.prepare('INSERT INTO test_collections(id,test_id,test_version_id,owner_id,opens_at,closes_at,created_at,start_enabled) VALUES(?,?,?,?,?,?,?,1)')
     .bind(id, uz.draft, uz.vid, owner.id, scheduled ? now - 60000 : null, scheduled ? now + 3600000 : null, now).run();
   const attach = await request(owner, `/staff/collections/${id}/languages`, { language: 'kaa', testVersionId: kaa.vid });
   expect(attach.status).toBe(200);
@@ -164,6 +164,8 @@ it('copies both languages into a reopened window while preserving the original r
   const timestamp = (time: number) => new Date(time + 5 * 3600000).toISOString().slice(0, 16) + ':00+05:00';
   const reopened = await request(admin, `/staff/collections/${f.id}/reopen`, { operationId: id, timeZone: 'Asia/Tashkent', opensAt: timestamp(minute - 60000), closesAt: timestamp(minute + 3600000) });
   expect(reopened.status).toBe(201);
+  expect((await start(user,id,'kaa')).status).toBe(403);
+  expect((await request(admin,`/staff/collections/${id}/availability`,{enabled:true,revision:0})).status).toBe(200);
   const next = await (await start(user, id, 'kaa')).json() as ServerAttempt;
   expect(next.id).not.toBe(old.id); expect(next.language).toBe('kaa'); expect(next.questions[0]?.id).toBe(f.kaa.qid);
   expect((await (await request(user, `/attempts/${old.id}`)).json() as ServerAttempt).language).toBe('kaa');

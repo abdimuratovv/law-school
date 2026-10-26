@@ -54,6 +54,7 @@ const paths = {
   link: <path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" />,
   external: <path d="M8 16 16 8M9.5 8H16v6.5" />,
   book: <path d="M12 4v16M7 20h10M5 7.5h14" />,
+  pause: <><path d="M8 5v14M16 5v14" strokeWidth="4" /></>,
   play: <path d="M8 5.5v13l10.5-6.5z" />,
   listNum: <path d="M10 7h10M10 12h10M10 17h10M4.5 6h1v3M4 17h2.5l-2.5 2h2.5" />,
   indent: <path d="M10 7h10M10 12h10M10 17h10M4 9.5l3 2.5-3 2.5" />,

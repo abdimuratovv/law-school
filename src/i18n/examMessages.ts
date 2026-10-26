@@ -1,5 +1,14 @@
 import type { Language } from './LanguageProvider';
 const rows: [string,string,string,string][] = [
+  ['Collection published paused. An admin can enable new attempts from Test collections.','Test pauzada e’lon qilindi. Admin «Test to‘plamlari» sahifasidan uni ochishi mumkin.','Test pauzada járiyalandı. Admin «Test toplamları» betinen onı ashıwı múmkin.','Тест опубликован на паузе. Администратор может открыть доступ на странице наборов тестов.'],
+  ['Control when users can start each test. New collections start paused.','Testni boshlash imkonini boshqaring. Yangi testlar dastlab pauzada turadi.','Testti baslaw múmkinshiligin basqarıń. Jańa testler dáslep pauzada turadı.','Управляйте доступом к началу тестов. Новые тесты изначально на паузе.'],
+  ['New attempts paused','Yangi urinishlar pauzada','Jańa urınıslar pauzada','Новые попытки приостановлены'],
+  ['Pause new attempts','Pauzaga qo‘yish','Pauzaǵa qoyıw','Приостановить доступ'],
+  ['Enable new attempts','Testni yoqish','Testti qosıw','Открыть доступ'],
+  ['New attempts enabled.','Testni boshlash imkoniyati ochildi.','Testti baslaw múmkinshiligi ashıldı.','Начало новых попыток разрешено.'],
+  ['New attempts paused. Existing attempts can continue.','Yangi urinishlar pauzada. Boshlangan testlarni davom ettirish mumkin.','Jańa urınıslar pauzada. Baslanǵan testlerdi dawam ettiriw múmkin.','Новые попытки приостановлены. Начатые тесты можно продолжить.'],
+  ['Could not change availability. Reloaded the latest state; try again.','Holatni o‘zgartirib bo‘lmadi. Joriy holat yangilandi, qayta urinib ko‘ring.','Jaǵdaydı ózgertip bolmadı. Jaǵday jańalandı, qayta urınıp kóriń.','Не удалось изменить доступ. Состояние обновлено, попробуйте ещё раз.'],
+  ['New attempts are paused. Please wait for the admin to open the test.','Yangi urinishlar pauzada. Admin testni ochishini kuting.','Jańa urınıslar pauzada. Admin testti ashıwın kútiń.','Новые попытки приостановлены. Дождитесь открытия теста администратором.'],
   ['Answers submitted','Javoblar topshirildi','Juwaplar tapsırıldı','Ответы отправлены'],
   ['Test completed','Test yakunlandi','Test juwmaqlandı','Тест завершён'],
   ['Your result is ready','Natijangiz tayyor','Nátiyjeńiz tayar','Ваш результат готов'],

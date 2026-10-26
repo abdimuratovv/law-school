@@ -28,7 +28,7 @@ for (const users of [100, 200]) it(`${users} simultaneous authenticated exam sol
     .bind('load-test', 'Load test', 'mock', 3600, JSON.stringify(bank.map(q => q.question.id)), 0, now).run();
   await env.DB.prepare('INSERT INTO test_drafts(id,owner_id,content,created_at,updated_at) VALUES(?,?,?,?,?)')
     .bind('load-draft', students[0]!.id, '{}', now, now).run();
-  await env.DB.prepare('INSERT INTO test_collections(id,test_id,test_version_id,owner_id,opens_at,closes_at,created_at) VALUES(?,?,?,?,?,?,?)')
+  await env.DB.prepare('INSERT INTO test_collections(id,test_id,test_version_id,owner_id,opens_at,closes_at,created_at,start_enabled) VALUES(?,?,?,?,?,?,?,1)')
     .bind('load-collection', 'load-draft', 'load-test', students[0]!.id, now - 1000, now + 3600000, now).run();
 
   const samples: Record<string, { ms: number[]; calls: number; statements: number; rowsRead: number; rowsWritten: number; bytes: number }> = {};

@@ -6,7 +6,7 @@ import type { ServerAttempt } from '../../shared/contracts/exams';
 
 const api=createApi();type Account=Awaited<ReturnType<typeof account>>;
 const request=(u:Account,path:string,body?:unknown)=>api.request('/api/v1'+path,{method:body===undefined?'GET':'POST',headers:u.headers,...(body===undefined?{}:{body:JSON.stringify(body)})},authEnv);
-async function collection(owner:Account,scheduled=false,manual=false){
+async function collection(owner:Account,scheduled=false,manual=false,enabled=true){
  const qid=crypto.randomUUID();
  await request(owner,'/staff/questions',{operationId:qid,content:{kind:manual?'written':'single',topic:'theory',stem:'Synthetic public collection question',options:[{id:'a',text:'Alpha'},{id:'b',text:'Beta'},{id:'c',text:'Gamma'},{id:'d',text:'Delta'}],correctOptionId:manual?null:'a',accepted:[],explanation:'Private synthetic explanation'}});
  const batch=await (await request(owner,'/staff/question-bank/publish',{items:[{id:qid,revision:0}]})).json() as {results:{versionId:string}[]};
@@ -14,10 +14,50 @@ async function collection(owner:Account,scheduled=false,manual=false){
  const opens=scheduled?Date.now()-120000:null,closes=scheduled?Date.now()+3600000:null;
  const draft=await request(owner,'/staff/tests',{operationId:draftId,content:{name:'Synthetic public test',mode:'mock',durationSeconds:null,isPublic:false,questionDraftIds:[qid],questionVersionIds:[version],opensAt:opens,closesAt:closes}});expect(draft.status).toBe(201);
  const result=await request(owner,'/staff/collections',{draftId,revision:0});expect(result.status).toBe(201);
- const data=await result.json() as {id:string;examId:string};return {...data,draftId,qid,version,closes};
+ const data=await result.json() as {id:string;examId:string};if(enabled)await env.DB.prepare('UPDATE test_collections SET start_enabled=1 WHERE id=?').bind(data.id).run();return {...data,draftId,qid,version,closes};
 }
 const start=async(u:Account,id:string)=>{const r=await request(u,`/exams/${id}/start`,{operationId:crypto.randomUUID()});expect(r.status).toBe(200);return await r.json() as ServerAttempt;};
 beforeEach(resetAuthDatabase);
+
+describe('admin admission controls',()=>{
+ it('publishes paused, rejects direct starts in either language, and requires admin + CSRF + current revision',async()=>{
+  const owner=await account('teacher'),admin=await account('admin'),student=await account();
+  const c=await collection(owner,false,false,false),path=`/staff/collections/${c.id}/availability`;
+  const summary=await (await request(student,'/exams/'+c.examId)).json() as {startEnabled:boolean};expect(summary.startEnabled).toBe(false);
+  for(const language of ['uz','kaa'])expect((await request(student,`/exams/${c.examId}/start`,{operationId:crypto.randomUUID(),language})).status).toBe(403);
+  expect((await request(owner,path,{enabled:true,revision:0})).status).toBe(403);
+  expect((await request(student,path,{enabled:true,revision:0})).status).toBe(403);
+  expect((await api.request('/api/v1'+path,{method:'POST',headers:{Cookie:admin.headers.Cookie,'Content-Type':'application/json'},body:JSON.stringify({enabled:true,revision:0})},authEnv)).status).toBe(403);
+  expect((await request(admin,path,{enabled:true,revision:0})).status).toBe(200);
+  expect((await request(admin,path,{enabled:false,revision:0})).status).toBe(409);
+  expect(await env.DB.prepare('SELECT start_enabled FROM test_collections WHERE id=?').bind(c.id).first('start_enabled')).toBe(1);
+  expect(await env.DB.prepare("SELECT count(*) n FROM audit_events WHERE action='collection.availability' AND target_id=?").bind(c.id).first('n')).toBe(1);
+  await env.DB.prepare('UPDATE test_collections SET retired=1 WHERE id=?').bind(c.id).run();
+  expect((await request(admin,path,{enabled:false,revision:1})).status).toBe(409);
+ });
+ it('blocks new admissions while preserving resume, saved answers, submission, deadline and the single-attempt rule',async()=>{
+  const admin=await account('admin'),student=await account(),fresh=await account();const c=await collection(admin,true);
+  const a=await start(student,c.examId),path=`/staff/collections/${c.id}/availability`;
+  expect((await request(admin,path,{enabled:false,revision:0})).status).toBe(200);
+  expect((await request(fresh,`/exams/${c.examId}/start`,{operationId:crypto.randomUUID()})).status).toBe(403);
+  const resumed=await start(student,c.examId);expect(resumed.id).toBe(a.id);expect(resumed.endsAt).toBe(c.closes);
+  const saved=await request(student,`/attempts/${a.id}/save`,{revision:0,operationId:crypto.randomUUID(),answers:{[c.version]:'a'},flags:[]});expect(saved.status).toBe(200);
+  const body=await saved.json() as ServerAttempt;
+  const submitted=await request(student,`/attempts/${a.id}/submit`,{revision:body.revision,operationId:crypto.randomUUID(),answers:{[c.version]:'a'},flags:[]});expect(submitted.status).toBe(200);
+  expect((await submitted.json() as ServerAttempt).result?.units).toBe(2);
+  expect((await request(admin,path,{enabled:true,revision:1})).status).toBe(200);
+  expect((await start(student,c.examId)).id).toBe(a.id);expect((await start(fresh,c.examId)).endsAt).toBe(c.closes);
+ });
+ it('cannot bypass future opening or expired closing times by enabling admission',async()=>{
+  const admin=await account('admin'),student=await account(),c=await collection(admin,true,false,false);
+  expect((await request(admin,`/staff/collections/${c.id}/availability`,{enabled:true,revision:0})).status).toBe(200);
+  await env.DB.prepare('UPDATE test_collections SET opens_at=?,closes_at=? WHERE id=?').bind(Date.now()+60000,Date.now()+120000,c.id).run();
+  expect((await request(student,`/exams/${c.examId}/start`,{operationId:crypto.randomUUID()})).status).toBe(404);
+  await env.DB.prepare('UPDATE test_collections SET opens_at=?,closes_at=? WHERE id=?').bind(Date.now()-120000,Date.now()-60000,c.id).run();
+  expect((await request(student,`/exams/${c.examId}/start`,{operationId:crypto.randomUUID()})).status).toBe(404);
+  expect(await env.DB.prepare('SELECT count(*) n FROM attempts WHERE collection_id=?').bind(c.id).first('n')).toBe(0);
+ });
+});
 describe('public test collections',()=>{
  it('is visible to every registered user without groups and reports results to its owner',async()=>{
   const teacher=await account('teacher'),student=await account(),newStudent=await account(),other=await account('teacher'),admin=await account('admin');
@@ -49,6 +89,8 @@ describe('public test collections',()=>{
   expect((await request(teacher,`/staff/collections/${c.id}/reopen`,body)).status).toBe(403);
   expect((await request(admin,`/staff/collections/${c.id}/reopen`,body)).status).toBe(201);
   expect((await request(admin,`/staff/collections/${c.id}/reopen`,body)).status).toBe(201);
+  expect(await env.DB.prepare('SELECT start_enabled FROM test_collections WHERE id=?').bind(body.operationId).first('start_enabled')).toBe(0);
+  expect((await request(admin,'/staff/collections/'+body.operationId+'/availability',{enabled:true,revision:0})).status).toBe(200);
   const next=await start(student,'c_'+body.operationId);expect(next.id).not.toBe(a.id);expect(next.endsAt).toBe(Date.parse(body.closesAt));
   const old=await (await request(student,'/attempts/'+a.id)).json() as ServerAttempt;expect(old.result).toEqual(final.result);
  });
@@ -99,6 +141,8 @@ describe('bilingual authoring',()=>{
   expect((await (await request(owner,'/staff/collections',{draftId:first.draftId,revision:1})).json() as {id:string}).id).toBe(next.id);
   expect(await env.DB.prepare('SELECT count(*) n FROM test_collections WHERE retired=0').first('n')).toBe(1);
   const variants=await env.DB.prepare('SELECT l.language,json_array_length(t.question_ids) n FROM collection_languages l JOIN test_versions t ON t.id=l.test_version_id WHERE l.collection_id=? ORDER BY l.language').bind(next.id).all();expect(variants.results).toEqual([{language:'kaa',n:1},{language:'uz',n:1}]);
+  expect(await env.DB.prepare('SELECT start_enabled FROM test_collections WHERE id=?').bind(next.id).first('start_enabled')).toBe(0);
+  await env.DB.prepare('UPDATE test_collections SET start_enabled=1 WHERE id=?').bind(next.id).run();
   const fresh=await account();const attempt=await (await request(fresh,'/exams/'+next.examId+'/start',{operationId:crypto.randomUUID(),language:'kaa'})).json() as ServerAttempt;
   expect(attempt.language).toBe('kaa');expect(attempt.questions[0]?.stem).toBe('Qaraqalpaqsha synthetic');expect(attempt.questions).toHaveLength(1);
   expect((await request(student,'/attempts/'+old.id)).status).toBe(200);
