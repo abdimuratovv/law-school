@@ -32,7 +32,7 @@ describe('public test collections',()=>{
   expect((await request(other,`/staff/collections/${c.id}/results`)).status).toBe(404);
   expect((await request(admin,`/staff/collections/${c.id}/results`)).status).toBe(200);
   expect((await request(student,'/staff/collections')).status).toBe(403);
-  const second=await start(student,c.examId);expect(second.id).not.toBe(a.id);
+  const second=await start(student,c.examId);expect(second.id).toBe(a.id);expect(second.state).toBe('final');
  });
  it('shares a scheduled deadline, prevents schedule bypass and preserves old results on admin reopen',async()=>{
   const admin=await account('admin'),student=await account(),teacher=await account('teacher');const c=await collection(admin,true);
@@ -72,7 +72,7 @@ describe('public test collections',()=>{
  });
  it('paginates same-time results and directory users without dropping records',async()=>{
   const admin=await account('admin'),student=await account(),c=await collection(admin);const ids:string[]=[];
-  for(let i=0;i<3;i++){const a=await start(student,c.examId);ids.push(a.id);await request(student,`/attempts/${a.id}/submit`,{revision:0,operationId:crypto.randomUUID(),answers:{[c.version]:'a'},flags:[]});}
+  for(let i=0;i<3;i++){const learner=i===0?student:await account();const a=await start(learner,c.examId);ids.push(a.id);await request(learner,`/attempts/${a.id}/submit`,{revision:0,operationId:crypto.randomUUID(),answers:{[c.version]:'a'},flags:[]});}
   await env.DB.prepare('UPDATE attempts SET started_at=1000').run();
   const found:string[]=[];let after:string|null='';
   do{const page=await (await request(admin,`/staff/collections/${c.id}/results?limit=1&after=${after}`)).json() as {items:{id:string}[];next:string|null};found.push(...page.items.map(r=>r.id));after=page.next;}while(after);

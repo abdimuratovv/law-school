@@ -37,10 +37,11 @@ export function examRoutes() {
   app.get('/exams/:id', async c => {
     const row = await c.env.DB.prepare(`SELECT * FROM (${eligible}) WHERE exam_id = ?`).bind(c.get('auth').user.id, c.req.param('id')).first<Eligible>();
     if (!row) throw missing();
-    const known = await c.env.DB.prepare(`SELECT language FROM attempts WHERE user_id=? AND exam_id=?
-      AND (state='active' OR assignment_id IS NOT NULL OR (collection_id IS NOT NULL AND ends_at IS NOT NULL)) ORDER BY started_at LIMIT 1`)
-      .bind(c.get('auth').user.id,row.exam_id).first<{language:TestLanguage}>();
-    return c.json({ ...summary(row), opensAt: row.opens_at, attemptLanguage:known?.language??null });
+    const known = await c.env.DB.prepare(`SELECT id,state,language FROM attempts WHERE user_id=? AND exam_id=?
+      AND (state='active' OR assignment_id IS NOT NULL OR collection_id IS NOT NULL)
+      ORDER BY (state='active') DESC,started_at DESC,id LIMIT 1`)
+      .bind(c.get('auth').user.id,row.exam_id).first<{id:string;state:'active'|'submitted'|'final';language:TestLanguage}>();
+    return c.json({ ...summary(row), opensAt: row.opens_at, attemptLanguage:known?.language??null, attempt:known??null });
   });
   app.post('/exams/:id/start', async c => {
     const content: ExamContent = new Map();
@@ -48,7 +49,7 @@ export function examRoutes() {
     let test = await c.env.DB.prepare(`SELECT * FROM (${eligible}) WHERE exam_id = ?`).bind(user, c.req.param('id')).first<Eligible>();
     if (!test) throw missing();
     const known = await c.env.DB.prepare(`SELECT id, exam_id,language FROM attempts WHERE user_id = ? AND (id = (SELECT attempt_id FROM attempt_starts WHERE user_id = ? AND operation_id = ?) OR start_operation = ? OR
-      (exam_id = ? AND (assignment_id IS NOT NULL OR (collection_id IS NOT NULL AND ends_at IS NOT NULL) OR state = 'active'))) ORDER BY started_at LIMIT 1`).bind(user, user, body.operationId, body.operationId, test.exam_id).first<{ id: string; exam_id: string;language:TestLanguage }>();
+      (exam_id = ? AND (assignment_id IS NOT NULL OR collection_id IS NOT NULL OR state = 'active'))) ORDER BY (state='active') DESC,started_at DESC,id LIMIT 1`).bind(user, user, body.operationId, body.operationId, test.exam_id).first<{ id: string; exam_id: string;language:TestLanguage }>();
     if (known && known.exam_id !== test.exam_id) throw missing();
     const language = body.language ?? known?.language ?? 'uz';
     if (known && language !== known.language) throw new ApiError(409,'CONFLICT','Resume this attempt in its original language.');
@@ -72,7 +73,7 @@ export function examRoutes() {
         AND (? IS NULL OR EXISTS(SELECT 1 FROM test_collections WHERE id=? AND retired=0))`)
         .bind(candidate,user,test.exam_id,test.id,test.assignment_id,test.collection_id,body.operationId,language,test.assignment_id??test.collection_id,test.closes_at,
           test.duration_seconds,test.duration_seconds,JSON.stringify(order),test.opens_at,test.opens_at,test.closes_at,test.closes_at,user,test.assignment_id,user,test.assignment_id,test.collection_id,test.collection_id).run();
-      const created = await c.env.DB.prepare(`SELECT id FROM attempts WHERE user_id = ? AND (start_operation = ? OR (exam_id = ? AND (assignment_id IS NOT NULL OR (collection_id IS NOT NULL AND ends_at IS NOT NULL) OR state = 'active'))) LIMIT 1`)
+      const created = await c.env.DB.prepare(`SELECT id FROM attempts WHERE user_id = ? AND (start_operation = ? OR (exam_id = ? AND (assignment_id IS NOT NULL OR collection_id IS NOT NULL OR state = 'active'))) ORDER BY (state='active') DESC,started_at DESC,id LIMIT 1`)
         .bind(user, body.operationId, test.exam_id).first<{ id: string }>();
       id = created?.id;
     }

@@ -62,7 +62,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
 function AccountState({ children, user, signOut }: { children: ReactNode; user: User | null; signOut: () => Promise<boolean> }) {
   const { load, save, remove } = accountStore(user?.id ?? null);
-  const [theme, setThemeState] = useState<ThemePref>(() => loadPreference('theme', 'system'));
+  const [theme, setThemeState] = useState<ThemePref>(() => loadPreference('theme', 'light'));
   const [sessions, setSessions] = useState<Record<string, ExamSession>>(() => load('sessions', {}));
   const [attempts, setAttempts] = useState<Attempt[]>(() => load('attempts', []));
   const sessionsRef = useRef(sessions);
@@ -81,6 +81,7 @@ function AccountState({ children, user, signOut }: { children: ReactNode; user: 
     const el = document.documentElement;
     el.classList.toggle('t-light', resolvedTheme === 'light');
     el.classList.toggle('t-dark', resolvedTheme === 'dark');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', resolvedTheme === 'dark' ? '#11141B' : '#F5F6FA');
   }, [resolvedTheme]);
 
   const setTheme = useCallback((t: ThemePref) => {

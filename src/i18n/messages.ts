@@ -5,6 +5,8 @@ const rows: Row[] = [
   // Navigation, account and common controls. Source text is the key.
   ['Language', 'Til', 'Til', 'Язык'],
   ['Test language', 'Test tili', 'Test tili', 'Язык теста'],
+  ['One attempt per test collection, shared across both languages.', 'Har bir test to‘plami uchun ikkala tilga umumiy bitta urinish beriladi.', 'Hár bir test toplamı ushın eki tilge ulıwma bir urınıs beriledi.', 'На каждый сборник тестов даётся одна попытка на оба языка.'],
+  ['You have completed this test. Another attempt is unavailable in either language.', 'Siz bu testni yakunlagansiz. Ikkala tilda ham qayta yechish imkoni yo‘q.', 'Siz bul testti juwmaqlaǵansız. Eki tilde de qayta sheshiw múmkin emes.', 'Вы завершили этот тест. Повторная попытка недоступна на обоих языках.'],
   ['Choose the language of the questions. It cannot change after you start.', 'Savollar tilini tanlang. Test boshlanganidan keyin uni o‘zgartirib bo‘lmaydi.', 'Sorawlar tilin tańlań. Test baslanǵannan keyin onı ózgertip bolmaydı.', 'Выберите язык вопросов. После начала теста изменить его нельзя.'],
   ['Home', 'Bosh sahifa', 'Bas bet', 'Главная'],
   ['Tests', 'Testlar', 'Testler', 'Тесты'],

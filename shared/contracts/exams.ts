@@ -23,7 +23,9 @@ export type Grade = z.infer<typeof gradeSchema>;
 export const feedbackSchema = gradeSchema.extend({ correctOptionId: z.string().optional(), accepted: z.array(z.string()), explanation: z.string(), reviewComment:z.string().optional() });
 export const snapshotSchema = z.object({ answers: z.record(z.string(), z.string()), flags: z.array(z.string()), currentQuestionId: z.string().optional() });
 export type Snapshot = z.infer<typeof snapshotSchema>;
-export const examSummarySchema = z.object({ id: z.string(), name: z.string(), mode: z.enum(['practice', 'mock']), questionCount: z.number(), durationSeconds: z.number().nullable(),opensAt:z.number().nullable().default(null), closesAt: z.number().nullable(),serverNow:z.number().optional(), languages:z.array(testLanguageSchema).default(['uz']), attemptLanguage:testLanguageSchema.nullable().optional() });
+export const examSummarySchema = z.object({ id: z.string(), name: z.string(), mode: z.enum(['practice', 'mock']), questionCount: z.number(), durationSeconds: z.number().nullable(),opensAt:z.number().nullable().default(null), closesAt: z.number().nullable(),serverNow:z.number().optional(), languages:z.array(testLanguageSchema).default(['uz']), attemptLanguage:testLanguageSchema.nullable().optional(),
+  attempt:z.object({id:z.uuid(),state:z.enum(['active','submitted','final']),language:testLanguageSchema}).nullable().optional(),
+});
 export type ExamSummary = z.infer<typeof examSummarySchema>;
 export const attemptSchema = z.object({
   id: z.uuid(), examId: z.string(), name: z.string(), mode: z.enum(['practice', 'mock']),
