@@ -6,6 +6,7 @@ import { Screen } from '@/components/layout/StudentShell';
 import { Button, Segmented, Tag } from '@/components/ui/basic';
 import { OptionButton } from '@/components/exam/parts';
 import { Schedule } from '@/components/exam/Schedule';
+import { ResultOverview } from '@/components/exam/ResultOverview';
 import { useText, useFormatting } from '@/i18n/LanguageProvider';
 import { useAuth } from '@/state/AuthState';
 import { useServerAttempt } from '@/state/useServerAttempt';
@@ -66,7 +67,7 @@ export function ServerLobby() {
   </Page>;
 }
 export function ServerExam() {
-  const { testId, attemptId } = useParams(); const id = attemptId ?? testId ?? ''; const t = useText(); const format = useFormatting();
+  const { testId, attemptId } = useParams(); const id = attemptId ?? testId ?? ''; const t = useText();
   const { attempt:a,snapshot:s,message,conflict,busy,change,sync,reload,retryLoad } = useServerAttempt(id);
   const [position,setPosition] = useState(0); const [confirm,setConfirm] = useState(false); const now = useNow(1000);
   const [navigatorOpen,setNavigatorOpen] = useState(false);
@@ -77,6 +78,7 @@ export function ServerExam() {
   useEffect(() => { if (a) setOffset(a.serverNow-Date.now()); }, [a?.serverNow]);
   useEffect(() => { if (a?.state === 'active' && a.endsAt !== null && now+offset >= a.endsAt && !expiryRequested.current) { expiryRequested.current = true; void sync('submit'); } }, [now,offset,a,sync]);
   if (!a || !s) return <Page focused><ErrorNotice message={message} retry={() => { void retryLoad(); }} /><Button to="/tests">{t('Back to tests')}</Button></Page>;
+  if (a.state !== 'active') return <Page focused><ResultOverview key={a.id} attempt={a} /></Page>;
   const index = Math.max(0,position); const question = a.questions[index] ?? a.questions[0]!;
   const feedback = a.feedback[question.id]; const final = a.state !== 'active'; const expired=a.endsAt!==null&&now+offset>=a.endsAt;const locked = final || expired || conflict || a.checked.includes(question.id) || busy;
   const go = (n: number) => { setPosition(n); setNavigatorOpen(false); if (!final&&!expired) change({ ...s,currentQuestionId:a.questions[n]!.id }); requestAnimationFrame(()=>{questionTitle.current?.focus({preventScroll:true});questionTitle.current?.scrollIntoView({block:'nearest'});}); };
@@ -91,7 +93,7 @@ export function ServerExam() {
       <nav id="exam-question-grid" className={'exam-question-grid'+(navigatorOpen?' is-open':'')} aria-label={t('All questions')}>{a.questions.map((q,n)=><button type="button" className={'exam-question-number'+(s.answers[q.id]?.trim()?' is-answered':'')} key={q.id} onClick={()=>go(n)} aria-current={n===index?'step':undefined} aria-label={t('Question')+' '+(n+1)+(s.answers[q.id]?.trim()?' · '+t('Answered'):'')}>{n+1}</button>)}</nav>
     </aside>
     <section className="prep-card card exam-content"><header className="col"><Tag tone="acc">{t(a.examId.startsWith('c_')?'Test collection':a.mode==='practice'?'Practice':'Mock exam')}</Tag><h1 className="t2">{a.name}</h1></header>
-    {expired&&!final&&<p role="status">{t('The deadline has passed. Only answers saved before closing are accepted.')}</p>}{final && <section className="learning-card"><h2 className="t2">{t(a.result?.final?'Completed':'Awaiting grading')}</h2>{a.result && <p className="hl">{format.number(a.result.units/2)} / {format.number(a.result.maxUnits/2)}{a.result.pending > 0 && ' · '+t('Pending: {count}',{count:a.result.pending})}</p>}<p>{t(a.result?.final?'Feedback is shown when its release conditions are met.':'This result is provisional. Pending answers are not marked incorrect.')}</p>{a.answerCounts&&<div className="result-counts"><span>{t('Correct')}: <strong>{a.answerCounts.correct}</strong></span><span>{t('Incorrect')}: <strong>{a.answerCounts.incorrect}</strong></span><span>{t('Not answered')}: <strong>{a.answerCounts.unanswered}</strong></span>{a.answerCounts.partial>0&&<span>{t('Partial')}: {a.answerCounts.partial}</span>}{a.answerCounts.pending>0&&<span>{t('Awaiting grading')}: {a.answerCounts.pending}</span>}</div>}</section>}
+    {expired&&!final&&<p role="status">{t('The deadline has passed. Only answers saved before closing are accepted.')}</p>}
     <p className="fn l2">{t('Test language')}: <span lang={a.language}>{testLanguageLabel(a.language)}</span></p>
     <h2 className="hl exam-question-title" ref={questionTitle} tabIndex={-1}>{t('Question')} {index+1} / {a.questions.length}</h2><p className="body" lang={a.language}>{question.stem}</p>
     {question.kind === 'single' && <>{question.terms && <ul>{question.terms.map(item => <li key={item.k}>{item.k} {item.t}</li>)}</ul>}{question.defs && <ul>{question.defs.map(item => <li key={item.k}>{item.k} {item.t}</li>)}</ul>}<div className="assessment-answers" role="radiogroup" aria-label={t('Answer options')}>{question.options.map((option,n) => <OptionButton key={option.id} letter={'ABCD'[n]} text={option.text} selected={s.answers[question.id]===option.id} disabled={locked} state={feedback?.correctOptionId===option.id?'right':s.answers[question.id]===option.id?feedback?'wrong':'sel':''} onClick={() => answer(option.id)} />)}</div></>}

@@ -35,6 +35,11 @@ with sync_playwright() as p:
             route.fulfill(json={'user': user, 'csrfToken': 'a' * 64})
         elif path == '/auth/config':
             route.fulfill(json={'googleEnabled': True})
+        elif path.endswith('/submit'):
+            attempt['state'] = 'final'
+            attempt['result'] = {'units': 0, 'maxUnits': 90, 'pending': 0, 'final': True, 'algorithm': 'fixture'}
+            attempt['answerCounts'] = {'correct': 0, 'incorrect': 1, 'partial': 0, 'pending': 0, 'unanswered': 44}
+            route.fulfill(json=attempt)
         elif path.endswith('/save-changes'):
             if fail_save:
                 route.fulfill(status=503, json={'error': {'code': 'SERVICE_UNAVAILABLE', 'message': 'Synthetic offline save'}})
@@ -94,6 +99,12 @@ with sync_playwright() as p:
     expect(page.locator('html')).to_have_class('t-dark')
     page.set_viewport_size({'width': 1440, 'height': 1000})
     page.screenshot(path=str(out / 'desktop-dark.png'), full_page=True)
+    page.get_by_role('button', name='Testni yakunlash', exact=True).click()
+    page.get_by_role('button', name='Javoblarni topshirish', exact=True).click()
+    expect(page.get_by_role('heading', name='Natijangiz tayyor')).to_be_visible()
+    expect(page.locator('.exam-workspace')).to_have_count(0)
+    expect(page.get_by_role('textbox')).to_have_count(0)
+    expect(page.locator('.result-completion h1')).to_be_focused()
     assert not errors, errors
     browser.close()
-print('PASS: compact sidebar, 45-question navigation, mobile collapse, save failures, light default and saved dark preference')
+print('PASS: compact sidebar, navigation, mobile, save failures, theme preferences, confirmed submit-to-report transition')
